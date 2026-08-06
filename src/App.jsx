@@ -26,6 +26,7 @@ import {
   pickImpostor,
   pickLookup,
   pickTwins,
+  pickScrambleTable,
   answerOf,
   scaffoldOf,
   isPP,
@@ -103,8 +104,12 @@ export default function App() {
   const [accentStage, setAccentStage] = useState(null); // {pid, cid, key, form, segments, choices, result}
   const [race, setRace] = useState(null); // {startAt, deadline, now, finished, timeMs, bestMs, isRecord}
   const [scramble, setScramble] = useState(null); // {bank, placed, startAt, result}
+  const [scrambleFlow, setScrambleFlow] = useState("same"); // "same" | "next", remembered
+  const [scrambleSolved, setScrambleSolved] = useState(0); // tables restored this session
   const [drag, setDrag] = useState(null); // {tile, from, x, y}
   const dragRef = useRef(null);
+  const dragYRef = useRef(0);
+  const scrambleBarRef = useRef(null);
   const [syllabus, setSyllabus] = useState(null); // {classUnit, lead}
   const [streak, setStreak] = useState(0);
   const [fastFlash, setFastFlash] = useState(false);
@@ -118,13 +123,15 @@ export default function App() {
   useEffect(() => {
     (async () => {
       await applyDecay();
-      const [m, s, unit, syl, pOpen] = await Promise.all([
+      const [m, s, unit, syl, pOpen, sFlow] = await Promise.all([
         loadMastery(),
         loadStudied(),
         getMeta("currentUnit", 1),
         getMeta("syllabus", null),
         getMeta("pickerOpen", true),
+        getMeta("scrambleFlow", "same"),
       ]);
+      setScrambleFlow(sFlow);
       setMasteryMap(m);
       setStudied(s);
       setCurrentUnit(unit);
@@ -377,6 +384,7 @@ export default function App() {
 
   const changeMode = (m) => {
     setMode(m);
+    if (m === "scramble") setScrambleSolved(0); // a fresh session's tally
     startRound(m);
   };
   const changeParadigm = (pid) => {
@@ -414,6 +422,20 @@ export default function App() {
   const saveSyllabus = async (s) => {
     setSyllabus(s);
     await setMeta("syllabus", s);
+  };
+
+  const setFlow = async (f) => {
+    setScrambleFlow(f);
+    await setMeta("scrambleFlow", f);
+  };
+
+  /* Hand the session a different table — same rules Snipe schedules by, but
+     scored over whole tables, and never the one just finished. */
+  const nextScrambleTable = () => {
+    const next = pickScrambleTable(currentUnit, masteryRef.current, paradigm.id);
+    const p = next ?? paradigm;
+    setParadigmId(p.id);
+    startRound("scramble", p);
   };
 
   const togglePicker = async () => {
@@ -498,6 +520,7 @@ export default function App() {
 
   const moveDrag = (e) => {
     if (!dragRef.current) return;
+    dragYRef.current = e.clientY;
     setDrag((d) => (d ? { ...d, x: e.clientX, y: e.clientY } : d));
   };
 
@@ -529,6 +552,25 @@ export default function App() {
     setScramble((s) => (s ? { ...s, ...next, result: null } : s));
   };
 
+  /* The bank is pinned to the bottom, so the lower rows of a tall table sit
+     behind it — and you cannot scroll with a finger already down. Auto-scroll
+     while dragging: near the top of the viewport, and in the band just above
+     the bar, which is what makes 12-cell tables reachable at all. */
+  useEffect(() => {
+    if (!drag) return;
+    let raf;
+    const tick = () => {
+      const y = dragYRef.current;
+      const barTop = scrambleBarRef.current?.getBoundingClientRect().top ?? window.innerHeight;
+      const EDGE = 90;
+      if (y < EDGE) window.scrollBy(0, -14);
+      else if (y > barTop - EDGE && y < barTop + 8) window.scrollBy(0, 14);
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [!!drag]);
+
   const checkScramble = async () => {
     if (!scramble) return;
     const p = paradigm;
@@ -541,6 +583,7 @@ export default function App() {
       const budget = FAST_MS + SCRAMBLE_MS_PER_CELL * (cells.length - 1);
       const fast = elapsed < budget;
       setStreak((s) => s + 1);
+      setScrambleSolved((n) => n + 1);
       if (fast) {
         setFastFlash(true);
         later(() => setFastFlash(false), 900);
@@ -1257,6 +1300,7 @@ export default function App() {
         const solved = scramble.result?.allCorrect;
         return (
           <div
+            ref={scrambleBarRef}
             className="fixed bottom-0 left-0 right-0 flex justify-center px-4 pb-6 pt-6"
             style={{ background: `linear-gradient(transparent, ${C.ink} 22%)` }}
           >
@@ -1289,11 +1333,13 @@ export default function App() {
                   <span className="flex-1" />
                   {solved ? (
                     <button
-                      onClick={() => startRound("scramble")}
+                      onClick={() =>
+                        scrambleFlow === "next" ? nextScrambleTable() : startRound("scramble")
+                      }
                       className="px-4 py-2 rounded-lg text-sm shrink-0"
                       style={{ background: C.panelUp, border: `1px solid ${C.goldDeep}`, color: C.gold }}
                     >
-                      Scramble again
+                      {scrambleFlow === "next" ? "Next table →" : "Scramble again"}
                     </button>
                   ) : (
                     <button
@@ -1311,13 +1357,42 @@ export default function App() {
                     </button>
                   )}
                 </div>
+
+                {/* what happens after a solve, and how the session is going */}
+                <div className="flex items-center gap-2 mt-2 flex-wrap text-xs">
+                  <span style={{ color: C.line, letterSpacing: "0.08em" }}>AFTER SOLVING</span>
+                  {[
+                    ["same", "Same table"],
+                    ["next", "Next table"],
+                  ].map(([f, lbl]) => (
+                    <button
+                      key={f}
+                      onClick={() => setFlow(f)}
+                      className="px-2 py-0.5 rounded"
+                      style={{
+                        background: scrambleFlow === f ? C.aegeanDeep : "transparent",
+                        border: `1px solid ${scrambleFlow === f ? C.aegean : C.line}`,
+                        color: scrambleFlow === f ? "#fff" : C.faint,
+                      }}
+                    >
+                      {lbl}
+                    </button>
+                  ))}
+                  <span className="flex-1" />
+                  {scrambleSolved > 0 && (
+                    <span style={{ color: C.gold }}>
+                      {scrambleSolved} restored
+                    </span>
+                  )}
+                </div>
               </div>
 
               <div
                 data-drop="bank"
-                className="flex flex-wrap gap-2 justify-center w-full rounded-xl"
+                className="flex flex-wrap gap-2 justify-center w-full rounded-xl overflow-y-auto"
                 style={{
                   minHeight: "3.5rem",
+                  maxHeight: "22vh", // a 12-tile bank must not swallow the board
                   padding: "0.5rem",
                   border: `1px dashed ${scramble.bank.length ? C.line : "transparent"}`,
                 }}

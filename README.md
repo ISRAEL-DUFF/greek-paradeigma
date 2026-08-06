@@ -49,7 +49,7 @@ npm run dev
 | `npm run dev` | Vite dev server |
 | `npm run build` | Production build + PWA service worker |
 | `npm run preview` | Serve the production build |
-| `npm test` | Vitest suite (60 tests) |
+| `npm test` | Vitest suite (66 tests) |
 | `npm run validate` | Structural + morphological validation of all content |
 | `npm run crosscheck` | Compare every form against the external reference corpus |
 | `npm run check` | `validate` + `test` — run this before committing |
@@ -185,7 +185,20 @@ either tile satisfies either cell, because correctness is judged by comparing th
 in each cell against that cell's form, never by tracking which tile went where.
 
 Dragging is implemented on Pointer Events rather than HTML5 drag-and-drop, so it works
-on touch as well as mouse.
+on touch as well as mouse, and the page auto-scrolls while you drag so that the lower
+rows of a tall table stay reachable from behind the pinned bank.
+
+**Two session flows**, chosen by the *after solving* toggle and remembered:
+
+- **Same table** (default) — hands the same paradigm back, reshuffled, so you can drill
+  one table until it is genuinely yours.
+- **Next table** — serves a *different* paradigm, chosen the way Snipe schedules but
+  scored over whole tables: how far the table as a whole still is from gold, weighted by
+  frequency tier, ~70 % from the current unit and ~30 % interleaved from earlier ones,
+  and never the table you just finished. Once everything is gilded it offers the
+  least-recently-practised table.
+
+A running *"N restored"* counter tracks the session.
 
 ---
 
@@ -279,7 +292,7 @@ only against a book scan, listed with their source PDF in `book-attested.txt`.
 
 Current standing: **912 of 916 forms attested**, queue = λείπω's four principal parts.
 
-**3. `npm test`** — 60 tests over the pure logic:
+**3. `npm test`** — 66 tests over the pure logic:
 - the unit-gating sweep across all 20 units (no tray or assembly chip from the future)
 - every tray contains its own answer; no duplicate, ungradeable chips
 - assembly grading, including the regression that tapping the correct ending first must

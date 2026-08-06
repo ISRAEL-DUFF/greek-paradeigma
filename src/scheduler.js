@@ -263,6 +263,60 @@ export function pickSnipe(currentUnit, masteryMap) {
   return bucket[bucket.length - 1];
 }
 
+/**
+ * Pick the next table for a Scramble session.
+ *
+ * Scramble rebuilds a WHOLE table, so unlike Snipe — which hunts your single
+ * weakest cell — this scores each table by how far the table as a whole still
+ * is from gold, weighted by frequency tier. On top of that it keeps Snipe's
+ * rules: ~70 % from the current unit, ~30 % interleaved from earlier ones, and
+ * weakest-first within the bucket. `excludeId` is the table you just finished,
+ * so a session never hands the same one straight back.
+ *
+ * When every unlocked table is fully gilded there is nothing "weak" to choose,
+ * so it serves the least-recently-practised table — the same defend-the-oldest
+ * behaviour Snipe falls back on.
+ */
+export function pickScrambleTable(currentUnit, masteryMap, excludeId) {
+  const all = unlockedParadigms(currentUnit).filter(
+    (p) => gatedCells(p, currentUnit).length > 0
+  );
+  const pool = all.filter((p) => p.id !== excludeId);
+  if (pool.length === 0) return all[0] ?? null;
+
+  const weaknessOf = (p) =>
+    gatedCells(p, currentUnit).reduce((sum, c) => {
+      const lvl = masteryMap[cellKey(p.id, c.id)]?.level ?? 0;
+      return sum + (GOLD_AT - lvl) * (TIER_WEIGHT[c.freqTier] ?? 1);
+    }, 0);
+
+  const scored = pool.map((p) => ({ p, w: weaknessOf(p) }));
+  const weak = scored.filter((x) => x.w > 0);
+
+  if (weak.length === 0) {
+    const lastSeenOf = (p) =>
+      gatedCells(p, currentUnit).reduce(
+        (min, c) => Math.min(min, masteryMap[cellKey(p.id, c.id)]?.lastSeenAt ?? 0),
+        Infinity
+      );
+    return pool.reduce((oldest, p) => (lastSeenOf(p) < lastSeenOf(oldest) ? p : oldest), pool[0]);
+  }
+
+  const current = weak.filter((x) => x.p.unitIntroduced === currentUnit);
+  const earlier = weak.filter((x) => x.p.unitIntroduced < currentUnit);
+  let bucket;
+  if (current.length && earlier.length)
+    bucket = Math.random() < CURRENT_UNIT_SHARE ? current : earlier;
+  else bucket = current.length ? current : earlier;
+
+  let roll = Math.random() * bucket.reduce((a, x) => a + x.w, 0);
+  for (const x of bucket) {
+    roll -= x.w;
+    if (roll <= 0) return x.p;
+  }
+  return bucket[bucket.length - 1].p;
+}
+
 /* Does this string carry a grave, acute, or circumflex? (NFD-decomposed check) */
 const hasAccent = (s) => /[̀́͂]/.test(s.normalize("NFD"));
 

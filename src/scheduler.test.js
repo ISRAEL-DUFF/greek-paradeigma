@@ -5,6 +5,7 @@ import {
   pickImpostor,
   pickLookup,
   pickSnipe,
+  pickScrambleTable,
   answerOf,
   endingOf,
   drillsWholeForm,
@@ -219,6 +220,80 @@ describe("reverse lookup ambiguity (M3)", () => {
       }
     }
     expect(sawAmbiguous, "never drew the ambiguous form in 60 tries").toBe(true);
+  });
+});
+
+describe("scramble scheduling", () => {
+  const gild = (unit, predicate) => {
+    const map = {};
+    for (const { paradigm, cell } of unlockedCells(unit))
+      if (predicate(paradigm))
+        map[cellKey(paradigm.id, cell.id)] = { level: 3, lastSeenAt: 5000 };
+    return map;
+  };
+
+  it("never hands back the table just finished", () => {
+    for (const unit of [2, 6, 13, 20]) {
+      const just = unlockedParadigms(unit)[0];
+      for (let i = 0; i < 40; i++) {
+        const p = pickScrambleTable(unit, {}, just.id);
+        expect(p).toBeTruthy();
+        expect(p.id).not.toBe(just.id);
+      }
+    }
+  });
+
+  it("only ever returns a table inside the unit gate", () => {
+    for (const unit of UNITS)
+      for (let i = 0; i < 20; i++) {
+        const p = pickScrambleTable(unit, {}, null);
+        expect(p).toBeTruthy();
+        expect(p.unitIntroduced).toBeLessThanOrEqual(unit);
+      }
+  });
+
+  it("prefers a table that is weak overall to one that is nearly gold", () => {
+    const unit = 2;
+    const [weakTable, strongTable] = unlockedParadigms(unit);
+    // gild everything EXCEPT weakTable, so it is the only weak one left
+    const map = gild(unit, (p) => p.id !== weakTable.id);
+    for (let i = 0; i < 30; i++) {
+      const p = pickScrambleTable(unit, map, null);
+      expect(p.id).toBe(weakTable.id);
+    }
+    expect(strongTable).toBeTruthy();
+  });
+
+  it("falls back to the least-recently-practised table once all are gold", () => {
+    const unit = 1;
+    const map = gild(unit, () => true);
+    const ps = unlockedParadigms(unit);
+    const stale = ps[2];
+    // make one table clearly the oldest
+    for (const c of stale.cells) map[cellKey(stale.id, c.id)] = { level: 3, lastSeenAt: 1 };
+    for (let i = 0; i < 20; i++) {
+      expect(pickScrambleTable(unit, map, null).id).toBe(stale.id);
+    }
+  });
+
+  it("still returns something when only one table is unlocked", () => {
+    // excluding the only candidate must not strand the session
+    const unit = 1;
+    const only = unlockedParadigms(unit)[0];
+    const p = pickScrambleTable(unit, {}, only.id);
+    expect(p).toBeTruthy();
+  });
+
+  it("interleaves earlier units rather than drilling only the newest", () => {
+    const unit = 6;
+    let earlier = 0;
+    const N = 400;
+    for (let i = 0; i < N; i++) {
+      const p = pickScrambleTable(unit, {}, null);
+      if (p.unitIntroduced < unit) earlier++;
+    }
+    expect(earlier / N).toBeGreaterThan(0.15);
+    expect(earlier / N).toBeLessThan(0.45);
   });
 });
 
