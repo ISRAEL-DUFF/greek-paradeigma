@@ -1,0 +1,1992 @@
+{
+  "unit": 12,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "verb.didomi.pres.act.ind",
+      "kind": "verb",
+      "lemma": "δίδωμι",
+      "system": "present active indicative (μι-verb)",
+      "label": "δίδωμι — Present Active Indicative",
+      "short": "δίδωμι",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "μι-verbs: no theme vowel — endings sit straight on the stem, long δω- in the singular, short δο- in the plural. δι- is present reduplication.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "δίδωμι",
+          "pieces": [
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δω",
+              "role": "stem"
+            },
+            {
+              "text": "μι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "δίδομεν",
+          "pieces": [
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "δίδως",
+          "pieces": [
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δω",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "δίδοτε",
+          "pieces": [
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "δίδωσι(ν)",
+          "pieces": [
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δω",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "διδόασι(ν)",
+          "pieces": [
+            {
+              "text": "δι",
+              "role": "redup"
+            },
+            {
+              "text": "δό",
+              "role": "stem"
+            },
+            {
+              "text": "ασι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.tithemi.pres.act.ind",
+      "kind": "verb",
+      "lemma": "τίθημι",
+      "system": "present active indicative (μι-verb)",
+      "label": "τίθημι — Present Active Indicative",
+      "short": "τίθημι",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Like δίδωμι, with θη-/θε- alternation. The reduplication is τι- (θι- would break Grassmann's law of aspirates).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "τίθημι",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θη",
+              "role": "stem"
+            },
+            {
+              "text": "μι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "τίθεμεν",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "τίθης",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θη",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "τίθετε",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "τίθησι(ν)",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θη",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "τιθέασι(ν)",
+          "pieces": [
+            {
+              "text": "τι",
+              "role": "redup"
+            },
+            {
+              "text": "θέ",
+              "role": "stem"
+            },
+            {
+              "text": "ασι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.histemi.pres.act.ind",
+      "kind": "verb",
+      "lemma": "ἵστημι",
+      "system": "present active indicative (μι-verb)",
+      "label": "ἵστημι — Present Active Indicative",
+      "short": "ἵστημι",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The reduplication ἱ- hides an old σι- (σι-στη → ἱστη): that is why it carries the rough breathing. H&Q marks the imperfect's augment only by vowel LENGTH (ῑ), so several imperfect forms print identically to the present.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἵστημι",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "μι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἵσταμεν",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.impf.act.ind:1p"
+          ]
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἵστης",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.impf.act.ind:2s"
+          ]
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἵστατε",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.impf.act.ind:2p"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἵστησι(ν)",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἱστᾶσι(ν)",
+          "pieces": [
+            {
+              "text": "ἱ",
+              "role": "redup"
+            },
+            {
+              "text": "στᾶ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.didomi.impf.act.ind",
+      "kind": "verb",
+      "lemma": "δίδωμι",
+      "system": "imperfect active indicative (μι-verb)",
+      "label": "δίδωμι — Imperfect Active Indicative",
+      "short": "ἐδίδουν",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The singular substitutes thematic contracted forms (ἐδίδουν < *ἐδίδοον); the plural is honest athematic διδο- (§100 obs. 3).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἐδίδουν",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δου",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐδίδομεν",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἐδίδους",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δου",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐδίδοτε",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἐδίδου",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δου",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἐδίδοσαν",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.tithemi.impf.act.ind",
+      "kind": "verb",
+      "lemma": "τίθημι",
+      "system": "imperfect active indicative (μι-verb)",
+      "label": "τίθημι — Imperfect Active Indicative",
+      "short": "ἐτίθην",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "1st singular athematic ἐτίθην, but 2nd/3rd singular thematic ἐτίθεις, ἐτίθει (< *ἐτίθεες, *ἐτίθεε — §100 obs. 2).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἐτίθην",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θη",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐτίθεμεν",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἐτίθεις",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θει",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐτίθετε",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἐτίθει",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θει",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἐτίθεσαν",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.histemi.impf.act.ind",
+      "kind": "verb",
+      "lemma": "ἵστημι",
+      "system": "imperfect active indicative (μι-verb)",
+      "label": "ἵστημι — Imperfect Active Indicative",
+      "short": "ἵστην",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The augment hides inside the long ῑ-: 2nd singular and both 1st/2nd plural print identically to the present — only vowel length (unmarked here) tells them apart.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἵστην",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἵσταμεν",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.pres.act.ind:1p"
+          ]
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἵστης",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.pres.act.ind:2s"
+          ]
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἵστατε",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.pres.act.ind:2p"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἵστη",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἵστασαν",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.didomi.pres.mp.ind",
+      "kind": "verb",
+      "lemma": "δίδωμι",
+      "system": "present middle/passive indicative (μι-verb)",
+      "label": "δίδωμι — Present Middle/Passive Indicative",
+      "short": "δίδομαι",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Middle/passive athematic endings on the short stem διδο-; the -σ- of -σαι stays even between vowels.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "δίδομαι",
+          "pieces": [
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "μαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "διδόμεθα",
+          "pieces": [
+            {
+              "text": "δι",
+              "role": "redup"
+            },
+            {
+              "text": "δό",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "δίδοσαι",
+          "pieces": [
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "σαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "δίδοσθε",
+          "pieces": [
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "δίδοται",
+          "pieces": [
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "δίδονται",
+          "pieces": [
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "νται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.tithemi.pres.mp.ind",
+      "kind": "verb",
+      "lemma": "τίθημι",
+      "system": "present middle/passive indicative (μι-verb)",
+      "label": "τίθημι — Present Middle/Passive Indicative",
+      "short": "τίθεμαι",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Middle/passive athematic endings on the short stem τιθε-.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "τίθεμαι",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "μαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "τιθέμεθα",
+          "pieces": [
+            {
+              "text": "τι",
+              "role": "redup"
+            },
+            {
+              "text": "θέ",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "τίθεσαι",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "σαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "τίθεσθε",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "τίθεται",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "τίθενται",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "νται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.histemi.pres.mp.ind",
+      "kind": "verb",
+      "lemma": "ἵστημι",
+      "system": "present middle/passive indicative (μι-verb)",
+      "label": "ἵστημι — Present Middle/Passive Indicative",
+      "short": "ἵσταμαι",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Middle/passive athematic endings on ἱστα-; the imperfect middle prints identically in the 1st/2nd plural.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἵσταμαι",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "μαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἱστάμεθα",
+          "pieces": [
+            {
+              "text": "ἱ",
+              "role": "redup"
+            },
+            {
+              "text": "στά",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.impf.mp.ind:1p"
+          ]
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἵστασαι",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "σαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἵστασθε",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.impf.mp.ind:2p"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἵσταται",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "ται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἵστανται",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "νται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.didomi.impf.mp.ind",
+      "kind": "verb",
+      "lemma": "δίδωμι",
+      "system": "imperfect middle/passive indicative (μι-verb)",
+      "label": "δίδωμι — Imperfect Middle/Passive Indicative",
+      "short": "ἐδιδόμην",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Augment + short stem + the same endings the pluperfect middle/passive uses.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἐδιδόμην",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δι",
+              "role": "redup"
+            },
+            {
+              "text": "δό",
+              "role": "stem"
+            },
+            {
+              "text": "μην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐδιδόμεθα",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δι",
+              "role": "redup"
+            },
+            {
+              "text": "δό",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἐδίδοσο",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "σο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐδίδοσθε",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἐδίδοτο",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "το",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἐδίδοντο",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δί",
+              "role": "redup"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.tithemi.impf.mp.ind",
+      "kind": "verb",
+      "lemma": "τίθημι",
+      "system": "imperfect middle/passive indicative (μι-verb)",
+      "label": "τίθημι — Imperfect Middle/Passive Indicative",
+      "short": "ἐτιθέμην",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Augment + short stem τιθε- + secondary middle endings.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἐτιθέμην",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τι",
+              "role": "redup"
+            },
+            {
+              "text": "θέ",
+              "role": "stem"
+            },
+            {
+              "text": "μην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐτιθέμεθα",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τι",
+              "role": "redup"
+            },
+            {
+              "text": "θέ",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἐτίθεσο",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "σο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐτίθεσθε",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἐτίθετο",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "το",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἐτίθεντο",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "τί",
+              "role": "redup"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.histemi.impf.mp.ind",
+      "kind": "verb",
+      "lemma": "ἵστημι",
+      "system": "imperfect middle/passive indicative (μι-verb)",
+      "label": "ἵστημι — Imperfect Middle/Passive Indicative",
+      "short": "ἱστάμην",
+      "unitIntroduced": 12,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Only the (unwritten) length of the initial ῑ separates these from the present middle/passive — the 1st/2nd plural print identically.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἱστάμην",
+          "pieces": [
+            {
+              "text": "ἱ",
+              "role": "redup"
+            },
+            {
+              "text": "στά",
+              "role": "stem"
+            },
+            {
+              "text": "μην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἱστάμεθα",
+          "pieces": [
+            {
+              "text": "ἱ",
+              "role": "redup"
+            },
+            {
+              "text": "στά",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.pres.mp.ind:1p"
+          ]
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἵστασο",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "σο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἵστασθε",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.pres.mp.ind:2p"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἵστατο",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "το",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἵσταντο",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "ντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 12,
+          "freqTier": 1
+        }
+      ]
+    }
+  ]
+}

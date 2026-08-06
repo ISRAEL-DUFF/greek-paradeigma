@@ -1,0 +1,1001 @@
+{
+  "unit": 2,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "verb.luo.pres.act.ind",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "present active indicative",
+      "label": "λύω — Present Active Indicative",
+      "short": "Present",
+      "unitIntroduced": 2,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Primary endings on the present stem: -ω, -εις, -ει, -ομεν, -ετε, -ουσι(ν).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λύω",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "pp.luo:i",
+            "verb.luo.pres.act.subj:1s"
+          ]
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λύομεν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ομεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λύεις",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λύετε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λύει",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λύουσι(ν)",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.fut.act.ind",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "future active indicative",
+      "label": "λύω — Future Active Indicative",
+      "short": "Future",
+      "unitIntroduced": 2,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The tense marker -σ- sits between stem and the same primary endings as the present.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λύσω",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "pp.luo:ii",
+            "verb.luo.aor.act.subj:1s"
+          ]
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λύσομεν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ομεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λύσεις",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λύσετε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λύσει",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λύσουσι(ν)",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "pp.paideuo",
+      "kind": "verb",
+      "drillClass": "principalParts",
+      "lemma": "παιδεύω",
+      "system": "principal parts",
+      "label": "παιδεύω — Principal Parts",
+      "short": "PP παιδεύω",
+      "unitIntroduced": 2,
+      "layout": {
+        "rowLabels": [
+          "I",
+          "II",
+          "III",
+          "IV",
+          "V",
+          "VI"
+        ],
+        "colLabels": [
+          "principal parts"
+        ]
+      },
+      "notes": "The book's model verb: six keys that unlock every tense system. Chant them until they are one word.",
+      "cells": [
+        {
+          "id": "i",
+          "r": 0,
+          "c": 0,
+          "form": "παιδεύω",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "ii",
+          "r": 1,
+          "c": 0,
+          "form": "παιδεύσω",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "iii",
+          "r": 2,
+          "c": 0,
+          "form": "ἐπαίδευσα",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "παίδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "unlockMsg": "παιδευσα- acquired — the aorist system of παιδεύω is now yours."
+        },
+        {
+          "id": "iv",
+          "r": 3,
+          "c": 0,
+          "form": "πεπαίδευκα",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παίδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "unlockMsg": "πεπαιδευκ- acquired — the perfect active of παιδεύω is now yours."
+        },
+        {
+          "id": "v",
+          "r": 4,
+          "c": 0,
+          "form": "πεπαίδευμαι",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παίδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "vi",
+          "r": 5,
+          "c": 0,
+          "form": "ἐπαιδεύθην",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "unlockMsg": "παιδευθη- acquired — the aorist passive of παιδεύω is now yours."
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.impf.act.ind",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "imperfect active indicative",
+      "label": "λύω — Imperfect Active Indicative",
+      "short": "Imperfect",
+      "unitIntroduced": 2,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The augment ἐ- marks past time in the indicative; 1st singular and 3rd plural are identical (ἔλυον).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἔλυον",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.impf.act.ind:3p"
+          ]
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐλύομεν",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ομεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἔλυες",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐλύετε",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἔλυε(ν)",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "ε(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἔλυον",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.impf.act.ind:1s"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.aor1.act.ind",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "first aorist active indicative",
+      "label": "λύω — First Aorist Active Indicative",
+      "short": "Aorist I",
+      "unitIntroduced": 2,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Augment + σ marker + α-set endings: the -σα- flavor of the first aorist.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἔλυσα",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "pp.luo:iii"
+          ]
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐλύσαμεν",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αμεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἔλυσας",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐλύσατε",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ατε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἔλυσε(ν)",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ε(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἔλυσαν",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "pp.luo",
+      "kind": "verb",
+      "drillClass": "principalParts",
+      "lemma": "λύω",
+      "system": "principal parts",
+      "label": "λύω — Principal Parts",
+      "short": "PP λύω",
+      "unitIntroduced": 2,
+      "layout": {
+        "rowLabels": [
+          "I",
+          "II",
+          "III",
+          "IV",
+          "V",
+          "VI"
+        ],
+        "colLabels": [
+          "principal parts"
+        ]
+      },
+      "notes": "Every part of λύω is a table you have already drilled — the six keys, now on one ring.",
+      "cells": [
+        {
+          "id": "i",
+          "r": 0,
+          "c": 0,
+          "form": "λύω",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.pres.act.ind:1s",
+            "verb.luo.pres.act.subj:1s"
+          ]
+        },
+        {
+          "id": "ii",
+          "r": 1,
+          "c": 0,
+          "form": "λύσω",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.fut.act.ind:1s",
+            "verb.luo.aor.act.subj:1s"
+          ]
+        },
+        {
+          "id": "iii",
+          "r": 2,
+          "c": 0,
+          "form": "ἔλυσα",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.aor1.act.ind:1s"
+          ],
+          "unlockMsg": "λυσα- acquired — the aorist system of λύω is now yours."
+        },
+        {
+          "id": "iv",
+          "r": 3,
+          "c": 0,
+          "form": "λέλυκα",
+          "pieces": [
+            {
+              "text": "λέ",
+              "role": "redup"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.perf.act.ind:1s"
+          ],
+          "unlockMsg": "λελυκ- acquired — the perfect active of λύω is now yours."
+        },
+        {
+          "id": "v",
+          "r": 4,
+          "c": 0,
+          "form": "λέλυμαι",
+          "pieces": [
+            {
+              "text": "λέ",
+              "role": "redup"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "μαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.perf.mp.ind:1s"
+          ]
+        },
+        {
+          "id": "vi",
+          "r": 5,
+          "c": 0,
+          "form": "ἐλύθην",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.aor.pass.ind:1s"
+          ],
+          "unlockMsg": "λυθη- acquired — the aorist passive of λύω is now yours."
+        }
+      ]
+    }
+  ]
+}

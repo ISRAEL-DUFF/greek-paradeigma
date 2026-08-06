@@ -1,0 +1,793 @@
+{
+  "unit": 18,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "verb.hiemi.pres.act.ind",
+      "kind": "verb",
+      "lemma": "ἵημι",
+      "system": "present active indicative (μι-verb)",
+      "label": "ἵημι — Present Active Indicative",
+      "short": "ἵημι",
+      "unitIntroduced": 18,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Like τίθημι with the slightest of stems: η-/ε-. H&Q also lists a thematic alternate 2nd singular ἱεῖς; 3rd plural ἱᾶσι(ν) is contracted from ἱέ-ᾱσι.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἵημι",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "η",
+              "role": "stem"
+            },
+            {
+              "text": "μι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἵεμεν",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2,
+          "homographs": [
+            "verb.hiemi.impf.act.ind:1p"
+          ]
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἵης",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "η",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἵετε",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2,
+          "homographs": [
+            "verb.hiemi.impf.act.ind:2p"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἵησι(ν)",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "η",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἱᾶσι(ν)",
+          "pieces": [
+            {
+              "text": "ἱ",
+              "role": "redup"
+            },
+            {
+              "text": "ᾶ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.hiemi.impf.act.ind",
+      "kind": "verb",
+      "lemma": "ἵημι",
+      "system": "imperfect active indicative (μι-verb)",
+      "label": "ἵημι — Imperfect Active Indicative",
+      "short": "ἵην",
+      "unitIntroduced": 18,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The long ἱ- absorbs the augment, so the 1st and 2nd plural are identical to the present. 2nd/3rd singular ἵεις, ἵει are thematic (H&Q §136 obs. 3–4).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἵην",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "η",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἵεμεν",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2,
+          "homographs": [
+            "verb.hiemi.pres.act.ind:1p"
+          ]
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἵεις",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ει",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἵετε",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2,
+          "homographs": [
+            "verb.hiemi.pres.act.ind:2p"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἵει",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ει",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἵεσαν",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.hiemi.pres.mp.ind",
+      "kind": "verb",
+      "lemma": "ἵημι",
+      "system": "present middle/passive indicative (μι-verb)",
+      "label": "ἵημι — Present Middle/Passive Indicative",
+      "short": "ἵεμαι",
+      "unitIntroduced": 18,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Middle/passive endings straight on the short stem ἱε-.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἵεμαι",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "μαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἱέμεθα",
+          "pieces": [
+            {
+              "text": "ἱ",
+              "role": "redup"
+            },
+            {
+              "text": "έ",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2,
+          "homographs": [
+            "verb.hiemi.impf.mp.ind:1p"
+          ]
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἵεσαι",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "σαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἵεσθε",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2,
+          "homographs": [
+            "verb.hiemi.impf.mp.ind:2p"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἵεται",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "ται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἵενται",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "νται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.hiemi.impf.mp.ind",
+      "kind": "verb",
+      "lemma": "ἵημι",
+      "system": "imperfect middle/passive indicative (μι-verb)",
+      "label": "ἵημι — Imperfect Middle/Passive Indicative",
+      "short": "ἱέμην",
+      "unitIntroduced": 18,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Again the augment vanishes into the long ἱ-: the 1st and 2nd plural are identical to the present middle/passive.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἱέμην",
+          "pieces": [
+            {
+              "text": "ἱ",
+              "role": "redup"
+            },
+            {
+              "text": "έ",
+              "role": "stem"
+            },
+            {
+              "text": "μην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἱέμεθα",
+          "pieces": [
+            {
+              "text": "ἱ",
+              "role": "redup"
+            },
+            {
+              "text": "έ",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2,
+          "homographs": [
+            "verb.hiemi.pres.mp.ind:1p"
+          ]
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἵεσο",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "σο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἵεσθε",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2,
+          "homographs": [
+            "verb.hiemi.pres.mp.ind:2p"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἵετο",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "το",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἵεντο",
+          "pieces": [
+            {
+              "text": "ἵ",
+              "role": "redup"
+            },
+            {
+              "text": "ε",
+              "role": "stem"
+            },
+            {
+              "text": "ντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.hiemi.aor.act.ind",
+      "kind": "verb",
+      "lemma": "ἵημι",
+      "system": "aorist active indicative (mixed aorist, compounds only)",
+      "label": "ἵημι — Aorist Active Indicative (in compounds)",
+      "short": "-ἧκα",
+      "unitIntroduced": 18,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The third mixed aorist (with ἔδωκα, ἔθηκα): ἡκ- in the singular, augmented εἱ- in the plural. H&Q prints these only with the compound hyphen — ἀφῆκα, not ἧκα.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "-ἧκα",
+          "pieces": [
+            {
+              "text": "-ἧ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "-εἷμεν",
+          "pieces": [
+            {
+              "text": "-εἷ",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "-ἧκας",
+          "pieces": [
+            {
+              "text": "-ἧ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "-εἷτε",
+          "pieces": [
+            {
+              "text": "-εἷ",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "-ἧκε(ν)",
+          "pieces": [
+            {
+              "text": "-ἧ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ε(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "-εἷσαν",
+          "pieces": [
+            {
+              "text": "-εἷ",
+              "role": "stem"
+            },
+            {
+              "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 2
+        }
+      ]
+    }
+  ]
+}

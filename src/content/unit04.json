@@ -1,0 +1,174 @@
+{
+  "unit": 4,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "noun.thalatta.decl1s",
+      "kind": "noun",
+      "lemma": "θάλαττα",
+      "system": "first declension, short-α type",
+      "label": "θάλαττα — First Declension (short-α)",
+      "short": "θάλαττα",
+      "unitIntroduced": 4,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Short α in nominative and accusative singular, but η in genitive and dative — the mixed first-declension type.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "θάλαττα",
+          "pieces": [
+            {
+              "text": "θάλαττ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "θάλατται",
+          "pieces": [
+            {
+              "text": "θάλαττ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "θαλάττης",
+          "pieces": [
+            {
+              "text": "θαλάττ",
+              "role": "stem"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "θαλαττῶν",
+          "pieces": [
+            {
+              "text": "θαλαττ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "θαλάττῃ",
+          "pieces": [
+            {
+              "text": "θαλάττ",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "θαλάτταις",
+          "pieces": [
+            {
+              "text": "θαλάττ",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "θάλατταν",
+          "pieces": [
+            {
+              "text": "θάλαττ",
+              "role": "stem"
+            },
+            {
+              "text": "αν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "θαλάττᾱς",
+          "pieces": [
+            {
+              "text": "θαλάττ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        }
+      ]
+    }
+  ]
+}

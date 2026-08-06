@@ -1,0 +1,8 @@
+{
+  "_comment": "Teaching strings shown when an impossible piece bounces off a Level-2 assembly (build plan M2). These refusals are curriculum — keep them here, never hardcoded. Keyed by the offered piece's role.",
+  "augment": "augment ἐ-: past indicative only",
+  "redup": "reduplication: perfect system only",
+  "tenseMarker": "no tense marker here — this form is built straight on the stem",
+  "moodMarker": "mood markers don't appear in the indicative",
+  "themeVowel": "no separate theme vowel in this form"
+}

@@ -1,0 +1,906 @@
+{
+  "unit": 6,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "noun.phylax.decl3",
+      "kind": "noun",
+      "lemma": "φύλαξ",
+      "system": "third declension, velar stem",
+      "label": "φύλαξ — Third Declension (velar stem)",
+      "short": "φύλαξ",
+      "unitIntroduced": 6,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Stem φύλακ-: κ + ς → ξ in the nominative singular and dative plural.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "φύλαξ",
+          "pieces": [
+            {
+              "text": "φύλακ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "κς",
+              "to": "ξ"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "φύλακες",
+          "pieces": [
+            {
+              "text": "φύλακ",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "φύλακος",
+          "pieces": [
+            {
+              "text": "φύλακ",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "φυλάκων",
+          "pieces": [
+            {
+              "text": "φυλάκ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "φύλακι",
+          "pieces": [
+            {
+              "text": "φύλακ",
+              "role": "stem"
+            },
+            {
+              "text": "ι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "φύλαξι(ν)",
+          "pieces": [
+            {
+              "text": "φύλακ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "κσ",
+              "to": "ξ"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "φύλακα",
+          "pieces": [
+            {
+              "text": "φύλακ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "φύλακας",
+          "pieces": [
+            {
+              "text": "φύλακ",
+              "role": "stem"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "noun.daimon.decl3n",
+      "kind": "noun",
+      "lemma": "δαίμων",
+      "system": "third declension, nasal stem",
+      "label": "δαίμων — Third Declension (nasal stem)",
+      "short": "δαίμων",
+      "unitIntroduced": 6,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Stem δαιμον-: the nominative singular has no ending — the stem vowel lengthens instead. ν drops before σ in the dative plural.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "δαίμων",
+          "pieces": [
+            {
+              "text": "δαίμων",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "δαίμονες",
+          "pieces": [
+            {
+              "text": "δαίμον",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "δαίμονος",
+          "pieces": [
+            {
+              "text": "δαίμον",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "δαιμόνων",
+          "pieces": [
+            {
+              "text": "δαιμόν",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "δαίμονι",
+          "pieces": [
+            {
+              "text": "δαίμον",
+              "role": "stem"
+            },
+            {
+              "text": "ι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "δαίμοσι(ν)",
+          "pieces": [
+            {
+              "text": "δαίμον",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "νσ",
+              "to": "σ"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "δαίμονα",
+          "pieces": [
+            {
+              "text": "δαίμον",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "δαίμονας",
+          "pieces": [
+            {
+              "text": "δαίμον",
+              "role": "stem"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "noun.elpis.decl3d",
+      "kind": "noun",
+      "lemma": "ἐλπίς",
+      "system": "third declension, dental stem",
+      "label": "ἐλπίς — Third Declension (dental stem)",
+      "short": "ἐλπίς",
+      "unitIntroduced": 6,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Stem ἐλπίδ-: the dental drops before σ in the nominative singular and dative plural.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "ἐλπίς",
+          "pieces": [
+            {
+              "text": "ἐλπίδ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "δς",
+              "to": "ς"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "ἐλπίδες",
+          "pieces": [
+            {
+              "text": "ἐλπίδ",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "ἐλπίδος",
+          "pieces": [
+            {
+              "text": "ἐλπίδ",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "ἐλπίδων",
+          "pieces": [
+            {
+              "text": "ἐλπίδ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "ἐλπίδι",
+          "pieces": [
+            {
+              "text": "ἐλπίδ",
+              "role": "stem"
+            },
+            {
+              "text": "ι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "ἐλπίσι(ν)",
+          "pieces": [
+            {
+              "text": "ἐλπίδ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "δσ",
+              "to": "σ"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "ἐλπίδα",
+          "pieces": [
+            {
+              "text": "ἐλπίδ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "ἐλπίδας",
+          "pieces": [
+            {
+              "text": "ἐλπίδ",
+              "role": "stem"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "noun.soma.decl3t",
+      "kind": "noun",
+      "lemma": "σῶμα",
+      "system": "third declension, neuter τ-stem",
+      "label": "σῶμα — Third Declension (neuter τ-stem)",
+      "short": "σῶμα",
+      "unitIntroduced": 6,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Stem σωματ-: the τ cannot end a Greek word, so the nominative/accusative singular drop it.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "σῶμα",
+          "pieces": [
+            {
+              "text": "σῶματ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "τ",
+              "to": ""
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1,
+          "homographs": [
+            "noun.soma.decl3t:as"
+          ]
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "σώματα",
+          "pieces": [
+            {
+              "text": "σώματ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1,
+          "homographs": [
+            "noun.soma.decl3t:ap"
+          ]
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "σώματος",
+          "pieces": [
+            {
+              "text": "σώματ",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "σωμάτων",
+          "pieces": [
+            {
+              "text": "σωμάτ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "σώματι",
+          "pieces": [
+            {
+              "text": "σώματ",
+              "role": "stem"
+            },
+            {
+              "text": "ι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "σώμασι(ν)",
+          "pieces": [
+            {
+              "text": "σώματ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "τσ",
+              "to": "σ"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "σῶμα",
+          "pieces": [
+            {
+              "text": "σῶματ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "τ",
+              "to": ""
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1,
+          "homographs": [
+            "noun.soma.decl3t:ns"
+          ]
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "σώματα",
+          "pieces": [
+            {
+              "text": "σώματ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1,
+          "homographs": [
+            "noun.soma.decl3t:np"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noun.rhetor.decl3r",
+      "kind": "noun",
+      "lemma": "ῥήτωρ",
+      "system": "third declension, liquid stem",
+      "label": "ῥήτωρ — Third Declension (liquid stem)",
+      "short": "ῥήτωρ",
+      "unitIntroduced": 6,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Stem ῥητορ-: like δαίμων, the nominative singular lengthens its vowel and takes no ending — but ρ survives before σ (ῥήτορσι).",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "ῥήτωρ",
+          "pieces": [
+            {
+              "text": "ῥήτωρ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "ῥήτορες",
+          "pieces": [
+            {
+              "text": "ῥήτορ",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "ῥήτορος",
+          "pieces": [
+            {
+              "text": "ῥήτορ",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "ῥητόρων",
+          "pieces": [
+            {
+              "text": "ῥητόρ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "ῥήτορι",
+          "pieces": [
+            {
+              "text": "ῥήτορ",
+              "role": "stem"
+            },
+            {
+              "text": "ι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "ῥήτορσι(ν)",
+          "pieces": [
+            {
+              "text": "ῥήτορ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "ῥήτορα",
+          "pieces": [
+            {
+              "text": "ῥήτορ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "ῥήτορας",
+          "pieces": [
+            {
+              "text": "ῥήτορ",
+              "role": "stem"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 6,
+          "freqTier": 1
+        }
+      ]
+    }
+  ]
+}

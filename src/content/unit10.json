@@ -1,0 +1,353 @@
+{
+  "unit": 10,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "noun.genos.decl3s",
+      "kind": "noun",
+      "lemma": "γένος",
+      "system": "third declension, neuter σ-stem",
+      "label": "γένος — Third Declension (neuter σ-stem)",
+      "short": "γένος",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Stem γενεσ-: the σ drops between vowels and the vowels contract (γένε(σ)ος → γένους, γένε(σ)α → γένη).",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "γένος",
+          "pieces": [
+            {
+              "text": "γέν",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.genos.decl3s:as"
+          ]
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "γένη",
+          "pieces": [
+            {
+              "text": "γέν",
+              "role": "stem"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.genos.decl3s:ap"
+          ]
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "γένους",
+          "pieces": [
+            {
+              "text": "γέν",
+              "role": "stem"
+            },
+            {
+              "text": "ους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "γενῶν",
+          "pieces": [
+            {
+              "text": "γεν",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "γένει",
+          "pieces": [
+            {
+              "text": "γέν",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "γένεσι(ν)",
+          "pieces": [
+            {
+              "text": "γέν",
+              "role": "stem"
+            },
+            {
+              "text": "εσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "γένος",
+          "pieces": [
+            {
+              "text": "γέν",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.genos.decl3s:ns"
+          ]
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "γένη",
+          "pieces": [
+            {
+              "text": "γέν",
+              "role": "stem"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.genos.decl3s:np"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verb.deloo.pres.act.ind",
+      "kind": "verb",
+      "lemma": "δηλόω",
+      "system": "present active indicative (contract)",
+      "label": "δηλόω — Present Active Indicative",
+      "short": "δηλόω",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "ο-contract: ο + ε/ο/ου → ου, ο + ει/ῃ → οι, ο + ω → ω. The οι forms are the exam trap.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "δηλῶ",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "δηλοῦμεν",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "ομεν",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όο",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "δηλοῖς",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όει",
+              "to": "οῖ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "δηλοῦτε",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όε",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "δηλοῖ",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όει",
+              "to": "οῖ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "δηλοῦσι(ν)",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όου",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        }
+      ]
+    }
+  ]
+}

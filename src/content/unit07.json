@@ -1,0 +1,689 @@
+{
+  "unit": 7,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "verb.leipo.aor2.act.ind",
+      "kind": "verb",
+      "lemma": "λείπω",
+      "system": "second aorist active indicative",
+      "label": "λείπω — Second Aorist Active Indicative",
+      "short": "Aorist II",
+      "unitIntroduced": 7,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Second aorist: a different stem (λιπ-) with the imperfect's secondary endings — 1st singular and 3rd plural are identical.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἔλιπον",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "verb.leipo.aor2.act.ind:3p",
+            "pp.leipo:iii"
+          ]
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐλίπομεν",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λίπ",
+              "role": "stem"
+            },
+            {
+              "text": "ομεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἔλιπες",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐλίπετε",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λίπ",
+              "role": "stem"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἔλιπε(ν)",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ε(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἔλιπον",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "verb.leipo.aor2.act.ind:1s",
+            "pp.leipo:iii"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pp.leipo",
+      "kind": "verb",
+      "drillClass": "principalParts",
+      "lemma": "λείπω",
+      "system": "principal parts",
+      "label": "λείπω — Principal Parts",
+      "short": "PP λείπω",
+      "unitIntroduced": 7,
+      "layout": {
+        "rowLabels": [
+          "I",
+          "II",
+          "III",
+          "IV",
+          "V",
+          "VI"
+        ],
+        "colLabels": [
+          "principal parts"
+        ]
+      },
+      "notes": "λείπω's stem changes by ablaut: λειπ- / λιπ- / λοιπ-. The sound shifts in II, V, VI are regular stop sandhi.",
+      "cells": [
+        {
+          "id": "i",
+          "r": 0,
+          "c": 0,
+          "form": "λείπω",
+          "pieces": [
+            {
+              "text": "λείπ",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "ii",
+          "r": 1,
+          "c": 0,
+          "form": "λείψω",
+          "pieces": [
+            {
+              "text": "λείπ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "πσ",
+              "to": "ψ"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "iii",
+          "r": 2,
+          "c": 0,
+          "form": "ἔλιπον",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "verb.leipo.aor2.act.ind:1s",
+            "verb.leipo.aor2.act.ind:3p"
+          ],
+          "unlockMsg": "λιπ- acquired — the entire aorist of λείπω is now yours."
+        },
+        {
+          "id": "iv",
+          "r": 3,
+          "c": 0,
+          "form": "λέλοιπα",
+          "pieces": [
+            {
+              "text": "λέ",
+              "role": "redup"
+            },
+            {
+              "text": "λοιπ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "unlockMsg": "λοιπ- acquired — the perfect active of λείπω is now yours."
+        },
+        {
+          "id": "v",
+          "r": 4,
+          "c": 0,
+          "form": "λέλειμμαι",
+          "pieces": [
+            {
+              "text": "λέ",
+              "role": "redup"
+            },
+            {
+              "text": "λειπ",
+              "role": "stem"
+            },
+            {
+              "text": "μαι",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "πμ",
+              "to": "μμ"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "vi",
+          "r": 5,
+          "c": 0,
+          "form": "ἐλείφθην",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λείπ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "πθ",
+              "to": "φθ"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "unlockMsg": "λειφθη- acquired — the aorist passive of λείπω is now yours."
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.fut.mid.ind",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "future middle indicative",
+      "label": "λύω — Future Middle Indicative",
+      "short": "Fut Mid",
+      "unitIntroduced": 7,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The σ marker of the future with the present's middle/passive endings.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λύσομαι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ομαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λυσόμεθα",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "όμεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λύσῃ",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.aor.act.subj:3s"
+          ]
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λύσεσθε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εσθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λύσεται",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λύσονται",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ονται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.aor1.mid.ind",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "first aorist middle indicative",
+      "label": "λύω — First Aorist Middle Indicative",
+      "short": "Aor Mid",
+      "unitIntroduced": 7,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Augment + σα + secondary middle endings; 2nd singular -ω is contracted from -ασο.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἐλυσάμην",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άμην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐλυσάμεθα",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άμεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἐλύσω",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐλύσασθε",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ασθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἐλύσατο",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ατο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἐλύσαντο",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        }
+      ]
+    }
+  ]
+}

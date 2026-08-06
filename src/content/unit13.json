@@ -1,0 +1,1151 @@
+{
+  "unit": 13,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "verb.didomi.aor.act.ind",
+      "kind": "verb",
+      "lemma": "δίδωμι",
+      "system": "aorist active indicative (κ-aorist)",
+      "label": "δίδωμι — Aorist Active Indicative",
+      "short": "ἔδωκα",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The κ-aorist: κ marks only the singular; the plural drops it and shortens the stem (ἔδομεν).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἔδωκα",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "δω",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἔδομεν",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἔδωκας",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "δω",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἔδοτε",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἔδωκε(ν)",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "δω",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ε(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἔδοσαν",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.tithemi.aor.act.ind",
+      "kind": "verb",
+      "lemma": "τίθημι",
+      "system": "aorist active indicative (κ-aorist)",
+      "label": "τίθημι — Aorist Active Indicative",
+      "short": "ἔθηκα",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "κ-aorist again: ἔθηκα in the singular, bare short stem in the plural (ἔθεμεν).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἔθηκα",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "θη",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἔθεμεν",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἔθηκας",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "θη",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἔθετε",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἔθηκε(ν)",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "θη",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ε(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἔθεσαν",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.histemi.aor2.act.ind",
+      "kind": "verb",
+      "lemma": "ἵστημι",
+      "system": "second (root) aorist active indicative",
+      "label": "ἵστημι — Root Aorist (ἔστην)",
+      "short": "ἔστην",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The root aorist: endings straight onto στη- with no marker at all. ἔστην means 'I stood (up)' — intransitive.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἔστην",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἔστημεν",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἔστης",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἔστητε",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἔστη",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἔστησαν",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.didomi.aor.mid.ind",
+      "kind": "verb",
+      "lemma": "δίδωμι",
+      "system": "aorist middle indicative (athematic 2nd aorist)",
+      "label": "δίδωμι — Aorist Middle Indicative",
+      "short": "ἐδόμην",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The unreduplicated short stem δο- with the imperfect middle's endings; 2nd singular ἔδου contracts from *ἔδοο.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἐδόμην",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δό",
+              "role": "stem"
+            },
+            {
+              "text": "μην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐδόμεθα",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "δό",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἔδου",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "δου",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἔδοσθε",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἔδοτο",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "το",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἔδοντο",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.tithemi.aor.mid.ind",
+      "kind": "verb",
+      "lemma": "τίθημι",
+      "system": "aorist middle indicative (athematic 2nd aorist)",
+      "label": "τίθημι — Aorist Middle Indicative",
+      "short": "ἐθέμην",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Unreduplicated θε- + secondary middle endings; ἔθου < *ἔθεο. ἵστημι has no second aorist middle at all.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἐθέμην",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "θέ",
+              "role": "stem"
+            },
+            {
+              "text": "μην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐθέμεθα",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "θέ",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἔθου",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "θου",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἔθεσθε",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἔθετο",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "το",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἔθεντο",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.histemi.perf.act.ind",
+      "kind": "verb",
+      "lemma": "ἵστημι",
+      "system": "perfect active indicative (athematic plural)",
+      "label": "ἵστημι — Perfect Active Indicative",
+      "short": "ἕστηκα",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "'I stand': singular like πεπαίδευκα on ἑστηκ-, but the plural drops the κ and goes athematic on ἑστα- (ἑστᾶσι(ν) contracts).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἕστηκα",
+          "pieces": [
+            {
+              "text": "ἕ",
+              "role": "redup"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἕσταμεν",
+          "pieces": [
+            {
+              "text": "ἕ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.plup.act.ind:1p"
+          ]
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἕστηκας",
+          "pieces": [
+            {
+              "text": "ἕ",
+              "role": "redup"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἕστατε",
+          "pieces": [
+            {
+              "text": "ἕ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1,
+          "homographs": [
+            "verb.histemi.plup.act.ind:2p"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἕστηκε(ν)",
+          "pieces": [
+            {
+              "text": "ἕ",
+              "role": "redup"
+            },
+            {
+              "text": "στη",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ε(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἑστᾶσι(ν)",
+          "pieces": [
+            {
+              "text": "ἑ",
+              "role": "redup"
+            },
+            {
+              "text": "στᾶ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.histemi.plup.act.ind",
+      "kind": "verb",
+      "lemma": "ἵστημι",
+      "system": "pluperfect active indicative (athematic plural)",
+      "label": "ἵστημι — Pluperfect Active Indicative",
+      "short": "εἱστήκη",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "'I stood': augmented εἱστηκ- in the singular; the plural uses bare unaugmented ἑστα- and prints identically to the perfect (§102 obs.).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "εἱστήκη",
+          "pieces": [
+            {
+              "text": "εἱ",
+              "role": "augment"
+            },
+            {
+              "text": "στή",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἕσταμεν",
+          "pieces": [
+            {
+              "text": "ἕ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2,
+          "homographs": [
+            "verb.histemi.perf.act.ind:1p"
+          ]
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "εἱστήκης",
+          "pieces": [
+            {
+              "text": "εἱ",
+              "role": "augment"
+            },
+            {
+              "text": "στή",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἕστατε",
+          "pieces": [
+            {
+              "text": "ἕ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2,
+          "homographs": [
+            "verb.histemi.perf.act.ind:2p"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "εἱστήκει(ν)",
+          "pieces": [
+            {
+              "text": "εἱ",
+              "role": "augment"
+            },
+            {
+              "text": "στή",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ει(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἕστασαν",
+          "pieces": [
+            {
+              "text": "ἕ",
+              "role": "redup"
+            },
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        }
+      ]
+    }
+  ]
+}

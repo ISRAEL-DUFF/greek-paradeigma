@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+.gk {
+  font-family: "GFS Didot", "Times New Roman", serif;
+}
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes decay {
+  from { opacity: 1; filter: blur(0); }
+  to { opacity: 0; filter: blur(4px); }
+}
+@keyframes shakeX {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+@keyframes splitL {
+  0% { transform: translateX(0); }
+  40% { transform: translateX(-9px); }
+  100% { transform: translateX(0); }
+}
+@keyframes splitR {
+  0% { transform: translateX(0); }
+  40% { transform: translateX(9px); }
+  100% { transform: translateX(0); }
+}
+@keyframes glowGold {
+  0% { text-shadow: 0 0 0 rgba(217, 188, 114, 0); }
+  40% { text-shadow: 0 0 18px rgba(217, 188, 114, 0.9); }
+  100% { text-shadow: 0 0 0 rgba(217, 188, 114, 0); }
+}
+@keyframes shimmer {
+  0% { background-position: -120% 0; }
+  100% { background-position: 220% 0; }
+}
+
+.rise { animation: riseIn 0.5s ease both; }
+.decaying { animation: decay 0.9s ease both; }
+.shake { animation: shakeX 0.35s ease; }
+.split-l {
+  display: inline-block;
+  animation: splitL 0.8s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+.split-r {
+  display: inline-block;
+  animation: splitR 0.8s cubic-bezier(0.2, 0.8, 0.3, 1), glowGold 0.9s ease;
+  color: #6fb3d8;
+}
+.gilded {
+  background: linear-gradient(
+    100deg,
+    #8a6f33 20%,
+    #d9bc72 45%,
+    #f2e3ae 50%,
+    #d9bc72 55%,
+    #8a6f33 80%
+  );
+  background-size: 220% 100%;
+  animation: shimmer 3.5s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise, .decaying, .shake, .split-l, .split-r { animation: none !important; }
+  .gilded { animation: none !important; }
+}
+
+.chip:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* M2: an impossible piece bounces off the assembly — the refusal is curriculum */
+@keyframes refuse {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-10px) rotate(-2deg); }
+  55% { transform: translateY(2px); }
+  75% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+.refuse {
+  animation: refuse 0.55s cubic-bezier(0.3, 0.7, 0.3, 1);
+}
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: none; }
+}
+.toast-in { animation: toastIn 0.4s ease both; }
+
+/* M6: underlying pieces visibly collapse into the contracted surface form */
+@keyframes collapseIn {
+  0% { letter-spacing: 0.22em; opacity: 0.35; filter: blur(1.5px); }
+  60% { letter-spacing: -0.02em; opacity: 1; filter: blur(0); }
+  100% { letter-spacing: 0; opacity: 1; }
+}
+.collapse-in {
+  display: inline-block;
+  animation: collapseIn 0.7s cubic-bezier(0.2, 0.8, 0.3, 1), glowGold 0.9s ease;
+  color: #6fb3d8;
+}
+
+/* M7: race clock */
+@keyframes pulseWrong {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+.race-low { animation: pulseWrong 0.8s ease infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .refuse, .toast-in, .collapse-in, .race-low { animation: none !important; }
+}

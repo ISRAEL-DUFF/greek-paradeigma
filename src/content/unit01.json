@@ -1,0 +1,864 @@
+{
+  "unit": 1,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "noun.tekhne.decl1",
+      "kind": "noun",
+      "lemma": "τέχνη",
+      "system": "first declension, η-type",
+      "label": "τέχνη — First Declension (η-type)",
+      "short": "τέχνη",
+      "unitIntroduced": 1,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "η throughout the singular; genitive plural of the first declension is always perispomenon (-ῶν).",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "τέχνη",
+          "pieces": [
+            {
+              "text": "τέχν",
+              "role": "stem"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "τέχναι",
+          "pieces": [
+            {
+              "text": "τέχν",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "τέχνης",
+          "pieces": [
+            {
+              "text": "τέχν",
+              "role": "stem"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "τεχνῶν",
+          "pieces": [
+            {
+              "text": "τεχν",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "τέχνῃ",
+          "pieces": [
+            {
+              "text": "τέχν",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "τέχναις",
+          "pieces": [
+            {
+              "text": "τέχν",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "τέχνην",
+          "pieces": [
+            {
+              "text": "τέχν",
+              "role": "stem"
+            },
+            {
+              "text": "ην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "τέχνᾱς",
+          "pieces": [
+            {
+              "text": "τέχν",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "noun.khora.decl1a",
+      "kind": "noun",
+      "lemma": "χώρᾱ",
+      "system": "first declension, long-ᾱ type",
+      "label": "χώρᾱ — First Declension (ᾱ-type)",
+      "short": "χώρᾱ",
+      "unitIntroduced": 1,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "ᾱ throughout the singular after ε, ι, ρ; genitive singular and accusative plural are homographs (χώρᾱς).",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "χώρᾱ",
+          "pieces": [
+            {
+              "text": "χώρ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "χῶραι",
+          "pieces": [
+            {
+              "text": "χῶρ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "χώρᾱς",
+          "pieces": [
+            {
+              "text": "χώρ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1,
+          "homographs": [
+            "noun.khora.decl1a:ap"
+          ]
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "χωρῶν",
+          "pieces": [
+            {
+              "text": "χωρ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "χώρᾳ",
+          "pieces": [
+            {
+              "text": "χώρ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "χώραις",
+          "pieces": [
+            {
+              "text": "χώρ",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "χώρᾱν",
+          "pieces": [
+            {
+              "text": "χώρ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "χώρᾱς",
+          "pieces": [
+            {
+              "text": "χώρ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1,
+          "homographs": [
+            "noun.khora.decl1a:gs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noun.anthropos.decl2",
+      "kind": "noun",
+      "lemma": "ἄνθρωπος",
+      "system": "second declension, masculine",
+      "label": "ἄνθρωπος — Second Declension (masc.)",
+      "short": "ἄνθρωπος",
+      "unitIntroduced": 1,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Antepenult accent moves to the penult whenever the ultima is long (ἄνθρωπος → ἀνθρώπου).",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "ἄνθρωπος",
+          "pieces": [
+            {
+              "text": "ἄνθρωπ",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "ἄνθρωποι",
+          "pieces": [
+            {
+              "text": "ἄνθρωπ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "ἀνθρώπου",
+          "pieces": [
+            {
+              "text": "ἀνθρώπ",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "ἀνθρώπων",
+          "pieces": [
+            {
+              "text": "ἀνθρώπ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "ἀνθρώπῳ",
+          "pieces": [
+            {
+              "text": "ἀνθρώπ",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "ἀνθρώποις",
+          "pieces": [
+            {
+              "text": "ἀνθρώπ",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "ἄνθρωπον",
+          "pieces": [
+            {
+              "text": "ἄνθρωπ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "ἀνθρώπους",
+          "pieces": [
+            {
+              "text": "ἀνθρώπ",
+              "role": "stem"
+            },
+            {
+              "text": "ους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "noun.doron.decl2n",
+      "kind": "noun",
+      "lemma": "δῶρον",
+      "system": "second declension, neuter",
+      "label": "δῶρον — Second Declension (neut.)",
+      "short": "δῶρον",
+      "unitIntroduced": 1,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Neuters: nominative and accusative are always identical, and the plural is -α.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "δῶρον",
+          "pieces": [
+            {
+              "text": "δῶρ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1,
+          "homographs": [
+            "noun.doron.decl2n:as"
+          ]
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "δῶρα",
+          "pieces": [
+            {
+              "text": "δῶρ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1,
+          "homographs": [
+            "noun.doron.decl2n:ap"
+          ]
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "δώρου",
+          "pieces": [
+            {
+              "text": "δώρ",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "δώρων",
+          "pieces": [
+            {
+              "text": "δώρ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "δώρῳ",
+          "pieces": [
+            {
+              "text": "δώρ",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "δώροις",
+          "pieces": [
+            {
+              "text": "δώρ",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "δῶρον",
+          "pieces": [
+            {
+              "text": "δῶρ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1,
+          "homographs": [
+            "noun.doron.decl2n:ns"
+          ]
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "δῶρα",
+          "pieces": [
+            {
+              "text": "δῶρ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1,
+          "homographs": [
+            "noun.doron.decl2n:np"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noun.hodos.decl2f",
+      "kind": "noun",
+      "lemma": "ὁδός",
+      "system": "second declension, feminine",
+      "label": "ὁδός — Second Declension (fem.)",
+      "short": "ὁδός",
+      "unitIntroduced": 1,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Feminine in form like λόγος; oxytone — acute in nominative and accusative, circumflex in genitive and dative.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "ὁδός",
+          "pieces": [
+            {
+              "text": "ὁδ",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "ὁδοί",
+          "pieces": [
+            {
+              "text": "ὁδ",
+              "role": "stem"
+            },
+            {
+              "text": "οί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "ὁδοῦ",
+          "pieces": [
+            {
+              "text": "ὁδ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "ὁδῶν",
+          "pieces": [
+            {
+              "text": "ὁδ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "ὁδῷ",
+          "pieces": [
+            {
+              "text": "ὁδ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "ὁδοῖς",
+          "pieces": [
+            {
+              "text": "ὁδ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "ὁδόν",
+          "pieces": [
+            {
+              "text": "ὁδ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "ὁδούς",
+          "pieces": [
+            {
+              "text": "ὁδ",
+              "role": "stem"
+            },
+            {
+              "text": "ούς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 1,
+          "freqTier": 1
+        }
+      ]
+    }
+  ]
+}

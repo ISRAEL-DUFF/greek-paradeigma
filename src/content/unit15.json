@@ -1,0 +1,669 @@
+{
+  "unit": 15,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "pron.tis.sg",
+      "kind": "pron",
+      "lemma": "τίς",
+      "system": "interrogative τίς, singular",
+      "label": "τίς — Interrogative, Singular",
+      "short": "τίς sg",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": "Stem τίν-: third declension. The interrogative keeps its acute — it never turns grave.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "τίς",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "νς",
+              "to": "ς"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "τί",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "τίνος",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.sg:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "τίνος",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "τίνι",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "ι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.sg:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "τίνι",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "ι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "τίνα",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.pl:nn",
+            "pron.tis.pl:an"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "τί",
+          "pieces": [
+            {
+              "text": "τί",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pron.tis.pl",
+      "kind": "pron",
+      "lemma": "τίς",
+      "system": "interrogative τίς, plural",
+      "label": "τίς — Interrogative, Plural",
+      "short": "τίς pl",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": "τίνα is three cells at once: neuter nominative and accusative plural here, and the masculine/feminine accusative singular.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "τίνες",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "τίνα",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.sg:am",
+            "pron.tis.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "τίνων",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "τίνων",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "τίσι(ν)",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "νσ",
+              "to": "σ"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.pl:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "τίσι(ν)",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "νσ",
+              "to": "σ"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "τίνας",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "τίνα",
+          "pieces": [
+            {
+              "text": "τίν",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis.sg:am",
+            "pron.tis.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verb.eimi.pres.ind",
+      "kind": "verb",
+      "drillClass": "wholeForm",
+      "lemma": "εἰμί",
+      "system": "present indicative (irregular)",
+      "label": "εἰμί — Present Indicative (to be)",
+      "short": "εἰμί",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Suppletive and enclitic — drill the whole words; there is no productive seam to cut. εἶ is also 'you go' (εἶμι).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "εἰμί",
+          "pieces": [
+            {
+              "text": "εἰμί",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐσμέν",
+          "pieces": [
+            {
+              "text": "ἐσμέν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "εἶ",
+          "pieces": [
+            {
+              "text": "εἶ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "verb.ienai.pres.ind:2s"
+          ]
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐστέ",
+          "pieces": [
+            {
+              "text": "ἐστέ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἐστί(ν)",
+          "pieces": [
+            {
+              "text": "ἐστί(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "εἰσί(ν)",
+          "pieces": [
+            {
+              "text": "εἰσί(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.eimi.impf.ind",
+      "kind": "verb",
+      "drillClass": "wholeForm",
+      "lemma": "εἰμί",
+      "system": "imperfect indicative (irregular)",
+      "label": "εἰμί — Imperfect Indicative",
+      "short": "ἦ / ἦν",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "1st singular ἦ (H&Q also lists ἦν) — the eta runs the whole table.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἦ",
+          "pieces": [
+            {
+              "text": "ἦ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἦμεν",
+          "pieces": [
+            {
+              "text": "ἦμεν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἦσθα",
+          "pieces": [
+            {
+              "text": "ἦσθα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἦτε",
+          "pieces": [
+            {
+              "text": "ἦτε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἦν",
+          "pieces": [
+            {
+              "text": "ἦν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἦσαν",
+          "pieces": [
+            {
+              "text": "ἦσαν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        }
+      ]
+    }
+  ]
+}

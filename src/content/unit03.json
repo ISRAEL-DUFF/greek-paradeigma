@@ -1,0 +1,847 @@
+{
+  "unit": 3,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "verb.luo.perf.act.ind",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "perfect active indicative",
+      "label": "λύω — Perfect Active Indicative",
+      "short": "Perfect",
+      "unitIntroduced": 3,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Reduplication + κ marker: λε- is copied from the stem's first consonant, and it never leaves the perfect system.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λέλυκα",
+          "pieces": [
+            {
+              "text": "λέ",
+              "role": "redup"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1,
+          "homographs": [
+            "pp.luo:iv"
+          ]
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λελύκαμεν",
+          "pieces": [
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αμεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λέλυκας",
+          "pieces": [
+            {
+              "text": "λέ",
+              "role": "redup"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λελύκατε",
+          "pieces": [
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ατε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λέλυκε(ν)",
+          "pieces": [
+            {
+              "text": "λέ",
+              "role": "redup"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ε(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λελύκᾱσι(ν)",
+          "pieces": [
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ᾱσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.plup.act.ind",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "pluperfect active indicative",
+      "label": "λύω — Pluperfect Active Indicative",
+      "short": "Pluperfect",
+      "unitIntroduced": 3,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Augment + reduplication together: past of the perfect. Endings η, ης, ει(ν) in the singular.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἐλελύκη",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐλελύκεμεν",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εμεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἐλελύκης",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐλελύκετε",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἐλελύκει(ν)",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ει(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἐλελύκεσαν",
+          "pieces": [
+            {
+              "text": "ἐ",
+              "role": "augment"
+            },
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εσαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.pres.act.subj",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "present active subjunctive",
+      "label": "λύω — Present Active Subjunctive",
+      "short": "Pres Subj",
+      "unitIntroduced": 3,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The subjunctive is the indicative with its theme vowel stretched long: ω/ῃ for ο/ε. No augment ever leaves the indicative.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λύω",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.pres.act.ind:1s",
+            "pp.luo:i"
+          ]
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λύωμεν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ωμεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λύῃς",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ῃς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λύητε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ητε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λύῃ",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.pres.mp.ind:2s",
+            "verb.luo.pres.mp.subj:2s"
+          ]
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λύωσι(ν)",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ωσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.aor.act.subj",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "aorist active subjunctive",
+      "label": "λύω — Aorist Active Subjunctive",
+      "short": "Aor Subj",
+      "unitIntroduced": 3,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "σ + the same long-vowel endings, and no augment: λύσω the subjunctive is spelled exactly like λύσω the future.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λύσω",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.fut.act.ind:1s",
+            "pp.luo:ii"
+          ]
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λύσωμεν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ωμεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λύσῃς",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ῃς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λύσητε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ητε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λύσῃ",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.fut.mid.ind:2s"
+          ]
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λύσωσι(ν)",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ωσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.pres.act.opt",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "present active optative",
+      "label": "λύω — Present Active Optative",
+      "short": "Pres Opt",
+      "unitIntroduced": 3,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The mood marker οι carries the wish; the 3rd singular is the bare marker. Final -οι counts long for the accent here.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λύοιμι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λύοιμεν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λύοις",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λύοιτε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λύοι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λύοιεν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "εν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        }
+      ]
+    }
+  ]
+}

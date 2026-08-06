@@ -1,0 +1,138 @@
+{
+  "unit": 19,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "verb.oida.perf.ind",
+      "kind": "verb",
+      "drillClass": "wholeForm",
+      "lemma": "οἶδα",
+      "system": "perfect indicative with present meaning (irregular)",
+      "label": "οἶδα — 'I know'",
+      "short": "οἶδα",
+      "unitIntroduced": 19,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Perfect in form, present in meaning; the plural switches to the ἰσ- stem.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "οἶδα",
+          "pieces": [
+            {
+              "text": "οἶδα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 19,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἴσμεν",
+          "pieces": [
+            {
+              "text": "ἴσμεν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 19,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "οἶσθα",
+          "pieces": [
+            {
+              "text": "οἶσθα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 19,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἴστε",
+          "pieces": [
+            {
+              "text": "ἴστε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 19,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "οἶδε(ν)",
+          "pieces": [
+            {
+              "text": "οἶδε(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 19,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἴσασι(ν)",
+          "pieces": [
+            {
+              "text": "ἴσασι(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 19,
+          "freqTier": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "unit": 17,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "verb.ienai.pres.ind",
+      "kind": "verb",
+      "drillClass": "wholeForm",
+      "lemma": "εἶμι",
+      "system": "present indicative, future meaning (irregular)",
+      "label": "εἶμι — 'I will go'",
+      "short": "εἶμι",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Present in form, future in meaning. εἶ collides with εἰμί's 'you are' — context is everything.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "εἶμι",
+          "pieces": [
+            {
+              "text": "εἶμι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἴμεν",
+          "pieces": [
+            {
+              "text": "ἴμεν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "εἶ",
+          "pieces": [
+            {
+              "text": "εἶ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 2,
+          "homographs": [
+            "verb.eimi.pres.ind:2s"
+          ]
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἴτε",
+          "pieces": [
+            {
+              "text": "ἴτε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "εἶσι(ν)",
+          "pieces": [
+            {
+              "text": "εἶσι(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἴασι(ν)",
+          "pieces": [
+            {
+              "text": "ἴασι(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 2
+        }
+      ]
+    }
+  ]
+}

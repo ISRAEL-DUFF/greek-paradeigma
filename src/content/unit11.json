@@ -1,0 +1,530 @@
+{
+  "unit": 11,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "pron.autos.sg",
+      "kind": "pron",
+      "lemma": "αὐτός",
+      "system": "αὐτός, singular",
+      "label": "αὐτός — Singular",
+      "short": "αὐτός sg",
+      "unitIntroduced": 11,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Declines like a 2-1-2 adjective, but the neuter nominative/accusative is bare αὐτό — no ν.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "αὐτός",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "αὐτή",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ή",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "αὐτό",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "αὐτοῦ",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "αὐτῆς",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῆς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "αὐτοῦ",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "αὐτῷ",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "αὐτῇ",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῇ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "αὐτῷ",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "αὐτόν",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "αὐτήν",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ήν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "αὐτό",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pron.autos.pl",
+      "kind": "pron",
+      "lemma": "αὐτός",
+      "system": "αὐτός, plural",
+      "label": "αὐτός — Plural",
+      "short": "αὐτός pl",
+      "unitIntroduced": 11,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The genitive plural αὐτῶν is one form for all three genders.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "αὐτοί",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "οί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "αὐταί",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "αί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "αὐτά",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "αὐτῶν",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.pl:gf",
+            "pron.autos.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "αὐτῶν",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.pl:gm",
+            "pron.autos.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "αὐτῶν",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.pl:gm",
+            "pron.autos.pl:gf"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "αὐτοῖς",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "αὐταῖς",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "αῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "αὐτοῖς",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "αὐτούς",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ούς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "αὐτάς",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "άς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "αὐτά",
+          "pieces": [
+            {
+              "text": "αὐτ",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "pron.autos.pl:nn"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "unit": 9,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "verb.poieo.pres.act.ind",
+      "kind": "verb",
+      "lemma": "ποιέω",
+      "system": "present active indicative (contract)",
+      "label": "ποιέω — Present Active Indicative",
+      "short": "ποιέω",
+      "unitIntroduced": 9,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "ε-contract: ε + ε → ει, ε + ο → ου, and ε disappears into any long vowel. The circumflex remembers the swallowed accent.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ποιῶ",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ποιοῦμεν",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "ομεν",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έο",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ποιεῖς",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έει",
+              "to": "εῖ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ποιεῖτε",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έε",
+              "to": "εῖ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ποιεῖ",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έει",
+              "to": "εῖ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ποιοῦσι(ν)",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έου",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.poieo.pres.mp.ind",
+      "kind": "verb",
+      "lemma": "ποιέω",
+      "system": "present middle/passive indicative (contract)",
+      "label": "ποιέω — Present Middle/Passive Indicative",
+      "short": "ποιέω M/P",
+      "unitIntroduced": 9,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The same contractions against the middle/passive endings: ποιέ-ομαι → ποιοῦμαι.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ποιοῦμαι",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "ομαι",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έο",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ποιούμεθα",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "όμεθα",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έό",
+              "to": "ού"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ποιῇ",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έῃ",
+              "to": "ῇ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ποιεῖσθε",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "εσθε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έε",
+              "to": "εῖ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ποιεῖται",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "εται",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έε",
+              "to": "εῖ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ποιοῦνται",
+          "pieces": [
+            {
+              "text": "ποιέ",
+              "role": "stem"
+            },
+            {
+              "text": "ονται",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έο",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.timao.pres.act.ind",
+      "kind": "verb",
+      "lemma": "τιμάω",
+      "system": "present active indicative (contract)",
+      "label": "τιμάω — Present Active Indicative",
+      "short": "τιμάω",
+      "unitIntroduced": 9,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "α-contract: α swallows ε/η into ᾱ (with subscript ι where the ending had ι) and swallows ο/ω/ου into ω.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "τιμῶ",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "τιμῶμεν",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "ομεν",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άο",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "τιμᾷς",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άει",
+              "to": "ᾷ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "τιμᾶτε",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άε",
+              "to": "ᾶ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "τιμᾷ",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άει",
+              "to": "ᾷ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "τιμῶσι(ν)",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άου",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "unit": 16,
+  "unitMappingVerified": true,
+  "paradigms": [
+    {
+      "id": "verb.phemi.pres.ind",
+      "kind": "verb",
+      "drillClass": "wholeForm",
+      "lemma": "φημί",
+      "system": "present indicative (irregular)",
+      "label": "φημί — Present Indicative (to say)",
+      "short": "φημί",
+      "unitIntroduced": 16,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Enclitic like εἰμί; φη-/φα- alternation runs the table.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "φημί",
+          "pieces": [
+            {
+              "text": "φημί",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "φαμέν",
+          "pieces": [
+            {
+              "text": "φαμέν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "φῄς",
+          "pieces": [
+            {
+              "text": "φῄς",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "φατέ",
+          "pieces": [
+            {
+              "text": "φατέ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "φησί(ν)",
+          "pieces": [
+            {
+              "text": "φησί(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "φασί(ν)",
+          "pieces": [
+            {
+              "text": "φασί(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        }
+      ]
+    }
+  ]
+}
