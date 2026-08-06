@@ -110,6 +110,7 @@ export default function App() {
   const dragRef = useRef(null);
   const dragYRef = useRef(0);
   const scrambleBarRef = useRef(null);
+  const DRAG_SLOP = 6; // px of travel before a touch is a drag and not a swipe
   const [syllabus, setSyllabus] = useState(null); // {classUnit, lead}
   const [streak, setStreak] = useState(0);
   const [fastFlash, setFastFlash] = useState(false);
@@ -508,20 +509,35 @@ export default function App() {
      nothing on touch — this gives real dragging on the phone too. */
   const beginDrag = (e, tile, from) => {
     if (!scramble || e.button > 0) return;
-    e.preventDefault();
     // capture keeps move/up coming to this element once the finger leaves it;
     // it throws if the pointer is not active, which must not abort the drag
     try {
       e.currentTarget.setPointerCapture?.(e.pointerId);
     } catch {}
-    dragRef.current = { tile, from };
-    setDrag({ tile, from, x: e.clientX, y: e.clientY });
+    // armed, not yet lifted — see moveDrag
+    dragRef.current = { tile, from, x0: e.clientX, y0: e.clientY, live: false };
   };
 
+  /* A tile is not picked up until the pointer has actually travelled. The bank
+     scrolls sideways, so a horizontal swipe is a scroll, not a grab: without
+     this threshold the ghost would flash on every swipe and every tap. */
   const moveDrag = (e) => {
-    if (!dragRef.current) return;
+    const d = dragRef.current;
+    if (!d) return;
     dragYRef.current = e.clientY;
-    setDrag((d) => (d ? { ...d, x: e.clientX, y: e.clientY } : d));
+    if (!d.live) {
+      if (Math.hypot(e.clientX - d.x0, e.clientY - d.y0) < DRAG_SLOP) return;
+      d.live = true;
+    }
+    e.preventDefault();
+    setDrag({ tile: d.tile, from: d.from, x: e.clientX, y: e.clientY });
+  };
+
+  /* The browser fires pointercancel when it takes the gesture over to pan the
+     bank — that is the normal end of a sideways swipe, not an error. */
+  const cancelDrag = () => {
+    dragRef.current = null;
+    setDrag(null);
   };
 
   const endDrag = (e) => {
@@ -1137,7 +1153,7 @@ export default function App() {
             impostor={mode === "impostor" && p.id === paradigm.id ? impostor : null}
             lookup={mode === "lookup" && p.id === paradigm.id ? lookup : null}
             scramble={mode === "scramble" && p.id === paradigm.id ? scramble : null}
-            dragHandlers={{ beginDrag, moveDrag, endDrag }}
+            dragHandlers={{ beginDrag, moveDrag, endDrag, cancelDrag }}
             assemblyPrefix={assemblyPrefix}
             getM={getM}
             onCellTap={(pid, cid) => {
@@ -1387,23 +1403,26 @@ export default function App() {
                 </div>
               </div>
 
+              {/* The bank stays ONE row and scrolls sideways however many forms
+                  it holds: on a phone vertical space is what the board needs,
+                  and horizontal space is what is going spare. */}
               <div
                 data-drop="bank"
-                className="flex flex-wrap gap-2 justify-center w-full rounded-xl overflow-y-auto"
+                className="w-full rounded-xl"
                 style={{
-                  minHeight: "3.5rem",
-                  maxHeight: "22vh", // a 12-tile bank must not swallow the board
                   padding: "0.5rem",
                   border: `1px dashed ${scramble.bank.length ? C.line : "transparent"}`,
                 }}
               >
+                <div className="bank-strip" style={{ minHeight: "3rem" }}>
                 {scramble.bank.map((tile) => (
                   <span
                     key={tile.id}
-                    className="chip gk px-4 py-2.5 rounded-xl text-xl draggable"
+                    className="chip gk px-4 py-2.5 rounded-xl text-xl draggable draggable-x"
                     onPointerDown={(e) => beginDrag(e, tile, { type: "bank" })}
                     onPointerMove={moveDrag}
                     onPointerUp={endDrag}
+                    onPointerCancel={cancelDrag}
                     style={{
                       background: C.panelUp,
                       border: `1px solid ${C.line}`,
@@ -1414,6 +1433,7 @@ export default function App() {
                     {tile.form}
                   </span>
                 ))}
+                </div>
               </div>
             </div>
           </div>
@@ -1870,6 +1890,7 @@ function Cell({ cell, paradigm, phase, mode, blank, fb, active, impostor, lookup
         {tile ? (
           <span
             className="gk text-xl draggable"
+            onPointerCancel={dragHandlers.cancelDrag}
             onPointerDown={(e) => dragHandlers.beginDrag(e, tile, { type: "cell", cellId: cell.id })}
             onPointerMove={dragHandlers.moveDrag}
             onPointerUp={dragHandlers.endDrag}

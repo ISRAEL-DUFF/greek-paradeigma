@@ -136,6 +136,39 @@
   cursor: grab;
 }
 .draggable:active { cursor: grabbing; }
+
+/* Bank tiles: the strip scrolls sideways, so let the browser own horizontal
+   panning and keep vertical movement for us. Lifting a form out of the bank is
+   an upward motion, so the two gestures do not fight. */
+.draggable-x { touch-action: pan-x; }
+
+/* One row, however many forms — vertical space is the scarce one on a phone */
+.bank-strip {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.5rem;
+  /* plain `center` makes the overflowing start unreachable; `safe` falls back
+     to flex-start exactly when the strip is too full to fit */
+  justify-content: flex-start;
+  justify-content: safe center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #2e3450 transparent;
+  /* fade the ends so it is obvious there is more off-screen */
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 14px,
+    black calc(100% - 14px),
+    transparent 100%
+  );
+}
+.bank-strip > * { flex: 0 0 auto; }
+.bank-strip::-webkit-scrollbar { height: 5px; }
+.bank-strip::-webkit-scrollbar-thumb { background: #2e3450; border-radius: 3px; }
+.bank-strip::-webkit-scrollbar-track { background: transparent; }
 .drag-ghost {
   position: fixed;
   z-index: 60;

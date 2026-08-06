@@ -188,6 +188,15 @@ Dragging is implemented on Pointer Events rather than HTML5 drag-and-drop, so it
 on touch as well as mouse, and the page auto-scrolls while you drag so that the lower
 rows of a tall table stay reachable from behind the pinned bank.
 
+The bank is **one row that scrolls sideways**, however many forms it holds — on a phone
+vertical space is what the board needs and horizontal space is what is going spare, so a
+12-form participle bank costs ~68 px instead of wrapping into a 179 px block. Because the
+strip pans horizontally, bank tiles set `touch-action: pan-x`: a sideways swipe scrolls
+the strip, while lifting a form out of it — which is always an upward motion — comes
+through as a drag. A tile is not picked up until the pointer has travelled 6 px, so taps
+and swipes never flash a ghost, and `pointercancel` (which the browser fires when it
+takes the gesture over to pan) puts the tile back rather than dropping it.
+
 **Two session flows**, chosen by the *after solving* toggle and remembered:
 
 - **Same table** (default) — hands the same paradigm back, reshuffled, so you can drill
