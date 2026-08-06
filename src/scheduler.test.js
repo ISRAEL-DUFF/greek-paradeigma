@@ -1,0 +1,261 @@
+import { describe, it, expect } from "vitest";
+import {
+  buildTray,
+  buildAssemblyTray,
+  pickImpostor,
+  pickLookup,
+  pickSnipe,
+  answerOf,
+  endingOf,
+  drillsWholeForm,
+} from "./scheduler.js";
+import { unlockedParadigms, unlockedCells, ALL_PARADIGMS, cellKey } from "./content/index.js";
+import { MAX_UNIT } from "./theme.js";
+
+const UNITS = Array.from({ length: MAX_UNIT }, (_, i) => i + 1);
+const gated = (p, unit) => p.cells.filter((c) => c.unitMax <= unit);
+
+describe("unit gating — the plan's single clearest advantage (§3.4, §7)", () => {
+  it("no chip in any Level-1 tray requires a unit above the player's", () => {
+    for (const unit of UNITS) {
+      // every ending the player is allowed to have met by now
+      const legal = new Set();
+      for (const p of unlockedParadigms(unit))
+        for (const c of gated(p, unit)) legal.add(drillsWholeForm(p) ? c.form : endingOf(c));
+
+      let trays = 0;
+      for (const p of unlockedParadigms(unit))
+        for (const c of gated(p, unit)) {
+          for (let i = 0; i < 3; i++) {
+            const tray = buildTray({ paradigm: p, cell: c, currentUnit: unit, masteryRecord: null });
+            trays++;
+            for (const chip of tray)
+              expect(
+                legal.has(chip),
+                `unit ${unit}: tray for ${p.id}:${c.id} offered ungated chip "${chip}"`
+              ).toBe(true);
+          }
+        }
+      expect(trays).toBeGreaterThan(0);
+    }
+  });
+
+  it("no piece in any assembly tray requires a unit above the player's", () => {
+    for (const unit of UNITS) {
+      const legal = new Set();
+      for (const p of unlockedParadigms(unit))
+        if (!drillsWholeForm(p))
+          for (const c of gated(p, unit))
+            for (const pc of c.pieces) if (pc.text !== "") legal.add(pc.role + ":" + pc.text);
+
+      for (const p of unlockedParadigms(unit)) {
+        if (drillsWholeForm(p)) continue;
+        for (const c of gated(p, unit)) {
+          const { chips } = buildAssemblyTray({ paradigm: p, cell: c, currentUnit: unit });
+          for (const chip of chips)
+            expect(
+              legal.has(chip.role + ":" + chip.text),
+              `unit ${unit}: assembly for ${p.id}:${c.id} offered ungated piece "${chip.text}"`
+            ).toBe(true);
+        }
+      }
+    }
+  });
+
+  it("the impostor never shows a form from beyond the unit gate", () => {
+    for (const unit of UNITS) {
+      for (const p of unlockedParadigms(unit)) {
+        const imp = pickImpostor(p, unit);
+        if (!imp) continue;
+        const cell = p.cells.find((c) => c.id === imp.cid);
+        expect(cell, `${p.id}: impostor targeted a missing cell`).toBeTruthy();
+        expect(cell.unitMax).toBeLessThanOrEqual(unit);
+      }
+    }
+  });
+});
+
+describe("every ask is answerable", () => {
+  it("the correct answer is always present in the Level-1 tray", () => {
+    for (const unit of UNITS)
+      for (const p of unlockedParadigms(unit))
+        for (const c of gated(p, unit)) {
+          const tray = buildTray({ paradigm: p, cell: c, currentUnit: unit, masteryRecord: null });
+          expect(
+            tray.includes(answerOf(p, c)),
+            `unit ${unit}: ${p.id}:${c.id} tray lacks its own answer`
+          ).toBe(true);
+        }
+  });
+
+  it("every assembly tray contains each expected piece, in gradeable form", () => {
+    for (const unit of UNITS)
+      for (const p of unlockedParadigms(unit)) {
+        if (drillsWholeForm(p)) continue;
+        for (const c of gated(p, unit)) {
+          const { expected, chips } = buildAssemblyTray({ paradigm: p, cell: c, currentUnit: unit });
+          for (const pc of expected)
+            expect(
+              chips.some((ch) => ch.text === pc.text && ch.role === pc.role && !ch.refusal),
+              `unit ${unit}: ${p.id}:${c.id} assembly lacks piece ${pc.role}:${pc.text}`
+            ).toBe(true);
+        }
+      }
+  });
+
+  it("no tray offers a duplicate chip (which would be ungradeable)", () => {
+    for (const unit of UNITS)
+      for (const p of unlockedParadigms(unit))
+        for (const c of gated(p, unit)) {
+          const tray = buildTray({ paradigm: p, cell: c, currentUnit: unit, masteryRecord: null });
+          expect(new Set(tray).size, `unit ${unit}: ${p.id}:${c.id} tray has duplicates`).toBe(
+            tray.length
+          );
+        }
+  });
+});
+
+describe("distractors are real neighbours (§ principle 2)", () => {
+  it("a recorded confusion is guaranteed back in the tray", () => {
+    const unit = 2;
+    const p = unlockedParadigms(unit).find((x) => x.id === "verb.luo.impf.act.ind");
+    const cell = p.cells.find((c) => c.id === "2s"); // answer ες
+    const rec = { confusions: { ετε: 4, ον: 1 } };
+    for (let i = 0; i < 20; i++) {
+      const tray = buildTray({ paradigm: p, cell, currentUnit: unit, masteryRecord: rec });
+      expect(tray).toContain("ετε");
+    }
+  });
+
+  it("principal-parts and whole-form tables never mix chips with ending tables", () => {
+    const unit = MAX_UNIT;
+    for (const p of unlockedParadigms(unit)) {
+      const whole = drillsWholeForm(p);
+      for (const c of gated(p, unit)) {
+        const tray = buildTray({ paradigm: p, cell: c, currentUnit: unit, masteryRecord: null });
+        for (const chip of tray) {
+          // whole-form trays hold whole words; ending trays hold endings
+          const looksWhole = ALL_PARADIGMS.some((q) =>
+            q.cells.some((qc) => qc.form === chip)
+          );
+          if (whole) expect(looksWhole).toBe(true);
+        }
+      }
+    }
+  });
+});
+
+describe("impostor honesty", () => {
+  const shownForm = (p, imp) => {
+    const cell = p.cells.find((c) => c.id === imp.cid);
+    return imp.wholeForm
+      ? imp.fakeEnd
+      : cell.pieces.filter((x) => x.role !== "ending").map((x) => x.text).join("") + imp.fakeEnd;
+  };
+
+  it("an ending-swap impostor never accidentally spells a genuine form", () => {
+    // A made-up ending on a real stem could land on a word that is correct
+    // elsewhere; then the 'wrong' cell would in fact be right.
+    for (const unit of UNITS) {
+      const real = new Set(unlockedCells(unit).map(({ cell }) => cell.form));
+      for (const p of unlockedParadigms(unit)) {
+        if (drillsWholeForm(p)) continue;
+        for (let i = 0; i < 5; i++) {
+          const imp = pickImpostor(p, unit);
+          if (!imp) continue;
+          const shown = shownForm(p, imp);
+          expect(
+            real.has(shown),
+            `unit ${unit}: ${p.id} impostor spelled the genuine form ${shown}`
+          ).toBe(false);
+        }
+      }
+    }
+  });
+
+  it("a whole-form impostor borrows a sibling's word but never one of its own", () => {
+    // The mechanic is 'ἔλυσα where ἔλαβον belongs': the word is real, but wrong
+    // for THIS chart. It must not be a form of this chart, or two cells would
+    // look equally right and the round would be unanswerable.
+    for (const unit of UNITS)
+      for (const p of unlockedParadigms(unit)) {
+        if (!drillsWholeForm(p)) continue;
+        const own = new Set(p.cells.map((c) => c.form));
+        for (let i = 0; i < 5; i++) {
+          const imp = pickImpostor(p, unit);
+          if (!imp) continue;
+          expect(
+            own.has(shownForm(p, imp)),
+            `unit ${unit}: ${p.id} impostor reused its own form`
+          ).toBe(false);
+        }
+      }
+  });
+
+  it("the falsified cell never still displays its own correct form", () => {
+    for (const unit of UNITS)
+      for (const p of unlockedParadigms(unit))
+        for (let i = 0; i < 5; i++) {
+          const imp = pickImpostor(p, unit);
+          if (!imp) continue;
+          const cell = p.cells.find((c) => c.id === imp.cid);
+          expect(shownForm(p, imp), `${p.id}:${imp.cid} impostor is a no-op`).not.toBe(cell.form);
+        }
+  });
+});
+
+describe("reverse lookup ambiguity (M3)", () => {
+  it("an ambiguous form requires every cell that holds it", () => {
+    const unit = 2;
+    const p = unlockedParadigms(unit).find((x) => x.id === "verb.luo.impf.act.ind");
+    // ἔλυον is both 1st singular and 3rd plural
+    let sawAmbiguous = false;
+    for (let i = 0; i < 60; i++) {
+      const l = pickLookup(p, unit, {});
+      const holders = p.cells.filter((c) => c.form === l.form).map((c) => c.id);
+      expect(new Set(l.required)).toEqual(new Set(holders));
+      if (l.form === "ἔλυον") {
+        sawAmbiguous = true;
+        expect(l.required.sort()).toEqual(["1s", "3p"]);
+      }
+    }
+    expect(sawAmbiguous, "never drew the ambiguous form in 60 tries").toBe(true);
+  });
+});
+
+describe("snipe scheduling", () => {
+  it("only ever returns a cell inside the unit gate", () => {
+    for (const unit of UNITS)
+      for (let i = 0; i < 30; i++) {
+        const t = pickSnipe(unit, {});
+        expect(t).toBeTruthy();
+        expect(t.paradigm.unitIntroduced).toBeLessThanOrEqual(unit);
+        expect(t.cell.unitMax).toBeLessThanOrEqual(unit);
+      }
+  });
+
+  it("prefers the current unit roughly 70% of the time when both exist (§3.3)", () => {
+    const unit = 6;
+    let current = 0;
+    const N = 600;
+    for (let i = 0; i < N; i++) {
+      const t = pickSnipe(unit, {});
+      if (t.paradigm.unitIntroduced === unit) current++;
+    }
+    expect(current / N).toBeGreaterThan(0.55);
+    expect(current / N).toBeLessThan(0.85);
+  });
+
+  it("defends gold: with everything gilded it returns the longest-unseen cell", () => {
+    const unit = 1;
+    const map = {};
+    let oldest = null;
+    unlockedCells(unit).forEach(({ paradigm, cell }, i) => {
+      const key = cellKey(paradigm.id, cell.id);
+      map[key] = { level: 3, lastSeenAt: 1000 + i };
+      if (oldest === null) oldest = key;
+    });
+    const t = pickSnipe(unit, map);
+    expect(cellKey(t.paradigm.id, t.cell.id)).toBe(oldest);
+  });
+});

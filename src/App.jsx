@@ -5,6 +5,7 @@ import {
   unlockedCells,
   paradigmsIntroducedAt,
   MAX_SHIPPED_UNIT,
+  unitTitle,
   cellKey,
 } from "./content/index.js";
 import {
@@ -35,6 +36,7 @@ import {
   applyAccent,
   ACCENT_CYCLE,
 } from "./accent.js";
+import { gradeAssemblyTap, askLevelFor, ROLE_SHORT } from "./grading.js";
 
 const CASE_NAMES = {
   Nom: "nominative",
@@ -94,6 +96,7 @@ export default function App() {
   const [fastFlash, setFastFlash] = useState(false);
   const [toast, setToast] = useState(null);
   const [unlock, setUnlock] = useState(null);
+  const [pickerOpen, setPickerOpen] = useState(true); // table list, choice remembered
   const activatedAt = useRef(null);
   const timers = useRef([]);
   const later = (fn, ms) => timers.current.push(setTimeout(fn, ms));
@@ -101,16 +104,18 @@ export default function App() {
   useEffect(() => {
     (async () => {
       await applyDecay();
-      const [m, s, unit, syl] = await Promise.all([
+      const [m, s, unit, syl, pOpen] = await Promise.all([
         loadMastery(),
         loadStudied(),
         getMeta("currentUnit", 1),
         getMeta("syllabus", null),
+        getMeta("pickerOpen", true),
       ]);
       setMasteryMap(m);
       setStudied(s);
       setCurrentUnit(unit);
       setSyllabus(syl);
+      setPickerOpen(pOpen);
       const first = unlockedParadigms(unit)[0];
       setParadigmId(first?.id ?? null);
       setPhase(s[first?.id] ? "drill" : "study");
@@ -215,6 +220,15 @@ export default function App() {
 
   const paradigmOf = (pid) => shownParadigms.find((p) => p.id === pid) ?? paradigm;
 
+  /* Deferred re-asks (the 1.9 s recovery after a miss, the Snipe hand-off) fire
+     from timers created in an earlier render. Reading mastery through a ref
+     keeps them honest: a cell demoted by that very miss must be re-asked at its
+     NEW level, and the tray must know the confusion it just recorded. */
+  const masteryRef = useRef(masteryMap);
+  useEffect(() => {
+    masteryRef.current = masteryMap;
+  }, [masteryMap]);
+
   /* ---------- selecting a cell builds its tray (Level 1 or assembly) ---------- */
   const selectCell = useCallback(
     (p, cid) => {
@@ -222,10 +236,10 @@ export default function App() {
       setRefusal(null);
       activatedAt.current = Date.now();
       const cell = p.cells.find((c) => c.id === cid);
-      const rec = recOf(p.id, cid);
+      const rec = masteryRef.current[cellKey(p.id, cid)];
       const level = rec?.level ?? 0;
       const pieces = cell.pieces.filter((pc) => pc.text !== "");
-      if (level >= 2 && pieces.length > 1 && mode !== "race") {
+      if (askLevelFor({ level, pieceCount: pieces.length, mode }) === 2) {
         const a = buildAssemblyTray({ paradigm: p, cell, currentUnit });
         setAssembly({ expected: a.expected, progress: 0 });
         setTray(a.chips);
@@ -243,7 +257,7 @@ export default function App() {
           ?.scrollIntoView({ block: "center", behavior: "smooth" })
       );
     },
-    [currentUnit, masteryMap, mode]
+    [currentUnit, mode]
   );
 
   /* ---------- round setup ---------- */
@@ -371,6 +385,12 @@ export default function App() {
   const saveSyllabus = async (s) => {
     setSyllabus(s);
     await setMeta("syllabus", s);
+  };
+
+  const togglePicker = async () => {
+    const next = !pickerOpen;
+    setPickerOpen(next);
+    await setMeta("pickerOpen", next);
   };
 
   /* ---------- auto-advance to the next blank ---------- */
@@ -526,34 +546,40 @@ export default function App() {
     }
 
     if (assembly) {
-      if (chip.refusal) {
-        setRefusal({ chipId: chip.id, msg: chip.refusal });
+      const { verdict, message } = gradeAssemblyTap({
+        expected: assembly.expected,
+        progress: assembly.progress,
+        chip,
+      });
+
+      // Refusals and ordering slips teach; neither costs a mastery level.
+      if (verdict === "refuse" || verdict === "outOfOrder") {
+        setRefusal({ chipId: chip.id, msg: message });
         later(() => setRefusal(null), 1600);
-        return; // refusals never penalize — they teach
+        return;
       }
-      const want = assembly.expected[assembly.progress];
-      if (chip.text === want.text && chip.role === want.role) {
-        const progress = assembly.progress + 1;
-        if (progress >= assembly.expected.length) {
-          const budget = FAST_MS + ASSEMBLY_MS_PER_PIECE * (assembly.expected.length - 1);
-          const fast = elapsed < budget;
-          succeed(p, cell, fast, true);
-          await commitAnswer({ p, cell, correct: true, fast, latencyMs: elapsed });
-        } else {
-          setAssembly({ ...assembly, progress });
-          setTray((t) => t.filter((c) => c.id !== chip.id));
-        }
-      } else {
-        fail(p, cell);
-        await commitAnswer({
-          p,
-          cell,
-          correct: false,
-          fast: false,
-          latencyMs: elapsed,
-          wrongChip: chip.text,
-        });
+      if (verdict === "advance") {
+        setAssembly({ ...assembly, progress: assembly.progress + 1 });
+        setTray((t) => t.filter((c) => c.id !== chip.id));
+        return;
       }
+      if (verdict === "complete") {
+        const budget = FAST_MS + ASSEMBLY_MS_PER_PIECE * (assembly.expected.length - 1);
+        const fast = elapsed < budget;
+        succeed(p, cell, fast, true);
+        await commitAnswer({ p, cell, correct: true, fast, latencyMs: elapsed });
+        return;
+      }
+      // "wrong": a piece that belongs to no part of this form
+      fail(p, cell);
+      await commitAnswer({
+        p,
+        cell,
+        correct: false,
+        fast: false,
+        latencyMs: elapsed,
+        wrongChip: chip.text,
+      });
       return;
     }
 
@@ -710,8 +736,15 @@ export default function App() {
   /* ============================ render ============================ */
   return (
     <div
-      className="min-h-screen w-full flex flex-col items-center px-4 pb-40"
-      style={{ background: C.ink, color: C.marble, fontFamily: "'Jost', system-ui, sans-serif" }}
+      className="min-h-screen w-full flex flex-col items-center px-4"
+      style={{
+        background: C.ink,
+        color: C.marble,
+        fontFamily: "'Jost', system-ui, sans-serif",
+        /* clearance for the pinned banner + tray, which is tallest on a phone
+           during a multi-piece assembly (QA bar §7: never occlude the cell) */
+        paddingBottom: "clamp(11rem, 44vh, 24rem)",
+      }}
     >
       {toast && (
         <div
@@ -824,34 +857,15 @@ export default function App() {
       )}
 
       {/* paradigm + mode pickers */}
-      <div className="w-full max-w-2xl flex flex-wrap gap-2 mb-2">
-        {paradigms.map((p) => {
-          const g = p.cells.filter((c) => getM(p.id, c.id) >= GOLD_AT).length;
-          const on = twinMode
-            ? twinIds.includes(p.id)
-            : p.id === paradigm.id;
-          return (
-            <button
-              key={p.id}
-              onClick={() => changeParadigm(p.id)}
-              className="px-3 py-2 rounded-lg text-sm"
-              style={{
-                background: on ? C.panelUp : "transparent",
-                border: `1px solid ${on ? C.aegeanDeep : C.line}`,
-                color: on ? C.marble : C.faint,
-              }}
-            >
-              <span className="gk">{p.short}</span>
-              <span
-                className="ml-2 text-xs"
-                style={{ color: g === p.cells.length ? C.gold : C.faint }}
-              >
-                {g}/{p.cells.length}
-              </span>
-            </button>
-          );
-        })}
-      </div>
+      <TablePicker
+        paradigms={paradigms}
+        activeIds={new Set(twinMode ? twinIds : [paradigm.id])}
+        activeLabel={twinMode ? twinIds.map((id) => paradigms.find((p) => p.id === id)?.short).join(" + ") : paradigm.short}
+        getM={getM}
+        onPick={changeParadigm}
+        open={pickerOpen}
+        onToggle={togglePicker}
+      />
       <div className="w-full max-w-2xl flex gap-2 mb-5 flex-wrap">
         {[
           ["fill", "Fill"],
@@ -1044,34 +1058,6 @@ export default function App() {
         </div>
       )}
 
-      {/* prompt line */}
-      {active && mode !== "impostor" && mode !== "lookup" && phase === "drill" && !accentStage && (
-        <div className={`w-full ${twinMode ? "max-w-5xl" : "max-w-2xl"} mt-4 text-sm`} style={{ color: C.faint }}>
-          {assembly ? "Assemble the " : "Build the "}
-          <span style={{ color: C.marble }}>
-            {labelFor(
-              paradigmOf(active.pid),
-              paradigmOf(active.pid).cells.find((c) => c.id === active.cid)
-            )}
-          </span>
-          {twinMode && (
-            <span className="gk" style={{ color: C.aegean }}>
-              {"  "}· {paradigmOf(active.pid).short}
-            </span>
-          )}
-          {assembly && (
-            <span style={{ color: C.aegean }}>{"  "}· piece by piece, in order</span>
-          )}
-        </div>
-      )}
-
-      {/* refusal teaching line */}
-      {refusal && (
-        <div className="w-full max-w-2xl mt-2 text-sm toast-in" style={{ color: C.wrong }}>
-          {refusal.msg}
-        </div>
-      )}
-
       {/* M5 accent finishing move */}
       {accentStage && (
         <div
@@ -1144,13 +1130,25 @@ export default function App() {
         </div>
       )}
 
-      {/* chip tray */}
-      {!accentStage && tray.length > 0 && phase === "drill" && mode !== "impostor" && mode !== "lookup" && (
+      {/* ask banner + chip tray, pinned together above the fold */}
+      {!accentStage && active && phase === "drill" && mode !== "impostor" && mode !== "lookup" && (
         <div
-          className="fixed bottom-0 left-0 right-0 flex justify-center px-4 pb-6 pt-4"
-          style={{ background: `linear-gradient(transparent, ${C.ink} 35%)` }}
+          className="fixed bottom-0 left-0 right-0 flex justify-center px-4 pb-6 pt-6"
+          style={{ background: `linear-gradient(transparent, ${C.ink} 22%)` }}
         >
-          <div className="flex flex-wrap gap-2 justify-center max-w-2xl w-full">
+          <div className="max-w-2xl w-full">
+            <PromptBanner
+              key={`${active.pid}:${active.cid}`}
+              label={labelFor(
+                paradigmOf(active.pid),
+                paradigmOf(active.pid).cells.find((c) => c.id === active.cid)
+              )}
+              tableShort={paradigmOf(active.pid).short}
+              twinMode={twinMode}
+              assembly={assembly}
+              refusal={refusal}
+            />
+            <div className="flex flex-wrap gap-2 justify-center w-full">
             {tray.map((chip) => (
               <button
                 key={chip.id}
@@ -1169,6 +1167,7 @@ export default function App() {
                 {chip.text === "" ? "—" : chip.text}
               </button>
             ))}
+            </div>
           </div>
         </div>
       )}
@@ -1183,8 +1182,11 @@ export default function App() {
             className="w-full max-w-md rounded-2xl p-6 rise"
             style={{ background: C.panel, border: `1px solid ${C.goldDeep}` }}
           >
-            <div className="text-xs mb-1" style={{ color: C.gold, letterSpacing: "0.12em" }}>
+            <div className="text-xs" style={{ color: C.gold, letterSpacing: "0.12em" }}>
               UNIT {unlock.unit} · NEW TABLES UNLOCKED
+            </div>
+            <div className="text-sm mt-1" style={{ color: C.marble }}>
+              {unitTitle(unlock.unit)}
             </div>
             <ul className="my-4 space-y-2">
               {unlock.paradigms.map((p) => (
@@ -1205,6 +1207,171 @@ export default function App() {
               Begin
             </button>
           </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ---------- the table picker ----------
+   At Unit 20 there are over a hundred tables. Left as one flat wrap it pushes
+   the board off the screen, so: collapsible (choice remembered), grouped by the
+   unit that introduced each table, and capped with its own scroll. */
+function TablePicker({ paradigms, activeIds, activeLabel, getM, onPick, open, onToggle }) {
+  const activeRef = useRef(null);
+  const activeKey = [...activeIds].join(",");
+  /* Bring the current table into view when the list opens or the selection
+     changes — but only then, so it never yanks while you are browsing. */
+  useEffect(() => {
+    if (open) activeRef.current?.scrollIntoView({ block: "nearest" });
+  }, [open, activeKey]);
+
+  const groups = [];
+  for (const p of paradigms) {
+    const last = groups[groups.length - 1];
+    if (last && last.unit === p.unitIntroduced) last.items.push(p);
+    else groups.push({ unit: p.unitIntroduced, items: [p] });
+  }
+
+  return (
+    <div className="w-full max-w-2xl mb-3">
+      <button
+        onClick={onToggle}
+        className="w-full flex items-center gap-2 text-xs py-1"
+        style={{ color: C.faint, letterSpacing: "0.1em" }}
+        aria-expanded={open}
+      >
+        <span className={`chev ${open ? "chev-open" : ""}`} style={{ color: C.aegean }}>
+          ›
+        </span>
+        TABLES
+        <span style={{ color: C.line }}>·</span>
+        <span>{paradigms.length}</span>
+        {!open && (
+          <span className="gk ml-1 truncate" style={{ color: C.marble, letterSpacing: 0 }}>
+            {activeLabel}
+          </span>
+        )}
+        <span className="flex-1" />
+        <span style={{ color: C.line }}>{open ? "hide" : "show"}</span>
+      </button>
+
+      {open && (
+        <div
+          className="mt-1 pr-1 overflow-y-auto"
+          style={{ maxHeight: "min(34vh, 20rem)", borderTop: `1px solid ${C.line}` }}
+        >
+          {groups.map((g) => (
+            <div key={g.unit} className="pt-3">
+              <div className="mb-1.5 flex items-baseline gap-2 flex-wrap">
+                <span
+                  className="text-xs shrink-0"
+                  style={{ color: C.aegean, letterSpacing: "0.14em" }}
+                >
+                  UNIT {g.unit}
+                </span>
+                <span className="text-xs" style={{ color: C.faint }}>
+                  {unitTitle(g.unit)}
+                </span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {g.items.map((p) => {
+                  const gold = p.cells.filter((c) => getM(p.id, c.id) >= GOLD_AT).length;
+                  const on = activeIds.has(p.id);
+                  return (
+                    <button
+                      key={p.id}
+                      ref={on ? activeRef : undefined}
+                      onClick={() => onPick(p.id)}
+                      className="px-3 py-2 rounded-lg text-sm"
+                      style={{
+                        background: on ? C.panelUp : "transparent",
+                        border: `1px solid ${on ? C.aegean : C.line}`,
+                        color: on ? C.marble : C.faint,
+                      }}
+                    >
+                      <span className="gk">{p.short}</span>
+                      <span
+                        className="ml-2 text-xs"
+                        style={{ color: gold === p.cells.length ? C.gold : C.faint }}
+                      >
+                        {gold}/{p.cells.length}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ---------- the ask banner ----------
+   Pinned directly above the chip tray so the instruction is always in view at
+   the moment of answering, and — during an assembly — showing which morpheme
+   is wanted next rather than only naming the cell. */
+function PromptBanner({ label, tableShort, twinMode, assembly, refusal }) {
+  const steps = assembly
+    ? assembly.expected.map((pc) => ROLE_SHORT[pc.role] ?? pc.role)
+    : null;
+  return (
+    <div
+      className="prompt-in w-full rounded-xl px-4 py-3 mb-3"
+      style={{ background: C.panel, border: `1px solid ${C.line}` }}
+    >
+      <div className="flex items-baseline gap-3 flex-wrap">
+        <span
+          className="px-2 py-0.5 rounded text-xs shrink-0"
+          style={{
+            background: assembly ? C.aegeanDeep : "transparent",
+            border: `1px solid ${C.aegean}`,
+            color: assembly ? "#fff" : C.aegean,
+            letterSpacing: "0.12em",
+          }}
+        >
+          {assembly ? "ASSEMBLE" : "BUILD"}
+        </span>
+        <span className="text-lg" style={{ color: C.marble }}>
+          {label}
+        </span>
+        {twinMode && tableShort && (
+          <span className="gk text-sm" style={{ color: C.aegean }}>
+            {tableShort}
+          </span>
+        )}
+      </div>
+
+      {steps && (
+        <div className="flex items-center gap-1.5 mt-2 flex-wrap">
+          {steps.map((s, i) => {
+            const done = i < assembly.progress;
+            const live = i === assembly.progress;
+            return (
+              <span key={i} className="flex items-center gap-1.5">
+                <span
+                  className={`px-2 py-0.5 rounded text-xs ${live ? "step-live" : ""}`}
+                  style={{
+                    border: `1px solid ${live ? C.aegean : done ? C.goldDeep : C.line}`,
+                    color: live ? C.aegean : done ? C.gold : C.faint,
+                    background: live ? "rgba(111,179,216,0.10)" : "transparent",
+                  }}
+                >
+                  {done ? "✓ " : ""}
+                  {s}
+                </span>
+                {i < steps.length - 1 && <span style={{ color: C.line }}>→</span>}
+              </span>
+            );
+          })}
+        </div>
+      )}
+
+      {refusal && (
+        <div className="mt-2 text-sm toast-in" style={{ color: C.wrong }}>
+          {refusal.msg}
         </div>
       )}
     </div>

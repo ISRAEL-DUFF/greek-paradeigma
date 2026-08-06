@@ -1,5 +1,6 @@
 {
   "unit": 13,
+  "title": "μι-verbs — the aorist system; ἵστημι's perfect",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -1139,6 +1140,1628 @@
             },
             {
               "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.didomi.aor.act.subj",
+      "kind": "verb",
+      "lemma": "δίδωμι",
+      "system": "aorist active subjunctive (athematic)",
+      "label": "δίδωμι — Aorist Active Subjunctive",
+      "short": "δῶ",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The present subjunctive minus the reduplication (§102 obs.): δῶμεν vs διδῶμεν.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "δῶ",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "δῶμεν",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ωμεν",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "δῷς",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ῃς",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οῃ",
+              "to": "ῷ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "δῶτε",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ητε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οη",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "δῷ",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οῃ",
+              "to": "ῷ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1,
+          "homographs": [
+            "verb.didomi.aor.mid.subj:2s"
+          ]
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "δῶσι(ν)",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ωσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.didomi.aor.mid.subj",
+      "kind": "verb",
+      "lemma": "δίδωμι",
+      "system": "aorist middle subjunctive (athematic)",
+      "label": "δίδωμι — Aorist Middle Subjunctive",
+      "short": "δῶμαι",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "*δόῃ gives δῷ, NOT δοῖ (§102.5).",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "δῶμαι",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ωμαι",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "δώμεθα",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ωμεθα",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οω",
+              "to": "ώ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "δῷ",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οῃ",
+              "to": "ῷ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1,
+          "homographs": [
+            "verb.didomi.aor.act.subj:3s"
+          ]
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "δῶσθε",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ησθε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οη",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "δῶται",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ηται",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οη",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "δῶνται",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ωνται",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "οω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.didomi.aor.act.opt",
+      "kind": "verb",
+      "lemma": "δίδωμι",
+      "system": "aorist active optative (athematic)",
+      "label": "δίδωμι — Aorist Active Optative",
+      "short": "δοίην",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Optative ι on the short stem; the accent never recedes past the ι. H&Q also lists plural alternates in -ίημεν/-ίητε/-ίησαν.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "δοίην",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "δοῖμεν",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "δοίης",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "δοῖτε",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "δοίη",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "δοῖεν",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "εν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.didomi.aor.mid.opt",
+      "kind": "verb",
+      "lemma": "δίδωμι",
+      "system": "aorist middle optative (athematic)",
+      "label": "δίδωμι — Aorist Middle Optative",
+      "short": "δοίμην",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Optative ι on the short stem; the accent never recedes past the ι. H&Q also lists plural alternates in -ίημεν/-ίητε/-ίησαν.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "δοίμην",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "δοίμεθα",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "δοῖο",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "δοῖσθε",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "δοῖτο",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "το",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "δοῖντο",
+          "pieces": [
+            {
+              "text": "δο",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.tithemi.aor.act.subj",
+      "kind": "verb",
+      "lemma": "τίθημι",
+      "system": "aorist active subjunctive (athematic)",
+      "label": "τίθημι — Aorist Active Subjunctive",
+      "short": "θῶ",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The present subjunctive minus the reduplication: θῶμεν vs τιθῶμεν.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "θῶ",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "θῶμεν",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ωμεν",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "θῇς",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ῃς",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εῃ",
+              "to": "ῇ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "θῆτε",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ητε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εη",
+              "to": "ῆ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "θῇ",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εῃ",
+              "to": "ῇ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1,
+          "homographs": [
+            "verb.tithemi.aor.mid.subj:2s"
+          ]
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "θῶσι(ν)",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ωσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.tithemi.aor.mid.subj",
+      "kind": "verb",
+      "lemma": "τίθημι",
+      "system": "aorist middle subjunctive (athematic)",
+      "label": "τίθημι — Aorist Middle Subjunctive",
+      "short": "θῶμαι",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Like the present M/P subjunctive without reduplication.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "θῶμαι",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ωμαι",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "θώμεθα",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ωμεθα",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εω",
+              "to": "ώ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "θῇ",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εῃ",
+              "to": "ῇ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1,
+          "homographs": [
+            "verb.tithemi.aor.act.subj:3s"
+          ]
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "θῆσθε",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ησθε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εη",
+              "to": "ῆ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "θῆται",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ηται",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εη",
+              "to": "ῆ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "θῶνται",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ωνται",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.tithemi.aor.act.opt",
+      "kind": "verb",
+      "lemma": "τίθημι",
+      "system": "aorist active optative (athematic)",
+      "label": "τίθημι — Aorist Active Optative",
+      "short": "θείην",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Optative ι on the short stem; the accent never recedes past the ι. H&Q also lists plural alternates in -ίημεν/-ίητε/-ίησαν.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "θείην",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "θεῖμεν",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "θείης",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "θεῖτε",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "θείη",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "θεῖεν",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "εν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.tithemi.aor.mid.opt",
+      "kind": "verb",
+      "lemma": "τίθημι",
+      "system": "aorist middle optative (athematic)",
+      "label": "τίθημι — Aorist Middle Optative",
+      "short": "θείμην",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Optative ι on the short stem; the accent never recedes past the ι. H&Q also lists plural alternates in -ίημεν/-ίητε/-ίησαν. Thematic alternates θοῖτο, θοίμεθα, θοῖσθε, θοῖντο also occur.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "θείμην",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "θείμεθα",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "θεῖο",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "θεῖσθε",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "θεῖτο",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "το",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "θεῖντο",
+          "pieces": [
+            {
+              "text": "θε",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.histemi.aor.act.subj",
+      "kind": "verb",
+      "lemma": "ἵστημι",
+      "system": "aorist active subjunctive (root aorist)",
+      "label": "ἵστημι — Aorist Active Subjunctive",
+      "short": "στῶ",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Stem στε- (as in the present subjunctive); ἔστην has no middle.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "στῶ",
+          "pieces": [
+            {
+              "text": "στε",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "στῶμεν",
+          "pieces": [
+            {
+              "text": "στε",
+              "role": "stem"
+            },
+            {
+              "text": "ωμεν",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "στῇς",
+          "pieces": [
+            {
+              "text": "στε",
+              "role": "stem"
+            },
+            {
+              "text": "ῃς",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εῃ",
+              "to": "ῇ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "στῆτε",
+          "pieces": [
+            {
+              "text": "στε",
+              "role": "stem"
+            },
+            {
+              "text": "ητε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εη",
+              "to": "ῆ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "στῇ",
+          "pieces": [
+            {
+              "text": "στε",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εῃ",
+              "to": "ῇ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "στῶσι(ν)",
+          "pieces": [
+            {
+              "text": "στε",
+              "role": "stem"
+            },
+            {
+              "text": "ωσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "εω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.histemi.aor.act.opt",
+      "kind": "verb",
+      "lemma": "ἵστημι",
+      "system": "aorist active optative (root aorist)",
+      "label": "ἵστημι — Aorist Active Optative",
+      "short": "σταίην",
+      "unitIntroduced": 13,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Optative ι on the short stem; the accent never recedes past the ι. H&Q also lists plural alternates in -ίημεν/-ίητε/-ίησαν.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "σταίην",
+          "pieces": [
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "σταῖμεν",
+          "pieces": [
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "σταίης",
+          "pieces": [
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "σταῖτε",
+          "pieces": [
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "σταίη",
+          "pieces": [
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "moodMarker"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 13,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "σταῖεν",
+          "pieces": [
+            {
+              "text": "στα",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "moodMarker"
+            },
+            {
+              "text": "εν",
               "role": "ending"
             }
           ],

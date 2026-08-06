@@ -1,10 +1,11 @@
 # Cross-check report — 2026-08-06
 
 Reference corpus: noun-declensions.html, paradigmsAdjectives.html, paradigmsVerbs1.html, paradigmsVerbs2.html, paradigmsVerbs3.html, pronoun.html, verb-conjugations.html (3293 distinct Greek tokens).
-Shipped forms: 466.
-- Attested exactly (accents included): 304
-- Attested via model-stem transposition (form skeleton only — ACCENTS UNCHECKED): 147
-- Not covered / for review: 15
+Shipped forms: 916.
+- Attested exactly (accents included): 480
+- Attested against book scans (book-attested.txt): 255
+- Attested via model-stem transposition (form skeleton only — ACCENTS UNCHECKED): 177
+- Not covered / for review: 4
 
 ## Review queue (not attested — human with the book decides)
 
@@ -13,23 +14,6 @@ Shipped forms: 466.
 - `ii` λείψω
 - `v` λέλειμμαι
 - `vi` ἐλείφθην
-
-### verb.histemi.perf.act.ind (unit 13) — 2 form(s)
-- `2s` ἕστηκας
-- `3s` ἕστηκε(ν)
-
-### verb.histemi.plup.act.ind (unit 13) — 3 form(s)
-- `1s` εἱστήκη
-- `2s` εἱστήκης
-- `3s` εἱστήκει(ν)
-
-### verb.hiemi.aor.act.ind (unit 18) — 6 form(s)
-- `1s` -ἧκα
-- `1p` -εἷμεν
-- `2s` -ἧκας
-- `2p` -εἷτε
-- `3s` -ἧκε(ν)
-- `3p` -εἷσαν
 
 ## Attested by transposition (accent check still needed)
 
@@ -45,6 +29,7 @@ Shipped forms: 466.
 - verb.luo.pres.act.subj: λύω, λύωμεν, λύῃς, λύητε, λύῃ, λύωσι(ν)
 - verb.luo.aor.act.subj: λύσω, λύσωμεν, λύσῃς, λύσητε, λύσῃ, λύσωσι(ν)
 - verb.luo.pres.act.opt: λύοιμι, λύοιμεν, λύοις, λύοιτε, λύοι, λύοιεν
+- verb.luo.aor.act.opt: λύσαιμι, λύσαιμεν, λύσαις, λύσαιτε, λύσαι, λύσαιεν
 - verb.luo.pres.mp.ind: λύομαι, λυόμεθα, λύῃ, λύεσθε, λύεται, λύονται
 - verb.luo.impf.mp.ind: ἐλυόμην, ἐλυόμεθα, ἐλύου, ἐλύεσθε, ἐλύετο, ἐλύοντο
 - verb.luo.aor.pass.ind: ἐλύθην, ἐλύθημεν, ἐλύθης, ἐλύθητε, ἐλύθη, ἐλύθησαν
@@ -56,6 +41,18 @@ Shipped forms: 466.
 - pp.leipo: ἔλιπον
 - verb.luo.fut.mid.ind: λύσομαι, λυσόμεθα, λύσῃ, λύσεσθε, λύσεται, λύσονται
 - verb.luo.aor1.mid.ind: ἐλυσάμην, ἐλυσάμεθα, ἐλύσω, ἐλύσασθε, ἐλύσατο, ἐλύσαντο
+- part.paideuo.pres.act.sg: παιδεύων, παιδεύουσα
+- part.paideuo.pres.act.pl: παιδευόντων, παιδευόντων, παιδεύουσι(ν), παιδεύουσι(ν)
+- part.paideuo.fut.act.sg: παιδεύσων, παιδεύσουσα
+- part.paideuo.fut.act.pl: παιδεύσουσι(ν), παιδεύσουσι(ν)
+- part.paideuo.aor1.act.sg: παιδεύσᾱς, παιδεύσᾱσα
+- part.paideuo.aor1.act.pl: παιδευσάντων, παιδευσάντων
+- part.paideuo.pres.mp.sg: παιδευόμενος
+- part.paideuo.aor.pass.sg: παιδευθείς, παιδευθεῖσα, παιδευθέν, παιδευθέν
+- part.paideuo.aor.pass.pl: παιδευθέντων, παιδευθέντων
+- part.paideuo.fut.mid.sg: παιδευσόμενος
+- part.paideuo.aor1.mid.sg: παιδευσάμενος
+- part.paideuo.fut.pass.sg: παιδευθησόμενος
 - verb.timao.pres.act.ind: τιμῶ, τιμῶμεν, τιμᾷς, τιμᾶτε, τιμᾷ, τιμῶσι(ν)
 
 _A paradigm with ALL its cells in the review queue is most likely simply not

@@ -22,6 +22,10 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR = join(HERE, "..", "src", "content");
 const RESOURCE_DIR = join(HERE, "..", "..", "resources");
 const REPORT = join(HERE, "..", "crosscheck-report.md");
+/* Forms verified directly against book scans in ../resources/books/ (one per
+   line, # comments). These count as book-attested — the book outranks the web
+   reference — but keep the list curated: every entry must name its scan. */
+const BOOK_ATTESTED = join(HERE, "..", "book-attested.txt");
 
 /* Comparison normalization: NFC, macrons/breves stripped (the app prints ᾱ per
    H&Q; the reference sometimes does not). Accents and breathings are NOT
@@ -111,9 +115,24 @@ const variantsOf = (form) => {
   );
 };
 
+let bookSet = new Set();
+try {
+  bookSet = new Set(
+    readFileSync(BOOK_ATTESTED, "utf-8")
+      .split("\n")
+      .map((l) => l.replace(/#.*/, "").trim())
+      .filter(Boolean)
+      .flatMap((f) => variantsOf(f))
+      .map((f) => normalize(f))
+  );
+} catch {
+  /* optional file */
+}
+
 let total = 0;
 let attested = 0;
 let transposed = 0;
+let bookAttested = 0;
 const missing = []; // {unit, paradigm, cell, form}
 const transposedList = []; // {unit, paradigm, cell, form}
 for (const f of unitFiles) {
@@ -124,6 +143,10 @@ for (const f of unitFiles) {
       const variants = variantsOf(c.form);
       if (variants.some((v) => inventory.has(normalize(v)))) {
         attested++;
+        continue;
+      }
+      if (variants.some((v) => bookSet.has(normalize(v)))) {
+        bookAttested++;
         continue;
       }
       const alts = variants.flatMap(transposedVariants);
@@ -149,6 +172,7 @@ const lines = [
   `Reference corpus: ${files.join(", ")} (${inventory.size} distinct Greek tokens).`,
   `Shipped forms: ${total}.`,
   `- Attested exactly (accents included): ${attested}`,
+  `- Attested against book scans (book-attested.txt): ${bookAttested}`,
   `- Attested via model-stem transposition (form skeleton only — ACCENTS UNCHECKED): ${transposed}`,
   `- Not covered / for review: ${missing.length}`,
   "",
@@ -181,6 +205,6 @@ lines.push(
 writeFileSync(REPORT, lines.join("\n"));
 
 console.log(
-  `Cross-check: ${attested} exact + ${transposed} transposed of ${total} forms; ${missing.length} queued for review.`
+  `Cross-check: ${attested} exact + ${bookAttested} book-scan + ${transposed} transposed of ${total} forms; ${missing.length} queued for review.`
 );
 console.log(`Report: ${REPORT}`);

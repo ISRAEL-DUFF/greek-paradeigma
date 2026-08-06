@@ -7,8 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "validate": "node scripts/validate-content.mjs",
-    "crosscheck": "node scripts/crosscheck.mjs"
+    "crosscheck": "node scripts/crosscheck.mjs",
+    "check": "npm run validate && npm run test"
   },
   "dependencies": {
     "dexie": "^4.0.11",
@@ -20,6 +23,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "tailwindcss": "^4.0.0",
     "vite": "^6.0.0",
-    "vite-plugin-pwa": "^0.21.0"
+    "vite-plugin-pwa": "^0.21.0",
+    "vitest": "^4.1.10"
   }
 }

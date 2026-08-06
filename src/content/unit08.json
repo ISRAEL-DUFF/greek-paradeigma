@@ -1,5 +1,7777 @@
 {
   "unit": 8,
+  "title": "Participles — every tense and voice, fully declined",
   "unitMappingVerified": true,
-  "paradigms": []
+  "paradigms": [
+    {
+      "id": "part.paideuo.pres.act.sg",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "present active participle, singular",
+      "label": "παιδεύων — Present Active Participle (sg.)",
+      "short": "παιδεύων sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Verbal adjective: -οντ- masculine/neuter (like γέρων), short-α feminine (like μοῦσα). Accent is persistent from παιδεύων.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδεύων",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδεύουσα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "ουσα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδεῦον",
+          "pieces": [
+            {
+              "text": "παιδεῦ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδεύοντος",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "οντος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευούσης",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ούσης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδεύοντος",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "οντος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδεύοντι",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "οντι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευούσῃ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ούσῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδεύοντι",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "οντι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδεύοντα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "οντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.pl:nn",
+            "part.paideuo.pres.act.pl:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδεύουσαν",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "ουσαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδεῦον",
+          "pieces": [
+            {
+              "text": "παιδεῦ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.pres.act.pl",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "present active participle, plural",
+      "label": "παιδεύων — Present Active Participle (pl.)",
+      "short": "παιδεύων pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Masculine/neuter dative plural παιδεύουσι(ν) is spelled exactly like a 3rd person plural verb — context decides (§66 obs. 3).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδεύοντες",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "οντες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδεύουσαι",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "ουσαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδεύοντα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "οντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.sg:am",
+            "part.paideuo.pres.act.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευόντων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "όντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευουσῶν",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ουσῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευόντων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "όντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδεύουσι(ν)",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευούσαις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ούσαις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδεύουσι(ν)",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδεύοντας",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "οντας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευούσᾱς",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ούσᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδεύοντα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "οντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.act.sg:am",
+            "part.paideuo.pres.act.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.fut.act.sg",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "future active participle, singular",
+      "label": "παιδεύσων — Future Active Participle (sg.)",
+      "short": "παιδεύσων sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The present participle's endings on the future stem: 'about to / intending to educate'.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδεύσων",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδεύσουσα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ουσα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδεῦσον",
+          "pieces": [
+            {
+              "text": "παιδεῦ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδεύσοντος",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οντος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευσούσης",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ούσης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδεύσοντος",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οντος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδεύσοντι",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οντι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευσούσῃ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ούσῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδεύσοντι",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οντι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδεύσοντα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.pl:nn",
+            "part.paideuo.fut.act.pl:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδεύσουσαν",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ουσαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδεῦσον",
+          "pieces": [
+            {
+              "text": "παιδεῦ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.fut.act.pl",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "future active participle, plural",
+      "label": "παιδεύσων — Future Active Participle (pl.)",
+      "short": "παιδεύσων pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Dative plural παιδεύσουσι(ν) spells the same as the future indicative 3rd plural — context decides.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδεύσοντες",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οντες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδεύσουσαι",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ουσαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδεύσοντα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.sg:am",
+            "part.paideuo.fut.act.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευσόντων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "όντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευσουσῶν",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ουσῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευσόντων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "όντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδεύσουσι(ν)",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευσούσαις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ούσαις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδεύσουσι(ν)",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδεύσοντας",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οντας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευσούσᾱς",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ούσᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδεύσοντα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.act.sg:am",
+            "part.paideuo.fut.act.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.aor1.act.sg",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "first aorist active participle, singular",
+      "label": "παιδεύσᾱς — First Aorist Active Participle (sg.)",
+      "short": "παιδεύσᾱς sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Tense vowel -α- instead of the theme vowel: -σαντ- masculine/neuter, -σᾱσα feminine. No augment.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδεύσᾱς",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδεύσᾱσα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ᾱσα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδεῦσαν",
+          "pieces": [
+            {
+              "text": "παιδεῦ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδεύσαντος",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αντος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευσάσης",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άσης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδεύσαντος",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αντος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδεύσαντι",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αντι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευσάσῃ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άσῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδεύσαντι",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αντι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδεύσαντα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.pl:nn",
+            "part.paideuo.aor1.act.pl:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδεύσᾱσαν",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ᾱσαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδεῦσαν",
+          "pieces": [
+            {
+              "text": "παιδεῦ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.aor1.act.pl",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "first aorist active participle, plural",
+      "label": "παιδεύσᾱς — First Aorist Active Participle (pl.)",
+      "short": "παιδεύσᾱς pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Masculine/neuter dative plural: -αντσι(ν) → -ᾱσι(ν) (§48 sound change).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδεύσαντες",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αντες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδεύσᾱσαι",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ᾱσαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδεύσαντα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.sg:am",
+            "part.paideuo.aor1.act.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευσάντων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευσᾱσῶν",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ᾱσῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευσάντων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδεύσᾱσι(ν)",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ᾱσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευσάσαις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άσαις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδεύσᾱσι(ν)",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ᾱσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδεύσαντας",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αντας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευσάσᾱς",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άσᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδεύσαντα",
+          "pieces": [
+            {
+              "text": "παιδεύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.act.sg:am",
+            "part.paideuo.aor1.act.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.leipo.aor2.act.sg",
+      "kind": "participle",
+      "lemma": "λείπω",
+      "system": "second aorist active participle, singular",
+      "label": "λιπών — Second Aorist Active Participle (sg.)",
+      "short": "λιπών sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The present participle's shape on the bare aorist stem λιπ-, with the accent thrown onto the endings.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "λιπών",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ών",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "λιποῦσα",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦσα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "λιπόν",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "λιπόντος",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "λιπούσης",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ούσης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "λιπόντος",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "λιπόντι",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "λιπούσῃ",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ούσῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "λιπόντι",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "λιπόντα",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.pl:nn",
+            "part.leipo.aor2.act.pl:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "λιποῦσαν",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦσαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "λιπόν",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.leipo.aor2.act.pl",
+      "kind": "participle",
+      "lemma": "λείπω",
+      "system": "second aorist active participle, plural",
+      "label": "λιπών — Second Aorist Active Participle (pl.)",
+      "short": "λιπών pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Feminine genitive plural λιπουσῶν takes the circumflex ultima, like all short-α feminines.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "λιπόντες",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "λιποῦσαι",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦσαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "λιπόντα",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.sg:am",
+            "part.leipo.aor2.act.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "λιπόντων",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "λιπουσῶν",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ουσῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "λιπόντων",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "λιποῦσι(ν)",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "λιπούσαις",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ούσαις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "λιποῦσι(ν)",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "λιπόντας",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "λιπούσᾱς",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ούσᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "λιπόντα",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "όντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.act.sg:am",
+            "part.leipo.aor2.act.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.perf.act.sg",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "perfect active participle, singular",
+      "label": "πεπαιδευκώς — Perfect Active Participle (sg.)",
+      "short": "πεπαιδευκώς sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Declension stem -οτ- with NO ν; feminine -υῖα like γέφῡρα. 'Having (completed) educated.'",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "πεπαιδευκώς",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ώς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "πεπαιδευκυῖα",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "υῖα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "πεπαιδευκός",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "πεπαιδευκότος",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "πεπαιδευκυίᾱς",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "υίᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.pl:af"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "πεπαιδευκότος",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "πεπαιδευκότι",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "πεπαιδευκυίᾳ",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "υίᾳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "πεπαιδευκότι",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "πεπαιδευκότα",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.pl:nn",
+            "part.paideuo.perf.act.pl:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "πεπαιδευκυῖαν",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "υῖαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "πεπαιδευκός",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.perf.act.pl",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "perfect active participle, plural",
+      "label": "πεπαιδευκώς — Perfect Active Participle (pl.)",
+      "short": "πεπαιδευκώς pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Masculine/neuter dative plural -οτσι → -οσι (§48); feminine genitive singular and accusative plural are homographs (-υίᾱς).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "πεπαιδευκότες",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "πεπαιδευκυῖαι",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "υῖαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "πεπαιδευκότα",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.sg:am",
+            "part.paideuo.perf.act.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "πεπαιδευκότων",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "πεπαιδευκυιῶν",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "υιῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "πεπαιδευκότων",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "πεπαιδευκόσι(ν)",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "όσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "πεπαιδευκυίαις",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "υίαις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "πεπαιδευκόσι(ν)",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "όσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "πεπαιδευκότας",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "πεπαιδευκυίᾱς",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "υίᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.sg:gf"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "πεπαιδευκότα",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ότα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.perf.act.sg:am",
+            "part.paideuo.perf.act.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.pres.mp.sg",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "present middle/passive participle, singular",
+      "label": "παιδευόμενος — Present M/P Participle (sg.)",
+      "short": "παιδευόμενος sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Theme vowel + -μενος, declined like a 2-1-2 adjective; masculine accusative and both neuter Nom/Acc are one form.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδευόμενος",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδευομένη",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένη",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδευόμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.sg:am",
+            "part.paideuo.pres.mp.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευομένου",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευομένης",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευομένου",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδευομένῳ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευομένῃ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδευομένῳ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδευόμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.sg:nn",
+            "part.paideuo.pres.mp.sg:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευομένην",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδευόμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.sg:nn",
+            "part.paideuo.pres.mp.sg:am"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.pres.mp.pl",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "present middle/passive participle, plural",
+      "label": "παιδευόμενος — Present M/P Participle (pl.)",
+      "short": "παιδευόμενος pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Genitive plural παιδευομένων is one form for all three genders; the feminine keeps its acute (no circumflex ultima — §67 obs.).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδευόμενοι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενοι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδευόμεναι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μεναι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδευόμενα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευομένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.pl:gf",
+            "part.paideuo.pres.mp.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευομένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.pl:gm",
+            "part.paideuo.pres.mp.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευομένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.pl:gm",
+            "part.paideuo.pres.mp.pl:gf"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδευομένοις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευομέναις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μέναις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδευομένοις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδευομένους",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευομένᾱς",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδευόμενα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.pres.mp.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.aor.pass.sg",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "aorist passive participle, singular",
+      "label": "παιδευθείς — Aorist Passive Participle (sg.)",
+      "short": "παιδευθείς sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Principal Part VI's θ + -εντ-/-εισα: every verb forms this the same way (λειφθείς, λειφθεῖσα, λειφθέν).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδευθείς",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "είς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδευθεῖσα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εῖσα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδευθέν",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευθέντος",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευθείσης",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "είσης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευθέντος",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδευθέντι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευθείσῃ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "είσῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδευθέντι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδευθέντα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.pl:nn",
+            "part.paideuo.aor.pass.pl:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευθεῖσαν",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εῖσαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδευθέν",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.aor.pass.pl",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "aorist passive participle, plural",
+      "label": "παιδευθείς — Aorist Passive Participle (pl.)",
+      "short": "παιδευθείς pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Masculine/neuter dative plural -εντσι → -εισι (§48): παιδευθεῖσι(ν).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδευθέντες",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδευθεῖσαι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εῖσαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδευθέντα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.sg:am",
+            "part.paideuo.aor.pass.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευθέντων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευθεισῶν",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εισῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευθέντων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδευθεῖσι(ν)",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εῖσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευθείσαις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "είσαις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδευθεῖσι(ν)",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εῖσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδευθέντας",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευθείσᾱς",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "είσᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδευθέντα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έντα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor.pass.sg:am",
+            "part.paideuo.aor.pass.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.fut.mid.sg",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "Future Middle Participle, singular",
+      "label": "παιδευσόμενος — Future Middle Participle (sg.)",
+      "short": "παιδευσόμενος sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "'About to educate for oneself.' Declines exactly like παιδευόμενος (§67).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδευσόμενος",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδευσομένη",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένη",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδευσόμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.sg:am",
+            "part.paideuo.fut.mid.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευσομένου",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευσομένης",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευσομένου",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδευσομένῳ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευσομένῃ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδευσομένῳ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδευσόμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.sg:nn",
+            "part.paideuo.fut.mid.sg:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευσομένην",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδευσόμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.sg:nn",
+            "part.paideuo.fut.mid.sg:am"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.fut.mid.pl",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "Future Middle Participle, plural",
+      "label": "παιδευσόμενος — Future Middle Participle (pl.)",
+      "short": "παιδευσόμενος pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Declines exactly like παιδευόμενος (§67).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδευσόμενοι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενοι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδευσόμεναι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μεναι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδευσόμενα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευσομένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.pl:gf",
+            "part.paideuo.fut.mid.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευσομένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.pl:gm",
+            "part.paideuo.fut.mid.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευσομένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.pl:gm",
+            "part.paideuo.fut.mid.pl:gf"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδευσομένοις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευσομέναις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μέναις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδευσομένοις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδευσομένους",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευσομένᾱς",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδευσόμενα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.mid.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.aor1.mid.sg",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "First Aorist Middle Participle, singular",
+      "label": "παιδευσάμενος — First Aorist Middle Participle (sg.)",
+      "short": "παιδευσάμενος sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Tense vowel -α- instead of the theme vowel; otherwise like παιδευόμενος. No augment.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδευσάμενος",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ά",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδευσαμένη",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένη",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδευσάμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ά",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.sg:am",
+            "part.paideuo.aor1.mid.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευσαμένου",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευσαμένης",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευσαμένου",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδευσαμένῳ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευσαμένῃ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδευσαμένῳ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδευσάμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ά",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.sg:nn",
+            "part.paideuo.aor1.mid.sg:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευσαμένην",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδευσάμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ά",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.sg:nn",
+            "part.paideuo.aor1.mid.sg:am"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.aor1.mid.pl",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "First Aorist Middle Participle, plural",
+      "label": "παιδευσάμενος — First Aorist Middle Participle (pl.)",
+      "short": "παιδευσάμενος pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Declines exactly like παιδευόμενος (§67).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδευσάμενοι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ά",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενοι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδευσάμεναι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ά",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μεναι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδευσάμενα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ά",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευσαμένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.pl:gf",
+            "part.paideuo.aor1.mid.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευσαμένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.pl:gm",
+            "part.paideuo.aor1.mid.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευσαμένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.pl:gm",
+            "part.paideuo.aor1.mid.pl:gf"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδευσαμένοις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευσαμέναις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μέναις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδευσαμένοις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδευσαμένους",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευσαμένᾱς",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "α",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδευσάμενα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ά",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.aor1.mid.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.leipo.aor2.mid.sg",
+      "kind": "participle",
+      "lemma": "λείπω",
+      "system": "Second Aorist Middle Participle, singular",
+      "label": "λιπόμενος — Second Aorist Middle Participle (sg.)",
+      "short": "λιπόμενος sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The bare aorist stem λιπ- with the παιδευόμενος endings.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "λιπόμενος",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "λιπομένη",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένη",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "λιπόμενον",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.sg:am",
+            "part.leipo.aor2.mid.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "λιπομένου",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "λιπομένης",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "λιπομένου",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "λιπομένῳ",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "λιπομένῃ",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "λιπομένῳ",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "λιπόμενον",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.sg:nn",
+            "part.leipo.aor2.mid.sg:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "λιπομένην",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "λιπόμενον",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.sg:nn",
+            "part.leipo.aor2.mid.sg:am"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.leipo.aor2.mid.pl",
+      "kind": "participle",
+      "lemma": "λείπω",
+      "system": "Second Aorist Middle Participle, plural",
+      "label": "λιπόμενος — Second Aorist Middle Participle (pl.)",
+      "short": "λιπόμενος pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Declines exactly like παιδευόμενος (§67).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "λιπόμενοι",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενοι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "λιπόμεναι",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μεναι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "λιπόμενα",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "λιπομένων",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.pl:gf",
+            "part.leipo.aor2.mid.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "λιπομένων",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.pl:gm",
+            "part.leipo.aor2.mid.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "λιπομένων",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.pl:gm",
+            "part.leipo.aor2.mid.pl:gf"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "λιπομένοις",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "λιπομέναις",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μέναις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "λιπομένοις",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "λιπομένους",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "λιπομένᾱς",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "λιπόμενα",
+          "pieces": [
+            {
+              "text": "λιπ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.leipo.aor2.mid.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.perf.mp.sg",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "Perfect Middle/Passive Participle, singular",
+      "label": "πεπαιδευμένος — Perfect Middle/Passive Participle (sg.)",
+      "short": "πεπαιδευμένος sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "-μένος straight on the reduplicated stem, and the accent NEVER leaves -μέν-: the perfect participle's signature.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "πεπαιδευμένος",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "πεπαιδευμένη",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένη",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "πεπαιδευμένον",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.sg:am",
+            "part.paideuo.perf.mp.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "πεπαιδευμένου",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "πεπαιδευμένης",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "πεπαιδευμένου",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "πεπαιδευμένῳ",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "πεπαιδευμένῃ",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "πεπαιδευμένῳ",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "πεπαιδευμένον",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.sg:nn",
+            "part.paideuo.perf.mp.sg:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "πεπαιδευμένην",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "πεπαιδευμένον",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.sg:nn",
+            "part.paideuo.perf.mp.sg:am"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.perf.mp.pl",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "Perfect Middle/Passive Participle, plural",
+      "label": "πεπαιδευμένος — Perfect Middle/Passive Participle (pl.)",
+      "short": "πεπαιδευμένος pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Accent fixed on -μέν- in every cell.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "πεπαιδευμένοι",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένοι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "πεπαιδευμέναι",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μέναι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "πεπαιδευμένα",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "πεπαιδευμένων",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.pl:gf",
+            "part.paideuo.perf.mp.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "πεπαιδευμένων",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.pl:gm",
+            "part.paideuo.perf.mp.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "πεπαιδευμένων",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.pl:gm",
+            "part.paideuo.perf.mp.pl:gf"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "πεπαιδευμένοις",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "πεπαιδευμέναις",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μέναις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "πεπαιδευμένοις",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "πεπαιδευμένους",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "πεπαιδευμένᾱς",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "πεπαιδευμένα",
+          "pieces": [
+            {
+              "text": "πε",
+              "role": "redup"
+            },
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "μένα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "part.paideuo.perf.mp.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.fut.pass.sg",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "Future Passive Participle, singular",
+      "label": "παιδευθησόμενος — Future Passive Participle (sg.)",
+      "short": "παιδευθησόμενος sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Principal Part VI's θη + future σ + -μενος: 'about to be educated'.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδευθησόμενος",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδευθησομένη",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένη",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδευθησόμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.sg:am",
+            "part.paideuo.fut.pass.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευθησομένου",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευθησομένης",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευθησομένου",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδευθησομένῳ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευθησομένῃ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδευθησομένῳ",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδευθησόμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.sg:nn",
+            "part.paideuo.fut.pass.sg:an"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευθησομένην",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδευθησόμενον",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.sg:nn",
+            "part.paideuo.fut.pass.sg:am"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "part.paideuo.fut.pass.pl",
+      "kind": "participle",
+      "lemma": "παιδεύω",
+      "system": "Future Passive Participle, plural",
+      "label": "παιδευθησόμενος — Future Passive Participle (pl.)",
+      "short": "παιδευθησόμενος pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Declines exactly like παιδευόμενος (§67).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "παιδευθησόμενοι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενοι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "παιδευθησόμεναι",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μεναι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "παιδευθησόμενα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παιδευθησομένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.pl:gf",
+            "part.paideuo.fut.pass.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "παιδευθησομένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.pl:gm",
+            "part.paideuo.fut.pass.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παιδευθησομένων",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.pl:gm",
+            "part.paideuo.fut.pass.pl:gf"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παιδευθησομένοις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "παιδευθησομέναις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μέναις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παιδευθησομένοις",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένοις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "παιδευθησομένους",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "παιδευθησομένᾱς",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ο",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μένᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "παιδευθησόμενα",
+          "pieces": [
+            {
+              "text": "παιδευ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ό",
+              "role": "themeVowel"
+            },
+            {
+              "text": "μενα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 2,
+          "homographs": [
+            "part.paideuo.fut.pass.pl:nn"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -48,6 +48,12 @@ export function paradigmsIntroducedAt(unit) {
   return ALL_PARADIGMS.filter((p) => p.unitIntroduced === unit);
 }
 
+/** Plain-English topic for a unit — what a player who is not following the
+ *  book should expect to find there. Lives in the content files, not the UI. */
+export function unitTitle(unit) {
+  return UNITS.find((u) => u.unit === unit)?.title ?? "";
+}
+
 export const SHIPPED_UNITS = UNITS.map((u) => u.unit);
 export const MAX_SHIPPED_UNIT = Math.max(...SHIPPED_UNITS);
 

@@ -1,5 +1,45 @@
 # corrections.md — morphological QA log
 
+## 2026-08-06 — PATTERN-COPY PARTICIPLES + μι-VERB MOODS
+
+Founder-approved batch, no new scans needed. (1) Unit 8 gains the five
+remaining -μενος participles as sg+pl pairs (120 cells): παιδευσόμενος,
+παιδευσάμενος, λιπόμενος, πεπαιδευμένος (fixed -μέν- accent), and
+παιδευθησόμενος — obliques pattern-derived per §67's explicit "declined just
+like" license, so they live in book-attested.txt under that label rather than
+claiming letter-level scan verification. (2) Units 12/13/18 gain 26
+subjunctive/optative tables for δίδωμι/τίθημι/ἵστημι/ἵημι from the scans
+already in resources/books/: subjunctives carry real contraction sandhi
+(διδο+ῃς with οῃ→ῷ — the book's "NOT οι" warning is now drillable), optatives
+use the ί/ῖ moodMarker piece, the subjunctive stem ἱστε-/στε- follows §100
+obs. 2, and the act-3s = M/P-2s identities (διδῷ, τιθῇ, ἱστῇ, ἱῇ, δῷ, θῇ) are
+homograph-linked. Alternates (-ίημεν plurals, θοῖτο family) noted, not
+modeled. Mastronarde corroborated the mood tables almost entirely (only
+δώμεθα, δοῖτε, σταῖμεν, σταῖτε needed the U13 scan). 916 cells total;
+crosscheck 912/916; queue = pp.λείπω only. ἵημι aorist subjunctive/optative
+(compound-hyphenated in §136) remain unauthored — poor chip material; revisit
+if the founder wants them.
+
+## 2026-08-06 — U3 AORIST OPTATIVE + U8 PARTICIPLES FROM SCANS
+
+From `HQ-U3.pdf` (§28–34) and `HQ-U8.pdf` (§65–67): Unit 3 gains the aorist
+active optative (λύσαιμι — the ToC-flagged gap; H&Q's -ειας/-ειε(ν)/-ειαν
+alternates noted, not modeled). Unit 8 (previously empty) gains 14 tables /
+168 cells: the seven fully-declined participles as sg+pl pairs — παιδεύων,
+παιδεύσων, παιδεύσᾱς, λιπών, πεπαιδευκώς, παιδευόμενος, παιδευθείς — with 94
+homograph cells auto-linked (all the book's M/N identities, the M-acc-sg =
+N-nom/acc-pl three-ways, gen-sg = acc-pl in the perfect feminine, and the
+gen-pl three-way in -μενος). Vocatives omitted per app convention (= Nom for
+participles, §66 obs. 2; παιδευόμενε noted only). The U3 scan also CONFIRMS
+two authored choices: pluperfect -η/-ης/-ει(ν) (item 5 resolved) and perfect
+3rd-pl -κᾱσι(ν) (item 7's macron). Crosscheck gained a third tier:
+`book-attested.txt` lists forms verified only against scans (134 entries,
+each naming its source PDF) — the web reference declines just λιπών in full.
+STILL UNAUTHORED from U8: future middle, aorist middle, perfect M/P, and
+future passive participles (nom/gen rows given in the book; all decline
+exactly like παιδευόμενος — pattern-copies pending founder preference),
+and πᾶς (§71, page not yet scanned).
+
 ## 2026-08-06 — μι-VERB INDICATIVES COMPLETED FROM U12/U13 SCANS
 
 From `resources/books/HQ-U12.pdf` and `HQ-U13.pdf` (§100, §102), 13 new tables

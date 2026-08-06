@@ -39,6 +39,8 @@ const paradigmIds = new Set();
 
 for (const { file, data } of units) {
   if (!Number.isInteger(data.unit)) err(file, "missing integer `unit`");
+  if (!data.title || !data.title.trim())
+    err(file, "missing `title` — the plain-English topic shown in the picker");
   for (const p of data.paradigms ?? []) {
     const where = `${file} → ${p.id}`;
     if (paradigmIds.has(p.id)) err(where, "duplicate paradigm id");

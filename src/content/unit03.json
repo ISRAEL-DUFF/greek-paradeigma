@@ -1,5 +1,6 @@
 {
   "unit": 3,
+  "title": "Perfect and pluperfect; the subjunctive and optative",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -840,6 +841,185 @@
           ],
           "unitMax": 3,
           "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.aor.act.opt",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "aorist active optative",
+      "label": "λύω — Aorist Active Optative",
+      "short": "Aor Opt",
+      "unitIntroduced": 3,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The -αι- diphthong (tense vowel α + optative ι) runs the table; H&Q also lists alternates λύσειας, λύσειε(ν), λύσειαν. Final -αι counts long here, and no augment outside the indicative.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λύσαιμι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λύσαιμεν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λύσαις",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λύσαιτε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λύσαι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λύσαιεν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αι",
+              "role": "moodMarker"
+            },
+            {
+              "text": "εν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 1
         }
       ]
     }
