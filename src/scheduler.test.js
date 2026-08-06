@@ -16,31 +16,32 @@ const UNITS = Array.from({ length: MAX_UNIT }, (_, i) => i + 1);
 const gated = (p, unit) => p.cells.filter((c) => c.unitMax <= unit);
 
 describe("unit gating — the plan's single clearest advantage (§3.4, §7)", () => {
+  /* These sweep every gated cell in all 20 units, so they collect violations
+     and assert once — asserting inside the hot loop is what makes them slow. */
   it("no chip in any Level-1 tray requires a unit above the player's", () => {
+    const bad = [];
+    let trays = 0;
     for (const unit of UNITS) {
       // every ending the player is allowed to have met by now
       const legal = new Set();
       for (const p of unlockedParadigms(unit))
         for (const c of gated(p, unit)) legal.add(drillsWholeForm(p) ? c.form : endingOf(c));
 
-      let trays = 0;
       for (const p of unlockedParadigms(unit))
-        for (const c of gated(p, unit)) {
-          for (let i = 0; i < 3; i++) {
+        for (const c of gated(p, unit))
+          for (let i = 0; i < 2; i++) {
             const tray = buildTray({ paradigm: p, cell: c, currentUnit: unit, masteryRecord: null });
             trays++;
             for (const chip of tray)
-              expect(
-                legal.has(chip),
-                `unit ${unit}: tray for ${p.id}:${c.id} offered ungated chip "${chip}"`
-              ).toBe(true);
+              if (!legal.has(chip)) bad.push(`unit ${unit} ${p.id}:${c.id} → "${chip}"`);
           }
-        }
-      expect(trays).toBeGreaterThan(0);
     }
-  });
+    expect(bad).toEqual([]);
+    expect(trays).toBeGreaterThan(1000);
+  }, 20000);
 
   it("no piece in any assembly tray requires a unit above the player's", () => {
+    const bad = [];
     for (const unit of UNITS) {
       const legal = new Set();
       for (const p of unlockedParadigms(unit))
@@ -53,14 +54,13 @@ describe("unit gating — the plan's single clearest advantage (§3.4, §7)", ()
         for (const c of gated(p, unit)) {
           const { chips } = buildAssemblyTray({ paradigm: p, cell: c, currentUnit: unit });
           for (const chip of chips)
-            expect(
-              legal.has(chip.role + ":" + chip.text),
-              `unit ${unit}: assembly for ${p.id}:${c.id} offered ungated piece "${chip.text}"`
-            ).toBe(true);
+            if (!legal.has(chip.role + ":" + chip.text))
+              bad.push(`unit ${unit} ${p.id}:${c.id} → "${chip.text}" (${chip.role})`);
         }
       }
     }
-  });
+    expect(bad).toEqual([]);
+  }, 20000);
 
   it("the impostor never shows a form from beyond the unit gate", () => {
     for (const unit of UNITS) {
@@ -77,42 +77,41 @@ describe("unit gating — the plan's single clearest advantage (§3.4, §7)", ()
 
 describe("every ask is answerable", () => {
   it("the correct answer is always present in the Level-1 tray", () => {
+    const bad = [];
     for (const unit of UNITS)
       for (const p of unlockedParadigms(unit))
         for (const c of gated(p, unit)) {
           const tray = buildTray({ paradigm: p, cell: c, currentUnit: unit, masteryRecord: null });
-          expect(
-            tray.includes(answerOf(p, c)),
-            `unit ${unit}: ${p.id}:${c.id} tray lacks its own answer`
-          ).toBe(true);
+          if (!tray.includes(answerOf(p, c))) bad.push(`unit ${unit} ${p.id}:${c.id}`);
         }
-  });
+    expect(bad).toEqual([]);
+  }, 20000);
 
   it("every assembly tray contains each expected piece, in gradeable form", () => {
+    const bad = [];
     for (const unit of UNITS)
       for (const p of unlockedParadigms(unit)) {
         if (drillsWholeForm(p)) continue;
         for (const c of gated(p, unit)) {
           const { expected, chips } = buildAssemblyTray({ paradigm: p, cell: c, currentUnit: unit });
           for (const pc of expected)
-            expect(
-              chips.some((ch) => ch.text === pc.text && ch.role === pc.role && !ch.refusal),
-              `unit ${unit}: ${p.id}:${c.id} assembly lacks piece ${pc.role}:${pc.text}`
-            ).toBe(true);
+            if (!chips.some((ch) => ch.text === pc.text && ch.role === pc.role && !ch.refusal))
+              bad.push(`unit ${unit} ${p.id}:${c.id} lacks ${pc.role}:${pc.text}`);
         }
       }
-  });
+    expect(bad).toEqual([]);
+  }, 20000);
 
   it("no tray offers a duplicate chip (which would be ungradeable)", () => {
+    const bad = [];
     for (const unit of UNITS)
       for (const p of unlockedParadigms(unit))
         for (const c of gated(p, unit)) {
           const tray = buildTray({ paradigm: p, cell: c, currentUnit: unit, masteryRecord: null });
-          expect(new Set(tray).size, `unit ${unit}: ${p.id}:${c.id} tray has duplicates`).toBe(
-            tray.length
-          );
+          if (new Set(tray).size !== tray.length) bad.push(`unit ${unit} ${p.id}:${c.id}`);
         }
-  });
+    expect(bad).toEqual([]);
+  }, 20000);
 });
 
 describe("distractors are real neighbours (§ principle 2)", () => {

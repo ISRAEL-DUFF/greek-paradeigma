@@ -1,6 +1,8 @@
-/* Answer grading — kept pure and free of React so it can be tested directly.
-   This is the code path that decides whether a tap costs the player a mastery
-   level, so it is the part of the app that most needs to be verifiable. */
+/* Answer grading and round composition — kept pure and free of React so they
+   can be tested directly. This is the code path that decides whether a tap
+   costs the player a mastery level, and which cells a round asks about, so it
+   is the part of the app that most needs to be verifiable. */
+import { GOLD_AT } from "./theme.js";
 
 /** How each morpheme role is named when we teach ordering. */
 export const ROLE_LABEL = {
@@ -70,6 +72,85 @@ export function gradeAssemblyTap({ expected, progress, chip }) {
   }
 
   return { verdict: "wrong" };
+}
+
+/**
+ * Which cells a Fill / Twin round should blank.
+ *
+ * Normally only the cells below gold blank, and gilded ones stay on screen as
+ * scaffolding. But a table whose cells are ALL gold would otherwise produce an
+ * empty round — the board would sit at "complete" and "Run it again" would do
+ * nothing, leaving a mastered table permanently undrillable. So when there is
+ * nothing weak left the round becomes a DEFENCE round: everything blanks, and
+ * gold has to be earned again. Gold must be defended.
+ */
+export function roundBlanks({ cells, levelOf, goldAt = GOLD_AT }) {
+  const weak = cells.filter((c) => levelOf(c) < goldAt);
+  return weak.length > 0
+    ? { cells: weak, isDefence: false }
+    : { cells, isDefence: cells.length > 0 };
+}
+
+/* ================= Scramble (rebuild the table) ================= */
+
+/**
+ * Build the tile set for a Scramble round: one tile per cell, shuffled, with
+ * the table left empty. A table containing a homograph therefore puts two
+ * identical tiles in the bank — which is honest, and tells the player that an
+ * ambiguity is coming.
+ */
+export function scrambleTiles(cells, shuffle) {
+  return shuffle(cells.map((c, i) => ({ id: `t${i}`, form: c.form })));
+}
+
+/**
+ * Move a tile between the bank and the table.
+ * `from` / `to` are {type:"bank"} or {type:"cell", cellId}. Dropping onto an
+ * occupied cell displaces its occupant back to the bank rather than destroying
+ * it, so a mis-drop can never lose a form.
+ */
+export function moveTile({ placed, bank, tile, from, to }) {
+  const nextPlaced = { ...placed };
+  let nextBank = bank.filter((t) => t.id !== tile.id);
+
+  if (from.type === "cell") delete nextPlaced[from.cellId];
+
+  if (to.type === "cell") {
+    const occupant = nextPlaced[to.cellId];
+    if (occupant && occupant.id !== tile.id) nextBank = [...nextBank, occupant];
+    nextPlaced[to.cellId] = tile;
+  } else {
+    nextBank = [...nextBank, tile];
+  }
+  return { placed: nextPlaced, bank: nextBank };
+}
+
+/**
+ * Judge a Scramble arrangement.
+ *
+ * Correctness is decided by comparing the FORM sitting in each cell against
+ * that cell's own form — never by tracking which tile went where. That is what
+ * makes homographs work: with ἔλυον in both 1st singular and 3rd plural, either
+ * tile satisfies either cell, exactly as the language does.
+ */
+export function gradeScramble({ cells, placed }) {
+  const correctCells = [];
+  const wrongCells = [];
+  let remaining = 0;
+
+  for (const c of cells) {
+    const tile = placed[c.id];
+    if (!tile) remaining++;
+    else if (tile.form === c.form) correctCells.push(c.id);
+    else wrongCells.push(c.id);
+  }
+  return {
+    complete: remaining === 0,
+    remaining,
+    correctCells,
+    wrongCells,
+    allCorrect: remaining === 0 && wrongCells.length === 0,
+  };
 }
 
 /** Grade one tap in a Level-1 (single-chip) ask. */

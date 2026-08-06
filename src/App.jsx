@@ -19,6 +19,7 @@ import {
   setMeta,
 } from "./db.js";
 import {
+  shuffle,
   buildTray,
   buildAssemblyTray,
   pickSnipe,
@@ -36,7 +37,15 @@ import {
   applyAccent,
   ACCENT_CYCLE,
 } from "./accent.js";
-import { gradeAssemblyTap, askLevelFor, ROLE_SHORT } from "./grading.js";
+import {
+  gradeAssemblyTap,
+  askLevelFor,
+  roundBlanks,
+  scrambleTiles,
+  moveTile,
+  gradeScramble,
+  ROLE_SHORT,
+} from "./grading.js";
 
 const CASE_NAMES = {
   Nom: "nominative",
@@ -59,6 +68,8 @@ const PART_DESC = {
 const ASSEMBLY_MS_PER_PIECE = 1000;
 /* M7: the row race clock. Pure chant-memory training under pressure. */
 const RACE_MS = 60000;
+/* Scramble: time allowed per cell before the ταχύς bonus lapses. */
+const SCRAMBLE_MS_PER_CELL = 3000;
 
 function labelFor(paradigm, cell) {
   const row = paradigm.layout.rowLabels[cell.r];
@@ -91,6 +102,9 @@ export default function App() {
   const [twinIds, setTwinIds] = useState(null); // [pidA, pidB]
   const [accentStage, setAccentStage] = useState(null); // {pid, cid, key, form, segments, choices, result}
   const [race, setRace] = useState(null); // {startAt, deadline, now, finished, timeMs, bestMs, isRecord}
+  const [scramble, setScramble] = useState(null); // {bank, placed, startAt, result}
+  const [drag, setDrag] = useState(null); // {tile, from, x, y}
+  const dragRef = useRef(null);
   const [syllabus, setSyllabus] = useState(null); // {classUnit, lead}
   const [streak, setStreak] = useState(0);
   const [fastFlash, setFastFlash] = useState(false);
@@ -159,19 +173,22 @@ export default function App() {
     if (!paradigm) return new Set();
     if (mode === "fill") {
       if (phase === "study" || phase === "decaying") return new Set();
-      return new Set(
-        paradigm.cells
-          .filter((c) => getM(paradigm.id, c.id) < GOLD_AT)
-          .map((c) => cellKey(paradigm.id, c.id))
-      );
+      const gated = paradigm.cells.filter((c) => c.unitMax <= currentUnit);
+      const { cells } = roundBlanks({
+        cells: gated,
+        levelOf: (c) => getM(paradigm.id, c.id),
+      });
+      return new Set(cells.map((c) => cellKey(paradigm.id, c.id)));
     }
     if (mode === "twin" && twinIds) {
-      const keys = [];
-      for (const p of shownParadigms)
-        for (const c of p.cells)
-          if (c.unitMax <= currentUnit && getM(p.id, c.id) < GOLD_AT)
-            keys.push(cellKey(p.id, c.id));
-      return new Set(keys);
+      const gated = shownParadigms.flatMap((p) =>
+        p.cells.filter((c) => c.unitMax <= currentUnit).map((c) => ({ p, c }))
+      );
+      const { cells } = roundBlanks({
+        cells: gated,
+        levelOf: ({ p, c }) => getM(p.id, c.id),
+      });
+      return new Set(cells.map(({ p, c }) => cellKey(p.id, c.id)));
     }
     if (mode === "snipe")
       return new Set(snipeTarget ? [cellKey(snipeTarget.pid, snipeTarget.cid)] : []);
@@ -273,6 +290,9 @@ export default function App() {
     setImpostorMsg(null);
     setAccentStage(null);
     setRace(null);
+    setScramble(null);
+    setDrag(null);
+    dragRef.current = null;
   };
 
   const nextSnipe = useCallback(() => {
@@ -325,6 +345,15 @@ export default function App() {
     } else if (nextMode === "lookup") {
       setPhase("drill");
       nextLookup(p);
+    } else if (nextMode === "scramble") {
+      setPhase("drill");
+      const cells = p.cells.filter((c) => c.unitMax <= currentUnit);
+      setScramble({
+        bank: scrambleTiles(cells, shuffle),
+        placed: {},
+        startAt: Date.now(),
+        result: null,
+      });
     } else if (nextMode === "race") {
       setPhase("drill");
       (async () => {
@@ -396,7 +425,7 @@ export default function App() {
   /* ---------- auto-advance to the next blank ---------- */
   useEffect(() => {
     if (!ready || phase !== "drill") return;
-    if (mode === "impostor" || mode === "lookup") return;
+    if (mode === "impostor" || mode === "lookup" || mode === "scramble") return;
     if (mode === "race" && (!race || race.finished)) return;
     if (accentStage) return; // finish the accents first
     if (
@@ -451,6 +480,90 @@ export default function App() {
       setRace((r) => (r ? { ...r, finished: "done", timeMs, bestMs: best, isRecord } : r));
     })();
   }, [mode, race, unanswered, feedback, phase]); // eslint-disable-line
+
+  /* ---------- Scramble: pointer-event drag and drop ----------
+     Built on pointer events rather than HTML5 drag-and-drop, which does
+     nothing on touch — this gives real dragging on the phone too. */
+  const beginDrag = (e, tile, from) => {
+    if (!scramble || e.button > 0) return;
+    e.preventDefault();
+    // capture keeps move/up coming to this element once the finger leaves it;
+    // it throws if the pointer is not active, which must not abort the drag
+    try {
+      e.currentTarget.setPointerCapture?.(e.pointerId);
+    } catch {}
+    dragRef.current = { tile, from };
+    setDrag({ tile, from, x: e.clientX, y: e.clientY });
+  };
+
+  const moveDrag = (e) => {
+    if (!dragRef.current) return;
+    setDrag((d) => (d ? { ...d, x: e.clientX, y: e.clientY } : d));
+  };
+
+  const endDrag = (e) => {
+    const d = dragRef.current;
+    dragRef.current = null;
+    setDrag(null);
+    if (!d || !scramble) return;
+    try {
+      e.currentTarget.releasePointerCapture?.(e.pointerId);
+    } catch {}
+
+    // the ghost is pointer-events:none, so this hits what is underneath
+    const el = document.elementFromPoint(e.clientX, e.clientY);
+    const zone = el?.closest("[data-drop]")?.getAttribute("data-drop");
+    if (!zone) return; // dropped nowhere: leave it where it was
+
+    const to = zone === "bank" ? { type: "bank" } : { type: "cell", cellId: zone.slice(5) };
+    if (d.from.type === to.type && d.from.cellId === to.cellId) return;
+
+    const next = moveTile({
+      placed: scramble.placed,
+      bank: scramble.bank,
+      tile: d.tile,
+      from: d.from,
+      to,
+    });
+    // moving anything invalidates the last verdict, so the board goes live again
+    setScramble((s) => (s ? { ...s, ...next, result: null } : s));
+  };
+
+  const checkScramble = async () => {
+    if (!scramble) return;
+    const p = paradigm;
+    const cells = p.cells.filter((c) => c.unitMax <= currentUnit);
+    const r = gradeScramble({ cells, placed: scramble.placed });
+    if (!r.complete) return; // the button is disabled anyway
+
+    const elapsed = Date.now() - scramble.startAt;
+    if (r.allCorrect) {
+      const budget = FAST_MS + SCRAMBLE_MS_PER_CELL * (cells.length - 1);
+      const fast = elapsed < budget;
+      setStreak((s) => s + 1);
+      if (fast) {
+        setFastFlash(true);
+        later(() => setFastFlash(false), 900);
+      }
+      for (const c of cells)
+        await commitAnswer({ p, cell: c, correct: true, fast, latencyMs: elapsed });
+    } else {
+      // only the misplaced cells are penalised, so guess-and-check costs you
+      setStreak(0);
+      for (const id of r.wrongCells) {
+        const cell = cells.find((c) => c.id === id);
+        await commitAnswer({
+          p,
+          cell,
+          correct: false,
+          fast: false,
+          latencyMs: elapsed,
+          wrongChip: scramble.placed[id]?.form,
+        });
+      }
+    }
+    setScramble((s) => (s ? { ...s, result: r } : s));
+  };
 
   /* ---------- shared answer bookkeeping ---------- */
   const commitAnswer = async ({ p, cell, correct, fast, latencyMs, wrongChip }) => {
@@ -874,6 +987,7 @@ export default function App() {
           ["lookup", "Lookup"],
           ["twin", "Twin"],
           ["race", "Race"],
+          ["scramble", "Scramble"],
         ].map(([m, lbl]) => (
           <button
             key={m}
@@ -979,6 +1093,8 @@ export default function App() {
             active={active}
             impostor={mode === "impostor" && p.id === paradigm.id ? impostor : null}
             lookup={mode === "lookup" && p.id === paradigm.id ? lookup : null}
+            scramble={mode === "scramble" && p.id === paradigm.id ? scramble : null}
+            dragHandlers={{ beginDrag, moveDrag, endDrag }}
             assemblyPrefix={assemblyPrefix}
             getM={getM}
             onCellTap={(pid, cid) => {
@@ -1013,15 +1129,19 @@ export default function App() {
                   style={{ color: goldCount === paradigm.cells.length ? C.gold : C.faint }}
                 >
                   {goldCount === paradigm.cells.length
-                    ? "Fully gilded. It lives in your head now."
+                    ? "Fully gilded. It lives in your head now — defend it and the whole table blanks."
                     : "Round complete — weak cells will blank again next round."}
                 </div>
                 <button
                   onClick={() => startRound("fill")}
                   className="px-4 py-2 rounded-lg text-sm shrink-0"
-                  style={{ background: C.panelUp, border: `1px solid ${C.line}`, color: C.marble }}
+                  style={{
+                    background: C.panelUp,
+                    border: `1px solid ${goldCount === paradigm.cells.length ? C.goldDeep : C.line}`,
+                    color: goldCount === paradigm.cells.length ? C.gold : C.marble,
+                  }}
                 >
-                  Run it again
+                  {goldCount === paradigm.cells.length ? "Defend it" : "Run it again"}
                 </button>
               </div>
             )}
@@ -1128,6 +1248,118 @@ export default function App() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* Scramble: the bank of loose forms + the Check gate */}
+      {mode === "scramble" && scramble && phase === "drill" && (() => {
+        const cells = paradigm.cells.filter((c) => c.unitMax <= currentUnit);
+        const g = gradeScramble({ cells, placed: scramble.placed });
+        const solved = scramble.result?.allCorrect;
+        return (
+          <div
+            className="fixed bottom-0 left-0 right-0 flex justify-center px-4 pb-6 pt-6"
+            style={{ background: `linear-gradient(transparent, ${C.ink} 22%)` }}
+          >
+            <div className="max-w-2xl w-full">
+              <div
+                className="prompt-in w-full rounded-xl px-4 py-3 mb-3"
+                style={{ background: C.panel, border: `1px solid ${C.line}` }}
+              >
+                <div className="flex items-center gap-3 flex-wrap">
+                  <span
+                    className="px-2 py-0.5 rounded text-xs shrink-0"
+                    style={{
+                      background: C.aegeanDeep,
+                      border: `1px solid ${C.aegean}`,
+                      color: "#fff",
+                      letterSpacing: "0.12em",
+                    }}
+                  >
+                    SCRAMBLE
+                  </span>
+                  <span className="text-sm" style={{ color: C.marble }}>
+                    {solved
+                      ? "τάξις — the table is restored."
+                      : scramble.result
+                        ? `${scramble.result.wrongCells.length} in the wrong place — marked in red.`
+                        : g.remaining > 0
+                          ? `Drag each form to its cell — ${g.remaining} left`
+                          : "Every slot filled. Check it."}
+                  </span>
+                  <span className="flex-1" />
+                  {solved ? (
+                    <button
+                      onClick={() => startRound("scramble")}
+                      className="px-4 py-2 rounded-lg text-sm shrink-0"
+                      style={{ background: C.panelUp, border: `1px solid ${C.goldDeep}`, color: C.gold }}
+                    >
+                      Scramble again
+                    </button>
+                  ) : (
+                    <button
+                      onClick={checkScramble}
+                      disabled={!g.complete}
+                      className="px-4 py-2 rounded-lg text-sm shrink-0"
+                      style={{
+                        background: g.complete ? C.aegeanDeep : "transparent",
+                        border: `1px solid ${g.complete ? C.aegean : C.line}`,
+                        color: g.complete ? "#fff" : C.line,
+                        cursor: g.complete ? "pointer" : "not-allowed",
+                      }}
+                    >
+                      Check
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <div
+                data-drop="bank"
+                className="flex flex-wrap gap-2 justify-center w-full rounded-xl"
+                style={{
+                  minHeight: "3.5rem",
+                  padding: "0.5rem",
+                  border: `1px dashed ${scramble.bank.length ? C.line : "transparent"}`,
+                }}
+              >
+                {scramble.bank.map((tile) => (
+                  <span
+                    key={tile.id}
+                    className="chip gk px-4 py-2.5 rounded-xl text-xl draggable"
+                    onPointerDown={(e) => beginDrag(e, tile, { type: "bank" })}
+                    onPointerMove={moveDrag}
+                    onPointerUp={endDrag}
+                    style={{
+                      background: C.panelUp,
+                      border: `1px solid ${C.line}`,
+                      color: C.marble,
+                      boxShadow: "0 3px 0 rgba(0,0,0,0.35)",
+                    }}
+                  >
+                    {tile.form}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+      })()}
+
+      {/* the tile under the finger */}
+      {drag && (
+        <span
+          className="drag-ghost gk px-4 py-2.5 rounded-xl text-xl"
+          style={{
+            left: drag.x,
+            top: drag.y,
+            background: C.panelUp,
+            border: `1px solid ${C.aegean}`,
+            color: C.marble,
+            boxShadow: "0 6px 18px rgba(0,0,0,0.5)",
+          }}
+        >
+          {drag.tile.form}
+        </span>
       )}
 
       {/* ask banner + chip tray, pinned together above the fold */}
@@ -1412,6 +1644,8 @@ function ParadigmTable({
   active,
   impostor,
   lookup,
+  scramble,
+  dragHandlers,
   assemblyPrefix,
   getM,
   onCellTap,
@@ -1459,6 +1693,8 @@ function ParadigmTable({
             active={active}
             impostor={impostor}
             lookup={lookup}
+            scramble={scramble}
+            dragHandlers={dragHandlers}
             assemblyPrefix={assemblyPrefix}
             getM={getM}
             onCellTap={onCellTap}
@@ -1470,7 +1706,7 @@ function ParadigmTable({
   );
 }
 
-function Row({ rl, r, paradigm, phase, mode, blanks, feedback, active, impostor, lookup, assemblyPrefix, getM, onCellTap }) {
+function Row({ rl, r, paradigm, phase, mode, blanks, feedback, active, impostor, lookup, scramble, dragHandlers, assemblyPrefix, getM, onCellTap }) {
   return (
     <>
       <div className="flex items-center text-xs" style={{ color: C.faint, letterSpacing: "0.08em" }}>
@@ -1493,6 +1729,8 @@ function Row({ rl, r, paradigm, phase, mode, blanks, feedback, active, impostor,
             active={isActive}
             impostor={impostor}
             lookup={lookup}
+            scramble={scramble}
+            dragHandlers={dragHandlers}
             assemblyPrefix={isActive ? assemblyPrefix : null}
             m={getM(paradigm.id, cell.id)}
             onTap={() => onCellTap(paradigm.id, cell.id)}
@@ -1527,7 +1765,52 @@ function CorrectFlash({ cell, whole, prefix, suffix }) {
   );
 }
 
-function Cell({ cell, paradigm, phase, mode, blank, fb, active, impostor, lookup, assemblyPrefix, m, onTap }) {
+function Cell({ cell, paradigm, phase, mode, blank, fb, active, impostor, lookup, scramble, dragHandlers, assemblyPrefix, m, onTap }) {
+  /* Scramble owns the cell entirely: it is a drop target holding either a
+     placed tile (itself draggable, so a placement can be undone) or an empty
+     slot. Verdict colours come from the last Check. */
+  if (scramble) {
+    const tile = scramble.placed[cell.id];
+    const verdict = scramble.result
+      ? scramble.result.wrongCells.includes(cell.id)
+        ? "wrong"
+        : scramble.result.correctCells.includes(cell.id)
+          ? "right"
+          : null
+      : null;
+    const border =
+      verdict === "wrong" ? C.wrong : verdict === "right" ? C.goldDeep : tile ? C.aegeanDeep : C.line;
+    return (
+      <div
+        data-drop={`cell:${cell.id}`}
+        className={`rounded-xl px-2 py-3 text-center flex items-center justify-center ${
+          !tile ? "slot-open" : ""
+        }`}
+        style={{
+          minHeight: "58px",
+          border: `1px ${tile ? "solid" : "dashed"} ${border}`,
+          background: tile ? "rgba(255,255,255,0.03)" : "rgba(111,179,216,0.04)",
+        }}
+      >
+        {tile ? (
+          <span
+            className="gk text-xl draggable"
+            onPointerDown={(e) => dragHandlers.beginDrag(e, tile, { type: "cell", cellId: cell.id })}
+            onPointerMove={dragHandlers.moveDrag}
+            onPointerUp={dragHandlers.endDrag}
+            style={{
+              color: verdict === "wrong" ? C.wrong : verdict === "right" ? C.gold : C.marble,
+            }}
+          >
+            {tile.form}
+          </span>
+        ) : (
+          <span style={{ color: C.line }}>·</span>
+        )}
+      </div>
+    );
+  }
+
   const gold = m >= GOLD_AT;
   const whole = drillsWholeForm(paradigm);
   const isImpostorCell = impostor && impostor.cid === cell.id && fb !== "correct";
