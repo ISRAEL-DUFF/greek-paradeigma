@@ -28,7 +28,6 @@ import {
   pickTwins,
   pickScrambleTable,
   answerOf,
-  scaffoldOf,
   isPP,
   drillsWholeForm,
 } from "./scheduler.js";
@@ -45,8 +44,16 @@ import {
   scrambleTiles,
   moveTile,
   gradeScramble,
-  ROLE_SHORT,
 } from "./grading.js";
+import TopBar from "./components/TopBar.jsx";
+import Sheet from "./components/Sheet.jsx";
+import TablesPanel from "./components/TablesPanel.jsx";
+import ModesPanel from "./components/ModesPanel.jsx";
+import SettingsPanel from "./components/SettingsPanel.jsx";
+import PromptBanner from "./components/PromptBanner.jsx";
+import ParadigmTable from "./components/ParadigmTable.jsx";
+import RoundEnd from "./components/RoundEnd.jsx";
+import useWide from "./useWide.js";
 
 const CASE_NAMES = {
   Nom: "nominative",
@@ -116,7 +123,11 @@ export default function App() {
   const [fastFlash, setFastFlash] = useState(false);
   const [toast, setToast] = useState(null);
   const [unlock, setUnlock] = useState(null);
-  const [pickerOpen, setPickerOpen] = useState(true); // table list, choice remembered
+  /* which sheet is up: "tables" | "modes" | "settings" | null. Deliberately
+     NOT persisted — a sheet is a momentary detour, not a place you live. */
+  const [sheet, setSheet] = useState(null);
+  const [raceBests, setRaceBests] = useState({}); // paradigmId -> ms, for RoundEnd
+  const wide = useWide(); // ≥1024px: rail instead of sheet, inline instead of pinned
   const activatedAt = useRef(null);
   const timers = useRef([]);
   const later = (fn, ms) => timers.current.push(setTimeout(fn, ms));
@@ -124,20 +135,20 @@ export default function App() {
   useEffect(() => {
     (async () => {
       await applyDecay();
-      const [m, s, unit, syl, pOpen, sFlow] = await Promise.all([
+      const [m, s, unit, syl, sFlow, bests] = await Promise.all([
         loadMastery(),
         loadStudied(),
         getMeta("currentUnit", 1),
         getMeta("syllabus", null),
-        getMeta("pickerOpen", true),
         getMeta("scrambleFlow", "same"),
+        getMeta("raceBest", {}),
       ]);
+      setRaceBests(bests);
       setScrambleFlow(sFlow);
       setMasteryMap(m);
       setStudied(s);
       setCurrentUnit(unit);
       setSyllabus(syl);
-      setPickerOpen(pOpen);
       const first = unlockedParadigms(unit)[0];
       setParadigmId(first?.id ?? null);
       setPhase(s[first?.id] ? "drill" : "study");
@@ -407,7 +418,15 @@ export default function App() {
     await setMeta("currentUnit", unit);
     if (unit > currentUnit) {
       const fresh = paradigmsIntroducedAt(unit);
-      if (fresh.length) setUnlock({ unit, paradigms: fresh });
+      if (fresh.length) {
+        /* The gate is normally bumped from inside the Settings sheet. An
+           unlock is an announcement about the BOARD, so the sheet gets out of
+           the way — it is the one thing allowed to dismiss a sheet without
+           the user asking, and only because the alternative is announcing
+           something they cannot see. */
+        setSheet(null);
+        setUnlock({ unit, paradigms: fresh });
+      }
     }
     const stillVisible = unlockedParadigms(unit).some((p) => p.id === paradigmId);
     const p = stillVisible
@@ -439,11 +458,6 @@ export default function App() {
     startRound("scramble", p);
   };
 
-  const togglePicker = async () => {
-    const next = !pickerOpen;
-    setPickerOpen(next);
-    await setMeta("pickerOpen", next);
-  };
 
   /* ---------- auto-advance to the next blank ---------- */
   useEffect(() => {
@@ -499,7 +513,9 @@ export default function App() {
       const prev = bests[paradigm.id] ?? null;
       const isRecord = !prev || timeMs < prev;
       const best = isRecord ? timeMs : prev;
-      await setMeta("raceBest", { ...bests, [paradigm.id]: best });
+      const nextBests = { ...bests, [paradigm.id]: best };
+      await setMeta("raceBest", nextBests);
+      setRaceBests(nextBests);
       setRace((r) => (r ? { ...r, finished: "done", timeMs, bestMs: best, isRecord } : r));
     })();
   }, [mode, race, unanswered, feedback, phase]); // eslint-disable-line
@@ -905,19 +921,143 @@ export default function App() {
     : null;
   const twinMode = mode === "twin" && shownParadigms.length === 2;
 
+  /* The breadcrumb and the gild rule both name WHAT IS ON THE BOARD — so they
+     read off shownParadigms, not the table last picked. That is what makes
+     Snipe's jumps and Twin's pair come out right without special-casing. */
+  const barTables = shownParadigms.map((p) => ({
+    id: p.id,
+    short: p.short,
+    gold: p.cells.filter((c) => getM(p.id, c.id) >= GOLD_AT).length,
+    total: p.cells.length,
+  }));
+  const goldTables = paradigms.filter(
+    (p) => p.cells.every((c) => getM(p.id, c.id) >= GOLD_AT)
+  ).length;
+
+  /* One derived description of "the round is over", for the four modes that
+     have rounds. Snipe, Lookup and Impostor are continuous streams — they
+     re-aim or auto-advance — so they have no end and get no screen. */
+  const allGold = goldCount === paradigm.cells.length;
+  const roundEnd = (() => {
+    if (twinMode && phase === "done")
+      return {
+        headline: "TWIN ROUND COMPLETE",
+        message: "The pair was chosen from the confusions you have actually recorded.",
+        primary: { label: "Next pair", onClick: () => startRound("twin") },
+      };
+    if (mode === "fill" && phase === "done")
+      return allGold
+        ? {
+            tone: "gold",
+            headline: "TABLE COMPLETE",
+            message: `Fully gilded — all ${paradigm.cells.length} cells are gold. Defend it and the whole table blanks.`,
+            primary: { label: "Defend it", onClick: () => startRound("fill") },
+          }
+        : {
+            headline: "ROUND COMPLETE",
+            message: "Weak cells will blank again next round.",
+            primary: { label: "Run it again", onClick: () => startRound("fill") },
+          };
+    if (mode === "race" && race?.finished)
+      return race.finished === "done"
+        ? {
+            tone: "gold",
+            headline: race.isRecord ? "τετέλεσται · NEW PERSONAL BEST" : "τετέλεσται",
+            message: `${(race.timeMs / 1000).toFixed(1)}s${
+              race.isRecord ? "" : ` · best ${(race.bestMs / 1000).toFixed(1)}s`
+            }`,
+            primary: { label: "Race again", onClick: () => startRound("race") },
+          }
+        : {
+            tone: "wrong",
+            headline: "THE CLOCK WINS",
+            message: "The chant continues. Mistakes cost time, never mastery.",
+            primary: { label: "Race again", onClick: () => startRound("race") },
+          };
+    if (mode === "scramble" && scramble?.result?.allCorrect)
+      return {
+        tone: "gold",
+        headline: "τάξις · THE TABLE IS RESTORED",
+        message:
+          scrambleSolved > 0
+            ? `${scrambleSolved} restored this session.`
+            : "Every form is back where it belongs.",
+        primary:
+          scrambleFlow === "next"
+            ? { label: "Next table →", onClick: nextScrambleTable }
+            : { label: "Scramble again", onClick: () => startRound("scramble") },
+        secondary:
+          scrambleFlow === "next"
+            ? { label: "Same table", onClick: () => startRound("scramble") }
+            : { label: "Next table →", onClick: nextScrambleTable },
+      };
+    return null;
+  })();
+
+  /* On a phone the prompt bar is pinned and the page reserves room for it. On
+     a wide screen it simply sits under the board — which is what makes the
+     occlusion bug class STRUCTURALLY IMPOSSIBLE there rather than merely
+     guarded against. Nothing overlays the board, so nothing can hide it. */
+  const barClass = wide
+    ? "w-full flex justify-center px-4 pt-4 pb-10"
+    : "fixed bottom-0 left-0 right-0 flex justify-center px-4 pb-6 pt-6";
+
   /* ============================ render ============================ */
   return (
     <div
-      className="min-h-screen w-full flex flex-col items-center px-4"
+      className="min-h-screen w-full flex flex-col"
       style={{
         background: C.ink,
         color: C.marble,
         fontFamily: "'Jost', system-ui, sans-serif",
-        /* clearance for the pinned banner + tray, which is tallest on a phone
-           during a multi-piece assembly (QA bar §7: never occlude the cell) */
-        paddingBottom: "clamp(11rem, 44vh, 24rem)",
       }}
     >
+      <TopBar
+        unit={currentUnit}
+        tables={barTables}
+        mode={mode}
+        wide={wide}
+        onOpenTables={() => setSheet("tables")}
+        onOpenModes={() => setSheet("modes")}
+        onOpenSettings={() => setSheet("settings")}
+      />
+
+      <div className="w-full flex flex-1 min-h-0">
+        {/* Desktop: the whole syllabus is permanently in view. Same
+            container-agnostic TablesPanel the sheet renders — only the box
+            around it differs, which is the contract set in Phase 2. */}
+        {wide && (
+          <aside
+            data-test="tables-rail"
+            className="shrink-0 overflow-y-auto px-4 py-4"
+            style={{
+              width: 320,
+              borderRight: `1px solid ${C.line}`,
+              position: "sticky",
+              top: 50,
+              height: "calc(100vh - 50px)",
+            }}
+          >
+            <TablesPanel
+              paradigms={paradigms}
+              activeIds={new Set(twinMode ? twinIds : [paradigm.id])}
+              getM={getM}
+              onPick={changeParadigm}
+              currentUnit={currentUnit}
+              masteryMap={masteryMap}
+            />
+          </aside>
+        )}
+
+        <div
+          className="flex-1 min-w-0 flex flex-col items-center px-4"
+          style={{
+            /* Phones reserve clearance for the pinned banner + tray, tallest
+               during a multi-piece assembly (QA bar §7: never occlude the
+               cell). Desktop pins nothing, so it reserves nothing. */
+            paddingBottom: wide ? "2rem" : "clamp(11rem, 44vh, 24rem)",
+          }}
+        >
       {toast && (
         <div
           className="fixed top-4 left-1/2 -translate-x-1/2 z-50 toast-in px-4 py-2.5 rounded-xl text-sm max-w-md text-center"
@@ -927,153 +1067,13 @@ export default function App() {
         </div>
       )}
 
-      {/* header */}
-      <header className="w-full max-w-2xl pt-6 pb-4 flex items-end justify-between">
-        <div>
-          <div className="gk text-3xl tracking-wide" style={{ color: C.marble }}>
-            παράδειγμα
-          </div>
-          <div className="text-xs mt-1 flex items-center gap-2" style={{ color: C.faint, letterSpacing: "0.12em" }}>
-            HANSEN &amp; QUINN · UNIT
-            <span className="inline-flex items-center gap-1">
-              <button
-                onClick={() => changeUnit(currentUnit - 1)}
-                className="px-1.5 rounded"
-                style={{ border: `1px solid ${C.line}`, color: C.faint }}
-                aria-label="previous unit"
-              >
-                ‹
-              </button>
-              <span style={{ color: C.marble, minWidth: "1.2em", textAlign: "center" }}>
-                {currentUnit}
-              </span>
-              <button
-                onClick={() => changeUnit(currentUnit + 1)}
-                className="px-1.5 rounded"
-                style={{ border: `1px solid ${C.line}`, color: C.faint }}
-                aria-label="next unit"
-              >
-                ›
-              </button>
-            </span>
-          </div>
-        </div>
-        <div className="text-right">
-          <div className="text-xs" style={{ color: C.faint }}>gilded</div>
-          <div className="text-lg" style={{ color: C.gold }}>
-            {totalGold}
-            <span style={{ color: C.faint }}> / {totalCells}</span>
-          </div>
-          {accentPct !== null && (
-            <div className="text-xs" style={{ color: C.aegean }}>
-              accents {accentPct}%
-            </div>
-          )}
-        </div>
-      </header>
-
-      {/* syllabus sprint planner: stay N units ahead of the class */}
-      <div
-        className="w-full max-w-2xl mb-3 flex items-center gap-2 flex-wrap text-xs"
-        style={{ color: C.faint, letterSpacing: "0.08em" }}
-      >
-        {syllabus ? (
-          <>
-            CLASS ON UNIT
-            <MiniStep
-              value={syllabus.classUnit}
-              min={1}
-              max={MAX_UNIT}
-              onChange={(v) => saveSyllabus({ ...syllabus, classUnit: v })}
-            />
-            · STAY
-            <MiniStep
-              value={syllabus.lead}
-              min={1}
-              max={5}
-              onChange={(v) => saveSyllabus({ ...syllabus, lead: v })}
-            />
-            AHEAD
-            <div className="flex-1" />
-            {currentUnit >= syllabus.classUnit + syllabus.lead ? (
-              <span style={{ color: C.gold }}>
-                sprint on track (+{currentUnit - syllabus.classUnit})
-              </span>
-            ) : (
-              <button
-                onClick={() =>
-                  changeUnit(Math.min(MAX_UNIT, syllabus.classUnit + syllabus.lead))
-                }
-                className="px-2 py-1 rounded"
-                style={{ border: `1px solid ${C.wrong}`, color: C.wrong }}
-              >
-                behind — jump to unit {Math.min(MAX_UNIT, syllabus.classUnit + syllabus.lead)}
-              </button>
-            )}
-          </>
-        ) : (
-          <button
-            onClick={() => saveSyllabus({ classUnit: 1, lead: 2 })}
-            style={{ color: C.faint, textDecoration: "underline dotted" }}
-          >
-            SET UP SYLLABUS SPRINT
-          </button>
-        )}
-      </div>
-
-      {currentUnit > MAX_SHIPPED_UNIT && (
-        <div className="w-full max-w-2xl mb-3 text-xs" style={{ color: C.faint }}>
-          Content is authored through Unit {MAX_SHIPPED_UNIT} so far — later units show
-          everything unlocked to date.
+      {/* per-answer feedback: costs no height when nothing is happening */}
+      {(streak > 1 || fastFlash) && (
+        <div className="w-full max-w-2xl flex gap-3 justify-end text-xs pt-2">
+          {streak > 1 && <span style={{ color: C.aegean }}>streak ×{streak}</span>}
+          {fastFlash && <span style={{ color: C.gold }}>ταχύς! +2</span>}
         </div>
       )}
-
-      {/* paradigm + mode pickers */}
-      <TablePicker
-        paradigms={paradigms}
-        activeIds={new Set(twinMode ? twinIds : [paradigm.id])}
-        activeLabel={twinMode ? twinIds.map((id) => paradigms.find((p) => p.id === id)?.short).join(" + ") : paradigm.short}
-        getM={getM}
-        onPick={changeParadigm}
-        open={pickerOpen}
-        onToggle={togglePicker}
-      />
-      <div className="w-full max-w-2xl flex gap-2 mb-5 flex-wrap">
-        {[
-          ["fill", "Fill"],
-          ["snipe", "Snipe"],
-          ["impostor", "Impostor"],
-          ["lookup", "Lookup"],
-          ["twin", "Twin"],
-          ["race", "Race"],
-          ["scramble", "Scramble"],
-        ].map(([m, lbl]) => (
-          <button
-            key={m}
-            onClick={() => changeMode(m)}
-            className="px-3 py-1.5 rounded-full text-xs"
-            style={{
-              background: mode === m ? C.aegeanDeep : "transparent",
-              border: `1px solid ${mode === m ? C.aegean : C.line}`,
-              color: mode === m ? "#fff" : C.faint,
-              letterSpacing: "0.08em",
-            }}
-          >
-            {lbl.toUpperCase()}
-          </button>
-        ))}
-        <div className="flex-1" />
-        {streak > 1 && (
-          <div className="text-xs self-center" style={{ color: C.aegean }}>
-            streak ×{streak}
-          </div>
-        )}
-        {fastFlash && (
-          <div className="text-xs self-center" style={{ color: C.gold }}>
-            ταχύς! +2
-          </div>
-        )}
-      </div>
 
       {/* race clock */}
       {mode === "race" && race && !race.finished && (
@@ -1091,27 +1091,6 @@ export default function App() {
             <span style={{ color: C.faint }}>best {(race.bestMs / 1000).toFixed(1)}s</span>
           )}
           <span style={{ color: C.faint }}>— the whole table, column by column</span>
-        </div>
-      )}
-      {mode === "race" && race?.finished && (
-        <div className="w-full max-w-2xl mb-3 flex items-center gap-3 text-sm flex-wrap">
-          {race.finished === "done" ? (
-            <span style={{ color: C.gold }}>
-              τετέλεσται — {(race.timeMs / 1000).toFixed(1)}s
-              {race.isRecord
-                ? " · new personal best"
-                : ` · best ${(race.bestMs / 1000).toFixed(1)}s`}
-            </span>
-          ) : (
-            <span style={{ color: C.wrong }}>The clock wins — the chant continues.</span>
-          )}
-          <button
-            onClick={() => startRound("race")}
-            className="px-3 py-1.5 rounded-lg text-xs"
-            style={{ background: C.panelUp, border: `1px solid ${C.line}`, color: C.marble }}
-          >
-            Race again
-          </button>
         </div>
       )}
 
@@ -1181,29 +1160,6 @@ export default function App() {
                 </button>
               </div>
             )}
-            {!twinMode && mode === "fill" && phase === "done" && (
-              <div className="mt-5 flex items-center justify-between gap-3">
-                <div
-                  className="text-sm"
-                  style={{ color: goldCount === paradigm.cells.length ? C.gold : C.faint }}
-                >
-                  {goldCount === paradigm.cells.length
-                    ? "Fully gilded. It lives in your head now — defend it and the whole table blanks."
-                    : "Round complete — weak cells will blank again next round."}
-                </div>
-                <button
-                  onClick={() => startRound("fill")}
-                  className="px-4 py-2 rounded-lg text-sm shrink-0"
-                  style={{
-                    background: C.panelUp,
-                    border: `1px solid ${goldCount === paradigm.cells.length ? C.goldDeep : C.line}`,
-                    color: goldCount === paradigm.cells.length ? C.gold : C.marble,
-                  }}
-                >
-                  {goldCount === paradigm.cells.length ? "Defend it" : "Run it again"}
-                </button>
-              </div>
-            )}
             {!twinMode && mode === "impostor" && impostorMsg && (
               <div className="mt-4 text-sm" style={{ color: C.faint }}>
                 {impostorMsg}
@@ -1221,27 +1177,25 @@ export default function App() {
         ))}
       </div>
 
-      {/* twin done state */}
-      {twinMode && phase === "done" && (
-        <div className="w-full max-w-5xl mt-4 flex items-center justify-between gap-3">
-          <div className="text-sm" style={{ color: C.faint }}>
-            Twin round complete — the pair was chosen from your confusion record.
-          </div>
-          <button
-            onClick={() => startRound("twin")}
-            className="px-4 py-2 rounded-lg text-sm shrink-0"
-            style={{ background: C.panelUp, border: `1px solid ${C.line}`, color: C.marble }}
-          >
-            Next pair
-          </button>
-        </div>
+      {/* One round-end screen for every mode that ends (see `roundEnd`). */}
+      {roundEnd && (
+        <RoundEnd
+          mode={mode}
+          tone={roundEnd.tone}
+          headline={roundEnd.headline}
+          message={roundEnd.message}
+          primary={roundEnd.primary}
+          secondary={roundEnd.secondary}
+          onPickMode={changeMode}
+          raceBest={raceBests[paradigm.id] ?? null}
+        />
       )}
 
       {/* M5 accent finishing move */}
       {accentStage && (
         <div
-          className="fixed bottom-0 left-0 right-0 flex justify-center px-4 pb-6 pt-4"
-          style={{ background: `linear-gradient(transparent, ${C.ink} 30%)` }}
+          className={barClass}
+          style={wide ? {} : { background: `linear-gradient(transparent, ${C.ink} 30%)` }}
         >
           <div className="max-w-2xl w-full">
             <div className="text-sm mb-2" style={{ color: C.faint }}>
@@ -1310,17 +1264,21 @@ export default function App() {
       )}
 
       {/* Scramble: the bank of loose forms + the Check gate */}
-      {mode === "scramble" && scramble && phase === "drill" && (() => {
+      {/* The pinned bar belongs to PLAYING. Once solved, RoundEnd owns the
+          screen — leaving the bar up duplicated its own message and covered
+          the "or try this table as…" row underneath it. */}
+      {mode === "scramble" && scramble && phase === "drill" && !scramble.result?.allCorrect && (() => {
         const cells = paradigm.cells.filter((c) => c.unitMax <= currentUnit);
         const g = gradeScramble({ cells, placed: scramble.placed });
-        const solved = scramble.result?.allCorrect;
         return (
           <div
             ref={scrambleBarRef}
-            className="fixed bottom-0 left-0 right-0 flex justify-center px-4 pb-6 pt-6"
-            style={{ background: `linear-gradient(transparent, ${C.ink} 22%)` }}
+            className={barClass}
+            style={wide ? {} : { background: `linear-gradient(transparent, ${C.ink} 22%)` }}
           >
-            <div className="max-w-2xl w-full">
+            {/* Wider on desktop: the bank is the one element that genuinely
+                wants the spare horizontal axis, so let it have it. */}
+            <div className={wide ? "max-w-4xl w-full" : "max-w-2xl w-full"}>
               <div
                 className="prompt-in w-full rounded-xl px-4 py-3 mb-3"
                 style={{ background: C.panel, border: `1px solid ${C.line}` }}
@@ -1338,26 +1296,14 @@ export default function App() {
                     SCRAMBLE
                   </span>
                   <span className="text-sm" style={{ color: C.marble }}>
-                    {solved
-                      ? "τάξις — the table is restored."
-                      : scramble.result
-                        ? `${scramble.result.wrongCells.length} in the wrong place — marked in red.`
-                        : g.remaining > 0
-                          ? `Drag each form to its cell — ${g.remaining} left`
-                          : "Every slot filled. Check it."}
+                    {scramble.result
+                      ? `${scramble.result.wrongCells.length} in the wrong place — marked in red.`
+                      : g.remaining > 0
+                        ? `Drag each form to its cell — ${g.remaining} left`
+                        : "Every slot filled. Check it."}
                   </span>
                   <span className="flex-1" />
-                  {solved ? (
-                    <button
-                      onClick={() =>
-                        scrambleFlow === "next" ? nextScrambleTable() : startRound("scramble")
-                      }
-                      className="px-4 py-2 rounded-lg text-sm shrink-0"
-                      style={{ background: C.panelUp, border: `1px solid ${C.goldDeep}`, color: C.gold }}
-                    >
-                      {scrambleFlow === "next" ? "Next table →" : "Scramble again"}
-                    </button>
-                  ) : (
+                  {(
                     <button
                       onClick={checkScramble}
                       disabled={!g.complete}
@@ -1376,7 +1322,7 @@ export default function App() {
 
                 {/* what happens after a solve, and how the session is going */}
                 <div className="flex items-center gap-2 mt-2 flex-wrap text-xs">
-                  <span style={{ color: C.line, letterSpacing: "0.08em" }}>AFTER SOLVING</span>
+                  <span style={{ color: C.faint, letterSpacing: "0.08em" }}>AFTER SOLVING</span>
                   {[
                     ["same", "Same table"],
                     ["next", "Next table"],
@@ -1460,8 +1406,8 @@ export default function App() {
       {/* ask banner + chip tray, pinned together above the fold */}
       {!accentStage && active && phase === "drill" && mode !== "impostor" && mode !== "lookup" && (
         <div
-          className="fixed bottom-0 left-0 right-0 flex justify-center px-4 pb-6 pt-6"
-          style={{ background: `linear-gradient(transparent, ${C.ink} 22%)` }}
+          className={barClass}
+          style={wide ? {} : { background: `linear-gradient(transparent, ${C.ink} 22%)` }}
         >
           <div className="max-w-2xl w-full">
             <PromptBanner
@@ -1499,11 +1445,12 @@ export default function App() {
         </div>
       )}
 
-      {/* new-tables-unlocked overlay */}
+      {/* new-tables-unlocked overlay. Sits ABOVE the sheets (z 70): an unlock
+          must never be hidden behind whatever summoned it. */}
       {unlock && (
         <div
-          className="fixed inset-0 flex items-center justify-center px-6 z-50"
-          style={{ background: "rgba(18,20,28,0.88)" }}
+          className="fixed inset-0 flex items-center justify-center px-6"
+          style={{ background: "rgba(18,20,28,0.88)", zIndex: 90 }}
         >
           <div
             className="w-full max-w-md rounded-2xl p-6 rise"
@@ -1536,470 +1483,53 @@ export default function App() {
           </div>
         </div>
       )}
-    </div>
-  );
-}
-
-/* ---------- the table picker ----------
-   At Unit 20 there are over a hundred tables. Left as one flat wrap it pushes
-   the board off the screen, so: collapsible (choice remembered), grouped by the
-   unit that introduced each table, and capped with its own scroll. */
-function TablePicker({ paradigms, activeIds, activeLabel, getM, onPick, open, onToggle }) {
-  const activeRef = useRef(null);
-  const activeKey = [...activeIds].join(",");
-  /* Bring the current table into view when the list opens or the selection
-     changes — but only then, so it never yanks while you are browsing. */
-  useEffect(() => {
-    if (open) activeRef.current?.scrollIntoView({ block: "nearest" });
-  }, [open, activeKey]);
-
-  const groups = [];
-  for (const p of paradigms) {
-    const last = groups[groups.length - 1];
-    if (last && last.unit === p.unitIntroduced) last.items.push(p);
-    else groups.push({ unit: p.unitIntroduced, items: [p] });
-  }
-
-  return (
-    <div className="w-full max-w-2xl mb-3">
-      <button
-        onClick={onToggle}
-        className="w-full flex items-center gap-2 text-xs py-1"
-        style={{ color: C.faint, letterSpacing: "0.1em" }}
-        aria-expanded={open}
-      >
-        <span className={`chev ${open ? "chev-open" : ""}`} style={{ color: C.aegean }}>
-          ›
-        </span>
-        TABLES
-        <span style={{ color: C.line }}>·</span>
-        <span>{paradigms.length}</span>
-        {!open && (
-          <span className="gk ml-1 truncate" style={{ color: C.marble, letterSpacing: 0 }}>
-            {activeLabel}
-          </span>
-        )}
-        <span className="flex-1" />
-        <span style={{ color: C.line }}>{open ? "hide" : "show"}</span>
-      </button>
-
-      {open && (
-        <div
-          className="mt-1 pr-1 overflow-y-auto"
-          style={{ maxHeight: "min(34vh, 20rem)", borderTop: `1px solid ${C.line}` }}
-        >
-          {groups.map((g) => (
-            <div key={g.unit} className="pt-3">
-              <div className="mb-1.5 flex items-baseline gap-2 flex-wrap">
-                <span
-                  className="text-xs shrink-0"
-                  style={{ color: C.aegean, letterSpacing: "0.14em" }}
-                >
-                  UNIT {g.unit}
-                </span>
-                <span className="text-xs" style={{ color: C.faint }}>
-                  {unitTitle(g.unit)}
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {g.items.map((p) => {
-                  const gold = p.cells.filter((c) => getM(p.id, c.id) >= GOLD_AT).length;
-                  const on = activeIds.has(p.id);
-                  return (
-                    <button
-                      key={p.id}
-                      ref={on ? activeRef : undefined}
-                      onClick={() => onPick(p.id)}
-                      className="px-3 py-2 rounded-lg text-sm"
-                      style={{
-                        background: on ? C.panelUp : "transparent",
-                        border: `1px solid ${on ? C.aegean : C.line}`,
-                        color: on ? C.marble : C.faint,
-                      }}
-                    >
-                      <span className="gk">{p.short}</span>
-                      <span
-                        className="ml-2 text-xs"
-                        style={{ color: gold === p.cells.length ? C.gold : C.faint }}
-                      >
-                        {gold}/{p.cells.length}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
         </div>
-      )}
+      </div>
+
+      {/* The Tables sheet is the NARROW presentation of the rail above — never
+          both, or picking a table would happen in two places at once. */}
+      <Sheet
+        open={!wide && sheet === "tables"}
+        onClose={() => setSheet(null)}
+        title="Tables"
+        meta={`${paradigms.length} UNLOCKED · ${totalGold} GILDED`}
+      >
+        <TablesPanel
+          paradigms={paradigms}
+          activeIds={new Set(twinMode ? twinIds : [paradigm.id])}
+          getM={getM}
+          onPick={changeParadigm}
+          currentUnit={currentUnit}
+          masteryMap={masteryMap}
+        />
+      </Sheet>
+
+      <Sheet
+        open={sheet === "modes"}
+        onClose={() => setSheet(null)}
+        title="How to drill"
+        meta={paradigm.short}
+      >
+        <ModesPanel mode={mode} onPick={changeMode} />
+      </Sheet>
+
+      <Sheet
+        open={sheet === "settings"}
+        onClose={() => setSheet(null)}
+        title="Progress &amp; syllabus"
+      >
+        <SettingsPanel
+          currentUnit={currentUnit}
+          onChangeUnit={changeUnit}
+          syllabus={syllabus}
+          onSaveSyllabus={saveSyllabus}
+          totalGold={totalGold}
+          totalCells={totalCells}
+          accentPct={accentPct}
+          goldTables={goldTables}
+          totalTables={paradigms.length}
+        />
+      </Sheet>
     </div>
   );
-}
-
-/* ---------- the ask banner ----------
-   Pinned directly above the chip tray so the instruction is always in view at
-   the moment of answering, and — during an assembly — showing which morpheme
-   is wanted next rather than only naming the cell. */
-function PromptBanner({ label, tableShort, twinMode, assembly, refusal }) {
-  const steps = assembly
-    ? assembly.expected.map((pc) => ROLE_SHORT[pc.role] ?? pc.role)
-    : null;
-  return (
-    <div
-      className="prompt-in w-full rounded-xl px-4 py-3 mb-3"
-      style={{ background: C.panel, border: `1px solid ${C.line}` }}
-    >
-      <div className="flex items-baseline gap-3 flex-wrap">
-        <span
-          className="px-2 py-0.5 rounded text-xs shrink-0"
-          style={{
-            background: assembly ? C.aegeanDeep : "transparent",
-            border: `1px solid ${C.aegean}`,
-            color: assembly ? "#fff" : C.aegean,
-            letterSpacing: "0.12em",
-          }}
-        >
-          {assembly ? "ASSEMBLE" : "BUILD"}
-        </span>
-        <span className="text-lg" style={{ color: C.marble }}>
-          {label}
-        </span>
-        {twinMode && tableShort && (
-          <span className="gk text-sm" style={{ color: C.aegean }}>
-            {tableShort}
-          </span>
-        )}
-      </div>
-
-      {steps && (
-        <div className="flex items-center gap-1.5 mt-2 flex-wrap">
-          {steps.map((s, i) => {
-            const done = i < assembly.progress;
-            const live = i === assembly.progress;
-            return (
-              <span key={i} className="flex items-center gap-1.5">
-                <span
-                  className={`px-2 py-0.5 rounded text-xs ${live ? "step-live" : ""}`}
-                  style={{
-                    border: `1px solid ${live ? C.aegean : done ? C.goldDeep : C.line}`,
-                    color: live ? C.aegean : done ? C.gold : C.faint,
-                    background: live ? "rgba(111,179,216,0.10)" : "transparent",
-                  }}
-                >
-                  {done ? "✓ " : ""}
-                  {s}
-                </span>
-                {i < steps.length - 1 && <span style={{ color: C.line }}>→</span>}
-              </span>
-            );
-          })}
-        </div>
-      )}
-
-      {refusal && (
-        <div className="mt-2 text-sm toast-in" style={{ color: C.wrong }}>
-          {refusal.msg}
-        </div>
-      )}
-    </div>
-  );
-}
-
-function MiniStep({ value, min, max, onChange }) {
-  return (
-    <span className="inline-flex items-center gap-1">
-      <button
-        onClick={() => onChange(Math.max(min, value - 1))}
-        className="px-1.5 rounded"
-        style={{ border: `1px solid ${C.line}`, color: C.faint }}
-      >
-        ‹
-      </button>
-      <span style={{ color: C.marble, minWidth: "1.2em", textAlign: "center" }}>{value}</span>
-      <button
-        onClick={() => onChange(Math.min(max, value + 1))}
-        className="px-1.5 rounded"
-        style={{ border: `1px solid ${C.line}`, color: C.faint }}
-      >
-        ›
-      </button>
-    </span>
-  );
-}
-
-/* ---------- one full paradigm table ---------- */
-function ParadigmTable({
-  paradigm,
-  currentUnit,
-  phase,
-  mode,
-  sticky,
-  blanks,
-  feedback,
-  active,
-  impostor,
-  lookup,
-  scramble,
-  dragHandlers,
-  assemblyPrefix,
-  getM,
-  onCellTap,
-  children,
-}) {
-  return (
-    <div
-      className="w-full rounded-2xl p-5 rise"
-      style={{ background: C.panel, border: `1px solid ${C.line}` }}
-    >
-      <div
-        className={`gk text-lg mb-4 ${sticky ? "sticky top-0 z-10 py-1 -my-1" : ""}`}
-        style={{ color: C.marble, ...(sticky ? { background: C.panel } : {}) }}
-      >
-        {paradigm.label}
-      </div>
-
-      <div
-        className="grid gap-2"
-        style={{
-          gridTemplateColumns: `72px repeat(${paradigm.layout.colLabels.length}, 1fr)`,
-        }}
-      >
-        <div />
-        {paradigm.layout.colLabels.map((cl) => (
-          <div
-            key={cl}
-            className="text-center text-xs pb-1"
-            style={{ color: C.faint, letterSpacing: "0.1em" }}
-          >
-            {cl.toUpperCase()}
-          </div>
-        ))}
-
-        {paradigm.layout.rowLabels.map((rl, r) => (
-          <Row
-            key={rl}
-            rl={rl}
-            r={r}
-            paradigm={paradigm}
-            phase={phase}
-            mode={mode}
-            blanks={blanks}
-            feedback={feedback}
-            active={active}
-            impostor={impostor}
-            lookup={lookup}
-            scramble={scramble}
-            dragHandlers={dragHandlers}
-            assemblyPrefix={assemblyPrefix}
-            getM={getM}
-            onCellTap={onCellTap}
-          />
-        ))}
-      </div>
-      {children}
-    </div>
-  );
-}
-
-function Row({ rl, r, paradigm, phase, mode, blanks, feedback, active, impostor, lookup, scramble, dragHandlers, assemblyPrefix, getM, onCellTap }) {
-  return (
-    <>
-      <div className="flex items-center text-xs" style={{ color: C.faint, letterSpacing: "0.08em" }}>
-        {rl.toUpperCase()}
-      </div>
-      {paradigm.layout.colLabels.map((_, cIdx) => {
-        const cell = paradigm.cells.find((c) => c.r === r && c.c === cIdx);
-        if (!cell) return <div key={cIdx} />;
-        const key = cellKey(paradigm.id, cell.id);
-        const isActive = active?.pid === paradigm.id && active?.cid === cell.id;
-        return (
-          <Cell
-            key={cell.id}
-            cell={cell}
-            paradigm={paradigm}
-            phase={phase}
-            mode={mode}
-            blank={blanks.has(key)}
-            fb={feedback[key]}
-            active={isActive}
-            impostor={impostor}
-            lookup={lookup}
-            scramble={scramble}
-            dragHandlers={dragHandlers}
-            assemblyPrefix={isActive ? assemblyPrefix : null}
-            m={getM(paradigm.id, cell.id)}
-            onTap={() => onCellTap(paradigm.id, cell.id)}
-          />
-        );
-      })}
-    </>
-  );
-}
-
-/* M6: a correct sandhi cell first shows its underlying seam, then the pieces
-   visibly collapse into the contracted surface form. */
-function CorrectFlash({ cell, whole, prefix, suffix }) {
-  const [collapsed, setCollapsed] = useState(false);
-  useEffect(() => {
-    if (!cell.sandhi) return;
-    const t = setTimeout(() => setCollapsed(true), 850);
-    return () => clearTimeout(t);
-  }, [cell]);
-  if (cell.sandhi && collapsed) {
-    return (
-      <span className="gk text-xl">
-        <span className="collapse-in">{cell.form}</span>
-      </span>
-    );
-  }
-  return (
-    <span className="gk text-xl">
-      <span className="split-l">{prefix}</span>
-      <span className="split-r">{whole ? cell.form : suffix}</span>
-    </span>
-  );
-}
-
-function Cell({ cell, paradigm, phase, mode, blank, fb, active, impostor, lookup, scramble, dragHandlers, assemblyPrefix, m, onTap }) {
-  /* Scramble owns the cell entirely: it is a drop target holding either a
-     placed tile (itself draggable, so a placement can be undone) or an empty
-     slot. Verdict colours come from the last Check. */
-  if (scramble) {
-    const tile = scramble.placed[cell.id];
-    const verdict = scramble.result
-      ? scramble.result.wrongCells.includes(cell.id)
-        ? "wrong"
-        : scramble.result.correctCells.includes(cell.id)
-          ? "right"
-          : null
-      : null;
-    const border =
-      verdict === "wrong" ? C.wrong : verdict === "right" ? C.goldDeep : tile ? C.aegeanDeep : C.line;
-    return (
-      <div
-        data-drop={`cell:${cell.id}`}
-        className={`rounded-xl px-2 py-3 text-center flex items-center justify-center ${
-          !tile ? "slot-open" : ""
-        }`}
-        style={{
-          minHeight: "58px",
-          border: `1px ${tile ? "solid" : "dashed"} ${border}`,
-          background: tile ? "rgba(255,255,255,0.03)" : "rgba(111,179,216,0.04)",
-        }}
-      >
-        {tile ? (
-          <span
-            className="gk text-xl draggable"
-            onPointerCancel={dragHandlers.cancelDrag}
-            onPointerDown={(e) => dragHandlers.beginDrag(e, tile, { type: "cell", cellId: cell.id })}
-            onPointerMove={dragHandlers.moveDrag}
-            onPointerUp={dragHandlers.endDrag}
-            style={{
-              color: verdict === "wrong" ? C.wrong : verdict === "right" ? C.gold : C.marble,
-            }}
-          >
-            {tile.form}
-          </span>
-        ) : (
-          <span style={{ color: C.line }}>·</span>
-        )}
-      </div>
-    );
-  }
-
-  const gold = m >= GOLD_AT;
-  const whole = drillsWholeForm(paradigm);
-  const isImpostorCell = impostor && impostor.cid === cell.id && fb !== "correct";
-  const prefix = scaffoldOf(paradigm, cell);
-  const suffix = whole ? cell.form : cell.pieces.find((p) => p.role === "ending").text;
-
-  let content;
-  if (mode === "lookup" && lookup) {
-    if (fb === "correct") {
-      content = (
-        <span className="gk text-xl" style={{ color: C.aegean }}>
-          {cell.form}
-        </span>
-      );
-    } else if (gold) {
-      content = <span className="gk text-xl gilded">{cell.form}</span>;
-    } else {
-      content = (
-        <span className="gk text-xl" style={{ color: C.line }}>
-          ·
-        </span>
-      );
-    }
-  } else if (fb === "correct") {
-    content = <CorrectFlash cell={cell} whole={whole} prefix={prefix} suffix={suffix} />;
-  } else if (fb === "reveal") {
-    content = (
-      <span className="gk text-xl" style={{ color: C.aegean }}>
-        {cell.form}
-      </span>
-    );
-  } else if (assemblyPrefix !== null && active) {
-    content = (
-      <span className="gk text-xl">
-        <span style={{ color: C.aegean }}>{assemblyPrefix}</span>
-        <span style={{ color: C.aegean }}>—</span>
-      </span>
-    );
-  } else if (
-    mode === "impostor" ||
-    !blank ||
-    phase === "study" ||
-    phase === "decaying"
-  ) {
-    const shown = isImpostorCell
-      ? impostor.wholeForm
-        ? impostor.fakeEnd
-        : prefixOfForFake(cell) + impostor.fakeEnd
-      : cell.form;
-    content = (
-      <span
-        className={`gk text-xl ${gold && mode !== "impostor" ? "gilded" : ""} ${
-          phase === "decaying" && !gold ? "decaying" : ""
-        }`}
-      >
-        {shown}
-      </span>
-    );
-  } else {
-    content = (
-      <span className="gk text-xl" style={{ color: C.faint }}>
-        {prefix}
-        <span style={{ color: active ? C.aegean : C.line }}>—</span>
-      </span>
-    );
-  }
-
-  return (
-    <button
-      id={`cell-${paradigm.id}-${cell.id}`}
-      onClick={onTap}
-      className={`rounded-xl px-3 py-3 text-center ${fb === "wrong" ? "shake" : ""}`}
-      style={{
-        background: active ? "rgba(111,179,216,0.10)" : "rgba(255,255,255,0.02)",
-        border: `1px solid ${
-          fb === "wrong" ? C.wrong : active ? C.aegean : gold ? C.goldDeep : C.line
-        }`,
-        cursor:
-          mode === "impostor" || mode === "lookup" || (blank && fb !== "correct")
-            ? "pointer"
-            : "default",
-        minHeight: "58px",
-      }}
-    >
-      {content}
-    </button>
-  );
-}
-
-/* Impostor fakes are composed on the underlying prefix (pre-sandhi). */
-function prefixOfForFake(cell) {
-  return cell.pieces
-    .filter((p) => p.role !== "ending")
-    .map((p) => p.text)
-    .join("");
 }

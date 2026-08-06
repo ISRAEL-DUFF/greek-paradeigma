@@ -1,0 +1,46 @@
+{
+  "modes": [
+    {
+      "id": "fill",
+      "name": "Fill",
+      "description": "Study the table, watch it decay, then refill the blanks.",
+      "note": "Once every cell is gold the whole table blanks — gold must be defended."
+    },
+    {
+      "id": "snipe",
+      "name": "Snipe",
+      "description": "Your weakest cells from every table, one at a time.",
+      "note": "Roughly 70% from your current unit, 30% interleaved from earlier ones."
+    },
+    {
+      "id": "impostor",
+      "name": "Impostor",
+      "description": "One form in the table is fake. Find it.",
+      "note": "The fake is always a real neighbouring ending — never a random string."
+    },
+    {
+      "id": "lookup",
+      "name": "Lookup",
+      "description": "A form appears — tap the cell it belongs to.",
+      "note": "Ambiguous forms need every match: ἔλυον is both 1st singular and 3rd plural."
+    },
+    {
+      "id": "twin",
+      "name": "Twin",
+      "description": "Two tables you keep confusing, drilled together.",
+      "note": "The pair is chosen from the confusions you have actually recorded."
+    },
+    {
+      "id": "race",
+      "name": "Race",
+      "description": "The whole table against a 60-second clock.",
+      "note": "Mistakes cost time, never mastery — the race never touches your record."
+    },
+    {
+      "id": "scramble",
+      "name": "Scramble",
+      "description": "Empty table, all forms loose in a bank. Drag each into place.",
+      "note": "Check is disabled until every slot is full; wrong cells are marked."
+    }
+  ]
+}

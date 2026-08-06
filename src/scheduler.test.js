@@ -9,7 +9,9 @@ import {
   answerOf,
   endingOf,
   drillsWholeForm,
+  tableWeakness,
 } from "./scheduler.js";
+import { GOLD_AT } from "./theme.js";
 import { unlockedParadigms, unlockedCells, ALL_PARADIGMS, cellKey } from "./content/index.js";
 import { MAX_UNIT } from "./theme.js";
 
@@ -331,5 +333,61 @@ describe("snipe scheduling", () => {
     });
     const t = pickSnipe(unit, map);
     expect(cellKey(t.paradigm.id, t.cell.id)).toBe(oldest);
+  });
+});
+
+/* tableWeakness is shared by the Scramble scheduler and the Tables panel's
+   "weakest first" ordering, so both must mean the same thing by "weak". */
+describe("tableWeakness", () => {
+  const unit = 3;
+  const p = unlockedParadigms(unit).find((x) => x.cells.length >= 6);
+
+  const mapAtLevel = (lvl) =>
+    Object.fromEntries(p.cells.map((c) => [cellKey(p.id, c.id), { level: lvl }]));
+
+  it("is zero when every gated cell is gilded", () => {
+    expect(tableWeakness(p, unit, mapAtLevel(GOLD_AT))).toBe(0);
+  });
+
+  it("is greatest when nothing has been learned", () => {
+    const untouched = tableWeakness(p, unit, {});
+    expect(untouched).toBeGreaterThan(0);
+    expect(untouched).toBeGreaterThan(tableWeakness(p, unit, mapAtLevel(1)));
+  });
+
+  it("falls monotonically as mastery rises", () => {
+    let prev = Infinity;
+    for (let lvl = 0; lvl <= GOLD_AT; lvl++) {
+      const w = tableWeakness(p, unit, mapAtLevel(lvl));
+      expect(w).toBeLessThan(prev);
+      prev = w;
+    }
+  });
+
+  it("treats a missing record as level 0", () => {
+    expect(tableWeakness(p, unit, {})).toBe(tableWeakness(p, unit, mapAtLevel(0)));
+  });
+
+  it("weights common forms above rare ones", () => {
+    // tier 1 cells contribute more than tier 3 cells at the same level
+    const tier1 = p.cells.filter((c) => c.freqTier === 1);
+    const tier3 = p.cells.filter((c) => c.freqTier === 3);
+    if (tier1.length === 0 || tier3.length === 0) return; // not all tables mix tiers
+    const only = (cells) =>
+      Object.fromEntries(
+        p.cells.map((c) => [
+          cellKey(p.id, c.id),
+          { level: cells.includes(c) ? 0 : GOLD_AT },
+        ])
+      );
+    expect(tableWeakness(p, unit, only(tier1.slice(0, 1)))).toBeGreaterThan(
+      tableWeakness(p, unit, only(tier3.slice(0, 1)))
+    );
+  });
+
+  it("never counts cells gated above the current unit", () => {
+    const future = p.cells.filter((c) => c.unitMax > 1);
+    if (future.length === 0) return;
+    expect(tableWeakness(p, 1, {})).toBeLessThan(tableWeakness(p, unit, {}));
   });
 });

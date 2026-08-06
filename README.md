@@ -49,7 +49,7 @@ npm run dev
 | `npm run dev` | Vite dev server |
 | `npm run build` | Production build + PWA service worker |
 | `npm run preview` | Serve the production build |
-| `npm test` | Vitest suite (66 tests) |
+| `npm test` | Vitest suite (101 tests) |
 | `npm run validate` | Structural + morphological validation of all content |
 | `npm run crosscheck` | Compare every form against the external reference corpus |
 | `npm run check` | `validate` + `test` — run this before committing |
@@ -188,14 +188,17 @@ Dragging is implemented on Pointer Events rather than HTML5 drag-and-drop, so it
 on touch as well as mouse, and the page auto-scrolls while you drag so that the lower
 rows of a tall table stay reachable from behind the pinned bank.
 
-The bank is **one row that scrolls sideways**, however many forms it holds — on a phone
-vertical space is what the board needs and horizontal space is what is going spare, so a
-12-form participle bank costs ~68 px instead of wrapping into a 179 px block. Because the
-strip pans horizontally, bank tiles set `touch-action: pan-x`: a sideways swipe scrolls
-the strip, while lifting a form out of it — which is always an upward motion — comes
-through as a drag. A tile is not picked up until the pointer has travelled 6 px, so taps
-and swipes never flash a ghost, and `pointercancel` (which the browser fires when it
-takes the gesture over to pan) puts the tile back rather than dropping it.
+The bank is **two rows that scroll sideways**, however many forms it holds. Vertical
+space is what the board needs and horizontal space is what is going spare, so the bank
+trades height for width: a 12-form participle bank is a fixed 108 px rather than wrapping
+into a 179 px block. Two rows rather than one because a single strip showed only about
+three of twelve forms at a time.
+
+Because the bank pans horizontally, its tiles set `touch-action: pan-x`: a sideways swipe
+scrolls it, while lifting a form out — always an upward motion — comes through as a drag.
+A tile is not picked up until the pointer has travelled 6 px, so taps and swipes never
+flash a ghost, and `pointercancel` (fired when the browser takes the gesture over to pan)
+puts the tile back rather than dropping it.
 
 **Two session flows**, chosen by the *after solving* toggle and remembered:
 
@@ -211,20 +214,83 @@ A running *"N restored"* counter tracks the session.
 
 ---
 
-## Other features
+## The shell
 
-**Unit selector.** Set your current unit 1–20 in either direction; you are meant to
-drill *ahead* of your class, so progression is never locked behind mastery. Advancing
-shows a "new tables unlocked" screen naming the unit's topic and its new paradigms.
+The paradigm is the product, so it gets the screen. Everything else is one line.
 
-**Syllabus sprint planner.** Tell it which unit your class is on and how far ahead you
-want to stay; the header then reports *sprint on track (+N)* or offers a one-tap jump
-when you fall behind.
+```
+┌──────────────────────────────────────┐
+│ ☰   UNIT 3 · τέχνη ▾      [ FILL ]   │  48 px
+├──────────────────────────────────────┤
+│ ▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │   2 px  gild rule
+│              THE BOARD               │  everything else
+├──────────────────────────────────────┤
+│  prompt banner + tray / bank         │  pinned on a phone, inline on desktop
+└──────────────────────────────────────┘
+```
 
-**Table picker.** Collapsible (your choice is remembered), grouped by unit with a
-plain-English topic on each heading — `UNIT 12 · μι-verbs (athematic) — the present
-system` — so the list is navigable without the book in hand, and internally scrollable
-so 100+ tables can never crowd out the board.
+Controls are placed by **how often they are touched**. Nothing above is touched
+per-answer, so nothing above takes permanent space. This replaced ~514 px of stacked
+chrome — 63 % of a 375 × 812 phone, which left the board 42 px in its natural position.
+
+**The breadcrumb names what is on the board right now** — not the table you last picked.
+Snipe moves you between tables and the bar follows, or it would lie. Twin puts two tables
+on the board, so it shows both: `τέχνη ⇄ χώρᾱ`, with the unit label dropped because twins
+can cross units.
+
+**The gild rule** under the bar is table-local: it fills as *this* table approaches gold,
+so it moves while you play. Twin splits it into two segments, one per table, rather than
+averaging them and hiding a weak half.
+
+### Sheets
+
+Three bottom sheets, summoned from the bar. They sit **over** a dimmed board rather than
+replacing it, so you always choose in relation to what you were looking at, and they stay
+open until you dismiss them — swipe down, tap the scrim, or press `Esc`. Picking a table
+does not close the sheet; the board changes behind it and you can keep browsing.
+
+- **Tables** — search, *by unit / weakest first / unfinished*, and a **locked row** showing
+  the next unit greyed out. Locked units used to simply not render, which made the gate
+  invisible; showing it turns a restriction into visible runway.
+- **How to drill** — the seven modes, each with a sentence and a note. `TWIN` and
+  `IMPOSTOR` were opaque as bare labels; the words live in
+  [`src/content/modes.json`](src/content/modes.json), because what a learner reads is
+  curriculum.
+- **Progress & syllabus** — gilded / accents / tables done, the unit gate, the sprint
+  planner, and an explanation of how gold decays.
+
+The **unit gate lives in Settings and nowhere else**, precisely because it is global: a
+mis-tap on the old always-visible stepper silently changed what the entire app would show.
+Advancing it dismisses the sheet and shows a "new tables unlocked" screen.
+
+### Round end
+
+One screen answers "what now?" for every mode that ends — Fill, Twin, Race and Scramble.
+The other three do not end: Snipe re-aims and Lookup and Impostor auto-advance, so they
+are continuous streams.
+
+It offers the obvious next action, and then **"or try this table as…"** with the sibling
+modes — the honest moment to choose a mode is when something finishes, not from a
+permanent rack of chips. Snipe is never offered (cross-table by definition) and neither is
+Twin (it needs a pair). The Race suggestion carries your personal best for that table.
+
+### Desktop
+
+At ≥ 1024 px the layout stops being a phone. Horizontal space is the spare axis, so:
+
+- **Tables becomes a permanent left rail** — the whole syllabus always in view. It renders
+  the same component the sheet does; only the container differs.
+- **Nothing is pinned.** The prompt banner and tray sit inline beneath the board, so the
+  board cannot be occluded — the failure mode is designed out rather than guarded against.
+- The Scramble bank widens, since it is the one element that wants the spare axis.
+
+Modes and Settings stay sheets at every width.
+
+### Other features
+
+**Syllabus sprint planner.** Tell it which unit your class is on and how far ahead you want
+to stay; it reports *sprint on track (+N)* or offers a one-tap jump when you fall behind.
+You are meant to drill *ahead* of your class, so progression is never locked behind mastery.
 
 **Confusion-driven trays.** Every wrong chip you tap is recorded against that cell. The
 tray then *guarantees* your top confusion reappears as a distractor until you stop
@@ -301,7 +367,7 @@ only against a book scan, listed with their source PDF in `book-attested.txt`.
 
 Current standing: **912 of 916 forms attested**, queue = λείπω's four principal parts.
 
-**3. `npm test`** — 66 tests over the pure logic:
+**3. `npm test`** — 101 tests over the pure logic:
 - the unit-gating sweep across all 20 units (no tray or assembly chip from the future)
 - every tray contains its own answer; no duplicate, ungradeable chips
 - assembly grading, including the regression that tapping the correct ending first must
@@ -313,6 +379,23 @@ Current standing: **912 of 916 forms attested**, queue = λείπω's four princ
 
 Answer grading and round composition deliberately live in a pure, React-free module,
 [`src/grading.js`](src/grading.js), *so that they can be tested*. Please keep them there.
+The same applies to `scheduler.js`, `accent.js` and `sheet.js`.
+
+**4. `scripts/measure-layout.js`** — the gate the other three cannot be.
+
+The one bug class that has repeatedly escaped this project is *"element A is hidden behind
+element B"*: the chip tray over the active cell, the Scramble bank over its drop targets,
+the unlock overlay behind the sheet that opened it. Vitest runs in jsdom, which has **no
+layout engine**, so no unit test can ever catch these. Paste this into the browser console
+with the dev server running:
+
+```js
+await measureLayout()   // every mode, current viewport
+```
+
+Every row must report `ok: true`. Run it at 375, 768 and 1280 px after any layout change.
+A related trap: text rendered in `C.line` — the *border* colour — is invisible against the
+panel. That has caused two separate bugs; it is not a valid colour for text.
 
 `corrections.md` is the standing QA log — every judgment call, every presentation
 question still open against the printed book, and every error found after shipping,
@@ -324,17 +407,28 @@ because a post-ship error indicates a pipeline gap and not just a typo.
 
 ```
 src/
-  App.jsx            UI and game loop
+  App.jsx            game loop and state
   grading.js         pure: answer grading, round composition  ← tested
   scheduler.js       pure: tray building, mode selection, gating  ← tested
   accent.js          pure: accent slot parsing/application  ← tested
+  sheet.js           pure: sheet dismiss gesture maths  ← tested
+  useWide.js         the single ≥1024px breakpoint
   db.js              Dexie/IndexedDB persistence, mastery, decay
   theme.js           locked palette and tuning constants
-  content/           one JSON file per unit + refusals.json
+  components/
+    TopBar.jsx       breadcrumb + gild rule
+    Sheet.jsx        the bottom-sheet container
+    TablesPanel.jsx  ─┐ container-agnostic: rendered inside a Sheet on a
+    ModesPanel.jsx    │ phone and (Tables) inside the rail on desktop.
+    SettingsPanel.jsx─┘ They own content, never position — do not add chrome.
+    RoundEnd.jsx     one "what now?" screen for every mode that ends
+    ParadigmTable.jsx / Cell.jsx / PromptBanner.jsx / MiniStep.jsx
+  content/           one JSON file per unit + refusals.json + modes.json
   *.test.js          vitest suites
 scripts/
   validate-content.mjs   content integrity gate
   crosscheck.mjs         external-source verification
+  measure-layout.js      browser occlusion check — see Correctness
 ```
 
 **Stack:** React 19 + Vite 6, Tailwind 4, Dexie (IndexedDB), vite-plugin-pwa. No

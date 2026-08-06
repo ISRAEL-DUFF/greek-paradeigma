@@ -1,4 +1,6 @@
 import { describe, it, expect } from "vitest";
+import { readFileSync } from "node:fs";
+import { MODES, MODE_IDS, SAME_TABLE_MODES, ROUND_MODES, siblingModes } from "./content/modes.js";
 import {
   ALL_PARADIGMS,
   unlockedParadigms,
@@ -121,5 +123,82 @@ describe("time decay (§3.3)", () => {
   it("never decays a cell that was not gold", () => {
     expect(decayedLevel(2, now - DECAY_TO_1_MS * 5, now)).toBe(2);
     expect(decayedLevel(0, now - DECAY_TO_1_MS * 5, now)).toBe(0);
+  });
+});
+
+/* ---------- play modes ---------- */
+describe("mode descriptions are content, and cover every mode", () => {
+  it("exposes all seven modes with unique ids", () => {
+    expect(MODE_IDS.length).toBe(7);
+    expect(new Set(MODE_IDS).size).toBe(7);
+  });
+
+  it("gives every mode a name, a description and a note", () => {
+    for (const m of MODES) {
+      expect(m.name?.trim(), `${m.id} name`).toBeTruthy();
+      expect(m.description?.trim(), `${m.id} description`).toBeTruthy();
+      expect(m.note?.trim(), `${m.id} note`).toBeTruthy();
+    }
+  });
+
+  /* The real invariant: a mode the app can ENTER must be one the app can
+     EXPLAIN. Reading the source is deliberate — it is the only way to catch a
+     mode being added to the game loop without a description, which is exactly
+     how TWIN and IMPOSTOR ended up as opaque labels in the first place. */
+  it("describes every mode the game loop can actually be in", () => {
+    const src = readFileSync(new URL("./App.jsx", import.meta.url), "utf8");
+    const used = new Set();
+    for (const re of [
+      /mode === "([a-z]+)"/g,
+      /changeMode\("([a-z]+)"\)/g,
+      /startRound\("([a-z]+)"\)/g,
+      /setMode\("([a-z]+)"\)/g,
+    ]) {
+      for (const m of src.matchAll(re)) used.add(m[1]);
+    }
+    expect(used.size).toBeGreaterThan(0);
+    const undescribed = [...used].filter((id) => !MODE_IDS.includes(id));
+    expect(undescribed, "modes the app can enter but cannot explain").toEqual([]);
+  });
+
+  it("has no described mode the app cannot actually enter", () => {
+    const src = readFileSync(new URL("./App.jsx", import.meta.url), "utf8");
+    const orphan = MODE_IDS.filter((id) => !src.includes(`"${id}"`));
+    expect(orphan, "described modes with no code path").toEqual([]);
+  });
+
+  it("keeps descriptions short enough to read at a glance", () => {
+    for (const m of MODES) {
+      expect(m.description.length, `${m.id} description`).toBeLessThanOrEqual(90);
+      expect(m.note.length, `${m.id} note`).toBeLessThanOrEqual(130);
+    }
+  });
+});
+
+describe("which modes are offered where", () => {
+  it("offers only modes that drill the table in front of you", () => {
+    // snipe is cross-table by definition; twin needs a pair, not a table
+    expect(SAME_TABLE_MODES).not.toContain("snipe");
+    expect(SAME_TABLE_MODES).not.toContain("twin");
+    for (const id of SAME_TABLE_MODES) expect(MODE_IDS).toContain(id);
+  });
+
+  it("never suggests the mode you are already in", () => {
+    for (const id of MODE_IDS) {
+      expect(siblingModes(id).map((m) => m.id)).not.toContain(id);
+    }
+  });
+
+  it("returns fully described modes, so a suggestion can always be explained", () => {
+    for (const m of siblingModes("fill")) {
+      expect(m.name).toBeTruthy();
+      expect(m.description).toBeTruthy();
+    }
+  });
+
+  it("gives a round-end screen only to modes that actually end", () => {
+    // lookup, impostor and snipe are continuous streams — they auto-advance
+    for (const id of ROUND_MODES) expect(MODE_IDS).toContain(id);
+    for (const id of ["snipe", "lookup", "impostor"]) expect(ROUND_MODES).not.toContain(id);
   });
 });

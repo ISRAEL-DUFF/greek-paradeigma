@@ -139,6 +139,44 @@ for (const [form, keys] of byForm) {
   }
 }
 
+/* ---------- play modes ----------
+   The words a learner reads are curriculum, so modes.json is validated like
+   any other content: a mode cannot ship without an explanation. */
+const MODE_DESC_MAX = 90; // one comfortable line in the sheet
+const MODE_NOTE_MAX = 130;
+let nModes = 0;
+try {
+  const modeDoc = JSON.parse(readFileSync(join(CONTENT_DIR, "modes.json"), "utf8"));
+  const modes = modeDoc.modes;
+  if (!Array.isArray(modes) || modes.length === 0) {
+    err("modes.json", "must hold a non-empty `modes` array");
+  } else {
+    nModes = modes.length;
+    const seen = new Set();
+    for (const m of modes) {
+      const where = `modes.json:${m.id ?? "(no id)"}`;
+      if (!m.id || !/^[a-z][a-z0-9]*$/.test(m.id))
+        err(where, "id must be lowercase alphanumeric");
+      if (seen.has(m.id)) err(where, "duplicate mode id");
+      seen.add(m.id);
+      if (!m.name?.trim()) err(where, "missing name");
+      for (const [field, max] of [
+        ["description", MODE_DESC_MAX],
+        ["note", MODE_NOTE_MAX],
+      ]) {
+        const v = m[field];
+        if (!v?.trim()) err(where, `missing ${field}`);
+        else if (v.length > max)
+          err(where, `${field} is ${v.length} chars, over the ${max} limit`);
+        else if (!/[.!?]$/.test(v.trim()))
+          err(where, `${field} should read as a sentence and end with punctuation`);
+      }
+    }
+  }
+} catch (e) {
+  err("modes.json", `unreadable — ${e.message}`);
+}
+
 /* ---------- report ---------- */
 if (errors.length) {
   console.error(`✗ Content validation FAILED — ${errors.length} error(s):`);
@@ -147,5 +185,5 @@ if (errors.length) {
 }
 const nParadigms = paradigmIds.size;
 console.log(
-  `✓ Content valid — ${unitFiles.length} unit(s), ${nParadigms} paradigm(s), ${allCells.size} cell(s).`
+  `✓ Content valid — ${unitFiles.length} unit(s), ${nParadigms} paradigm(s), ${allCells.size} cell(s), ${nModes} mode(s).`
 );

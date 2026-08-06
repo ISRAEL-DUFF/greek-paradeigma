@@ -142,14 +142,20 @@
    an upward motion, so the two gestures do not fight. */
 .draggable-x { touch-action: pan-x; }
 
-/* One row, however many forms — vertical space is the scarce one on a phone */
+/* TWO rows, however many forms, scrolling sideways.
+   Vertical space is the scarce axis and horizontal is the spare one, so the
+   bank trades height for width — but one row let you see only ~3 of 12 forms,
+   so two is the balance: fixed height, most of the bank visible, still scrolls.
+   Column-major fill keeps reading order down-then-across. */
 .bank-strip {
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-columns: max-content;
   align-items: center;
   gap: 0.5rem;
   /* plain `center` makes the overflowing start unreachable; `safe` falls back
-     to flex-start exactly when the strip is too full to fit */
+     to start exactly when the bank is too full to fit */
   justify-content: flex-start;
   justify-content: safe center;
   overflow-x: auto;
@@ -165,10 +171,23 @@
     transparent 100%
   );
 }
-.bank-strip > * { flex: 0 0 auto; }
 .bank-strip::-webkit-scrollbar { height: 5px; }
 .bank-strip::-webkit-scrollbar-thumb { background: #2e3450; border-radius: 3px; }
 .bank-strip::-webkit-scrollbar-track { background: transparent; }
+/* Bottom sheet: slide and fade, but never while a finger is on the handle —
+   the drag must track 1:1, so .sheet-anim is removed for the duration. */
+.sheet-anim {
+  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.3, 1), opacity 0.28s ease;
+}
+/* the handle owns its gesture; the sheet body below it still scrolls */
+.sheet-grab {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+.sheet-grab:active { cursor: grabbing; }
+
 .drag-ghost {
   position: fixed;
   z-index: 60;
@@ -192,6 +211,7 @@
 @media (prefers-reduced-motion: reduce) {
   .refuse, .toast-in, .collapse-in, .race-low,
   .prompt-in, .step-live, .slot-open { animation: none !important; }
+  .sheet-anim { transition: none !important; }
   .prompt-in { box-shadow: -3px 0 0 0 rgba(111, 179, 216, 0.9) inset; }
   .chev { transition: none; }
 }

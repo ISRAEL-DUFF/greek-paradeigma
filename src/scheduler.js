@@ -277,6 +277,19 @@ export function pickSnipe(currentUnit, masteryMap) {
  * so it serves the least-recently-practised table — the same defend-the-oldest
  * behaviour Snipe falls back on.
  */
+/**
+ * How far a whole table still is from gold, weighted by frequency tier.
+ * 0 means every gated cell is gilded. Shared by the Scramble scheduler and the
+ * Tables panel's "weakest first" ordering, so both mean the same thing by
+ * "weak" — two different definitions would be quietly misleading.
+ */
+export function tableWeakness(paradigm, currentUnit, masteryMap) {
+  return gatedCells(paradigm, currentUnit).reduce((sum, c) => {
+    const lvl = masteryMap[cellKey(paradigm.id, c.id)]?.level ?? 0;
+    return sum + (GOLD_AT - lvl) * (TIER_WEIGHT[c.freqTier] ?? 1);
+  }, 0);
+}
+
 export function pickScrambleTable(currentUnit, masteryMap, excludeId) {
   const all = unlockedParadigms(currentUnit).filter(
     (p) => gatedCells(p, currentUnit).length > 0
@@ -284,13 +297,7 @@ export function pickScrambleTable(currentUnit, masteryMap, excludeId) {
   const pool = all.filter((p) => p.id !== excludeId);
   if (pool.length === 0) return all[0] ?? null;
 
-  const weaknessOf = (p) =>
-    gatedCells(p, currentUnit).reduce((sum, c) => {
-      const lvl = masteryMap[cellKey(p.id, c.id)]?.level ?? 0;
-      return sum + (GOLD_AT - lvl) * (TIER_WEIGHT[c.freqTier] ?? 1);
-    }, 0);
-
-  const scored = pool.map((p) => ({ p, w: weaknessOf(p) }));
+  const scored = pool.map((p) => ({ p, w: tableWeakness(p, currentUnit, masteryMap) }));
   const weak = scored.filter((x) => x.w > 0);
 
   if (weak.length === 0) {
