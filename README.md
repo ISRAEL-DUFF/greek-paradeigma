@@ -7,7 +7,7 @@ It is a single-player, local-first, offline-capable morphology trainer. No accou
 no backend, no network. You drill declension and conjugation tables until every cell
 is gold, and the app makes sure you are never shown a form your unit has not reached.
 
-**Current coverage:** 20 units · 122 tables · 916 fully decomposed cells.
+**Current coverage:** 20 units · 200 tables · 1,672 fully decomposed cells — every H&Q unit has its content authored, including duals and vocatives.
 
 ---
 
@@ -117,7 +117,7 @@ in **its own score channel** (shown in the header) and never touches form master
 verb accents are rule-driven and noun accents lexical, so they are a separate skill.
 
 Slot detection is diphthong-aware and preserves breathings and iota subscripts; a test
-round-trips all 916 shipped forms through it.
+round-trips all 1,672 shipped forms through it.
 
 ---
 
@@ -365,7 +365,7 @@ exact match including accents; match by model-stem transposition (their βουλ
 vouching for our λύω — skeleton only, accents still human-checked); and forms attested
 only against a book scan, listed with their source PDF in `book-attested.txt`.
 
-Current standing: **912 of 916 forms attested**, queue = λείπω's four principal parts.
+Current standing: **1,666 of 1,672 forms attested** (1,128 exact, 255 book-scan, 283 transposed); queue = λείπω's four principal parts, ἐλπί, γενοῖν — all awaiting the book check.
 
 **3. `npm test`** — 101 tests over the pure logic:
 - the unit-gating sweep across all 20 units (no tray or assembly chip from the future)
@@ -374,7 +374,7 @@ Current standing: **912 of 916 forms attested**, queue = λείπω's four princ
   teach rather than penalize
 - impostor honesty (never spells a genuine form; never reuses its own)
 - Lookup requires every homograph cell
-- accent round-trip over all 916 forms
+- accent round-trip over all 1,672 forms
 - decay thresholds, homograph symmetry, round composition
 
 Answer grading and round composition deliberately live in a pure, React-free module,

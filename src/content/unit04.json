@@ -1,6 +1,6 @@
 {
   "unit": 4,
-  "title": "First declension concluded — the short-α type",
+  "title": "First declension concluded; adjectives of the first and second declensions",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -16,11 +16,18 @@
           "Nom",
           "Gen",
           "Dat",
-          "Acc"
+          "Acc",
+          "Voc"
         ],
         "colLabels": [
           "singular",
-          "plural"
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2",
+          "4,2"
         ]
       },
       "notes": "Short α in nominative and accusative singular, but η in genitive and dative — the mixed first-declension type.",
@@ -41,7 +48,10 @@
             }
           ],
           "unitMax": 4,
-          "freqTier": 1
+          "freqTier": 1,
+          "homographs": [
+            "noun.thalatta.decl1s:vs"
+          ]
         },
         {
           "id": "np",
@@ -59,7 +69,10 @@
             }
           ],
           "unitMax": 4,
-          "freqTier": 1
+          "freqTier": 1,
+          "homographs": [
+            "noun.thalatta.decl1s:vp"
+          ]
         },
         {
           "id": "gs",
@@ -168,6 +181,2252 @@
           ],
           "unitMax": 4,
           "freqTier": 1
+        },
+        {
+          "id": "vs",
+          "r": 4,
+          "c": 0,
+          "form": "θάλαττα",
+          "pieces": [
+            {
+              "text": "θάλαττ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "noun.thalatta.decl1s:ns"
+          ]
+        },
+        {
+          "id": "vp",
+          "r": 4,
+          "c": 1,
+          "form": "θάλατται",
+          "pieces": [
+            {
+              "text": "θάλαττ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "noun.thalatta.decl1s:np"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "θαλάττᾱ",
+          "pieces": [
+            {
+              "text": "θαλάττ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "θαλάτταιν",
+          "pieces": [
+            {
+              "text": "θαλάττ",
+              "role": "stem"
+            },
+            {
+              "text": "αιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "noun.neanias.decl1m",
+      "kind": "noun",
+      "lemma": "νεανίας",
+      "system": "first declension, masculine in -ᾱς",
+      "label": "νεανίᾱς — First Declension Masculine (-ᾱς)",
+      "short": "νεανίᾱς",
+      "unitIntroduced": 4,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2",
+          "4,2"
+        ]
+      },
+      "notes": "Masculine, but first declension: the -ου genitive singular is borrowed from the second declension to mark the gender.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "νεανίᾱς",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "noun.neanias.decl1m:ap"
+          ]
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "νεανίου",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "νεανίᾳ",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "νεανίᾱν",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "vs",
+          "r": 4,
+          "c": 0,
+          "form": "νεανίᾱ",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "noun.neanias.decl1m:dn"
+          ]
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "νεανίαι",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "noun.neanias.decl1m:vp"
+          ]
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "νεανιῶν",
+          "pieces": [
+            {
+              "text": "νεανι",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "νεανίαις",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "νεανίᾱς",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "noun.neanias.decl1m:ns"
+          ]
+        },
+        {
+          "id": "vp",
+          "r": 4,
+          "c": 1,
+          "form": "νεανίαι",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "noun.neanias.decl1m:np"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "νεανίᾱ",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "noun.neanias.decl1m:vs"
+          ]
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "νεανίαιν",
+          "pieces": [
+            {
+              "text": "νεανί",
+              "role": "stem"
+            },
+            {
+              "text": "αιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "noun.stratiotes.decl1m",
+      "kind": "noun",
+      "lemma": "στρατιώτης",
+      "system": "first declension, masculine in -ης",
+      "label": "στρατιώτης — First Declension Masculine (-ης)",
+      "short": "στρατιώτης",
+      "unitIntroduced": 4,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2",
+          "4,2"
+        ]
+      },
+      "notes": "Vocative in short -α with retracted accent: στρατιῶτα. Nouns in -της regularly do this.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "στρατιώτης",
+          "pieces": [
+            {
+              "text": "στρατιώτ",
+              "role": "stem"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "στρατιώτου",
+          "pieces": [
+            {
+              "text": "στρατιώτ",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "στρατιώτῃ",
+          "pieces": [
+            {
+              "text": "στρατιώτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "στρατιώτην",
+          "pieces": [
+            {
+              "text": "στρατιώτ",
+              "role": "stem"
+            },
+            {
+              "text": "ην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "vs",
+          "r": 4,
+          "c": 0,
+          "form": "στρατιῶτα",
+          "pieces": [
+            {
+              "text": "στρατιῶτ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "στρατιῶται",
+          "pieces": [
+            {
+              "text": "στρατιῶτ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "noun.stratiotes.decl1m:vp"
+          ]
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "στρατιωτῶν",
+          "pieces": [
+            {
+              "text": "στρατιωτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "στρατιώταις",
+          "pieces": [
+            {
+              "text": "στρατιώτ",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "στρατιώτᾱς",
+          "pieces": [
+            {
+              "text": "στρατιώτ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "vp",
+          "r": 4,
+          "c": 1,
+          "form": "στρατιῶται",
+          "pieces": [
+            {
+              "text": "στρατιῶτ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "noun.stratiotes.decl1m:np"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "στρατιώτᾱ",
+          "pieces": [
+            {
+              "text": "στρατιώτ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "στρατιώταιν",
+          "pieces": [
+            {
+              "text": "στρατιώτ",
+              "role": "stem"
+            },
+            {
+              "text": "αιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "adj.agathos.sg",
+      "kind": "adj",
+      "lemma": "ἀγαθός",
+      "system": "first/second-declension adjective",
+      "label": "ἀγαθός — Adjective 2-1-2 (η-type), singular",
+      "short": "ἀγαθός sg",
+      "unitIntroduced": 4,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Feminine in η after a consonant. Masculine and neuter share genitive and dative — the syncretism Lookup will demand you know.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "ἀγαθός",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "ἀγαθή",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ή",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.sg:vf"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ἀγαθόν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.sg:am",
+            "adj.agathos.sg:an",
+            "adj.agathos.sg:vn"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "ἀγαθοῦ",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ἀγαθῆς",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῆς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "ἀγαθοῦ",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "ἀγαθῷ",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ἀγαθῇ",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῇ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "ἀγαθῷ",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "ἀγαθόν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.sg:an",
+            "adj.agathos.sg:nn",
+            "adj.agathos.sg:vn"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ἀγαθήν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ήν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ἀγαθόν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.sg:am",
+            "adj.agathos.sg:nn",
+            "adj.agathos.sg:vn"
+          ]
+        },
+        {
+          "id": "vm",
+          "r": 4,
+          "c": 0,
+          "form": "ἀγαθέ",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "έ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3
+        },
+        {
+          "id": "vf",
+          "r": 4,
+          "c": 1,
+          "form": "ἀγαθή",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ή",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.agathos.sg:nf"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 2,
+          "form": "ἀγαθόν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.agathos.sg:am",
+            "adj.agathos.sg:an",
+            "adj.agathos.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.agathos.pl",
+      "kind": "adj",
+      "lemma": "ἀγαθός",
+      "system": "first/second-declension adjective",
+      "label": "ἀγαθός — Adjective 2-1-2 (η-type), plural",
+      "short": "ἀγαθός pl",
+      "unitIntroduced": 4,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The genitive plural is ἀγαθῶν in all three genders — one form, three cells.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "ἀγαθοί",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "οί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.pl:vm"
+          ]
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "ἀγαθαί",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "αί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.pl:vf"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ἀγαθά",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.du:navf",
+            "adj.agathos.pl:an",
+            "adj.agathos.pl:vn"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "ἀγαθῶν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.pl:gf",
+            "adj.agathos.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ἀγαθῶν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.pl:gm",
+            "adj.agathos.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "ἀγαθῶν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.pl:gf",
+            "adj.agathos.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "ἀγαθοῖς",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ἀγαθαῖς",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "αῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "ἀγαθοῖς",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "ἀγαθούς",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ούς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ἀγαθάς",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "άς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ἀγαθά",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.agathos.du:navf",
+            "adj.agathos.pl:nn",
+            "adj.agathos.pl:vn"
+          ]
+        },
+        {
+          "id": "vm",
+          "r": 4,
+          "c": 0,
+          "form": "ἀγαθοί",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "οί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.agathos.pl:nm"
+          ]
+        },
+        {
+          "id": "vf",
+          "r": 4,
+          "c": 1,
+          "form": "ἀγαθαί",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "αί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.agathos.pl:nf"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 2,
+          "form": "ἀγαθά",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.agathos.du:navf",
+            "adj.agathos.pl:an",
+            "adj.agathos.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.agathos.du",
+      "kind": "adj",
+      "lemma": "ἀγαθός",
+      "system": "first/second-declension adjective, dual",
+      "label": "ἀγαθός — Adjective 2-1-2 (η-type), dual",
+      "short": "ἀγαθός du",
+      "unitIntroduced": 4,
+      "layout": {
+        "rowLabels": [
+          "N.A.V.",
+          "G.D."
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The feminine dual ἀγαθά is spelled like the neuter plural — context alone decides.",
+      "cells": [
+        {
+          "id": "navm",
+          "r": 0,
+          "c": 0,
+          "form": "ἀγαθώ",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ώ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.agathos.du:navn"
+          ]
+        },
+        {
+          "id": "navf",
+          "r": 0,
+          "c": 1,
+          "form": "ἀγαθά",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.agathos.pl:an",
+            "adj.agathos.pl:nn",
+            "adj.agathos.pl:vn"
+          ]
+        },
+        {
+          "id": "navn",
+          "r": 0,
+          "c": 2,
+          "form": "ἀγαθώ",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "ώ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.agathos.du:navm"
+          ]
+        },
+        {
+          "id": "gdm",
+          "r": 1,
+          "c": 0,
+          "form": "ἀγαθοῖν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.agathos.du:gdn"
+          ]
+        },
+        {
+          "id": "gdf",
+          "r": 1,
+          "c": 1,
+          "form": "ἀγαθαῖν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "αῖν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3
+        },
+        {
+          "id": "gdn",
+          "r": 1,
+          "c": 2,
+          "form": "ἀγαθοῖν",
+          "pieces": [
+            {
+              "text": "ἀγαθ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.agathos.du:gdm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.axios.sg",
+      "kind": "adj",
+      "lemma": "ἄξιος",
+      "system": "first/second-declension adjective",
+      "label": "ἄξιος — Adjective 2-1-2 (ᾱ-type), singular",
+      "short": "ἄξιος sg",
+      "unitIntroduced": 4,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Feminine in ᾱ after ε, ι, ρ. The accent sits on the penult and moves nowhere it need not.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "ἄξιος",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "ἀξίᾱ",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.du:navf",
+            "adj.axios.sg:vf"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ἄξιον",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.sg:am",
+            "adj.axios.sg:an",
+            "adj.axios.sg:vn"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "ἀξίου",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ἀξίᾱς",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.pl:af"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "ἀξίου",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "ἀξίῳ",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ἀξίᾳ",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "ἀξίῳ",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "ἄξιον",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.sg:an",
+            "adj.axios.sg:nn",
+            "adj.axios.sg:vn"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ἀξίᾱν",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ἄξιον",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.sg:am",
+            "adj.axios.sg:nn",
+            "adj.axios.sg:vn"
+          ]
+        },
+        {
+          "id": "vm",
+          "r": 4,
+          "c": 0,
+          "form": "ἄξιε",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "ε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3
+        },
+        {
+          "id": "vf",
+          "r": 4,
+          "c": 1,
+          "form": "ἀξίᾱ",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.axios.du:navf",
+            "adj.axios.sg:nf"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 2,
+          "form": "ἄξιον",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.axios.sg:am",
+            "adj.axios.sg:an",
+            "adj.axios.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.axios.pl",
+      "kind": "adj",
+      "lemma": "ἄξιος",
+      "system": "first/second-declension adjective",
+      "label": "ἄξιος — Adjective 2-1-2 (ᾱ-type), plural",
+      "short": "ἄξιος pl",
+      "unitIntroduced": 4,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The feminine genitive plural is ἀξίων, following the masculine's accent — NOT the noun-style perispomenon -ῶν. This is the classic adjective trap.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "ἄξιοι",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.pl:vm"
+          ]
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "ἄξιαι",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.pl:vf"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ἄξια",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.pl:an",
+            "adj.axios.pl:vn"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "ἀξίων",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.pl:gf",
+            "adj.axios.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ἀξίων",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.pl:gm",
+            "adj.axios.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "ἀξίων",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.pl:gf",
+            "adj.axios.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "ἀξίοις",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ἀξίαις",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "ἀξίοις",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "ἀξίους",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ἀξίᾱς",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.sg:gf"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ἄξια",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 1,
+          "homographs": [
+            "adj.axios.pl:nn",
+            "adj.axios.pl:vn"
+          ]
+        },
+        {
+          "id": "vm",
+          "r": 4,
+          "c": 0,
+          "form": "ἄξιοι",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.axios.pl:nm"
+          ]
+        },
+        {
+          "id": "vf",
+          "r": 4,
+          "c": 1,
+          "form": "ἄξιαι",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.axios.pl:nf"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 2,
+          "form": "ἄξια",
+          "pieces": [
+            {
+              "text": "ἄξι",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.axios.pl:an",
+            "adj.axios.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.axios.du",
+      "kind": "adj",
+      "lemma": "ἄξιος",
+      "system": "first/second-declension adjective, dual",
+      "label": "ἄξιος — Adjective 2-1-2 (ᾱ-type), dual",
+      "short": "ἄξιος du",
+      "unitIntroduced": 4,
+      "layout": {
+        "rowLabels": [
+          "N.A.V.",
+          "G.D."
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The feminine dual ἀξίᾱ is spelled like the feminine nominative singular — context alone decides.",
+      "cells": [
+        {
+          "id": "navm",
+          "r": 0,
+          "c": 0,
+          "form": "ἀξίω",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.axios.du:navn"
+          ]
+        },
+        {
+          "id": "navf",
+          "r": 0,
+          "c": 1,
+          "form": "ἀξίᾱ",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.axios.sg:nf",
+            "adj.axios.sg:vf"
+          ]
+        },
+        {
+          "id": "navn",
+          "r": 0,
+          "c": 2,
+          "form": "ἀξίω",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.axios.du:navm"
+          ]
+        },
+        {
+          "id": "gdm",
+          "r": 1,
+          "c": 0,
+          "form": "ἀξίοιν",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.axios.du:gdn"
+          ]
+        },
+        {
+          "id": "gdf",
+          "r": 1,
+          "c": 1,
+          "form": "ἀξίαιν",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "αιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3
+        },
+        {
+          "id": "gdn",
+          "r": 1,
+          "c": 2,
+          "form": "ἀξίοιν",
+          "pieces": [
+            {
+              "text": "ἀξί",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 4,
+          "freqTier": 3,
+          "homographs": [
+            "adj.axios.du:gdm"
+          ]
         }
       ]
     }

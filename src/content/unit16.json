@@ -1,6 +1,6 @@
 {
   "unit": 16,
-  "title": "The verb φημί, “say”",
+  "title": "φημί; γιγνώσκω's aorist; future optative and infinitive; πολύς; ναῦς",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -132,6 +132,1433 @@
           ],
           "unitMax": 16,
           "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.gignosko.aor.act.ind",
+      "kind": "verb",
+      "lemma": "γιγνώσκω",
+      "system": "root aorist",
+      "label": "ἔγνων — Root Aorist of γιγνώσκω",
+      "short": "Aor ἔγνων",
+      "unitIntroduced": 16,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "A root aorist: the endings attach straight to the long-vowel root γνω- with no σ and no thematic vowel. Like ἔβην and ἔστην.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἔγνων",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "γνω",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἔγνως",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "γνω",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἔγνω",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "γνω",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἔγνωμεν",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "γνω",
+              "role": "stem"
+            },
+            {
+              "text": "μεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἔγνωτε",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "γνω",
+              "role": "stem"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἔγνωσαν",
+          "pieces": [
+            {
+              "text": "ἔ",
+              "role": "augment"
+            },
+            {
+              "text": "γνω",
+              "role": "stem"
+            },
+            {
+              "text": "σαν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.fut.act.opt",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "future optative",
+      "label": "λύω — Future Active Optative",
+      "short": "Fut Opt",
+      "unitIntroduced": 16,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Lives almost entirely in indirect discourse after a past-tense verb: ἔφη ὅτι λύσοι.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λύσοιμι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οιμι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λύσοις",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λύσοι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λύσοιμεν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οιμεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λύσοιτε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οιτε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λύσοιεν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οιεν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.fut.mid.opt",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "future optative",
+      "label": "λύω — Future Middle Optative",
+      "short": "Fut Opt Mid",
+      "unitIntroduced": 16,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": null,
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λυσοίμην",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οίμην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λύσοιο",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οιο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λύσοιτο",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οιτο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λυσοίμεθα",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οίμεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λύσοισθε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οισθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λύσοιντο",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οιντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.fut.pass.opt",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "future optative",
+      "label": "λύω — Future Passive Optative",
+      "short": "Fut Opt Pass",
+      "unitIntroduced": 16,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": null,
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "λυθησοίμην",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οίμην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "λυθήσοιο",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "θή",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οιο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "λυθήσοιτο",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "θή",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οιτο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "λυθησοίμεθα",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οίμεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "λυθήσοισθε",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "θή",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οισθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "λυθήσοιντο",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "θή",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "οιντο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "adj.polys.sg",
+      "kind": "adj",
+      "lemma": "πολύς",
+      "system": "adjective with variant stems",
+      "label": "πολύς — much, many (singular)",
+      "short": "πολύς sg",
+      "unitIntroduced": 16,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Two stems: πολυ- only in the masc/neut nominative and accusative singular; πολλ- everywhere else. No vocative and no dual in use.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "πολύς",
+          "pieces": [
+            {
+              "text": "πολύ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "πολλή",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ή",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "πολύ",
+          "pieces": [
+            {
+              "text": "πολύ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "πολλοῦ",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "πολλῆς",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ῆς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "πολλοῦ",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "πολλῷ",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "πολλῇ",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ῇ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "πολλῷ",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "πολύν",
+          "pieces": [
+            {
+              "text": "πολύ",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "πολλήν",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ήν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "πολύ",
+          "pieces": [
+            {
+              "text": "πολύ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.polys.pl",
+      "kind": "adj",
+      "lemma": "πολύς",
+      "system": "adjective with variant stems",
+      "label": "πολύς — much, many (plural)",
+      "short": "πολύς pl",
+      "unitIntroduced": 16,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The plural is entirely regular on πολλ-.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "πολλοί",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "οί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "πολλαί",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "αί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "πολλά",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "πολλῶν",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.pl:gf",
+            "adj.polys.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "πολλῶν",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.pl:gm",
+            "adj.polys.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "πολλῶν",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.pl:gf",
+            "adj.polys.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "πολλοῖς",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "πολλαῖς",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "αῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "πολλοῖς",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "πολλούς",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ούς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "πολλάς",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "άς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "πολλά",
+          "pieces": [
+            {
+              "text": "πολλ",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "adj.polys.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noun.naus.decl3irr",
+      "kind": "noun",
+      "lemma": "ναῦς",
+      "system": "third declension, irregular diphthong stem",
+      "label": "ναῦς — ship (irregular)",
+      "short": "ναῦς",
+      "unitIntroduced": 16,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2",
+          "4,2"
+        ]
+      },
+      "notes": "Three stem grades: ναυ- before consonants, νε- before vowels (with quantitative metathesis in νεώς), νη- where the vowel lengthened. The dative νηΐ keeps its diaeresis.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "ναῦς",
+          "pieces": [
+            {
+              "text": "ναῦ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "noun.naus.decl3irr:ap"
+          ]
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "νῆες",
+          "pieces": [
+            {
+              "text": "νῆ",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "noun.naus.decl3irr:vp"
+          ]
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "νεώς",
+          "pieces": [
+            {
+              "text": "νε",
+              "role": "stem"
+            },
+            {
+              "text": "ώς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "νεῶν",
+          "pieces": [
+            {
+              "text": "νε",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "νηΐ",
+          "pieces": [
+            {
+              "text": "νη",
+              "role": "stem"
+            },
+            {
+              "text": "ΐ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "ναυσί(ν)",
+          "pieces": [
+            {
+              "text": "ναυ",
+              "role": "stem"
+            },
+            {
+              "text": "σί(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "ναῦν",
+          "pieces": [
+            {
+              "text": "ναῦ",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "ναῦς",
+          "pieces": [
+            {
+              "text": "ναῦ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 1,
+          "homographs": [
+            "noun.naus.decl3irr:ns"
+          ]
+        },
+        {
+          "id": "vs",
+          "r": 4,
+          "c": 0,
+          "form": "ναῦ",
+          "pieces": [
+            {
+              "text": "ναῦ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 3
+        },
+        {
+          "id": "vp",
+          "r": 4,
+          "c": 1,
+          "form": "νῆες",
+          "pieces": [
+            {
+              "text": "νῆ",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 3,
+          "homographs": [
+            "noun.naus.decl3irr:np"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "νῆε",
+          "pieces": [
+            {
+              "text": "νῆ",
+              "role": "stem"
+            },
+            {
+              "text": "ε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 3
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "νεοῖν",
+          "pieces": [
+            {
+              "text": "νε",
+              "role": "stem"
+            },
+            {
+              "text": "οῖν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 3
         }
       ]
     }

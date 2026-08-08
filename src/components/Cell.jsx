@@ -26,7 +26,28 @@ function CorrectFlash({ cell, whole, prefix, suffix }) {
   );
 }
 
-export default function Cell({ cell, paradigm, phase, mode, blank, fb, active, impostor, lookup, scramble, dragHandlers, assemblyPrefix, m, onTap }) {
+export default function Cell({ cell, paradigm, currentUnit, phase, mode, blank, fb, active, impostor, lookup, scramble, dragHandlers, assemblyPrefix, m, onTap }) {
+  /* A cell above the gate is never shown and never a target — the sacred rule
+     ("no form is ever shown or drilled beyond your unit") applied to DISPLAY.
+     Until Phase 1 every table was uniformly gated, so this branch never fired;
+     the infinitive grid spans U2..U16 and made it real. It must precede the
+     scramble branch, or a locked cell would render as a droppable slot that
+     grading ignores — an unsolvable board. */
+  if (currentUnit != null && cell.unitMax > currentUnit) {
+    return (
+      <div
+        className="rounded-xl px-2 py-3 text-center flex items-center justify-center"
+        style={{ minHeight: "58px", border: `1px dashed ${C.line}`, opacity: 0.45 }}
+        title={`unlocks at Unit ${cell.unitMax}`}
+        aria-label={`locked until unit ${cell.unitMax}`}
+      >
+        <span className="text-xs" style={{ color: C.faint }}>
+          🔒 {cell.unitMax}
+        </span>
+      </div>
+    );
+  }
+
   /* Scramble owns the cell entirely: it is a drop target holding either a
      placed tile (itself draggable, so a placement can be undone) or an empty
      slot. Verdict colours come from the last Check. */

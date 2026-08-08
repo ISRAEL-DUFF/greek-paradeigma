@@ -99,12 +99,17 @@ describe("content contract", () => {
   });
 
   it("grid positions are complete and unique in every table", () => {
+    /* Sparse grids are legal only when declared: the dual column collapses
+       five cases into two, so its empty positions live in `layout.absent`.
+       An UNdeclared hole still fails — that is the point of the check. */
     for (const p of ALL_PARADIGMS) {
       const rows = p.layout.rowLabels.length;
       const cols = p.layout.colLabels.length;
-      expect(p.cells.length, p.id).toBe(rows * cols);
+      const absent = new Set(p.layout.absent ?? []);
+      expect(p.cells.length + absent.size, p.id).toBe(rows * cols);
       const seen = new Set(p.cells.map((c) => `${c.r},${c.c}`));
-      expect(seen.size, p.id).toBe(rows * cols);
+      expect(seen.size, p.id).toBe(p.cells.length);
+      for (const rc of absent) expect(seen.has(rc), `${p.id}: cell at declared-absent ${rc}`).toBe(false);
     }
   });
 });

@@ -1,6 +1,6 @@
 {
   "unit": 11,
-  "title": "The adjective/pronoun αὐτός",
+  "title": "The imperative mood; deponent verbs; the adjective/pronoun αὐτός",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -404,8 +404,8 @@
           "unitMax": 11,
           "freqTier": 1,
           "homographs": [
-            "pron.autos.pl:gm",
-            "pron.autos.pl:gf"
+            "pron.autos.pl:gf",
+            "pron.autos.pl:gm"
           ]
         },
         {
@@ -524,6 +524,533 @@
           "homographs": [
             "pron.autos.pl:nn"
           ]
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.impv.pres.act",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "imperative mood",
+      "label": "λύω — Present Active Imperative",
+      "short": "Impv Pres",
+      "unitIntroduced": 11,
+      "layout": {
+        "rowLabels": [
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Progressive/repeated aspect: 'keep loosing, be loosing.' The 3rd plural λυόντων is spelled like a participle genitive plural — context decides.",
+      "cells": [
+        {
+          "id": "2s",
+          "r": 0,
+          "c": 0,
+          "form": "λῦε",
+          "pieces": [
+            {
+              "text": "λῦ",
+              "role": "stem"
+            },
+            {
+              "text": "ε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 1,
+          "c": 0,
+          "form": "λυέτω",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "έτω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 0,
+          "c": 1,
+          "form": "λύετε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.pres.act.ind:2p"
+          ]
+        },
+        {
+          "id": "3p",
+          "r": 1,
+          "c": 1,
+          "form": "λυόντων",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "όντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.impv.pres.mp",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "imperative mood",
+      "label": "λύω — Present M/P Imperative",
+      "short": "Impv Pres M/P",
+      "unitIntroduced": 11,
+      "layout": {
+        "rowLabels": [
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "λύου is the 2nd singular — historically λύ-ε-σο with σ lost and εο contracted.",
+      "cells": [
+        {
+          "id": "2s",
+          "r": 0,
+          "c": 0,
+          "form": "λύου",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 1,
+          "c": 0,
+          "form": "λυέσθω",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "έσθω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 0,
+          "c": 1,
+          "form": "λύεσθε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "εσθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.pres.mp.ind:2p"
+          ]
+        },
+        {
+          "id": "3p",
+          "r": 1,
+          "c": 1,
+          "form": "λυέσθων",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "έσθων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.impv.aor.act",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "imperative mood",
+      "label": "λύω — Aorist Active Imperative",
+      "short": "Impv Aor",
+      "unitIntroduced": 11,
+      "layout": {
+        "rowLabels": [
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Simple aspect: 'loose (once).' No augment — the augment belongs to the indicative alone.",
+      "cells": [
+        {
+          "id": "2s",
+          "r": 0,
+          "c": 0,
+          "form": "λῦσον",
+          "pieces": [
+            {
+              "text": "λῦ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 1,
+          "c": 0,
+          "form": "λυσάτω",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άτω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 0,
+          "c": 1,
+          "form": "λύσατε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ατε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 1,
+          "c": 1,
+          "form": "λυσάντων",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.impv.aor.mid",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "imperative mood",
+      "label": "λύω — Aorist Middle Imperative",
+      "short": "Impv Aor Mid",
+      "unitIntroduced": 11,
+      "layout": {
+        "rowLabels": [
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The 2nd singular λῦσαι is spelled exactly like the aorist active infinitive — and differs from the optative λύσαι only by accent. The famous triple.",
+      "cells": [
+        {
+          "id": "2s",
+          "r": 0,
+          "c": 0,
+          "form": "λῦσαι",
+          "pieces": [
+            {
+              "text": "λῦ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.inf:aoa"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 1,
+          "c": 0,
+          "form": "λυσάσθω",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άσθω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 0,
+          "c": 1,
+          "form": "λύσασθε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ασθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 1,
+          "c": 1,
+          "form": "λυσάσθων",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "άσθων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.impv.aor.pass",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "imperative mood",
+      "label": "λύω — Aorist Passive Imperative",
+      "short": "Impv Aor Pass",
+      "unitIntroduced": 11,
+      "layout": {
+        "rowLabels": [
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The 2nd singular ends in -θητι (λύθητι); the 3rd plural shortens θη to θε before -ντων.",
+      "cells": [
+        {
+          "id": "2s",
+          "r": 0,
+          "c": 0,
+          "form": "λύθητι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "τι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 1,
+          "c": 0,
+          "form": "λυθήτω",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "θή",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "τω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 0,
+          "c": 1,
+          "form": "λύθητε",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "θη",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "τε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 1,
+          "c": 1,
+          "form": "λυθέντων",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "θέ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ντων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 11,
+          "freqTier": 1
         }
       ]
     }

@@ -26,7 +26,10 @@ export default function TablesPanel({
   const [q, setQ] = useState("");
   const [filter, setFilter] = useState("unit");
 
-  const goldOf = (p) => p.cells.filter((c) => getM(p.id, c.id) >= GOLD_AT).length;
+  /* Counted over gated cells only — "0/12" on a table with 3 reachable cells
+     would misreport what is drillable today (mixed-gate infinitive grid). */
+  const gatedOf = (p) => p.cells.filter((c) => c.unitMax <= currentUnit);
+  const goldOf = (p) => gatedOf(p).filter((c) => getM(p.id, c.id) >= GOLD_AT).length;
   const needle = q.trim().toLowerCase();
 
   /* Search covers the short name, the full label and the unit's own topic, so
@@ -43,7 +46,7 @@ export default function TablesPanel({
 
   const flat = useMemo(() => {
     let list = matches;
-    if (filter === "unfinished") list = list.filter((p) => goldOf(p) < p.cells.length);
+    if (filter === "unfinished") list = list.filter((p) => goldOf(p) < gatedOf(p).length);
     return [...list].sort(
       (a, b) =>
         tableWeakness(b, currentUnit, masteryMap) - tableWeakness(a, currentUnit, masteryMap)
@@ -72,7 +75,7 @@ export default function TablesPanel({
   const tile = (p) => {
     const gold = goldOf(p);
     const on = activeIds.has(p.id);
-    const done = gold === p.cells.length;
+    const done = gold === gatedOf(p).length;
     return (
       <button
         key={p.id}
@@ -86,7 +89,7 @@ export default function TablesPanel({
       >
         <span className="gk">{p.short}</span>
         <span className="ml-2 text-xs" style={{ color: done ? C.gold : C.faint }}>
-          {gold}/{p.cells.length}
+          {gold}/{gatedOf(p).length}
         </span>
       </button>
     );

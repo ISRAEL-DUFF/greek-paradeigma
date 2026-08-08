@@ -33,10 +33,15 @@ export default function ParadigmTable({
         {paradigm.label}
       </div>
 
+      {/* Three-plus columns (sg | pl | dual) must fit a 375px phone, so wide
+          layouts tighten: narrower label gutter, minmax(0,1fr) so columns may
+          shrink below the text's natural width, and .grid-tight shaves cell
+          padding and a font step. Found by the Phase 0.5 layout pass — the
+          dual column overflowed its panel by 13px. */}
       <div
-        className="grid gap-2"
+        className={`grid ${paradigm.layout.colLabels.length >= 3 ? "gap-1.5 grid-tight" : "gap-2"}`}
         style={{
-          gridTemplateColumns: `72px repeat(${paradigm.layout.colLabels.length}, 1fr)`,
+          gridTemplateColumns: `${paradigm.layout.colLabels.length >= 3 ? "42px" : "72px"} repeat(${paradigm.layout.colLabels.length}, minmax(0, 1fr))`,
         }}
       >
         <div />
@@ -56,6 +61,7 @@ export default function ParadigmTable({
             rl={rl}
             r={r}
             paradigm={paradigm}
+            currentUnit={currentUnit}
             phase={phase}
             mode={mode}
             blanks={blanks}
@@ -76,7 +82,7 @@ export default function ParadigmTable({
   );
 }
 
-function Row({ rl, r, paradigm, phase, mode, blanks, feedback, active, impostor, lookup, scramble, dragHandlers, assemblyPrefix, getM, onCellTap }) {
+function Row({ rl, r, paradigm, currentUnit, phase, mode, blanks, feedback, active, impostor, lookup, scramble, dragHandlers, assemblyPrefix, getM, onCellTap }) {
   return (
     <>
       <div className="flex items-center text-xs" style={{ color: C.faint, letterSpacing: "0.08em" }}>
@@ -92,6 +98,7 @@ function Row({ rl, r, paradigm, phase, mode, blanks, feedback, active, impostor,
             key={cell.id}
             cell={cell}
             paradigm={paradigm}
+            currentUnit={currentUnit}
             phase={phase}
             mode={mode}
             blank={blanks.has(key)}

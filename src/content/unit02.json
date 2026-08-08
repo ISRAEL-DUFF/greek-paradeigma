@@ -1,6 +1,6 @@
 {
   "unit": 2,
-  "title": "The verb — principal parts; present, imperfect, future, aorist",
+  "title": "The verb — principal parts; present, imperfect, future, aorist; infinitives",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -98,7 +98,10 @@
             }
           ],
           "unitMax": 2,
-          "freqTier": 1
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.impv.pres.act:2p"
+          ]
         },
         {
           "id": "3s",
@@ -877,8 +880,8 @@
           "unitMax": 2,
           "freqTier": 1,
           "homographs": [
-            "verb.luo.fut.act.ind:1s",
-            "verb.luo.aor.act.subj:1s"
+            "verb.luo.aor.act.subj:1s",
+            "verb.luo.fut.act.ind:1s"
           ]
         },
         {
@@ -995,6 +998,306 @@
             "verb.luo.aor.pass.ind:1s"
           ],
           "unlockMsg": "λυθη- acquired — the aorist passive of λύω is now yours."
+        }
+      ]
+    },
+    {
+      "id": "verb.luo.inf",
+      "kind": "verb",
+      "lemma": "λύω",
+      "system": "infinitives, all tenses and voices",
+      "label": "λύω — Infinitives",
+      "short": "Infinitives",
+      "unitIntroduced": 2,
+      "layout": {
+        "rowLabels": [
+          "Present",
+          "Future",
+          "Aorist",
+          "Perfect"
+        ],
+        "colLabels": [
+          "active",
+          "middle",
+          "passive"
+        ]
+      },
+      "notes": "The infinitive accent is not recessive: -σαι, -ναι, -σθαι fix it. λῦσαι (aorist infinitive) and λύσαι (aorist optative 3rd sing.) differ by accent alone.",
+      "cells": [
+        {
+          "id": "pra",
+          "r": 0,
+          "c": 0,
+          "form": "λύειν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "ειν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1
+        },
+        {
+          "id": "prm",
+          "r": 0,
+          "c": 1,
+          "form": "λύεσθαι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "εσθαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 2,
+          "homographs": [
+            "verb.luo.inf:prp"
+          ]
+        },
+        {
+          "id": "prp",
+          "r": 0,
+          "c": 2,
+          "form": "λύεσθαι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "εσθαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 5,
+          "freqTier": 2,
+          "homographs": [
+            "verb.luo.inf:prm"
+          ]
+        },
+        {
+          "id": "fua",
+          "r": 1,
+          "c": 0,
+          "form": "λύσειν",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ειν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "fum",
+          "r": 1,
+          "c": 1,
+          "form": "λύσεσθαι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εσθαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "fup",
+          "r": 1,
+          "c": 2,
+          "form": "λυθήσεσθαι",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "θή",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "εσθαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 16,
+          "freqTier": 2
+        },
+        {
+          "id": "aoa",
+          "r": 2,
+          "c": 0,
+          "form": "λῦσαι",
+          "pieces": [
+            {
+              "text": "λῦ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 2,
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.impv.aor.mid:2s"
+          ]
+        },
+        {
+          "id": "aom",
+          "r": 2,
+          "c": 1,
+          "form": "λύσασθαι",
+          "pieces": [
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ασθαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 2
+        },
+        {
+          "id": "aop",
+          "r": 2,
+          "c": 2,
+          "form": "λυθῆναι",
+          "pieces": [
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "θῆ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "ναι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 5,
+          "freqTier": 2
+        },
+        {
+          "id": "pfa",
+          "r": 3,
+          "c": 0,
+          "form": "λελυκέναι",
+          "pieces": [
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λυ",
+              "role": "stem"
+            },
+            {
+              "text": "κ",
+              "role": "tenseMarker"
+            },
+            {
+              "text": "έναι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 3,
+          "freqTier": 2
+        },
+        {
+          "id": "pfm",
+          "r": 3,
+          "c": 1,
+          "form": "λελύσθαι",
+          "pieces": [
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σθαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 2,
+          "homographs": [
+            "verb.luo.inf:pfp"
+          ]
+        },
+        {
+          "id": "pfp",
+          "r": 3,
+          "c": 2,
+          "form": "λελύσθαι",
+          "pieces": [
+            {
+              "text": "λε",
+              "role": "redup"
+            },
+            {
+              "text": "λύ",
+              "role": "stem"
+            },
+            {
+              "text": "σθαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 5,
+          "freqTier": 2,
+          "homographs": [
+            "verb.luo.inf:pfm"
+          ]
         }
       ]
     }

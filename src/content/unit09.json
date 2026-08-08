@@ -1,6 +1,6 @@
 {
   "unit": 9,
-  "title": "Contract verbs — stems in -α- and -ε-",
+  "title": "Contract verbs in -α- and -ε-; the demonstratives οὗτος and ὅδε",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -476,7 +476,10 @@
             }
           ],
           "unitMax": 9,
-          "freqTier": 1
+          "freqTier": 1,
+          "homographs": [
+            "verb.timao.pres.mp.ind:2s"
+          ]
         },
         {
           "id": "3p",
@@ -496,6 +499,1341 @@
           "sandhi": [
             {
               "seq": "άου",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "pron.houtos.sg",
+      "kind": "pron",
+      "lemma": "οὗτος",
+      "system": "demonstrative pronoun",
+      "label": "οὗτος — Demonstrative (this/that), singular",
+      "short": "οὗτος sg",
+      "unitIntroduced": 9,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The rough breathing appears only in the nominative masculine and feminine (οὗτος, αὕτη); every other form begins with τ. The diphthong tracks the ending: ου before ο-vowels, αυ before α/η.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "οὗτος",
+          "pieces": [
+            {
+              "text": "οὗτ",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "αὕτη",
+          "pieces": [
+            {
+              "text": "αὕτ",
+              "role": "stem"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "τοῦτο",
+          "pieces": [
+            {
+              "text": "τοῦτ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "τούτου",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ταύτης",
+          "pieces": [
+            {
+              "text": "ταύτ",
+              "role": "stem"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "τούτου",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "τούτῳ",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ταύτῃ",
+          "pieces": [
+            {
+              "text": "ταύτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "τούτῳ",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "τοῦτον",
+          "pieces": [
+            {
+              "text": "τοῦτ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ταύτην",
+          "pieces": [
+            {
+              "text": "ταύτ",
+              "role": "stem"
+            },
+            {
+              "text": "ην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "τοῦτο",
+          "pieces": [
+            {
+              "text": "τοῦτ",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pron.houtos.pl",
+      "kind": "pron",
+      "lemma": "οὗτος",
+      "system": "demonstrative pronoun",
+      "label": "οὗτος — Demonstrative (this/that), plural",
+      "short": "οὗτος pl",
+      "unitIntroduced": 9,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The feminine genitive plural is τούτων, not ταύτων — it follows the masculine.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "οὗτοι",
+          "pieces": [
+            {
+              "text": "οὗτ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "αὗται",
+          "pieces": [
+            {
+              "text": "αὗτ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ταῦτα",
+          "pieces": [
+            {
+              "text": "ταῦτ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "τούτων",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.pl:gf",
+            "pron.houtos.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "τούτων",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.pl:gm",
+            "pron.houtos.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "τούτων",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.pl:gf",
+            "pron.houtos.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "τούτοις",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ταύταις",
+          "pieces": [
+            {
+              "text": "ταύτ",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "τούτοις",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "τούτους",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "ους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ταύτᾱς",
+          "pieces": [
+            {
+              "text": "ταύτ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ταῦτα",
+          "pieces": [
+            {
+              "text": "ταῦτ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.houtos.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pron.houtos.du",
+      "kind": "pron",
+      "lemma": "οὗτος",
+      "system": "dual — one form for all genders",
+      "label": "οὗτος — Demonstrative (this/that), dual",
+      "short": "οὗτος du",
+      "unitIntroduced": 9,
+      "layout": {
+        "rowLabels": [
+          "N.A.",
+          "G.D."
+        ],
+        "colLabels": [
+          "all genders"
+        ]
+      },
+      "notes": "One dual form serves all three genders.",
+      "cells": [
+        {
+          "id": "nav",
+          "r": 0,
+          "c": 0,
+          "form": "τούτω",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 3
+        },
+        {
+          "id": "gd",
+          "r": 1,
+          "c": 0,
+          "form": "τούτοιν",
+          "pieces": [
+            {
+              "text": "τούτ",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "pron.hode.sg",
+      "kind": "pron",
+      "lemma": "ὅδε",
+      "system": "demonstrative pronoun",
+      "label": "ὅδε — Demonstrative (this here), singular",
+      "short": "ὅδε sg",
+      "unitIntroduced": 9,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The article with -δε bolted on: ὁ + δε, τοῦ + δε. Decline the article and the rest follows.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "ὅδε",
+          "pieces": [
+            {
+              "text": "ὅδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "ἥδε",
+          "pieces": [
+            {
+              "text": "ἥδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "τόδε",
+          "pieces": [
+            {
+              "text": "τόδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "τοῦδε",
+          "pieces": [
+            {
+              "text": "τοῦδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "τῆσδε",
+          "pieces": [
+            {
+              "text": "τῆσδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "τοῦδε",
+          "pieces": [
+            {
+              "text": "τοῦδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "τῷδε",
+          "pieces": [
+            {
+              "text": "τῷδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "τῇδε",
+          "pieces": [
+            {
+              "text": "τῇδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "τῷδε",
+          "pieces": [
+            {
+              "text": "τῷδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "τόνδε",
+          "pieces": [
+            {
+              "text": "τόνδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "τήνδε",
+          "pieces": [
+            {
+              "text": "τήνδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "τόδε",
+          "pieces": [
+            {
+              "text": "τόδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.sg:nn"
+          ]
+        }
+      ],
+      "drillClass": "wholeForm"
+    },
+    {
+      "id": "pron.hode.pl",
+      "kind": "pron",
+      "lemma": "ὅδε",
+      "system": "demonstrative pronoun",
+      "label": "ὅδε — Demonstrative (this here), plural",
+      "short": "ὅδε pl",
+      "unitIntroduced": 9,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": null,
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "οἵδε",
+          "pieces": [
+            {
+              "text": "οἵδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "αἵδε",
+          "pieces": [
+            {
+              "text": "αἵδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "τάδε",
+          "pieces": [
+            {
+              "text": "τάδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "τῶνδε",
+          "pieces": [
+            {
+              "text": "τῶνδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.pl:gf",
+            "pron.hode.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "τῶνδε",
+          "pieces": [
+            {
+              "text": "τῶνδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.pl:gm",
+            "pron.hode.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "τῶνδε",
+          "pieces": [
+            {
+              "text": "τῶνδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.pl:gf",
+            "pron.hode.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "τοῖσδε",
+          "pieces": [
+            {
+              "text": "τοῖσδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ταῖσδε",
+          "pieces": [
+            {
+              "text": "ταῖσδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "τοῖσδε",
+          "pieces": [
+            {
+              "text": "τοῖσδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "τούσδε",
+          "pieces": [
+            {
+              "text": "τούσδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "τάσδε",
+          "pieces": [
+            {
+              "text": "τάσδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "τάδε",
+          "pieces": [
+            {
+              "text": "τάδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hode.pl:nn"
+          ]
+        }
+      ],
+      "drillClass": "wholeForm"
+    },
+    {
+      "id": "pron.hode.du",
+      "kind": "pron",
+      "lemma": "ὅδε",
+      "system": "dual — one form for all genders",
+      "label": "ὅδε — Demonstrative (this here), dual",
+      "short": "ὅδε du",
+      "unitIntroduced": 9,
+      "layout": {
+        "rowLabels": [
+          "N.A.",
+          "G.D."
+        ],
+        "colLabels": [
+          "all genders"
+        ]
+      },
+      "notes": "One dual form serves all three genders.",
+      "cells": [
+        {
+          "id": "nav",
+          "r": 0,
+          "c": 0,
+          "form": "τώδε",
+          "pieces": [
+            {
+              "text": "τώδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 3
+        },
+        {
+          "id": "gd",
+          "r": 1,
+          "c": 0,
+          "form": "τοῖνδε",
+          "pieces": [
+            {
+              "text": "τοῖνδε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 3
+        }
+      ],
+      "drillClass": "wholeForm"
+    },
+    {
+      "id": "verb.timao.pres.mp.ind",
+      "kind": "verb",
+      "lemma": "τιμάω",
+      "system": "contract verb in -άω, middle/passive",
+      "label": "τιμάω — Present M/P Indicative",
+      "short": "τιμάω M/P",
+      "unitIntroduced": 9,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "α-contraction throughout: τιμά-ομαι → τιμῶμαι, τιμά-εται → τιμᾶται.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "τιμῶμαι",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "ομαι",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άο",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "τιμᾷ",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άῃ",
+              "to": "ᾷ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1,
+          "homographs": [
+            "verb.timao.pres.act.ind:3s"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "τιμᾶται",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "εται",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άε",
+              "to": "ᾶ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "τιμώμεθα",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "όμεθα",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άό",
+              "to": "ώ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "τιμᾶσθε",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "εσθε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άε",
+              "to": "ᾶ"
+            }
+          ],
+          "unitMax": 9,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "τιμῶνται",
+          "pieces": [
+            {
+              "text": "τιμά",
+              "role": "stem"
+            },
+            {
+              "text": "ονται",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άο",
               "to": "ῶ"
             }
           ],

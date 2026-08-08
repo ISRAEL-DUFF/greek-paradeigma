@@ -61,6 +61,9 @@ const CASE_NAMES = {
   Dat: "dative",
   Acc: "accusative",
   Voc: "vocative",
+  /* Participles: H&Q §66 obs. 2 — the vocative is always the nominative, so
+     the book prints one "Nom./Voc." row and so do we. */
+  "Nom/Voc": "nominative/vocative",
 };
 
 const PART_DESC = {
@@ -83,6 +86,8 @@ function labelFor(paradigm, cell) {
   const row = paradigm.layout.rowLabels[cell.r];
   const col = paradigm.layout.colLabels[cell.c];
   if (isPP(paradigm)) return `principal part ${row} — ${PART_DESC[row] ?? ""}`;
+  /* The infinitive grid is tense × voice, not person × number. */
+  if (paradigm.id.includes(".inf")) return `${row.toLowerCase()} ${col} infinitive`;
   if (paradigm.kind === "verb") return `${row} person ${col}`;
   return `${CASE_NAMES[row] ?? row.toLowerCase()} ${col}`;
 }
@@ -915,7 +920,11 @@ export default function App() {
     );
   }
 
-  const goldCount = paradigm.cells.filter((c) => getM(paradigm.id, c.id) >= GOLD_AT).length;
+  /* Gold is always counted over GATED cells — a mixed-gate table (the
+     infinitive grid spans U2..U16) must read complete when everything the
+     player can currently reach is gold, not when Unit 16 arrives. */
+  const gatedOf = (p) => p.cells.filter((c) => c.unitMax <= currentUnit);
+  const goldCount = gatedOf(paradigm).filter((c) => getM(paradigm.id, c.id) >= GOLD_AT).length;
   const assemblyPrefix = assembly
     ? assembly.expected.slice(0, assembly.progress).map((pc) => pc.text).join("")
     : null;
@@ -927,17 +936,17 @@ export default function App() {
   const barTables = shownParadigms.map((p) => ({
     id: p.id,
     short: p.short,
-    gold: p.cells.filter((c) => getM(p.id, c.id) >= GOLD_AT).length,
-    total: p.cells.length,
+    gold: gatedOf(p).filter((c) => getM(p.id, c.id) >= GOLD_AT).length,
+    total: gatedOf(p).length,
   }));
   const goldTables = paradigms.filter(
-    (p) => p.cells.every((c) => getM(p.id, c.id) >= GOLD_AT)
+    (p) => gatedOf(p).every((c) => getM(p.id, c.id) >= GOLD_AT)
   ).length;
 
   /* One derived description of "the round is over", for the four modes that
      have rounds. Snipe, Lookup and Impostor are continuous streams — they
      re-aim or auto-advance — so they have no end and get no screen. */
-  const allGold = goldCount === paradigm.cells.length;
+  const allGold = goldCount === gatedOf(paradigm).length;
   const roundEnd = (() => {
     if (twinMode && phase === "done")
       return {

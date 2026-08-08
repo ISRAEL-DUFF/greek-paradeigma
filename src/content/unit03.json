@@ -427,8 +427,8 @@
           "unitMax": 3,
           "freqTier": 1,
           "homographs": [
-            "verb.luo.pres.act.ind:1s",
-            "pp.luo:i"
+            "pp.luo:i",
+            "verb.luo.pres.act.ind:1s"
           ]
         },
         {
@@ -570,8 +570,8 @@
           "unitMax": 3,
           "freqTier": 1,
           "homographs": [
-            "verb.luo.fut.act.ind:1s",
-            "pp.luo:ii"
+            "pp.luo:ii",
+            "verb.luo.fut.act.ind:1s"
           ]
         },
         {

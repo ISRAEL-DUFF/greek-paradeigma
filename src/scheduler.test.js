@@ -158,6 +158,9 @@ describe("impostor honesty", () => {
   it("an ending-swap impostor never accidentally spells a genuine form", () => {
     // A made-up ending on a real stem could land on a word that is correct
     // elsewhere; then the 'wrong' cell would in fact be right.
+    // Collect-then-assert: per-iteration expect() made this sweep time out
+    // the moment the corpus grew past ~1600 cells (the flaky-gating lesson).
+    const bad = [];
     for (const unit of UNITS) {
       const real = new Set(unlockedCells(unit).map(({ cell }) => cell.form));
       for (const p of unlockedParadigms(unit)) {
@@ -166,19 +169,18 @@ describe("impostor honesty", () => {
           const imp = pickImpostor(p, unit);
           if (!imp) continue;
           const shown = shownForm(p, imp);
-          expect(
-            real.has(shown),
-            `unit ${unit}: ${p.id} impostor spelled the genuine form ${shown}`
-          ).toBe(false);
+          if (real.has(shown)) bad.push(`unit ${unit}: ${p.id} spelled genuine ${shown}`);
         }
       }
     }
-  });
+    expect(bad).toEqual([]);
+  }, 30000);
 
   it("a whole-form impostor borrows a sibling's word but never one of its own", () => {
     // The mechanic is 'ἔλυσα where ἔλαβον belongs': the word is real, but wrong
     // for THIS chart. It must not be a form of this chart, or two cells would
     // look equally right and the round would be unanswerable.
+    const bad = [];
     for (const unit of UNITS)
       for (const p of unlockedParadigms(unit)) {
         if (!drillsWholeForm(p)) continue;
@@ -186,24 +188,24 @@ describe("impostor honesty", () => {
         for (let i = 0; i < 5; i++) {
           const imp = pickImpostor(p, unit);
           if (!imp) continue;
-          expect(
-            own.has(shownForm(p, imp)),
-            `unit ${unit}: ${p.id} impostor reused its own form`
-          ).toBe(false);
+          if (own.has(shownForm(p, imp))) bad.push(`unit ${unit}: ${p.id} reused its own form`);
         }
       }
-  });
+    expect(bad).toEqual([]);
+  }, 30000);
 
   it("the falsified cell never still displays its own correct form", () => {
+    const bad = [];
     for (const unit of UNITS)
       for (const p of unlockedParadigms(unit))
         for (let i = 0; i < 5; i++) {
           const imp = pickImpostor(p, unit);
           if (!imp) continue;
           const cell = p.cells.find((c) => c.id === imp.cid);
-          expect(shownForm(p, imp), `${p.id}:${imp.cid} impostor is a no-op`).not.toBe(cell.form);
+          if (shownForm(p, imp) === cell.form) bad.push(`${p.id}:${imp.cid} impostor is a no-op`);
         }
-  });
+    expect(bad).toEqual([]);
+  }, 30000);
 });
 
 describe("reverse lookup ambiguity (M3)", () => {

@@ -124,6 +124,16 @@
 }
 .step-live { animation: stepGlow 1.6s ease-in-out infinite; }
 
+/* Wide (3+ column) paradigm grids: tighter cells so sg|pl|dual fits a phone.
+   Greek forms must never be clipped — the columns shrink by shaving padding
+   and one font step, not by truncating text. */
+.grid-tight > button,
+.grid-tight > div[data-drop] {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.grid-tight .gk.text-xl { font-size: 1.125rem; }
+
 /* picker disclosure chevron */
 .chev { transition: transform 0.2s ease; }
 .chev-open { transform: rotate(90deg); }

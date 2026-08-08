@@ -101,8 +101,24 @@ for (const { file, data } of units) {
         where: cw,
       });
     }
-    if (seenCellIds.size !== rows * cols)
-      err(where, `expected ${rows * cols} cells for ${rows}x${cols} layout, got ${seenCellIds.size}`);
+    /* A grid may be legitimately sparse — the dual collapses five cases into
+       two, so a dual column has no separate dative/accusative/vocative cell.
+       Sparsity must be DECLARED (`layout.absent: ["2,2", …]`) so that an
+       accidentally dropped cell still fails this check. */
+    const absent = new Set(p.layout?.absent ?? []);
+    for (const rc of absent) {
+      const [ar, ac] = String(rc).split(",").map(Number);
+      if (!(ar >= 0 && ar < rows && ac >= 0 && ac < cols))
+        err(where, `absent position ${rc} outside ${rows}x${cols} layout`);
+      if (seenRC.has(rc))
+        err(where, `position ${rc} is declared absent but a cell exists there`);
+    }
+    if (seenCellIds.size + absent.size !== rows * cols)
+      err(
+        where,
+        `expected ${rows * cols} cells for ${rows}x${cols} layout, got ${seenCellIds.size}` +
+          (absent.size ? ` + ${absent.size} declared absent` : "")
+      );
   }
 }
 

@@ -98,7 +98,10 @@
             }
           ],
           "unitMax": 5,
-          "freqTier": 1
+          "freqTier": 1,
+          "homographs": [
+            "verb.luo.impv.pres.mp:2p"
+          ]
         },
         {
           "id": "3s",
@@ -887,8 +890,8 @@
           "unitMax": 5,
           "freqTier": 1,
           "homographs": [
-            "verb.luo.pres.mp.ind:2s",
-            "verb.luo.pres.act.subj:3s"
+            "verb.luo.pres.act.subj:3s",
+            "verb.luo.pres.mp.ind:2s"
           ]
         },
         {

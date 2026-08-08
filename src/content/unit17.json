@@ -1,6 +1,6 @@
 {
   "unit": 17,
-  "title": "The verb εἶμι, “go, come”",
+  "title": "εἶμι; μέγας and ἡδύς; comparison of adjectives; numerals",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -135,6 +135,2929 @@
           ],
           "unitMax": 17,
           "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "adj.megas.sg",
+      "kind": "adj",
+      "lemma": "μέγας",
+      "system": "adjective with variant stems",
+      "label": "μέγας — big, great (singular)",
+      "short": "μέγας sg",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Like πολύς: the short stem μεγα- only in the masc/neut nominative and accusative singular; μεγαλ- everywhere else.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "μέγας",
+          "pieces": [
+            {
+              "text": "μέγα",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "μεγάλη",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "μέγα",
+          "pieces": [
+            {
+              "text": "μέγα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "μεγάλου",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "μεγάλης",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "μεγάλου",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "μεγάλῳ",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "μεγάλῃ",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "μεγάλῳ",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "μέγαν",
+          "pieces": [
+            {
+              "text": "μέγα",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "μεγάλην",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "μέγα",
+          "pieces": [
+            {
+              "text": "μέγα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.megas.pl",
+      "kind": "adj",
+      "lemma": "μέγας",
+      "system": "adjective with variant stems",
+      "label": "μέγας — big, great (plural)",
+      "short": "μέγας pl",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Entirely regular on μεγαλ-.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "μεγάλοι",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "μεγάλαι",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "μεγάλα",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "μεγάλων",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.pl:gf",
+            "adj.megas.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "μεγάλων",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.pl:gm",
+            "adj.megas.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "μεγάλων",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.pl:gf",
+            "adj.megas.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "μεγάλοις",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "μεγάλαις",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "μεγάλοις",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "μεγάλους",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "μεγάλᾱς",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "μεγάλα",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.megas.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.megas.du",
+      "kind": "adj",
+      "lemma": "μέγας",
+      "system": "adjective, dual",
+      "label": "μέγας — big, great (dual)",
+      "short": "μέγας du",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "N.A.V.",
+          "G.D."
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": null,
+      "cells": [
+        {
+          "id": "navm",
+          "r": 0,
+          "c": 0,
+          "form": "μεγάλω",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.megas.du:navn"
+          ]
+        },
+        {
+          "id": "navf",
+          "r": 0,
+          "c": 1,
+          "form": "μεγάλᾱ",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3
+        },
+        {
+          "id": "navn",
+          "r": 0,
+          "c": 2,
+          "form": "μεγάλω",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.megas.du:navm"
+          ]
+        },
+        {
+          "id": "gdm",
+          "r": 1,
+          "c": 0,
+          "form": "μεγάλοιν",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.megas.du:gdn"
+          ]
+        },
+        {
+          "id": "gdf",
+          "r": 1,
+          "c": 1,
+          "form": "μεγάλαιν",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "αιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3
+        },
+        {
+          "id": "gdn",
+          "r": 1,
+          "c": 2,
+          "form": "μεγάλοιν",
+          "pieces": [
+            {
+              "text": "μεγάλ",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.megas.du:gdm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.hedys.sg",
+      "kind": "adj",
+      "lemma": "ἡδύς",
+      "system": "adjective, υ-stem, three endings",
+      "label": "ἡδύς — pleasant (singular)",
+      "short": "ἡδύς sg",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The masc/neut alternate ἡδυ-/ἡδε- like πῆχυς; the feminine ἡδεῖα declines like a short-α first-declension noun. The masculine vocative is bare ἡδύ.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "ἡδύς",
+          "pieces": [
+            {
+              "text": "ἡδύ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "ἡδεῖα",
+          "pieces": [
+            {
+              "text": "ἡδεῖ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.sg:vf"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ἡδύ",
+          "pieces": [
+            {
+              "text": "ἡδύ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.sg:an",
+            "adj.hedys.sg:vm",
+            "adj.hedys.sg:vn"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "ἡδέος",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ἡδείᾱς",
+          "pieces": [
+            {
+              "text": "ἡδεί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.pl:af"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "ἡδέος",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "ἡδεῖ",
+          "pieces": [
+            {
+              "text": "ἡδ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ἡδείᾳ",
+          "pieces": [
+            {
+              "text": "ἡδεί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "ἡδεῖ",
+          "pieces": [
+            {
+              "text": "ἡδ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "ἡδύν",
+          "pieces": [
+            {
+              "text": "ἡδύ",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ἡδεῖαν",
+          "pieces": [
+            {
+              "text": "ἡδεῖ",
+              "role": "stem"
+            },
+            {
+              "text": "αν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ἡδύ",
+          "pieces": [
+            {
+              "text": "ἡδύ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.sg:nn",
+            "adj.hedys.sg:vm",
+            "adj.hedys.sg:vn"
+          ]
+        },
+        {
+          "id": "vm",
+          "r": 4,
+          "c": 0,
+          "form": "ἡδύ",
+          "pieces": [
+            {
+              "text": "ἡδύ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.hedys.sg:an",
+            "adj.hedys.sg:nn",
+            "adj.hedys.sg:vn"
+          ]
+        },
+        {
+          "id": "vf",
+          "r": 4,
+          "c": 1,
+          "form": "ἡδεῖα",
+          "pieces": [
+            {
+              "text": "ἡδεῖ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.hedys.sg:nf"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 2,
+          "form": "ἡδύ",
+          "pieces": [
+            {
+              "text": "ἡδύ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.hedys.sg:an",
+            "adj.hedys.sg:nn",
+            "adj.hedys.sg:vm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.hedys.pl",
+      "kind": "adj",
+      "lemma": "ἡδύς",
+      "system": "adjective, υ-stem, three endings",
+      "label": "ἡδύς — pleasant (plural)",
+      "short": "ἡδύς pl",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The feminine genitive plural ἡδειῶν keeps the noun-style circumflex, like πᾱσῶν.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "ἡδεῖς",
+          "pieces": [
+            {
+              "text": "ἡδ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.pl:am",
+            "adj.hedys.pl:vm"
+          ]
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "ἡδεῖαι",
+          "pieces": [
+            {
+              "text": "ἡδεῖ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.pl:vf"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ἡδέα",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.pl:an",
+            "adj.hedys.pl:vn"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "ἡδέων",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ἡδειῶν",
+          "pieces": [
+            {
+              "text": "ἡδει",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "ἡδέων",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "ἡδέσι(ν)",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ἡδείαις",
+          "pieces": [
+            {
+              "text": "ἡδεί",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "ἡδέσι(ν)",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "ἡδεῖς",
+          "pieces": [
+            {
+              "text": "ἡδ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.pl:nm",
+            "adj.hedys.pl:vm"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ἡδείᾱς",
+          "pieces": [
+            {
+              "text": "ἡδεί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.sg:gf"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ἡδέα",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.hedys.pl:nn",
+            "adj.hedys.pl:vn"
+          ]
+        },
+        {
+          "id": "vm",
+          "r": 4,
+          "c": 0,
+          "form": "ἡδεῖς",
+          "pieces": [
+            {
+              "text": "ἡδ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.hedys.pl:am",
+            "adj.hedys.pl:nm"
+          ]
+        },
+        {
+          "id": "vf",
+          "r": 4,
+          "c": 1,
+          "form": "ἡδεῖαι",
+          "pieces": [
+            {
+              "text": "ἡδεῖ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.hedys.pl:nf"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 2,
+          "form": "ἡδέα",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.hedys.pl:an",
+            "adj.hedys.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.hedys.du",
+      "kind": "adj",
+      "lemma": "ἡδύς",
+      "system": "adjective, dual",
+      "label": "ἡδύς — pleasant (dual)",
+      "short": "ἡδύς du",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "N.A.V.",
+          "G.D."
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": null,
+      "cells": [
+        {
+          "id": "navm",
+          "r": 0,
+          "c": 0,
+          "form": "ἡδέε",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "ε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.hedys.du:navn"
+          ]
+        },
+        {
+          "id": "navf",
+          "r": 0,
+          "c": 1,
+          "form": "ἡδείᾱ",
+          "pieces": [
+            {
+              "text": "ἡδεί",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3
+        },
+        {
+          "id": "navn",
+          "r": 0,
+          "c": 2,
+          "form": "ἡδέε",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "ε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.hedys.du:navm"
+          ]
+        },
+        {
+          "id": "gdm",
+          "r": 1,
+          "c": 0,
+          "form": "ἡδέοιν",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.hedys.du:gdn"
+          ]
+        },
+        {
+          "id": "gdf",
+          "r": 1,
+          "c": 1,
+          "form": "ἡδείαιν",
+          "pieces": [
+            {
+              "text": "ἡδεί",
+              "role": "stem"
+            },
+            {
+              "text": "αιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3
+        },
+        {
+          "id": "gdn",
+          "r": 1,
+          "c": 2,
+          "form": "ἡδέοιν",
+          "pieces": [
+            {
+              "text": "ἡδέ",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.hedys.du:gdm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.kallion.sg",
+      "kind": "adj",
+      "lemma": "καλλίων",
+      "system": "comparative in -ίων, two endings",
+      "label": "καλλίων — more beautiful (singular)",
+      "short": "καλλίων sg",
+      "unitIntroduced": 17,
+      "drillClass": "wholeForm",
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": "Comparatives in -ίων decline like σώφρων — and the accusative has a contracted doublet καλλίω beside καλλίονα. The contracted forms grow commoner in real texts.",
+      "cells": [
+        {
+          "id": "nc",
+          "r": 0,
+          "c": 0,
+          "form": "καλλίων",
+          "pieces": [
+            {
+              "text": "καλλίων",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "κάλλιον",
+          "pieces": [
+            {
+              "text": "κάλλιον",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.sg:an",
+            "adj.kallion.sg:vc",
+            "adj.kallion.sg:vn"
+          ]
+        },
+        {
+          "id": "gc",
+          "r": 1,
+          "c": 0,
+          "form": "καλλίονος",
+          "pieces": [
+            {
+              "text": "καλλίονος",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.sg:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "καλλίονος",
+          "pieces": [
+            {
+              "text": "καλλίονος",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.sg:gc"
+          ]
+        },
+        {
+          "id": "dc",
+          "r": 2,
+          "c": 0,
+          "form": "καλλίονι",
+          "pieces": [
+            {
+              "text": "καλλίονι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.sg:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "καλλίονι",
+          "pieces": [
+            {
+              "text": "καλλίονι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.sg:dc"
+          ]
+        },
+        {
+          "id": "ac",
+          "r": 3,
+          "c": 0,
+          "form": "καλλίονα",
+          "pieces": [
+            {
+              "text": "καλλίονα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.pl:an",
+            "adj.kallion.pl:nn",
+            "adj.kallion.pl:vn"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "κάλλιον",
+          "pieces": [
+            {
+              "text": "κάλλιον",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.sg:nn",
+            "adj.kallion.sg:vc",
+            "adj.kallion.sg:vn"
+          ]
+        },
+        {
+          "id": "vc",
+          "r": 4,
+          "c": 0,
+          "form": "κάλλιον",
+          "pieces": [
+            {
+              "text": "κάλλιον",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.kallion.sg:an",
+            "adj.kallion.sg:nn",
+            "adj.kallion.sg:vn"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 1,
+          "form": "κάλλιον",
+          "pieces": [
+            {
+              "text": "κάλλιον",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.kallion.sg:an",
+            "adj.kallion.sg:nn",
+            "adj.kallion.sg:vc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.kallion.pl",
+      "kind": "adj",
+      "lemma": "καλλίων",
+      "system": "comparative in -ίων, two endings",
+      "label": "καλλίων — more beautiful (plural)",
+      "short": "καλλίων pl",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": "Contracted doublets: καλλίους beside καλλίονες/καλλίονας, καλλίω beside καλλίονα.",
+      "cells": [
+        {
+          "id": "nc",
+          "r": 0,
+          "c": 0,
+          "form": "καλλίονες",
+          "pieces": [
+            {
+              "text": "καλλίον",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.pl:vc"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "καλλίονα",
+          "pieces": [
+            {
+              "text": "καλλίον",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.pl:an",
+            "adj.kallion.pl:vn",
+            "adj.kallion.sg:ac"
+          ]
+        },
+        {
+          "id": "gc",
+          "r": 1,
+          "c": 0,
+          "form": "καλλιόνων",
+          "pieces": [
+            {
+              "text": "καλλιόν",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "καλλιόνων",
+          "pieces": [
+            {
+              "text": "καλλιόν",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.pl:gc"
+          ]
+        },
+        {
+          "id": "dc",
+          "r": 2,
+          "c": 0,
+          "form": "καλλίοσι(ν)",
+          "pieces": [
+            {
+              "text": "καλλίο",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.pl:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "καλλίοσι(ν)",
+          "pieces": [
+            {
+              "text": "καλλίο",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.pl:dc"
+          ]
+        },
+        {
+          "id": "ac",
+          "r": 3,
+          "c": 0,
+          "form": "καλλίονας",
+          "pieces": [
+            {
+              "text": "καλλίον",
+              "role": "stem"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "καλλίονα",
+          "pieces": [
+            {
+              "text": "καλλίον",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "adj.kallion.pl:nn",
+            "adj.kallion.pl:vn",
+            "adj.kallion.sg:ac"
+          ]
+        },
+        {
+          "id": "vc",
+          "r": 4,
+          "c": 0,
+          "form": "καλλίονες",
+          "pieces": [
+            {
+              "text": "καλλίον",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.kallion.pl:nc"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 1,
+          "form": "καλλίονα",
+          "pieces": [
+            {
+              "text": "καλλίον",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 3,
+          "homographs": [
+            "adj.kallion.pl:an",
+            "adj.kallion.pl:nn",
+            "adj.kallion.sg:ac"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "num.heis",
+      "kind": "numeral",
+      "lemma": "εἷς",
+      "system": "declined numeral",
+      "label": "εἷς — one",
+      "short": "εἷς",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Masc/neut on the stem ἑν- (nominative εἷς by compensatory lengthening); the feminine μία is a different stem altogether.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "εἷς",
+          "pieces": [
+            {
+              "text": "εἷς",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "μία",
+          "pieces": [
+            {
+              "text": "μί",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ἕν",
+          "pieces": [
+            {
+              "text": "ἕν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.heis:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "ἑνός",
+          "pieces": [
+            {
+              "text": "ἑν",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.heis:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "μιᾶς",
+          "pieces": [
+            {
+              "text": "μι",
+              "role": "stem"
+            },
+            {
+              "text": "ᾶς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "ἑνός",
+          "pieces": [
+            {
+              "text": "ἑν",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.heis:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "ἑνί",
+          "pieces": [
+            {
+              "text": "ἑν",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.heis:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "μιᾷ",
+          "pieces": [
+            {
+              "text": "μι",
+              "role": "stem"
+            },
+            {
+              "text": "ᾷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "ἑνί",
+          "pieces": [
+            {
+              "text": "ἑν",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.heis:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "ἕνα",
+          "pieces": [
+            {
+              "text": "ἕν",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "μίαν",
+          "pieces": [
+            {
+              "text": "μί",
+              "role": "stem"
+            },
+            {
+              "text": "αν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ἕν",
+          "pieces": [
+            {
+              "text": "ἕν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.heis:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "num.oudeis",
+      "kind": "numeral",
+      "lemma": "οὐδείς",
+      "system": "declined numeral (negative)",
+      "label": "οὐδείς — no one",
+      "short": "οὐδείς",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "οὐδέ + εἷς. A masculine plural οὐδένες, οὐδένων exists ('no men'), but the singular is the paradigm. μηδείς replaces it wherever μή would replace οὐ.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "οὐδείς",
+          "pieces": [
+            {
+              "text": "οὐδεί",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "οὐδεμία",
+          "pieces": [
+            {
+              "text": "οὐδεμί",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "οὐδέν",
+          "pieces": [
+            {
+              "text": "οὐδέν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.oudeis:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "οὐδενός",
+          "pieces": [
+            {
+              "text": "οὐδεν",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.oudeis:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "οὐδεμιᾶς",
+          "pieces": [
+            {
+              "text": "οὐδεμι",
+              "role": "stem"
+            },
+            {
+              "text": "ᾶς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "οὐδενός",
+          "pieces": [
+            {
+              "text": "οὐδεν",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.oudeis:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "οὐδενί",
+          "pieces": [
+            {
+              "text": "οὐδεν",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.oudeis:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "οὐδεμιᾷ",
+          "pieces": [
+            {
+              "text": "οὐδεμι",
+              "role": "stem"
+            },
+            {
+              "text": "ᾷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "οὐδενί",
+          "pieces": [
+            {
+              "text": "οὐδεν",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.oudeis:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "οὐδένα",
+          "pieces": [
+            {
+              "text": "οὐδέν",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "οὐδεμίαν",
+          "pieces": [
+            {
+              "text": "οὐδεμί",
+              "role": "stem"
+            },
+            {
+              "text": "αν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "οὐδέν",
+          "pieces": [
+            {
+              "text": "οὐδέν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.oudeis:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "num.duo",
+      "kind": "numeral",
+      "lemma": "δύο",
+      "system": "declined numeral",
+      "label": "δύο — two",
+      "short": "δύο",
+      "unitIntroduced": 17,
+      "drillClass": "wholeForm",
+      "layout": {
+        "rowLabels": [
+          "N.A.",
+          "G.D."
+        ],
+        "colLabels": [
+          "all genders"
+        ]
+      },
+      "notes": "Effectively a dual: two cases, all genders. The genitive/dative δυοῖν sometimes stays δύο uninflected.",
+      "cells": [
+        {
+          "id": "nav",
+          "r": 0,
+          "c": 0,
+          "form": "δύο",
+          "pieces": [
+            {
+              "text": "δύο",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "gd",
+          "r": 1,
+          "c": 0,
+          "form": "δυοῖν",
+          "pieces": [
+            {
+              "text": "δυοῖν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "num.treis",
+      "kind": "numeral",
+      "lemma": "τρεῖς",
+      "system": "declined numeral",
+      "label": "τρεῖς — three",
+      "short": "τρεῖς",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": "The accusative borrows the nominative in the masc/fem — τρεῖς serves both.",
+      "cells": [
+        {
+          "id": "nc",
+          "r": 0,
+          "c": 0,
+          "form": "τρεῖς",
+          "pieces": [
+            {
+              "text": "τρ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.treis:ac"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "τρία",
+          "pieces": [
+            {
+              "text": "τρ",
+              "role": "stem"
+            },
+            {
+              "text": "ία",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.treis:an"
+          ]
+        },
+        {
+          "id": "gc",
+          "r": 1,
+          "c": 0,
+          "form": "τριῶν",
+          "pieces": [
+            {
+              "text": "τρι",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.treis:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "τριῶν",
+          "pieces": [
+            {
+              "text": "τρι",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.treis:gc"
+          ]
+        },
+        {
+          "id": "dc",
+          "r": 2,
+          "c": 0,
+          "form": "τρισί(ν)",
+          "pieces": [
+            {
+              "text": "τρι",
+              "role": "stem"
+            },
+            {
+              "text": "σί(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.treis:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "τρισί(ν)",
+          "pieces": [
+            {
+              "text": "τρι",
+              "role": "stem"
+            },
+            {
+              "text": "σί(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.treis:dc"
+          ]
+        },
+        {
+          "id": "ac",
+          "r": 3,
+          "c": 0,
+          "form": "τρεῖς",
+          "pieces": [
+            {
+              "text": "τρ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.treis:nc"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "τρία",
+          "pieces": [
+            {
+              "text": "τρ",
+              "role": "stem"
+            },
+            {
+              "text": "ία",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.treis:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "num.tettares",
+      "kind": "numeral",
+      "lemma": "τέτταρες",
+      "system": "declined numeral",
+      "label": "τέτταρες — four",
+      "short": "τέτταρες",
+      "unitIntroduced": 17,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": null,
+      "cells": [
+        {
+          "id": "nc",
+          "r": 0,
+          "c": 0,
+          "form": "τέτταρες",
+          "pieces": [
+            {
+              "text": "τέτταρ",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "τέτταρα",
+          "pieces": [
+            {
+              "text": "τέτταρ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.tettares:an"
+          ]
+        },
+        {
+          "id": "gc",
+          "r": 1,
+          "c": 0,
+          "form": "τεττάρων",
+          "pieces": [
+            {
+              "text": "τεττάρ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.tettares:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "τεττάρων",
+          "pieces": [
+            {
+              "text": "τεττάρ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.tettares:gc"
+          ]
+        },
+        {
+          "id": "dc",
+          "r": 2,
+          "c": 0,
+          "form": "τέτταρσι(ν)",
+          "pieces": [
+            {
+              "text": "τέτταρ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.tettares:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "τέτταρσι(ν)",
+          "pieces": [
+            {
+              "text": "τέτταρ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.tettares:dc"
+          ]
+        },
+        {
+          "id": "ac",
+          "r": 3,
+          "c": 0,
+          "form": "τέτταρας",
+          "pieces": [
+            {
+              "text": "τέτταρ",
+              "role": "stem"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "τέτταρα",
+          "pieces": [
+            {
+              "text": "τέτταρ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 17,
+          "freqTier": 1,
+          "homographs": [
+            "num.tettares:nn"
+          ]
         }
       ]
     }

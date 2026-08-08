@@ -1,6 +1,6 @@
 {
   "unit": 8,
-  "title": "Participles — every tense and voice, fully declined",
+  "title": "Participles — every tense and voice; the adjective πᾶς",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -13,7 +13,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -221,8 +221,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.pres.act.pl:nn",
-            "part.paideuo.pres.act.pl:an"
+            "part.paideuo.pres.act.pl:an",
+            "part.paideuo.pres.act.pl:nn"
           ]
         },
         {
@@ -276,7 +276,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -343,8 +343,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.pres.act.sg:am",
-            "part.paideuo.pres.act.pl:an"
+            "part.paideuo.pres.act.pl:an",
+            "part.paideuo.pres.act.sg:am"
           ]
         },
         {
@@ -521,8 +521,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.pres.act.sg:am",
-            "part.paideuo.pres.act.pl:nn"
+            "part.paideuo.pres.act.pl:nn",
+            "part.paideuo.pres.act.sg:am"
           ]
         }
       ]
@@ -537,7 +537,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -785,8 +785,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.fut.act.pl:nn",
-            "part.paideuo.fut.act.pl:an"
+            "part.paideuo.fut.act.pl:an",
+            "part.paideuo.fut.act.pl:nn"
           ]
         },
         {
@@ -848,7 +848,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -927,8 +927,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.fut.act.sg:am",
-            "part.paideuo.fut.act.pl:an"
+            "part.paideuo.fut.act.pl:an",
+            "part.paideuo.fut.act.sg:am"
           ]
         },
         {
@@ -1141,8 +1141,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.fut.act.sg:am",
-            "part.paideuo.fut.act.pl:nn"
+            "part.paideuo.fut.act.pl:nn",
+            "part.paideuo.fut.act.sg:am"
           ]
         }
       ]
@@ -1157,7 +1157,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -1405,8 +1405,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.aor1.act.pl:nn",
-            "part.paideuo.aor1.act.pl:an"
+            "part.paideuo.aor1.act.pl:an",
+            "part.paideuo.aor1.act.pl:nn"
           ]
         },
         {
@@ -1468,7 +1468,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -1547,8 +1547,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.aor1.act.sg:am",
-            "part.paideuo.aor1.act.pl:an"
+            "part.paideuo.aor1.act.pl:an",
+            "part.paideuo.aor1.act.sg:am"
           ]
         },
         {
@@ -1761,8 +1761,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.aor1.act.sg:am",
-            "part.paideuo.aor1.act.pl:nn"
+            "part.paideuo.aor1.act.pl:nn",
+            "part.paideuo.aor1.act.sg:am"
           ]
         }
       ]
@@ -1777,7 +1777,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -1985,8 +1985,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.leipo.aor2.act.pl:nn",
-            "part.leipo.aor2.act.pl:an"
+            "part.leipo.aor2.act.pl:an",
+            "part.leipo.aor2.act.pl:nn"
           ]
         },
         {
@@ -2040,7 +2040,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -2107,8 +2107,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.leipo.aor2.act.sg:am",
-            "part.leipo.aor2.act.pl:an"
+            "part.leipo.aor2.act.pl:an",
+            "part.leipo.aor2.act.sg:am"
           ]
         },
         {
@@ -2285,8 +2285,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.leipo.aor2.act.sg:am",
-            "part.leipo.aor2.act.pl:nn"
+            "part.leipo.aor2.act.pl:nn",
+            "part.leipo.aor2.act.sg:am"
           ]
         }
       ]
@@ -2301,7 +2301,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -2592,8 +2592,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.perf.act.pl:nn",
-            "part.paideuo.perf.act.pl:an"
+            "part.paideuo.perf.act.pl:an",
+            "part.paideuo.perf.act.pl:nn"
           ]
         },
         {
@@ -2663,7 +2663,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -2754,8 +2754,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.perf.act.sg:am",
-            "part.paideuo.perf.act.pl:an"
+            "part.paideuo.perf.act.pl:an",
+            "part.paideuo.perf.act.sg:am"
           ]
         },
         {
@@ -3007,8 +3007,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.perf.act.sg:am",
-            "part.paideuo.perf.act.pl:nn"
+            "part.paideuo.perf.act.pl:nn",
+            "part.paideuo.perf.act.sg:am"
           ]
         }
       ]
@@ -3023,7 +3023,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -3272,8 +3272,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.pres.mp.sg:nn",
-            "part.paideuo.pres.mp.sg:an"
+            "part.paideuo.pres.mp.sg:an",
+            "part.paideuo.pres.mp.sg:nn"
           ]
         },
         {
@@ -3320,8 +3320,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.pres.mp.sg:nn",
-            "part.paideuo.pres.mp.sg:am"
+            "part.paideuo.pres.mp.sg:am",
+            "part.paideuo.pres.mp.sg:nn"
           ]
         }
       ]
@@ -3336,7 +3336,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -3492,8 +3492,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.pres.mp.pl:gm",
-            "part.paideuo.pres.mp.pl:gf"
+            "part.paideuo.pres.mp.pl:gf",
+            "part.paideuo.pres.mp.pl:gm"
           ]
         },
         {
@@ -3649,7 +3649,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -3897,8 +3897,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.aor.pass.pl:nn",
-            "part.paideuo.aor.pass.pl:an"
+            "part.paideuo.aor.pass.pl:an",
+            "part.paideuo.aor.pass.pl:nn"
           ]
         },
         {
@@ -3960,7 +3960,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -4039,8 +4039,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.aor.pass.sg:am",
-            "part.paideuo.aor.pass.pl:an"
+            "part.paideuo.aor.pass.pl:an",
+            "part.paideuo.aor.pass.sg:am"
           ]
         },
         {
@@ -4253,8 +4253,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.aor.pass.sg:am",
-            "part.paideuo.aor.pass.pl:nn"
+            "part.paideuo.aor.pass.pl:nn",
+            "part.paideuo.aor.pass.sg:am"
           ]
         }
       ]
@@ -4269,7 +4269,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -4558,8 +4558,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.fut.mid.sg:nn",
-            "part.paideuo.fut.mid.sg:an"
+            "part.paideuo.fut.mid.sg:an",
+            "part.paideuo.fut.mid.sg:nn"
           ]
         },
         {
@@ -4614,8 +4614,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.fut.mid.sg:nn",
-            "part.paideuo.fut.mid.sg:am"
+            "part.paideuo.fut.mid.sg:am",
+            "part.paideuo.fut.mid.sg:nn"
           ]
         }
       ]
@@ -4630,7 +4630,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -4810,8 +4810,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.fut.mid.pl:gm",
-            "part.paideuo.fut.mid.pl:gf"
+            "part.paideuo.fut.mid.pl:gf",
+            "part.paideuo.fut.mid.pl:gm"
           ]
         },
         {
@@ -4991,7 +4991,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -5280,8 +5280,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.aor1.mid.sg:nn",
-            "part.paideuo.aor1.mid.sg:an"
+            "part.paideuo.aor1.mid.sg:an",
+            "part.paideuo.aor1.mid.sg:nn"
           ]
         },
         {
@@ -5336,8 +5336,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.aor1.mid.sg:nn",
-            "part.paideuo.aor1.mid.sg:am"
+            "part.paideuo.aor1.mid.sg:am",
+            "part.paideuo.aor1.mid.sg:nn"
           ]
         }
       ]
@@ -5352,7 +5352,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -5532,8 +5532,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.aor1.mid.pl:gm",
-            "part.paideuo.aor1.mid.pl:gf"
+            "part.paideuo.aor1.mid.pl:gf",
+            "part.paideuo.aor1.mid.pl:gm"
           ]
         },
         {
@@ -5713,7 +5713,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -5962,8 +5962,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.leipo.aor2.mid.sg:nn",
-            "part.leipo.aor2.mid.sg:an"
+            "part.leipo.aor2.mid.sg:an",
+            "part.leipo.aor2.mid.sg:nn"
           ]
         },
         {
@@ -6010,8 +6010,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.leipo.aor2.mid.sg:nn",
-            "part.leipo.aor2.mid.sg:am"
+            "part.leipo.aor2.mid.sg:am",
+            "part.leipo.aor2.mid.sg:nn"
           ]
         }
       ]
@@ -6026,7 +6026,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -6182,8 +6182,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.leipo.aor2.mid.pl:gm",
-            "part.leipo.aor2.mid.pl:gf"
+            "part.leipo.aor2.mid.pl:gf",
+            "part.leipo.aor2.mid.pl:gm"
           ]
         },
         {
@@ -6339,7 +6339,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -6588,8 +6588,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.perf.mp.sg:nn",
-            "part.paideuo.perf.mp.sg:an"
+            "part.paideuo.perf.mp.sg:an",
+            "part.paideuo.perf.mp.sg:nn"
           ]
         },
         {
@@ -6636,8 +6636,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.perf.mp.sg:nn",
-            "part.paideuo.perf.mp.sg:am"
+            "part.paideuo.perf.mp.sg:am",
+            "part.paideuo.perf.mp.sg:nn"
           ]
         }
       ]
@@ -6652,7 +6652,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -6808,8 +6808,8 @@
           "unitMax": 8,
           "freqTier": 1,
           "homographs": [
-            "part.paideuo.perf.mp.pl:gm",
-            "part.paideuo.perf.mp.pl:gf"
+            "part.paideuo.perf.mp.pl:gf",
+            "part.paideuo.perf.mp.pl:gm"
           ]
         },
         {
@@ -6965,7 +6965,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -7294,8 +7294,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.fut.pass.sg:nn",
-            "part.paideuo.fut.pass.sg:an"
+            "part.paideuo.fut.pass.sg:an",
+            "part.paideuo.fut.pass.sg:nn"
           ]
         },
         {
@@ -7358,8 +7358,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.fut.pass.sg:nn",
-            "part.paideuo.fut.pass.sg:am"
+            "part.paideuo.fut.pass.sg:am",
+            "part.paideuo.fut.pass.sg:nn"
           ]
         }
       ]
@@ -7374,7 +7374,7 @@
       "unitIntroduced": 8,
       "layout": {
         "rowLabels": [
-          "Nom",
+          "Nom/Voc",
           "Gen",
           "Dat",
           "Acc"
@@ -7578,8 +7578,8 @@
           "unitMax": 8,
           "freqTier": 2,
           "homographs": [
-            "part.paideuo.fut.pass.pl:gm",
-            "part.paideuo.fut.pass.pl:gf"
+            "part.paideuo.fut.pass.pl:gf",
+            "part.paideuo.fut.pass.pl:gm"
           ]
         },
         {
@@ -7769,6 +7769,720 @@
           "freqTier": 2,
           "homographs": [
             "part.paideuo.fut.pass.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.pas.sg",
+      "kind": "adj",
+      "lemma": "πᾶς",
+      "system": "adjective, ντ-stem",
+      "label": "πᾶς — all, every; whole (singular)",
+      "short": "πᾶς sg",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Masculine and neuter decline on the stem παντ-; the feminine on πασ-. The vocative is the nominative.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "πᾶς",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.sg:vm"
+          ],
+          "sandhi": [
+            {
+              "seq": "αντς",
+              "to": "ᾶς"
+            }
+          ]
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "πᾶσα",
+          "pieces": [
+            {
+              "text": "πᾶσ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.sg:vf"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "πᾶν",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.sg:an",
+            "adj.pas.sg:vn"
+          ],
+          "sandhi": [
+            {
+              "seq": "αντ",
+              "to": "ᾶν"
+            }
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "παντός",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "πάσης",
+          "pieces": [
+            {
+              "text": "πάσ",
+              "role": "stem"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "παντός",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "παντί",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "πάσῃ",
+          "pieces": [
+            {
+              "text": "πάσ",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "παντί",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "πάντα",
+          "pieces": [
+            {
+              "text": "πάντ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.pl:an",
+            "adj.pas.pl:nn",
+            "adj.pas.pl:vn"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "πᾶσαν",
+          "pieces": [
+            {
+              "text": "πᾶσ",
+              "role": "stem"
+            },
+            {
+              "text": "αν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "πᾶν",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.sg:nn",
+            "adj.pas.sg:vn"
+          ],
+          "sandhi": [
+            {
+              "seq": "αντ",
+              "to": "ᾶν"
+            }
+          ]
+        },
+        {
+          "id": "vm",
+          "r": 4,
+          "c": 0,
+          "form": "πᾶς",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 3,
+          "homographs": [
+            "adj.pas.sg:nm"
+          ],
+          "sandhi": [
+            {
+              "seq": "αντς",
+              "to": "ᾶς"
+            }
+          ]
+        },
+        {
+          "id": "vf",
+          "r": 4,
+          "c": 1,
+          "form": "πᾶσα",
+          "pieces": [
+            {
+              "text": "πᾶσ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 3,
+          "homographs": [
+            "adj.pas.sg:nf"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 2,
+          "form": "πᾶν",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 3,
+          "homographs": [
+            "adj.pas.sg:an",
+            "adj.pas.sg:nn"
+          ],
+          "sandhi": [
+            {
+              "seq": "αντ",
+              "to": "ᾶν"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.pas.pl",
+      "kind": "adj",
+      "lemma": "πᾶς",
+      "system": "adjective, ντ-stem",
+      "label": "πᾶς — all, every; whole (plural)",
+      "short": "πᾶς pl",
+      "unitIntroduced": 8,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The feminine genitive plural πᾱσῶν keeps the noun-style circumflex — unlike ordinary adjectives (ἀξίων). πάντα serves as masculine accusative singular AND neuter plural.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "πάντες",
+          "pieces": [
+            {
+              "text": "πάντ",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.pl:vm"
+          ]
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "πᾶσαι",
+          "pieces": [
+            {
+              "text": "πᾶσ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.pl:vf"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "πάντα",
+          "pieces": [
+            {
+              "text": "πάντ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.pl:an",
+            "adj.pas.pl:vn",
+            "adj.pas.sg:am"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "πάντων",
+          "pieces": [
+            {
+              "text": "πάντ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "πᾱσῶν",
+          "pieces": [
+            {
+              "text": "πᾱσ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "πάντων",
+          "pieces": [
+            {
+              "text": "πάντ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "πᾶσι(ν)",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.pl:dn"
+          ],
+          "sandhi": [
+            {
+              "seq": "αντσι",
+              "to": "ᾶσι"
+            }
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "πάσαις",
+          "pieces": [
+            {
+              "text": "πάσ",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "πᾶσι(ν)",
+          "pieces": [
+            {
+              "text": "παντ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.pl:dm"
+          ],
+          "sandhi": [
+            {
+              "seq": "αντσι",
+              "to": "ᾶσι"
+            }
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "πάντας",
+          "pieces": [
+            {
+              "text": "πάντ",
+              "role": "stem"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "πάσᾱς",
+          "pieces": [
+            {
+              "text": "πάσ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "πάντα",
+          "pieces": [
+            {
+              "text": "πάντ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 1,
+          "homographs": [
+            "adj.pas.pl:nn",
+            "adj.pas.pl:vn",
+            "adj.pas.sg:am"
+          ]
+        },
+        {
+          "id": "vm",
+          "r": 4,
+          "c": 0,
+          "form": "πάντες",
+          "pieces": [
+            {
+              "text": "πάντ",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 3,
+          "homographs": [
+            "adj.pas.pl:nm"
+          ]
+        },
+        {
+          "id": "vf",
+          "r": 4,
+          "c": 1,
+          "form": "πᾶσαι",
+          "pieces": [
+            {
+              "text": "πᾶσ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 3,
+          "homographs": [
+            "adj.pas.pl:nf"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 2,
+          "form": "πάντα",
+          "pieces": [
+            {
+              "text": "πάντ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 8,
+          "freqTier": 3,
+          "homographs": [
+            "adj.pas.pl:an",
+            "adj.pas.pl:nn",
+            "adj.pas.sg:am"
           ]
         }
       ]

@@ -1,6 +1,6 @@
 {
   "unit": 7,
-  "title": "The middle voice; the second aorist",
+  "title": "The middle voice; the second aorist; the demonstrative ἐκεῖνος",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -46,8 +46,8 @@
           "unitMax": 7,
           "freqTier": 1,
           "homographs": [
-            "verb.leipo.aor2.act.ind:3p",
-            "pp.leipo:iii"
+            "pp.leipo:iii",
+            "verb.leipo.aor2.act.ind:3p"
           ]
         },
         {
@@ -160,8 +160,8 @@
           "unitMax": 7,
           "freqTier": 1,
           "homographs": [
-            "verb.leipo.aor2.act.ind:1s",
-            "pp.leipo:iii"
+            "pp.leipo:iii",
+            "verb.leipo.aor2.act.ind:1s"
           ]
         }
       ]
@@ -683,6 +683,587 @@
           ],
           "unitMax": 7,
           "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "pron.ekeinos.sg",
+      "kind": "pron",
+      "lemma": "ἐκεῖνος",
+      "system": "demonstrative pronoun",
+      "label": "ἐκεῖνος — Demonstrative (that), singular",
+      "short": "ἐκεῖνος sg",
+      "unitIntroduced": 7,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The neuter is ἐκεῖνο, not ἐκεῖνον — pronominal declension drops the -ν the adjective would take.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "ἐκεῖνος",
+          "pieces": [
+            {
+              "text": "ἐκεῖν",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "ἐκείνη",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ἐκεῖνο",
+          "pieces": [
+            {
+              "text": "ἐκεῖν",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "ἐκείνου",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ἐκείνης",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ης",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "ἐκείνου",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "ἐκείνῳ",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ἐκείνῃ",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "ἐκείνῳ",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "ἐκεῖνον",
+          "pieces": [
+            {
+              "text": "ἐκεῖν",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ἐκείνην",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ην",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ἐκεῖνο",
+          "pieces": [
+            {
+              "text": "ἐκεῖν",
+              "role": "stem"
+            },
+            {
+              "text": "ο",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pron.ekeinos.pl",
+      "kind": "pron",
+      "lemma": "ἐκεῖνος",
+      "system": "demonstrative pronoun",
+      "label": "ἐκεῖνος — Demonstrative (that), plural",
+      "short": "ἐκεῖνος pl",
+      "unitIntroduced": 7,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": null,
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "ἐκεῖνοι",
+          "pieces": [
+            {
+              "text": "ἐκεῖν",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "ἐκεῖναι",
+          "pieces": [
+            {
+              "text": "ἐκεῖν",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ἐκεῖνα",
+          "pieces": [
+            {
+              "text": "ἐκεῖν",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "ἐκείνων",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.pl:gf",
+            "pron.ekeinos.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ἐκείνων",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.pl:gm",
+            "pron.ekeinos.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "ἐκείνων",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.pl:gf",
+            "pron.ekeinos.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "ἐκείνοις",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ἐκείναις",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "ἐκείνοις",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "ἐκείνους",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ἐκείνᾱς",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ἐκεῖνα",
+          "pieces": [
+            {
+              "text": "ἐκεῖν",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 1,
+          "homographs": [
+            "pron.ekeinos.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pron.ekeinos.du",
+      "kind": "pron",
+      "lemma": "ἐκεῖνος",
+      "system": "dual — one form for all genders",
+      "label": "ἐκεῖνος — Demonstrative (that), dual",
+      "short": "ἐκεῖνος du",
+      "unitIntroduced": 7,
+      "layout": {
+        "rowLabels": [
+          "N.A.",
+          "G.D."
+        ],
+        "colLabels": [
+          "all genders"
+        ]
+      },
+      "notes": "One dual form serves all three genders.",
+      "cells": [
+        {
+          "id": "nav",
+          "r": 0,
+          "c": 0,
+          "form": "ἐκείνω",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 3
+        },
+        {
+          "id": "gd",
+          "r": 1,
+          "c": 0,
+          "form": "ἐκείνοιν",
+          "pieces": [
+            {
+              "text": "ἐκείν",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 7,
+          "freqTier": 3
         }
       ]
     }

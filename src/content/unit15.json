@@ -1,6 +1,6 @@
 {
   "unit": 15,
-  "title": "The interrogative τίς; the verb εἰμί, “be”",
+  "title": "τίς and indefinite τις; εἰμί; personal and reflexive pronouns",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -172,8 +172,8 @@
           "unitMax": 15,
           "freqTier": 1,
           "homographs": [
-            "pron.tis.pl:nn",
-            "pron.tis.pl:an"
+            "pron.tis.pl:an",
+            "pron.tis.pl:nn"
           ]
         },
         {
@@ -257,8 +257,8 @@
           "unitMax": 15,
           "freqTier": 1,
           "homographs": [
-            "pron.tis.sg:am",
-            "pron.tis.pl:an"
+            "pron.tis.pl:an",
+            "pron.tis.sg:am"
           ]
         },
         {
@@ -393,8 +393,8 @@
           "unitMax": 15,
           "freqTier": 1,
           "homographs": [
-            "pron.tis.sg:am",
-            "pron.tis.pl:nn"
+            "pron.tis.pl:nn",
+            "pron.tis.sg:am"
           ]
         }
       ]
@@ -663,6 +663,1534 @@
           ],
           "unitMax": 15,
           "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "pron.ego",
+      "kind": "pron",
+      "lemma": "ἐγώ",
+      "system": "personal pronoun (suppletive)",
+      "label": "ἐγώ — Personal Pronoun, 1st person",
+      "short": "ἐγώ",
+      "unitIntroduced": 15,
+      "drillClass": "wholeForm",
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2"
+        ]
+      },
+      "notes": "Suppletive throughout: ἐγώ, ἐμοῦ, ἡμεῖς share no stem. The oblique singulars have unemphatic enclitic doublets — μου, μοι, με.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "ἐγώ",
+          "pieces": [
+            {
+              "text": "ἐγώ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "ἐμοῦ",
+          "pieces": [
+            {
+              "text": "ἐμοῦ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "ἐμοί",
+          "pieces": [
+            {
+              "text": "ἐμοί",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "ἐμέ",
+          "pieces": [
+            {
+              "text": "ἐμέ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "ἡμεῖς",
+          "pieces": [
+            {
+              "text": "ἡμεῖς",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "ἡμῶν",
+          "pieces": [
+            {
+              "text": "ἡμῶν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "ἡμῖν",
+          "pieces": [
+            {
+              "text": "ἡμῖν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "ἡμᾶς",
+          "pieces": [
+            {
+              "text": "ἡμᾶς",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "νώ",
+          "pieces": [
+            {
+              "text": "νώ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 3,
+          "homographs": [
+            "noun.nous.decl2c:dn"
+          ]
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "νῷν",
+          "pieces": [
+            {
+              "text": "νῷν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "pron.su",
+      "kind": "pron",
+      "lemma": "σύ",
+      "system": "personal pronoun (suppletive)",
+      "label": "σύ — Personal Pronoun, 2nd person",
+      "short": "σύ",
+      "unitIntroduced": 15,
+      "drillClass": "wholeForm",
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2"
+        ]
+      },
+      "notes": "The oblique singulars have unemphatic enclitic doublets — σου, σοι, σε. The dual σφώ survives mostly in poetry.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "σύ",
+          "pieces": [
+            {
+              "text": "σύ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "σοῦ",
+          "pieces": [
+            {
+              "text": "σοῦ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "σοί",
+          "pieces": [
+            {
+              "text": "σοί",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "σέ",
+          "pieces": [
+            {
+              "text": "σέ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "ὑμεῖς",
+          "pieces": [
+            {
+              "text": "ὑμεῖς",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "ὑμῶν",
+          "pieces": [
+            {
+              "text": "ὑμῶν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "ὑμῖν",
+          "pieces": [
+            {
+              "text": "ὑμῖν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "ὑμᾶς",
+          "pieces": [
+            {
+              "text": "ὑμᾶς",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "σφώ",
+          "pieces": [
+            {
+              "text": "σφώ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 3
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "σφῷν",
+          "pieces": [
+            {
+              "text": "σφῷν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "pron.emautou",
+      "kind": "pron",
+      "lemma": "ἐμαυτοῦ",
+      "system": "reflexive pronoun",
+      "label": "ἐμαυτοῦ — Reflexive, 1st person (singular)",
+      "short": "ἐμαυτοῦ",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine"
+        ]
+      },
+      "notes": "ἐμέ + αὐτόν fused. No nominative — a reflexive cannot be a subject. The plural is two words: ἡμῶν αὐτῶν, ἡμῖν αὐτοῖς, ἡμᾶς αὐτούς.",
+      "cells": [
+        {
+          "id": "gm",
+          "r": 0,
+          "c": 0,
+          "form": "ἐμαυτοῦ",
+          "pieces": [
+            {
+              "text": "ἐμαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "gf",
+          "r": 0,
+          "c": 1,
+          "form": "ἐμαυτῆς",
+          "pieces": [
+            {
+              "text": "ἐμαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῆς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "dm",
+          "r": 1,
+          "c": 0,
+          "form": "ἐμαυτῷ",
+          "pieces": [
+            {
+              "text": "ἐμαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "df",
+          "r": 1,
+          "c": 1,
+          "form": "ἐμαυτῇ",
+          "pieces": [
+            {
+              "text": "ἐμαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῇ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "am",
+          "r": 2,
+          "c": 0,
+          "form": "ἐμαυτόν",
+          "pieces": [
+            {
+              "text": "ἐμαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 2,
+          "c": 1,
+          "form": "ἐμαυτήν",
+          "pieces": [
+            {
+              "text": "ἐμαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ήν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "pron.seautou",
+      "kind": "pron",
+      "lemma": "σεαυτοῦ",
+      "system": "reflexive pronoun",
+      "label": "σεαυτοῦ — Reflexive, 2nd person (singular)",
+      "short": "σεαυτοῦ",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine"
+        ]
+      },
+      "notes": "Also contracted σαυτοῦ. The plural is two words: ὑμῶν αὐτῶν, ὑμῖν αὐτοῖς, ὑμᾶς αὐτούς.",
+      "cells": [
+        {
+          "id": "gm",
+          "r": 0,
+          "c": 0,
+          "form": "σεαυτοῦ",
+          "pieces": [
+            {
+              "text": "σεαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "gf",
+          "r": 0,
+          "c": 1,
+          "form": "σεαυτῆς",
+          "pieces": [
+            {
+              "text": "σεαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῆς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "dm",
+          "r": 1,
+          "c": 0,
+          "form": "σεαυτῷ",
+          "pieces": [
+            {
+              "text": "σεαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "df",
+          "r": 1,
+          "c": 1,
+          "form": "σεαυτῇ",
+          "pieces": [
+            {
+              "text": "σεαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῇ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "am",
+          "r": 2,
+          "c": 0,
+          "form": "σεαυτόν",
+          "pieces": [
+            {
+              "text": "σεαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 2,
+          "c": 1,
+          "form": "σεαυτήν",
+          "pieces": [
+            {
+              "text": "σεαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ήν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "pron.heautou.sg",
+      "kind": "pron",
+      "lemma": "ἑαυτοῦ",
+      "system": "reflexive pronoun",
+      "label": "ἑαυτοῦ — Reflexive, 3rd person (singular)",
+      "short": "ἑαυτοῦ sg",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "ἕ + αὐτόν. Often contracted: αὑτοῦ, αὑτῷ — distinguish the rough breathing from αὐτοῦ (smooth) of plain αὐτός. The neuter accusative is ἑαυτό, pronoun-style.",
+      "cells": [
+        {
+          "id": "gm",
+          "r": 0,
+          "c": 0,
+          "form": "ἑαυτοῦ",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.heautou.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 0,
+          "c": 1,
+          "form": "ἑαυτῆς",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῆς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 0,
+          "c": 2,
+          "form": "ἑαυτοῦ",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.heautou.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 1,
+          "c": 0,
+          "form": "ἑαυτῷ",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.heautou.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 1,
+          "c": 1,
+          "form": "ἑαυτῇ",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῇ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 1,
+          "c": 2,
+          "form": "ἑαυτῷ",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.heautou.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 2,
+          "c": 0,
+          "form": "ἑαυτόν",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "όν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 2,
+          "c": 1,
+          "form": "ἑαυτήν",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ήν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 2,
+          "c": 2,
+          "form": "ἑαυτό",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ό",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "pron.heautou.pl",
+      "kind": "pron",
+      "lemma": "ἑαυτοῦ",
+      "system": "reflexive pronoun",
+      "label": "ἑαυτοῦ — Reflexive, 3rd person (plural)",
+      "short": "ἑαυτοῦ pl",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": null,
+      "cells": [
+        {
+          "id": "gm",
+          "r": 0,
+          "c": 0,
+          "form": "ἑαυτῶν",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.heautou.pl:gf",
+            "pron.heautou.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 0,
+          "c": 1,
+          "form": "ἑαυτῶν",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.heautou.pl:gm",
+            "pron.heautou.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 0,
+          "c": 2,
+          "form": "ἑαυτῶν",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.heautou.pl:gf",
+            "pron.heautou.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 1,
+          "c": 0,
+          "form": "ἑαυτοῖς",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.heautou.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 1,
+          "c": 1,
+          "form": "ἑαυταῖς",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "αῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 1,
+          "c": 2,
+          "form": "ἑαυτοῖς",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.heautou.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 2,
+          "c": 0,
+          "form": "ἑαυτούς",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ούς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 2,
+          "c": 1,
+          "form": "ἑαυτάς",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "άς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 2,
+          "c": 2,
+          "form": "ἑαυτά",
+          "pieces": [
+            {
+              "text": "ἑαυτ",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "pron.tis-indef.sg",
+      "kind": "pron",
+      "lemma": "τις",
+      "system": "indefinite pronoun (enclitic)",
+      "label": "τις — Indefinite Pronoun (someone), singular",
+      "short": "τις sg",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": "The interrogative τίς with its accent surrendered — an enclitic. Where two syllables force an accent it falls on the ULTIMA: τινός, τινί (the interrogative accents the stem: τίνος, τίνι).",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "τις",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "νς",
+              "to": "ς"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "τι",
+          "pieces": [
+            {
+              "text": "τι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "τινός",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.sg:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "τινός",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ός",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "τινί",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.sg:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "τινί",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ί",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "τινά",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.pl:an",
+            "pron.tis-indef.pl:nn"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "τι",
+          "pieces": [
+            {
+              "text": "τι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pron.tis-indef.pl",
+      "kind": "pron",
+      "lemma": "τις",
+      "system": "indefinite pronoun (enclitic)",
+      "label": "τις — Indefinite Pronoun (someone), plural",
+      "short": "τις pl",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": "τινά is both the masc/fem accusative singular and the neuter plural — like πάντα.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "τινές",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ές",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "τινά",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.pl:an",
+            "pron.tis-indef.sg:am"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "τινῶν",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "τινῶν",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "τισί(ν)",
+          "pieces": [
+            {
+              "text": "τι",
+              "role": "stem"
+            },
+            {
+              "text": "σί(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.pl:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "τισί(ν)",
+          "pieces": [
+            {
+              "text": "τι",
+              "role": "stem"
+            },
+            {
+              "text": "σί(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "τινάς",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "άς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "τινά",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "ά",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 1,
+          "homographs": [
+            "pron.tis-indef.pl:nn",
+            "pron.tis-indef.sg:am"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pron.tis-indef.du",
+      "kind": "pron",
+      "lemma": "τις",
+      "system": "indefinite pronoun, dual",
+      "label": "τις — Indefinite Pronoun, dual",
+      "short": "τις du",
+      "unitIntroduced": 15,
+      "layout": {
+        "rowLabels": [
+          "N.A.",
+          "G.D."
+        ],
+        "colLabels": [
+          "all genders"
+        ]
+      },
+      "notes": "One dual form serves all genders.",
+      "cells": [
+        {
+          "id": "nav",
+          "r": 0,
+          "c": 0,
+          "form": "τινέ",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "έ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 3
+        },
+        {
+          "id": "gd",
+          "r": 1,
+          "c": 0,
+          "form": "τινοῖν",
+          "pieces": [
+            {
+              "text": "τιν",
+              "role": "stem"
+            },
+            {
+              "text": "οῖν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 15,
+          "freqTier": 3
         }
       ]
     }

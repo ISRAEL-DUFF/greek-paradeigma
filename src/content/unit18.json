@@ -1,6 +1,6 @@
 {
   "unit": 18,
-  "title": "The verb ἵημι, “release, send”",
+  "title": "ἵημι; the indefinite relative ὅστις",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -1533,6 +1533,590 @@
           ],
           "unitMax": 18,
           "freqTier": 2
+        }
+      ]
+    },
+    {
+      "id": "pron.hostis.sg",
+      "kind": "pron",
+      "lemma": "ὅστις",
+      "system": "indefinite relative pronoun",
+      "label": "ὅστις — Indefinite Relative (whoever), singular",
+      "short": "ὅστις sg",
+      "unitIntroduced": 18,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Both halves decline: ὅς + τις, οὗ + τινος. The neuter is written ὅ τι — two words — to keep it apart from the conjunction ὅτι. Contracted doublets ὅτου, ὅτῳ exist for the masc/neut genitive and dative.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "ὅστις",
+          "pieces": [
+            {
+              "text": "ὅστις",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "ἥτις",
+          "pieces": [
+            {
+              "text": "ἥτις",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ὅ τι",
+          "pieces": [
+            {
+              "text": "ὅ τι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.sg:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "οὗτινος",
+          "pieces": [
+            {
+              "text": "οὗτινος",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ἧστινος",
+          "pieces": [
+            {
+              "text": "ἧστινος",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "οὗτινος",
+          "pieces": [
+            {
+              "text": "οὗτινος",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "ᾧτινι",
+          "pieces": [
+            {
+              "text": "ᾧτινι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "ᾗτινι",
+          "pieces": [
+            {
+              "text": "ᾗτινι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "ᾧτινι",
+          "pieces": [
+            {
+              "text": "ᾧτινι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "ὅντινα",
+          "pieces": [
+            {
+              "text": "ὅντινα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ἥντινα",
+          "pieces": [
+            {
+              "text": "ἥντινα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ὅ τι",
+          "pieces": [
+            {
+              "text": "ὅ τι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.sg:nn"
+          ]
+        }
+      ],
+      "drillClass": "wholeForm"
+    },
+    {
+      "id": "pron.hostis.pl",
+      "kind": "pron",
+      "lemma": "ὅστις",
+      "system": "indefinite relative pronoun",
+      "label": "ὅστις — Indefinite Relative (whoever), plural",
+      "short": "ὅστις pl",
+      "unitIntroduced": 18,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The neuter plural has a contracted doublet ἅττα; the masc/neut genitive and dative have ὅτων, ὅτοις.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "οἵτινες",
+          "pieces": [
+            {
+              "text": "οἵτινες",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "αἵτινες",
+          "pieces": [
+            {
+              "text": "αἵτινες",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "ἅτινα",
+          "pieces": [
+            {
+              "text": "ἅτινα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.pl:an"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "ὧντινων",
+          "pieces": [
+            {
+              "text": "ὧντινων",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.pl:gf",
+            "pron.hostis.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "ὧντινων",
+          "pieces": [
+            {
+              "text": "ὧντινων",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.pl:gm",
+            "pron.hostis.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "ὧντινων",
+          "pieces": [
+            {
+              "text": "ὧντινων",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.pl:gf",
+            "pron.hostis.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "οἷστισι(ν)",
+          "pieces": [
+            {
+              "text": "οἷστισι(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "αἷστισι(ν)",
+          "pieces": [
+            {
+              "text": "αἷστισι(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "οἷστισι(ν)",
+          "pieces": [
+            {
+              "text": "οἷστισι(ν)",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "οὕστινας",
+          "pieces": [
+            {
+              "text": "οὕστινας",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "ἅστινας",
+          "pieces": [
+            {
+              "text": "ἅστινας",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "ἅτινα",
+          "pieces": [
+            {
+              "text": "ἅτινα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 1,
+          "homographs": [
+            "pron.hostis.pl:nn"
+          ]
+        }
+      ],
+      "drillClass": "wholeForm"
+    },
+    {
+      "id": "pron.hostis.du",
+      "kind": "pron",
+      "lemma": "ὅστις",
+      "system": "indefinite relative, dual",
+      "label": "ὅστις — Indefinite Relative, dual",
+      "short": "ὅστις du",
+      "unitIntroduced": 18,
+      "drillClass": "wholeForm",
+      "layout": {
+        "rowLabels": [
+          "N.A.",
+          "G.D."
+        ],
+        "colLabels": [
+          "all genders"
+        ]
+      },
+      "notes": "One dual form serves all genders.",
+      "cells": [
+        {
+          "id": "nav",
+          "r": 0,
+          "c": 0,
+          "form": "ὥτινε",
+          "pieces": [
+            {
+              "text": "ὥτινε",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 3
+        },
+        {
+          "id": "gd",
+          "r": 1,
+          "c": 0,
+          "form": "οἷντινοιν",
+          "pieces": [
+            {
+              "text": "οἷντινοιν",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 18,
+          "freqTier": 3
         }
       ]
     }

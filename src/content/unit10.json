@@ -1,6 +1,6 @@
 {
   "unit": 10,
-  "title": "More third declension; contract verbs in -ο-",
+  "title": "More third declension — nouns and adjectives; -ο- contracts; contracted futures",
   "unitMappingVerified": true,
   "paradigms": [
     {
@@ -16,11 +16,18 @@
           "Nom",
           "Gen",
           "Dat",
-          "Acc"
+          "Acc",
+          "Voc"
         ],
         "colLabels": [
           "singular",
-          "plural"
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2",
+          "4,2"
         ]
       },
       "notes": "Stem γενεσ-: the σ drops between vowels and the vowels contract (γένε(σ)ος → γένους, γένε(σ)α → γένη).",
@@ -43,7 +50,8 @@
           "unitMax": 10,
           "freqTier": 1,
           "homographs": [
-            "noun.genos.decl3s:as"
+            "noun.genos.decl3s:as",
+            "noun.genos.decl3s:vs"
           ]
         },
         {
@@ -64,7 +72,8 @@
           "unitMax": 10,
           "freqTier": 1,
           "homographs": [
-            "noun.genos.decl3s:ap"
+            "noun.genos.decl3s:ap",
+            "noun.genos.decl3s:vp"
           ]
         },
         {
@@ -119,7 +128,10 @@
             }
           ],
           "unitMax": 10,
-          "freqTier": 1
+          "freqTier": 1,
+          "homographs": [
+            "noun.genos.decl3s:dn"
+          ]
         },
         {
           "id": "dp",
@@ -157,7 +169,8 @@
           "unitMax": 10,
           "freqTier": 1,
           "homographs": [
-            "noun.genos.decl3s:ns"
+            "noun.genos.decl3s:ns",
+            "noun.genos.decl3s:vs"
           ]
         },
         {
@@ -178,8 +191,92 @@
           "unitMax": 10,
           "freqTier": 1,
           "homographs": [
+            "noun.genos.decl3s:np",
+            "noun.genos.decl3s:vp"
+          ]
+        },
+        {
+          "id": "vs",
+          "r": 4,
+          "c": 0,
+          "form": "γένος",
+          "pieces": [
+            {
+              "text": "γέν",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "noun.genos.decl3s:as",
+            "noun.genos.decl3s:ns"
+          ]
+        },
+        {
+          "id": "vp",
+          "r": 4,
+          "c": 1,
+          "form": "γένη",
+          "pieces": [
+            {
+              "text": "γέν",
+              "role": "stem"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "noun.genos.decl3s:ap",
             "noun.genos.decl3s:np"
           ]
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "γένει",
+          "pieces": [
+            {
+              "text": "γέν",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "noun.genos.decl3s:ds"
+          ]
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "γενοῖν",
+          "pieces": [
+            {
+              "text": "γεν",
+              "role": "stem"
+            },
+            {
+              "text": "οῖν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
         }
       ]
     },
@@ -322,7 +419,10 @@
             }
           ],
           "unitMax": 10,
-          "freqTier": 1
+          "freqTier": 1,
+          "homographs": [
+            "verb.deloo.pres.mp.ind:2s"
+          ]
         },
         {
           "id": "3p",
@@ -342,6 +442,2380 @@
           "sandhi": [
             {
               "seq": "όου",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "noun.polis.decl3i",
+      "kind": "noun",
+      "lemma": "πόλις",
+      "system": "third declension, ι-stem",
+      "label": "πόλις — Third Declension (ι-stem)",
+      "short": "πόλις",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2",
+          "4,2"
+        ]
+      },
+      "notes": "The stem alternates ι/ε: πόλι- in nom/acc singular, πόλε- elsewhere. The genitive πόλεως keeps its accent by quantitative metathesis — accusative plural borrows the nominative.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "πόλις",
+          "pieces": [
+            {
+              "text": "πόλι",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "πόλεως",
+          "pieces": [
+            {
+              "text": "πόλε",
+              "role": "stem"
+            },
+            {
+              "text": "ως",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "πόλει",
+          "pieces": [
+            {
+              "text": "πόλ",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.polis.decl3i:dn"
+          ]
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "πόλιν",
+          "pieces": [
+            {
+              "text": "πόλι",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "vs",
+          "r": 4,
+          "c": 0,
+          "form": "πόλι",
+          "pieces": [
+            {
+              "text": "πόλι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "πόλεις",
+          "pieces": [
+            {
+              "text": "πόλ",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.polis.decl3i:ap",
+            "noun.polis.decl3i:vp"
+          ]
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "πόλεων",
+          "pieces": [
+            {
+              "text": "πόλε",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "πόλεσι(ν)",
+          "pieces": [
+            {
+              "text": "πόλε",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "πόλεις",
+          "pieces": [
+            {
+              "text": "πόλ",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.polis.decl3i:np",
+            "noun.polis.decl3i:vp"
+          ]
+        },
+        {
+          "id": "vp",
+          "r": 4,
+          "c": 1,
+          "form": "πόλεις",
+          "pieces": [
+            {
+              "text": "πόλ",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "noun.polis.decl3i:ap",
+            "noun.polis.decl3i:np"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "πόλει",
+          "pieces": [
+            {
+              "text": "πόλ",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "noun.polis.decl3i:ds"
+          ]
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "πολέοιν",
+          "pieces": [
+            {
+              "text": "πολέ",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "noun.pechys.decl3y",
+      "kind": "noun",
+      "lemma": "πῆχυς",
+      "system": "third declension, υ-stem",
+      "label": "πῆχυς — Third Declension (υ-stem)",
+      "short": "πῆχυς",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2",
+          "4,2"
+        ]
+      },
+      "notes": "Declines like πόλις with υ for ι in the nominative/accusative singular.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "πῆχυς",
+          "pieces": [
+            {
+              "text": "πῆχυ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "πήχεως",
+          "pieces": [
+            {
+              "text": "πήχε",
+              "role": "stem"
+            },
+            {
+              "text": "ως",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "πήχει",
+          "pieces": [
+            {
+              "text": "πήχ",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.pechys.decl3y:dn"
+          ]
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "πῆχυν",
+          "pieces": [
+            {
+              "text": "πῆχυ",
+              "role": "stem"
+            },
+            {
+              "text": "ν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "vs",
+          "r": 4,
+          "c": 0,
+          "form": "πῆχυ",
+          "pieces": [
+            {
+              "text": "πῆχυ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "πήχεις",
+          "pieces": [
+            {
+              "text": "πήχ",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.pechys.decl3y:ap",
+            "noun.pechys.decl3y:vp"
+          ]
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "πήχεων",
+          "pieces": [
+            {
+              "text": "πήχε",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "πήχεσι(ν)",
+          "pieces": [
+            {
+              "text": "πήχε",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "πήχεις",
+          "pieces": [
+            {
+              "text": "πήχ",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.pechys.decl3y:np",
+            "noun.pechys.decl3y:vp"
+          ]
+        },
+        {
+          "id": "vp",
+          "r": 4,
+          "c": 1,
+          "form": "πήχεις",
+          "pieces": [
+            {
+              "text": "πήχ",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "noun.pechys.decl3y:ap",
+            "noun.pechys.decl3y:np"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "πήχει",
+          "pieces": [
+            {
+              "text": "πήχ",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "noun.pechys.decl3y:ds"
+          ]
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "πηχέοιν",
+          "pieces": [
+            {
+              "text": "πηχέ",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "noun.hippeus.decl3eu",
+      "kind": "noun",
+      "lemma": "ἱππεύς",
+      "system": "third declension, ευ-stem",
+      "label": "ἱππεύς — Third Declension (ευ-stem)",
+      "short": "ἱππεύς",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2",
+          "4,2"
+        ]
+      },
+      "notes": "The ευ diphthong survives only before a consonant (ἱππεύς, ἱππεῦσι); before a vowel it breaks to ε. Nominative plural ἱππῆς is the older Attic — later texts write ἱππεῖς.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "ἱππεύς",
+          "pieces": [
+            {
+              "text": "ἱππεύ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "ἱππέως",
+          "pieces": [
+            {
+              "text": "ἱππέ",
+              "role": "stem"
+            },
+            {
+              "text": "ως",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "ἱππεῖ",
+          "pieces": [
+            {
+              "text": "ἱππε",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "ἱππέᾱ",
+          "pieces": [
+            {
+              "text": "ἱππέ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "vs",
+          "r": 4,
+          "c": 0,
+          "form": "ἱππεῦ",
+          "pieces": [
+            {
+              "text": "ἱππεῦ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "ἱππῆς",
+          "pieces": [
+            {
+              "text": "ἱππῆ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "noun.hippeus.decl3eu:vp"
+          ]
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "ἱππέων",
+          "pieces": [
+            {
+              "text": "ἱππέ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "ἱππεῦσι(ν)",
+          "pieces": [
+            {
+              "text": "ἱππεῦ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "ἱππέᾱς",
+          "pieces": [
+            {
+              "text": "ἱππέ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "vp",
+          "r": 4,
+          "c": 1,
+          "form": "ἱππῆς",
+          "pieces": [
+            {
+              "text": "ἱππῆ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "noun.hippeus.decl3eu:np"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "ἱππῆ",
+          "pieces": [
+            {
+              "text": "ἱππῆ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "ἱππέοιν",
+          "pieces": [
+            {
+              "text": "ἱππέ",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "adj.alethes.sg",
+      "kind": "adj",
+      "lemma": "ἀληθής",
+      "system": "adjective, σ-stem, two endings",
+      "label": "ἀληθής — true (singular)",
+      "short": "ἀληθής sg",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": "Masculine and feminine share one column. The σ of the stem contracts with every ending: ἀληθε(σ)-ος → ἀληθοῦς.",
+      "cells": [
+        {
+          "id": "nc",
+          "r": 0,
+          "c": 0,
+          "form": "ἀληθής",
+          "pieces": [
+            {
+              "text": "ἀληθή",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "ἀληθές",
+          "pieces": [
+            {
+              "text": "ἀληθέ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.sg:an",
+            "adj.alethes.sg:vc",
+            "adj.alethes.sg:vn"
+          ]
+        },
+        {
+          "id": "gc",
+          "r": 1,
+          "c": 0,
+          "form": "ἀληθοῦς",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.sg:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "ἀληθοῦς",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "οῦς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.sg:gc"
+          ]
+        },
+        {
+          "id": "dc",
+          "r": 2,
+          "c": 0,
+          "form": "ἀληθεῖ",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.du:nav",
+            "adj.alethes.sg:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "ἀληθεῖ",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.du:nav",
+            "adj.alethes.sg:dc"
+          ]
+        },
+        {
+          "id": "ac",
+          "r": 3,
+          "c": 0,
+          "form": "ἀληθῆ",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῆ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.pl:an",
+            "adj.alethes.pl:nn",
+            "adj.alethes.pl:vn"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "ἀληθές",
+          "pieces": [
+            {
+              "text": "ἀληθέ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.sg:nn",
+            "adj.alethes.sg:vc",
+            "adj.alethes.sg:vn"
+          ]
+        },
+        {
+          "id": "vc",
+          "r": 4,
+          "c": 0,
+          "form": "ἀληθές",
+          "pieces": [
+            {
+              "text": "ἀληθέ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "adj.alethes.sg:an",
+            "adj.alethes.sg:nn",
+            "adj.alethes.sg:vn"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 1,
+          "form": "ἀληθές",
+          "pieces": [
+            {
+              "text": "ἀληθέ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "adj.alethes.sg:an",
+            "adj.alethes.sg:nn",
+            "adj.alethes.sg:vc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.alethes.pl",
+      "kind": "adj",
+      "lemma": "ἀληθής",
+      "system": "adjective, σ-stem, two endings",
+      "label": "ἀληθής — true (plural)",
+      "short": "ἀληθής pl",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": "ἀληθῆ is the neuter plural here and the masc/fem accusative singular in the other table — one spelling, three grammatical lives.",
+      "cells": [
+        {
+          "id": "nc",
+          "r": 0,
+          "c": 0,
+          "form": "ἀληθεῖς",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.pl:ac",
+            "adj.alethes.pl:vc"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "ἀληθῆ",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῆ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.pl:an",
+            "adj.alethes.pl:vn",
+            "adj.alethes.sg:ac"
+          ]
+        },
+        {
+          "id": "gc",
+          "r": 1,
+          "c": 0,
+          "form": "ἀληθῶν",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "ἀληθῶν",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.pl:gc"
+          ]
+        },
+        {
+          "id": "dc",
+          "r": 2,
+          "c": 0,
+          "form": "ἀληθέσι(ν)",
+          "pieces": [
+            {
+              "text": "ἀληθέ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.pl:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "ἀληθέσι(ν)",
+          "pieces": [
+            {
+              "text": "ἀληθέ",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.pl:dc"
+          ]
+        },
+        {
+          "id": "ac",
+          "r": 3,
+          "c": 0,
+          "form": "ἀληθεῖς",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.pl:nc",
+            "adj.alethes.pl:vc"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "ἀληθῆ",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῆ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.alethes.pl:nn",
+            "adj.alethes.pl:vn",
+            "adj.alethes.sg:ac"
+          ]
+        },
+        {
+          "id": "vc",
+          "r": 4,
+          "c": 0,
+          "form": "ἀληθεῖς",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "adj.alethes.pl:ac",
+            "adj.alethes.pl:nc"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 1,
+          "form": "ἀληθῆ",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "ῆ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "adj.alethes.pl:an",
+            "adj.alethes.pl:nn",
+            "adj.alethes.sg:ac"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.alethes.du",
+      "kind": "adj",
+      "lemma": "ἀληθής",
+      "system": "two-ending adjective, dual",
+      "label": "ἀληθής — true (dual)",
+      "short": "ἀληθής du",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "N.A.V.",
+          "G.D."
+        ],
+        "colLabels": [
+          "all genders"
+        ]
+      },
+      "notes": "One dual form serves all genders — and ἀληθεῖ doubles as the dative singular.",
+      "cells": [
+        {
+          "id": "nav",
+          "r": 0,
+          "c": 0,
+          "form": "ἀληθεῖ",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "εῖ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "adj.alethes.sg:dc",
+            "adj.alethes.sg:dn"
+          ]
+        },
+        {
+          "id": "gd",
+          "r": 1,
+          "c": 0,
+          "form": "ἀληθοῖν",
+          "pieces": [
+            {
+              "text": "ἀληθ",
+              "role": "stem"
+            },
+            {
+              "text": "οῖν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "adj.sophron.sg",
+      "kind": "adj",
+      "lemma": "σώφρων",
+      "system": "adjective, ν-stem, two endings",
+      "label": "σώφρων — prudent (singular)",
+      "short": "σώφρων sg",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": "Declines like δαίμων: long ω in the nominative masculine/feminine, short ο everywhere else. The vocative σῶφρον retracts the accent.",
+      "cells": [
+        {
+          "id": "nc",
+          "r": 0,
+          "c": 0,
+          "form": "σώφρων",
+          "pieces": [
+            {
+              "text": "σώφρων",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "σῶφρον",
+          "pieces": [
+            {
+              "text": "σῶφρον",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.sg:an",
+            "adj.sophron.sg:vc",
+            "adj.sophron.sg:vn"
+          ]
+        },
+        {
+          "id": "gc",
+          "r": 1,
+          "c": 0,
+          "form": "σώφρονος",
+          "pieces": [
+            {
+              "text": "σώφρονος",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.sg:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "σώφρονος",
+          "pieces": [
+            {
+              "text": "σώφρονος",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.sg:gc"
+          ]
+        },
+        {
+          "id": "dc",
+          "r": 2,
+          "c": 0,
+          "form": "σώφρονι",
+          "pieces": [
+            {
+              "text": "σώφρονι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.sg:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "σώφρονι",
+          "pieces": [
+            {
+              "text": "σώφρονι",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.sg:dc"
+          ]
+        },
+        {
+          "id": "ac",
+          "r": 3,
+          "c": 0,
+          "form": "σώφρονα",
+          "pieces": [
+            {
+              "text": "σώφρονα",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.pl:an",
+            "adj.sophron.pl:nn",
+            "adj.sophron.pl:vn"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "σῶφρον",
+          "pieces": [
+            {
+              "text": "σῶφρον",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.sg:nn",
+            "adj.sophron.sg:vc",
+            "adj.sophron.sg:vn"
+          ]
+        },
+        {
+          "id": "vc",
+          "r": 4,
+          "c": 0,
+          "form": "σῶφρον",
+          "pieces": [
+            {
+              "text": "σῶφρον",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "adj.sophron.sg:an",
+            "adj.sophron.sg:nn",
+            "adj.sophron.sg:vn"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 1,
+          "form": "σῶφρον",
+          "pieces": [
+            {
+              "text": "σῶφρον",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "adj.sophron.sg:an",
+            "adj.sophron.sg:nn",
+            "adj.sophron.sg:vc"
+          ]
+        }
+      ],
+      "drillClass": "wholeForm"
+    },
+    {
+      "id": "adj.sophron.pl",
+      "kind": "adj",
+      "lemma": "σώφρων",
+      "system": "adjective, ν-stem, two endings",
+      "label": "σώφρων — prudent (plural)",
+      "short": "σώφρων pl",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masc/fem",
+          "neuter"
+        ]
+      },
+      "notes": null,
+      "cells": [
+        {
+          "id": "nc",
+          "r": 0,
+          "c": 0,
+          "form": "σώφρονες",
+          "pieces": [
+            {
+              "text": "σώφρον",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.pl:vc"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 1,
+          "form": "σώφρονα",
+          "pieces": [
+            {
+              "text": "σώφρον",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.pl:an",
+            "adj.sophron.pl:vn",
+            "adj.sophron.sg:ac"
+          ]
+        },
+        {
+          "id": "gc",
+          "r": 1,
+          "c": 0,
+          "form": "σωφρόνων",
+          "pieces": [
+            {
+              "text": "σωφρόν",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 1,
+          "form": "σωφρόνων",
+          "pieces": [
+            {
+              "text": "σωφρόν",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.pl:gc"
+          ]
+        },
+        {
+          "id": "dc",
+          "r": 2,
+          "c": 0,
+          "form": "σώφροσι(ν)",
+          "pieces": [
+            {
+              "text": "σώφρο",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.pl:dn"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 1,
+          "form": "σώφροσι(ν)",
+          "pieces": [
+            {
+              "text": "σώφρο",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.pl:dc"
+          ]
+        },
+        {
+          "id": "ac",
+          "r": 3,
+          "c": 0,
+          "form": "σώφρονας",
+          "pieces": [
+            {
+              "text": "σώφρον",
+              "role": "stem"
+            },
+            {
+              "text": "ας",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 1,
+          "form": "σώφρονα",
+          "pieces": [
+            {
+              "text": "σώφρον",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "adj.sophron.pl:nn",
+            "adj.sophron.pl:vn",
+            "adj.sophron.sg:ac"
+          ]
+        },
+        {
+          "id": "vc",
+          "r": 4,
+          "c": 0,
+          "form": "σώφρονες",
+          "pieces": [
+            {
+              "text": "σώφρον",
+              "role": "stem"
+            },
+            {
+              "text": "ες",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "adj.sophron.pl:nc"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 1,
+          "form": "σώφρονα",
+          "pieces": [
+            {
+              "text": "σώφρον",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3,
+          "homographs": [
+            "adj.sophron.pl:an",
+            "adj.sophron.pl:nn",
+            "adj.sophron.sg:ac"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.sophron.du",
+      "kind": "adj",
+      "lemma": "σώφρων",
+      "system": "two-ending adjective, dual",
+      "label": "σώφρων — prudent (dual)",
+      "short": "σώφρων du",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "N.A.V.",
+          "G.D."
+        ],
+        "colLabels": [
+          "all genders"
+        ]
+      },
+      "notes": "One dual form serves all genders.",
+      "cells": [
+        {
+          "id": "nav",
+          "r": 0,
+          "c": 0,
+          "form": "σώφρονε",
+          "pieces": [
+            {
+              "text": "σώφρον",
+              "role": "stem"
+            },
+            {
+              "text": "ε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
+        },
+        {
+          "id": "gd",
+          "r": 1,
+          "c": 0,
+          "form": "σωφρόνοιν",
+          "pieces": [
+            {
+              "text": "σωφρόν",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "verb.ballo.fut.act.ind",
+      "kind": "verb",
+      "lemma": "βάλλω",
+      "system": "contracted future (-έω type)",
+      "label": "βαλῶ — Future of βάλλω (contracted)",
+      "short": "Fut βαλῶ",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Liquid stems lose σ in the future and contract instead: βαλέ-ω → βαλῶ. Looks like a present of ποιέω — only context and the stem tell you it is future.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "βαλῶ",
+          "pieces": [
+            {
+              "text": "βαλέ",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "βαλοῦμεν",
+          "pieces": [
+            {
+              "text": "βαλέ",
+              "role": "stem"
+            },
+            {
+              "text": "ομεν",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έο",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "βαλεῖς",
+          "pieces": [
+            {
+              "text": "βαλέ",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έει",
+              "to": "εῖ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "βαλεῖτε",
+          "pieces": [
+            {
+              "text": "βαλέ",
+              "role": "stem"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έε",
+              "to": "εῖ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "βαλεῖ",
+          "pieces": [
+            {
+              "text": "βαλέ",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έει",
+              "to": "εῖ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "βαλοῦσι(ν)",
+          "pieces": [
+            {
+              "text": "βαλέ",
+              "role": "stem"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "έου",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.elauno.fut.act.ind",
+      "kind": "verb",
+      "lemma": "ἐλαύνω",
+      "system": "contracted future (-άω type)",
+      "label": "ἐλῶ — Future of ἐλαύνω (contracted)",
+      "short": "Fut ἐλῶ",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "The future of ἐλαύνω contracts like a present of τιμάω: ἐλά-ω → ἐλῶ.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "ἐλῶ",
+          "pieces": [
+            {
+              "text": "ἐλά",
+              "role": "stem"
+            },
+            {
+              "text": "ω",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άω",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "ἐλῶμεν",
+          "pieces": [
+            {
+              "text": "ἐλά",
+              "role": "stem"
+            },
+            {
+              "text": "ομεν",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άο",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "ἐλᾷς",
+          "pieces": [
+            {
+              "text": "ἐλά",
+              "role": "stem"
+            },
+            {
+              "text": "εις",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άει",
+              "to": "ᾷ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "ἐλᾶτε",
+          "pieces": [
+            {
+              "text": "ἐλά",
+              "role": "stem"
+            },
+            {
+              "text": "ετε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άε",
+              "to": "ᾶ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "ἐλᾷ",
+          "pieces": [
+            {
+              "text": "ἐλά",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άει",
+              "to": "ᾷ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "ἐλῶσι(ν)",
+          "pieces": [
+            {
+              "text": "ἐλά",
+              "role": "stem"
+            },
+            {
+              "text": "ουσι(ν)",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "άου",
+              "to": "ῶ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "verb.deloo.pres.mp.ind",
+      "kind": "verb",
+      "lemma": "δηλόω",
+      "system": "contract verb in -όω, middle/passive",
+      "label": "δηλόω — Present M/P Indicative",
+      "short": "δηλόω M/P",
+      "unitIntroduced": 10,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "ο-contraction throughout: δηλό-ομαι → δηλοῦμαι; the 2nd singular δηλοῖ is spelled exactly like the active 3rd singular.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "δηλοῦμαι",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "ομαι",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όο",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "δηλοῖ",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "ῃ",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όῃ",
+              "to": "οῖ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1,
+          "homographs": [
+            "verb.deloo.pres.act.ind:3s"
+          ]
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "δηλοῦται",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "εται",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όε",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "δηλούμεθα",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "όμεθα",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όό",
+              "to": "ού"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "δηλοῦσθε",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "εσθε",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όε",
+              "to": "οῦ"
+            }
+          ],
+          "unitMax": 10,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "δηλοῦνται",
+          "pieces": [
+            {
+              "text": "δηλό",
+              "role": "stem"
+            },
+            {
+              "text": "ονται",
+              "role": "ending"
+            }
+          ],
+          "sandhi": [
+            {
+              "seq": "όο",
               "to": "οῦ"
             }
           ],

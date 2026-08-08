@@ -52,7 +52,7 @@ const TRANSPOSE = [
   { stems: ["πεπαίδευκ", "πεπαιδεύκ"], to: "λελυκ" }, // PP perfect act → λέλυκα (their perfect model)
   { stems: ["πεπαίδευ"], to: "λελυ" }, // PP perfect M/P → λέλυμαι
   { stems: ["παίδευ", "παιδεύ", "παιδευ"], to: "βουλευ" }, // PP παιδεύω → βουλεύω
-  { stems: ["λύ", "λυ"], to: "βουλευ" }, // all λύω systems except the perfects (theirs are λύω too)
+  { stems: ["λύ", "λυ", "λῦ"], to: "βουλευ" }, // all λύω systems except the perfects (theirs are λύω too)
   { stems: ["ἔλιπ"], to: "ἤγαγ" }, // strong aorist → ἤγαγον (augment fused in their model)
   { stems: ["ἐλίπ"], to: "ἠγάγ" },
   { stems: ["τέχν", "τεχν"], to: "γνωμ" }, // η-type 1st declension → γνώμη
@@ -62,6 +62,9 @@ const TRANSPOSE = [
   { stems: ["σῶμ", "σώμ"], to: "πραγμ" },
   { stems: ["ἐλπίδ", "ἐλπίσ", "ἐλπίς"], to: (s) => s.replace("ἐλπί", "ἀσπί") }, // dental stem → ἀσπίς
   { stems: ["τιμ"], to: "ἐλ" }, // α-contract shape → contract future of ἐλαύνω (ἐλῶ, ἐλᾷς…)
+  { stems: ["τιμ"], to: "ὁρ" }, // α-contract M/P → ὁράω's page (ὁρῶμαι, ὁρᾶται…); ἐλῶ has no printed middle
+  { stems: ["λυτέ"], to: "ἀξί" }, // verbal adjective -τέος endings → ἄξιος's 2-1-2 paradigm
+  { stems: ["κεῖ", "κεί"], to: (s) => (s === "κεῖ" ? "δύνα" : "δυνά") }, // κεῖμαι → δύναμαι (athematic middle endings)
 ];
 
 function transposedVariants(form) {
@@ -142,6 +145,15 @@ for (const f of unitFiles) {
       total++;
       const variants = variantsOf(c.form);
       if (variants.some((v) => inventory.has(normalize(v)))) {
+        attested++;
+        continue;
+      }
+      /* Two-word forms (the neuter ὅ τι is written apart to distinguish it
+         from the conjunction ὅτι): attested when every word is attested. */
+      if (
+        c.form.includes(" ") &&
+        c.form.split(" ").every((w) => inventory.has(normalize(w)))
+      ) {
         attested++;
         continue;
       }

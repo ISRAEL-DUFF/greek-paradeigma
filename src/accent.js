@@ -97,7 +97,15 @@ export function applyAccent(bareCluster, choice) {
   }
   const sub = marks.includes(YPOGEGRAMMENI) ? YPOGEGRAMMENI : "";
   marks = marks.replace(YPOGEGRAMMENI, "");
-  cs[idx] = (base + breathing + mark + sub + marks).normalize("NFC");
+  /* A diaeresis must come BEFORE the accent (ι+̈+́ composes to ΐ; ι+́+̈ does
+     not compose at all). First form to need this: νηΐ, the dative of ναῦς. */
+  const DIAERESIS = "̈";
+  let diaeresis = "";
+  if (marks.includes(DIAERESIS)) {
+    diaeresis = DIAERESIS;
+    marks = marks.replace(DIAERESIS, "");
+  }
+  cs[idx] = (base + breathing + diaeresis + mark + sub + marks).normalize("NFC");
   return cs.join("").normalize("NFC");
 }
 

@@ -2,5 +2,1360 @@
   "unit": 20,
   "title": "Verbal adjectives; κεῖμαι, νοῦς, ἄστυ",
   "unitMappingVerified": true,
-  "paradigms": []
+  "paradigms": [
+    {
+      "id": "adj.lyteos.sg",
+      "kind": "adj",
+      "lemma": "λυτέος",
+      "system": "verbal adjective in -τέος",
+      "label": "λυτέος — verbal adjective: to-be-loosed (singular)",
+      "short": "λυτέος sg",
+      "unitIntroduced": 20,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "Formed on the fourth-principal-part stem + -τέος; declines exactly like ἄξιος. With a form of εἰμί it makes the passive periphrastic of obligation: λυτέος ἐστί, 'he must be loosed'.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "λυτέος",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ος",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "λυτέᾱ",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.sg:vf"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "λυτέον",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.sg:am",
+            "adj.lyteos.sg:an",
+            "adj.lyteos.sg:vn"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "λυτέου",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.sg:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "λυτέᾱς",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.pl:af"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "λυτέου",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ου",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.sg:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "λυτέῳ",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.sg:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "λυτέᾳ",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "λυτέῳ",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ῳ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.sg:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "λυτέον",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.sg:an",
+            "adj.lyteos.sg:nn",
+            "adj.lyteos.sg:vn"
+          ]
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "λυτέᾱν",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "λυτέον",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.sg:am",
+            "adj.lyteos.sg:nn",
+            "adj.lyteos.sg:vn"
+          ]
+        },
+        {
+          "id": "vm",
+          "r": 4,
+          "c": 0,
+          "form": "λυτέε",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3
+        },
+        {
+          "id": "vf",
+          "r": 4,
+          "c": 1,
+          "form": "λυτέᾱ",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "adj.lyteos.sg:nf"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 2,
+          "form": "λυτέον",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ον",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "adj.lyteos.sg:am",
+            "adj.lyteos.sg:an",
+            "adj.lyteos.sg:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adj.lyteos.pl",
+      "kind": "adj",
+      "lemma": "λυτέος",
+      "system": "verbal adjective in -τέος",
+      "label": "λυτέος — verbal adjective: to-be-loosed (plural)",
+      "short": "λυτέος pl",
+      "unitIntroduced": 20,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "masculine",
+          "feminine",
+          "neuter"
+        ]
+      },
+      "notes": "The feminine genitive plural λυτέων follows the masculine, adjective-style. Note λυτέᾱ (fem sg) vs λυτέα (neut pl) — the macron is the difference.",
+      "cells": [
+        {
+          "id": "nm",
+          "r": 0,
+          "c": 0,
+          "form": "λυτέοι",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.pl:vm"
+          ]
+        },
+        {
+          "id": "nf",
+          "r": 0,
+          "c": 1,
+          "form": "λυτέαι",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.pl:vf"
+          ]
+        },
+        {
+          "id": "nn",
+          "r": 0,
+          "c": 2,
+          "form": "λυτέα",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.pl:an",
+            "adj.lyteos.pl:vn"
+          ]
+        },
+        {
+          "id": "gm",
+          "r": 1,
+          "c": 0,
+          "form": "λυτέων",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.pl:gf",
+            "adj.lyteos.pl:gn"
+          ]
+        },
+        {
+          "id": "gf",
+          "r": 1,
+          "c": 1,
+          "form": "λυτέων",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.pl:gm",
+            "adj.lyteos.pl:gn"
+          ]
+        },
+        {
+          "id": "gn",
+          "r": 1,
+          "c": 2,
+          "form": "λυτέων",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.pl:gf",
+            "adj.lyteos.pl:gm"
+          ]
+        },
+        {
+          "id": "dm",
+          "r": 2,
+          "c": 0,
+          "form": "λυτέοις",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.pl:dn"
+          ]
+        },
+        {
+          "id": "df",
+          "r": 2,
+          "c": 1,
+          "form": "λυτέαις",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "αις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2
+        },
+        {
+          "id": "dn",
+          "r": 2,
+          "c": 2,
+          "form": "λυτέοις",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "οις",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.pl:dm"
+          ]
+        },
+        {
+          "id": "am",
+          "r": 3,
+          "c": 0,
+          "form": "λυτέους",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ους",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2
+        },
+        {
+          "id": "af",
+          "r": 3,
+          "c": 1,
+          "form": "λυτέᾱς",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "ᾱς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.sg:gf"
+          ]
+        },
+        {
+          "id": "an",
+          "r": 3,
+          "c": 2,
+          "form": "λυτέα",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 2,
+          "homographs": [
+            "adj.lyteos.pl:nn",
+            "adj.lyteos.pl:vn"
+          ]
+        },
+        {
+          "id": "vm",
+          "r": 4,
+          "c": 0,
+          "form": "λυτέοι",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "οι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "adj.lyteos.pl:nm"
+          ]
+        },
+        {
+          "id": "vf",
+          "r": 4,
+          "c": 1,
+          "form": "λυτέαι",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "αι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "adj.lyteos.pl:nf"
+          ]
+        },
+        {
+          "id": "vn",
+          "r": 4,
+          "c": 2,
+          "form": "λυτέα",
+          "pieces": [
+            {
+              "text": "λυτέ",
+              "role": "stem"
+            },
+            {
+              "text": "α",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "adj.lyteos.pl:an",
+            "adj.lyteos.pl:nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verb.keimai.pres.ind",
+      "kind": "verb",
+      "lemma": "κεῖμαι",
+      "system": "athematic middle (deponent)",
+      "label": "κεῖμαι — lie, be placed",
+      "short": "κεῖμαι",
+      "unitIntroduced": 20,
+      "layout": {
+        "rowLabels": [
+          "1st",
+          "2nd",
+          "3rd"
+        ],
+        "colLabels": [
+          "singular",
+          "plural"
+        ]
+      },
+      "notes": "Middle endings straight on the stem κει-, no thematic vowel — like δύναμαι. Serves as the perfect passive of τίθημι: 'has been placed'.",
+      "cells": [
+        {
+          "id": "1s",
+          "r": 0,
+          "c": 0,
+          "form": "κεῖμαι",
+          "pieces": [
+            {
+              "text": "κεῖ",
+              "role": "stem"
+            },
+            {
+              "text": "μαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "1p",
+          "r": 0,
+          "c": 1,
+          "form": "κείμεθα",
+          "pieces": [
+            {
+              "text": "κεί",
+              "role": "stem"
+            },
+            {
+              "text": "μεθα",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "2s",
+          "r": 1,
+          "c": 0,
+          "form": "κεῖσαι",
+          "pieces": [
+            {
+              "text": "κεῖ",
+              "role": "stem"
+            },
+            {
+              "text": "σαι",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "2p",
+          "r": 1,
+          "c": 1,
+          "form": "κεῖσθε",
+          "pieces": [
+            {
+              "text": "κεῖ",
+              "role": "stem"
+            },
+            {
+              "text": "σθε",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "3s",
+          "r": 2,
+          "c": 0,
+          "form": "κεῖται",
+          "pieces": [
+            {
+              "text": "κεῖ",
+              "role": "stem"
+            },
+            {
+              "text": "ται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "3p",
+          "r": 2,
+          "c": 1,
+          "form": "κεῖνται",
+          "pieces": [
+            {
+              "text": "κεῖ",
+              "role": "stem"
+            },
+            {
+              "text": "νται",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        }
+      ]
+    },
+    {
+      "id": "noun.nous.decl2c",
+      "kind": "noun",
+      "lemma": "νοῦς",
+      "system": "second declension, contracted",
+      "label": "νοῦς — mind (contracted)",
+      "short": "νοῦς",
+      "unitIntroduced": 20,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2",
+          "4,2"
+        ]
+      },
+      "notes": "νόος contracted throughout: every ending fuses with the stem-ο into a single long syllable. The dual νώ is spelled like the pronoun 'we two'.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "νοῦς",
+          "pieces": [
+            {
+              "text": "νοῦ",
+              "role": "stem"
+            },
+            {
+              "text": "ς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1,
+          "homographs": [
+            "noun.nous.decl2c:ap"
+          ]
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "νοῖ",
+          "pieces": [
+            {
+              "text": "νο",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1,
+          "homographs": [
+            "noun.nous.decl2c:vp"
+          ]
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "νοῦ",
+          "pieces": [
+            {
+              "text": "νο",
+              "role": "stem"
+            },
+            {
+              "text": "ῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1,
+          "homographs": [
+            "noun.nous.decl2c:vs"
+          ]
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "νῶν",
+          "pieces": [
+            {
+              "text": "ν",
+              "role": "stem"
+            },
+            {
+              "text": "ῶν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "νῷ",
+          "pieces": [
+            {
+              "text": "ν",
+              "role": "stem"
+            },
+            {
+              "text": "ῷ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "νοῖς",
+          "pieces": [
+            {
+              "text": "ν",
+              "role": "stem"
+            },
+            {
+              "text": "οῖς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "νοῦν",
+          "pieces": [
+            {
+              "text": "νο",
+              "role": "stem"
+            },
+            {
+              "text": "ῦν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "νοῦς",
+          "pieces": [
+            {
+              "text": "νο",
+              "role": "stem"
+            },
+            {
+              "text": "ῦς",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1,
+          "homographs": [
+            "noun.nous.decl2c:ns"
+          ]
+        },
+        {
+          "id": "vs",
+          "r": 4,
+          "c": 0,
+          "form": "νοῦ",
+          "pieces": [
+            {
+              "text": "νο",
+              "role": "stem"
+            },
+            {
+              "text": "ῦ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "noun.nous.decl2c:gs"
+          ]
+        },
+        {
+          "id": "vp",
+          "r": 4,
+          "c": 1,
+          "form": "νοῖ",
+          "pieces": [
+            {
+              "text": "νο",
+              "role": "stem"
+            },
+            {
+              "text": "ῖ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "noun.nous.decl2c:np"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "νώ",
+          "pieces": [
+            {
+              "text": "ν",
+              "role": "stem"
+            },
+            {
+              "text": "ώ",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "pron.ego:dn"
+          ]
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "νοῖν",
+          "pieces": [
+            {
+              "text": "ν",
+              "role": "stem"
+            },
+            {
+              "text": "οῖν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3
+        }
+      ]
+    },
+    {
+      "id": "noun.asty.decl3u",
+      "kind": "noun",
+      "lemma": "ἄστυ",
+      "system": "third declension, neuter υ-stem",
+      "label": "ἄστυ — town (neuter υ-stem)",
+      "short": "ἄστυ",
+      "unitIntroduced": 20,
+      "layout": {
+        "rowLabels": [
+          "Nom",
+          "Gen",
+          "Dat",
+          "Acc",
+          "Voc"
+        ],
+        "colLabels": [
+          "singular",
+          "plural",
+          "dual"
+        ],
+        "absent": [
+          "2,2",
+          "3,2",
+          "4,2"
+        ]
+      },
+      "notes": "Neuter twin of πῆχυς: nominative, accusative and vocative are all bare ἄστυ, and the plural collapses to ἄστη. The genitive ἄστεως keeps the πόλεως accent.",
+      "cells": [
+        {
+          "id": "ns",
+          "r": 0,
+          "c": 0,
+          "form": "ἄστυ",
+          "pieces": [
+            {
+              "text": "ἄστυ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1,
+          "homographs": [
+            "noun.asty.decl3u:as",
+            "noun.asty.decl3u:vs"
+          ]
+        },
+        {
+          "id": "np",
+          "r": 0,
+          "c": 1,
+          "form": "ἄστη",
+          "pieces": [
+            {
+              "text": "ἄστ",
+              "role": "stem"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1,
+          "homographs": [
+            "noun.asty.decl3u:ap",
+            "noun.asty.decl3u:vp"
+          ]
+        },
+        {
+          "id": "gs",
+          "r": 1,
+          "c": 0,
+          "form": "ἄστεως",
+          "pieces": [
+            {
+              "text": "ἄστε",
+              "role": "stem"
+            },
+            {
+              "text": "ως",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "gp",
+          "r": 1,
+          "c": 1,
+          "form": "ἄστεων",
+          "pieces": [
+            {
+              "text": "ἄστε",
+              "role": "stem"
+            },
+            {
+              "text": "ων",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "ds",
+          "r": 2,
+          "c": 0,
+          "form": "ἄστει",
+          "pieces": [
+            {
+              "text": "ἄστ",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1,
+          "homographs": [
+            "noun.asty.decl3u:dn"
+          ]
+        },
+        {
+          "id": "dp",
+          "r": 2,
+          "c": 1,
+          "form": "ἄστεσι(ν)",
+          "pieces": [
+            {
+              "text": "ἄστε",
+              "role": "stem"
+            },
+            {
+              "text": "σι(ν)",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1
+        },
+        {
+          "id": "as",
+          "r": 3,
+          "c": 0,
+          "form": "ἄστυ",
+          "pieces": [
+            {
+              "text": "ἄστυ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1,
+          "homographs": [
+            "noun.asty.decl3u:ns",
+            "noun.asty.decl3u:vs"
+          ]
+        },
+        {
+          "id": "ap",
+          "r": 3,
+          "c": 1,
+          "form": "ἄστη",
+          "pieces": [
+            {
+              "text": "ἄστ",
+              "role": "stem"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 1,
+          "homographs": [
+            "noun.asty.decl3u:np",
+            "noun.asty.decl3u:vp"
+          ]
+        },
+        {
+          "id": "vs",
+          "r": 4,
+          "c": 0,
+          "form": "ἄστυ",
+          "pieces": [
+            {
+              "text": "ἄστυ",
+              "role": "stem"
+            },
+            {
+              "text": "",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "noun.asty.decl3u:as",
+            "noun.asty.decl3u:ns"
+          ]
+        },
+        {
+          "id": "vp",
+          "r": 4,
+          "c": 1,
+          "form": "ἄστη",
+          "pieces": [
+            {
+              "text": "ἄστ",
+              "role": "stem"
+            },
+            {
+              "text": "η",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "noun.asty.decl3u:ap",
+            "noun.asty.decl3u:np"
+          ]
+        },
+        {
+          "id": "dn",
+          "r": 0,
+          "c": 2,
+          "form": "ἄστει",
+          "pieces": [
+            {
+              "text": "ἄστ",
+              "role": "stem"
+            },
+            {
+              "text": "ει",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3,
+          "homographs": [
+            "noun.asty.decl3u:ds"
+          ]
+        },
+        {
+          "id": "dg",
+          "r": 1,
+          "c": 2,
+          "form": "ἀστέοιν",
+          "pieces": [
+            {
+              "text": "ἀστέ",
+              "role": "stem"
+            },
+            {
+              "text": "οιν",
+              "role": "ending"
+            }
+          ],
+          "unitMax": 20,
+          "freqTier": 3
+        }
+      ]
+    }
+  ]
 }
