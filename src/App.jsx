@@ -51,6 +51,7 @@ import TablesPanel from "./components/TablesPanel.jsx";
 import ModesPanel from "./components/ModesPanel.jsx";
 import SettingsPanel from "./components/SettingsPanel.jsx";
 import PromptBanner from "./components/PromptBanner.jsx";
+import { RaceClock, ModePrompt } from "./components/DrillHud.jsx";
 import ParadigmTable from "./components/ParadigmTable.jsx";
 import RoundEnd from "./components/RoundEnd.jsx";
 import useWide from "./useWide.js";
@@ -1084,39 +1085,39 @@ export default function App() {
         </div>
       )}
 
-      {/* race clock */}
+      {/* race clock — the draining ring (founder request: unmissable) */}
       {mode === "race" && race && !race.finished && (
-        <div className="w-full max-w-2xl mb-3 flex items-center gap-3 text-sm">
-          <span
-            className={race.deadline - race.now < 10000 ? "race-low" : ""}
-            style={{
-              color: race.deadline - race.now < 10000 ? C.wrong : C.aegean,
-              fontVariantNumeric: "tabular-nums",
-            }}
-          >
-            ⏱ {(Math.max(0, race.deadline - race.now) / 1000).toFixed(1)}s
-          </span>
-          {race.bestMs != null && (
-            <span style={{ color: C.faint }}>best {(race.bestMs / 1000).toFixed(1)}s</span>
-          )}
-          <span style={{ color: C.faint }}>— the whole table, column by column</span>
-        </div>
+        <RaceClock
+          msLeft={Math.max(0, race.deadline - race.now)}
+          totalMs={RACE_MS}
+          bestMs={race.bestMs}
+        />
       )}
 
-      {/* lookup prompt */}
+      {/* impostor prompt — first-class banner (was a whisper under the table) */}
+      {mode === "impostor" && impostorMsg && (
+        <ModePrompt tag="IMPOSTOR" tone={/genuine|too small/.test(impostorMsg) ? "aegean" : impostorMsg.startsWith("Found") ? "gold" : "wrong"}>
+          {impostorMsg}
+        </ModePrompt>
+      )}
+
+      {/* lookup prompt — first-class banner, the form at display size */}
       {mode === "lookup" && lookup && (
-        <div className="w-full max-w-2xl mb-3 text-sm" style={{ color: C.faint }}>
+        <ModePrompt
+          tag="LOOKUP"
+          sub="The table keeps its secrets — answer from memory of WHERE, not by reading."
+        >
           Where does{" "}
-          <span className="gk text-xl" style={{ color: C.marble }}>
+          <span className="gk text-2xl sm:text-3xl" style={{ color: C.gold }}>
             {lookup.form}
           </span>{" "}
           live?
           {lookup.required.length > 1 && (
-            <span style={{ color: C.aegean }}>
+            <span className="text-base" style={{ color: C.aegean }}>
               {"  "}({lookup.found.length}/{lookup.required.length} places — find them all)
             </span>
           )}
-        </div>
+        </ModePrompt>
       )}
 
       {/* the table(s) */}
@@ -1169,11 +1170,7 @@ export default function App() {
                 </button>
               </div>
             )}
-            {!twinMode && mode === "impostor" && impostorMsg && (
-              <div className="mt-4 text-sm" style={{ color: C.faint }}>
-                {impostorMsg}
-              </div>
-            )}
+
             {!twinMode &&
               paradigm.notes &&
               mode === "fill" &&

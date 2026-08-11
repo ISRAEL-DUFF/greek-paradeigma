@@ -102,17 +102,20 @@ export default function Cell({ cell, paradigm, currentUnit, phase, mode, blank, 
 
   let content;
   if (mode === "lookup" && lookup) {
+    /* Reverse lookup tests WHERE the form lives, from memory. Gilded cells
+       used to display their forms here as a trophy — which handed a fully
+       gilded table the answer key and made the mode worthless (founder
+       report, 2026-08-10). Gold now shows only as a tinted marker; no form
+       is ever visible until found. */
     if (fb === "correct") {
       content = (
         <span className="gk text-xl" style={{ color: C.aegean }}>
           {cell.form}
         </span>
       );
-    } else if (gold) {
-      content = <span className="gk text-xl gilded">{cell.form}</span>;
     } else {
       content = (
-        <span className="gk text-xl" style={{ color: C.line }}>
+        <span className="gk text-xl" style={{ color: gold ? C.goldDeep : C.line }}>
           ·
         </span>
       );
