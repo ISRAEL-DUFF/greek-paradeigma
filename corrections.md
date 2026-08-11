@@ -492,3 +492,35 @@ records are otherwise untouched; treat those tables' gold as partly unearned.
 
 Verified live in both apps (gilded-table lookup shows only dots; ring
 renders and drains; banners visible). Full suites + builds green.
+
+## Success beats — silent-correct audit, 2026-08-10 (founder-reported)
+
+Founder: "in LOOKUP the user gets feedback when wrong but not when right —
+the system just moves to the next question." Correct, and the asymmetry was
+the bug: rich feedback for failure, silence for success.
+
+**LOOKUP now speaks in all three states**, and names the cell so the
+confirmation carries the lesson rather than just a verdict:
+- complete → gold banner, "✓ τέχναις — dative plural. Right." (+ the fast
+  bonus inline: "ταχύς!" / "celeriter!"), the found form POPS into its cell
+  (`.lookup-hit` scale-in), and the round holds 1.9s (was 1.4s silent).
+- partial (homographs) → blue banner, "✓ 1 of 2 — nominative plural. Where
+  else does ὁδοί live?" — progress is now felt, not just counted.
+- wrong → red banner, "✗ Not there — that cell holds the nominative
+  singular." (was: a red cell and no words, while IMPOSTOR spoke on both).
+
+**The audit found one more instance of the same class:** the streak and
+fast-bonus signals — the app's only "you did well" voice — rendered as
+`text-xs` right-aligned grey text, the smallest type on screen. Promoted to
+`SuccessRibbon`: pill-shaped, mode-colored, arriving with a pop (keyed on the
+streak value so each increment re-animates).
+
+Modes checked and found already speaking on success (no change): FILL and
+SNIPE (CorrectFlash split-form animation in the cell), IMPOSTOR ("Found it —
+watch it correct itself"), the accent finishing move ("ὀρθῶς — the accent is
+yours too"), SCRAMBLE and RACE (both end in the RoundEnd screen), and
+assembly (step chips tick to ✓ as each morpheme lands).
+
+Verified live in both apps across all three lookup states; the beat banner
+carries the 4px gold accent edge and the found cell pops. Suites green
+(Greek 101, Latin 95), builds clean.

@@ -51,7 +51,7 @@ import TablesPanel from "./components/TablesPanel.jsx";
 import ModesPanel from "./components/ModesPanel.jsx";
 import SettingsPanel from "./components/SettingsPanel.jsx";
 import PromptBanner from "./components/PromptBanner.jsx";
-import { RaceClock, ModePrompt } from "./components/DrillHud.jsx";
+import { RaceClock, ModePrompt, SuccessRibbon } from "./components/DrillHud.jsx";
 import ParadigmTable from "./components/ParadigmTable.jsx";
 import RoundEnd from "./components/RoundEnd.jsx";
 import useWide from "./useWide.js";
@@ -108,7 +108,8 @@ export default function App() {
   const [tray, setTray] = useState([]); // [{id, text, role?, refusal?}]
   const [assembly, setAssembly] = useState(null); // {expected, progress}
   const [refusal, setRefusal] = useState(null); // {chipId, msg}
-  const [lookup, setLookup] = useState(null); // {form, required, found: []}
+  const [lookup, setLookup] = useState(null);
+  const [lookupBeat, setLookupBeat] = useState(null); // {tone, icon, before, form, after} // {form, required, found: []}
   const [feedback, setFeedback] = useState({}); // cellKey -> correct | wrong | reveal
   const [snipeTarget, setSnipeTarget] = useState(null); // {pid, cid}
   const [impostor, setImpostor] = useState(null); // {cid, fakeEnd}
@@ -344,6 +345,7 @@ export default function App() {
   const nextLookup = useCallback(
     (p = paradigm) => {
       setFeedback({});
+      setLookupBeat(null);
       const l = pickLookup(p, currentUnit, masteryMap);
       setLookup({ ...l, found: [] });
       activatedAt.current = Date.now();
@@ -873,14 +875,39 @@ export default function App() {
           const rcell = paradigm.cells.find((c) => c.id === rid);
           await commitAnswer({ p: paradigm, cell: rcell, correct: true, fast, latencyMs: elapsed });
         }
+        /* SUCCESS BEAT (founder report 2026-08-10): a right answer used to
+           pass in silence — the round simply advanced. Naming the cell they
+           found turns the confirmation into the lesson. */
+        setLookupBeat({
+          tone: "gold",
+          icon: "✓",
+          before: "",
+          form: lookup.form,
+          after: ` — ${labelFor(paradigm, cell)}. Right.${fast ? " ταχύς!" : ""}`,
+        });
         setLookup({ ...lookup, found });
-        later(() => nextLookup(), 1400);
+        later(() => nextLookup(), 1900);
       } else {
+        setLookupBeat({
+          tone: "aegean",
+          icon: "✓",
+          before: `${found.length} of ${lookup.required.length} — ${labelFor(paradigm, cell)}. Where else does `,
+          form: lookup.form,
+          after: " live?",
+        });
         setLookup({ ...lookup, found });
       }
     } else {
       setFeedback((f) => ({ ...f, [key]: "wrong" }));
       setStreak(0);
+      setLookupBeat({
+        tone: "wrong",
+        icon: "✗",
+        before: `Not there — that cell holds the ${labelFor(paradigm, cell)}.`,
+        form: null,
+        after: "",
+      });
+      later(() => setLookupBeat(null), 1500);
       const target = paradigm.cells.find((c) => c.id === lookup.required[0]);
       const elapsed = Date.now() - (activatedAt.current || Date.now());
       await commitAnswer({
@@ -1078,12 +1105,7 @@ export default function App() {
       )}
 
       {/* per-answer feedback: costs no height when nothing is happening */}
-      {(streak > 1 || fastFlash) && (
-        <div className="w-full max-w-2xl flex gap-3 justify-end text-xs pt-2">
-          {streak > 1 && <span style={{ color: C.aegean }}>streak ×{streak}</span>}
-          {fastFlash && <span style={{ color: C.gold }}>ταχύς! +2</span>}
-        </div>
-      )}
+      <SuccessRibbon streak={streak} fast={fastFlash} fastLabel="ταχύς!" />
 
       {/* race clock — the draining ring (founder request: unmissable) */}
       {mode === "race" && race && !race.finished && (
@@ -1105,17 +1127,37 @@ export default function App() {
       {mode === "lookup" && lookup && (
         <ModePrompt
           tag="LOOKUP"
-          sub="The table keeps its secrets — answer from memory of WHERE, not by reading."
+          tone={lookupBeat?.tone ?? "aegean"}
+          sub={
+            lookupBeat
+              ? null
+              : "The table keeps its secrets — answer from memory of WHERE, not by reading."
+          }
         >
-          Where does{" "}
-          <span className="gk text-2xl sm:text-3xl" style={{ color: C.gold }}>
-            {lookup.form}
-          </span>{" "}
-          live?
-          {lookup.required.length > 1 && (
-            <span className="text-base" style={{ color: C.aegean }}>
-              {"  "}({lookup.found.length}/{lookup.required.length} places — find them all)
+          {lookupBeat ? (
+            <span>
+              <span className="mr-1">{lookupBeat.icon}</span>
+              {lookupBeat.before}
+              {lookupBeat.form && (
+                <span className="gk text-2xl sm:text-3xl" style={{ color: C.gold }}>
+                  {lookupBeat.form}
+                </span>
+              )}
+              {lookupBeat.after}
             </span>
+          ) : (
+            <>
+              Where does{" "}
+              <span className="gk text-2xl sm:text-3xl" style={{ color: C.gold }}>
+                {lookup.form}
+              </span>{" "}
+              live?
+              {lookup.required.length > 1 && (
+                <span className="text-base" style={{ color: C.aegean }}>
+                  {"  "}({lookup.found.length}/{lookup.required.length} places — find them all)
+                </span>
+              )}
+            </>
           )}
         </ModePrompt>
       )}

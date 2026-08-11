@@ -93,3 +93,41 @@ export function ModePrompt({ tag, tone = "aegean", sub, children }) {
     </div>
   );
 }
+
+
+/** The reward signal. streak / fast-bonus used to be the smallest text on
+    screen (text-xs, right-aligned) — the one thing the app says when you do
+    well should not be its quietest voice. Now a pill that arrives with a
+    pop. */
+export function SuccessRibbon({ streak, fast, fastLabel }) {
+  if (!(streak > 1) && !fast) return null;
+  return (
+    <div className="w-full max-w-2xl flex gap-2 justify-end pt-2">
+      {streak > 1 && (
+        <span
+          key={streak}
+          className="ribbon-pop px-3 py-1 rounded-full text-sm"
+          style={{
+            border: `1px solid ${C.aegean}`,
+            color: C.aegean,
+            background: "rgba(111,179,216,0.10)",
+          }}
+        >
+          streak ×{streak}
+        </span>
+      )}
+      {fast && (
+        <span
+          className="ribbon-pop px-3 py-1 rounded-full text-sm"
+          style={{
+            border: `1px solid ${C.gold}`,
+            color: C.gold,
+            background: "rgba(217,188,114,0.12)",
+          }}
+        >
+          {fastLabel} +2
+        </span>
+      )}
+    </div>
+  );
+}
